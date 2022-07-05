@@ -146,8 +146,11 @@ public class Receiver {
 		case PRINT_CONSOLE:
 			fhirConnector.printBundleAsXml(fhirConnector.getBundleFromString(bundle));
 			break;
-		case PRINT_FILE:
+		case PRINT_FILE_XML:
 			fhirConnector.printBundleAsXmlToFile(number, fhirConnector.getBundleFromString(bundle));
+			break;
+		case PRINT_FILE_JSON:
+			fhirConnector.printBundleAsJsonToFile(number, fhirConnector.getBundleFromString(bundle));
 			break;
 		case PRINT_BOTH:
 			fhirConnector.printBundleAsXml(fhirConnector.getBundleFromString(bundle));

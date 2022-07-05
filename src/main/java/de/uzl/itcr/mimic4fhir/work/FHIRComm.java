@@ -16,6 +16,11 @@
  ******************************************************************************/
 package de.uzl.itcr.mimic4fhir.work;
 
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -72,7 +77,7 @@ public class FHIRComm {
 		client.registerInterceptor(new GZipContentInterceptor());
 	}
 
-	/**
+	/**logger.error(e.getMessage());
 	 * Print bundle as xml to console
 	 * 
 	 * @param transactionBundle bundle to print
@@ -81,7 +86,7 @@ public class FHIRComm {
 		System.out.println(getBundleAsString(transactionBundle));
 
 	}
-
+	
 	/**
 	 * Save FHIR-Ressource-Bundle as xml to location specified in Config
 	 * 
@@ -90,6 +95,7 @@ public class FHIRComm {
 	 * @param transactionBundle bundle to print to file
 	 */
 	public void printBundleAsXmlToFile(String number, Bundle transactionBundle) {
+		System.out.println("IN XML PRINT");
 		try {
 			String xml = getBundleAsString(transactionBundle);
 
@@ -122,10 +128,18 @@ public class FHIRComm {
 	 * @param transactionBundle bundle to push to server
 	 */
 	public void bundleToServer(Bundle transactionBundle) {
-		Bundle resp = client.transaction().withBundle(transactionBundle).execute();
+		System.out.println("Before pushing bundle");
+		Bundle resp = client
+				.transaction()
+				.withBundle(transactionBundle)
+				.withAdditionalHeader("Prefer", "return=representation")
+				.execute();
+		System.out.println("After pushing bundle");
+		System.out.println(resp.fhirType());
 
 		// Log response
-		// writeToFile(ctx.newXmlParser().setPrettyPrint(true).encodeResourceToString(resp));
+		writeToFile(ctx.newJsonParser().setPrettyPrint(true).encodeResourceToString(resp), "json");
+		System.out.println("After writing bundle");
 	}
 
 	private void writeToFile(String text) {
@@ -143,6 +157,22 @@ public class FHIRComm {
 			e.printStackTrace();
 		}
 	}
+	
+	private void writeToFile(String text, String format) {
+		try {
+
+			String fullFilePath = configuration.getFhirxmlFilePath() + "/log" + new Date().getTime() + "." + format;
+
+			Path path = Paths.get(fullFilePath);
+			byte[] strToBytes = text.getBytes();
+
+			// Write formatted file
+			Files.write(path, strToBytes);
+		} catch (Exception e) {
+			logger.error(e.getMessage());
+			e.printStackTrace();
+		}
+	}
 
 	/**
 	 * Get a bundle as xml string representation
@@ -153,6 +183,17 @@ public class FHIRComm {
 	public String getBundleAsString(Bundle bundle) {
 		return ctx.newXmlParser().setPrettyPrint(true).encodeResourceToString(bundle);
 	}
+	
+	/**
+	 * Get a bundle as json string representation
+	 * 
+	 * @param bundle bundle to transform into a string
+	 * @return bundle json string
+	 */
+	public String getBundleAsJsonString(Bundle bundle) {
+		return ctx.newJsonParser().encodeResourceToString(bundle);
+	}
+
 
 	/**
 	 * Parse xml string to bundle
@@ -162,6 +203,60 @@ public class FHIRComm {
 	 */
 	public Bundle getBundleFromString(String bundle) {
 		return (Bundle) ctx.newXmlParser().setPrettyPrint(true).parseResource(bundle);
+	}
+
+	/**
+	 * Save FHIR-Ressource-Bundle as xml to location specified in Config
+	 * @param number Number of bundle. Use 0, if no number in file name wanted ("bundle.xml")
+	 * @param bundle bundle to print to file
+	 */
+	public void printBundleAsJsonToFile(String number, Bundle transactionBundle) {
+		String json = getBundleAsJsonString(transactionBundle);
+		
+		try {
+			String fullFilePath;
+			if(!number.equals("0")) {
+				fullFilePath = configuration.getFhirxmlFilePath() + "bundle" + number + ".json";
+			}
+			else{
+				fullFilePath = configuration.getFhirxmlFilePath() + "bundle.json";
+			}
+			
+			Path path = Paths.get(fullFilePath);
+		    byte[] strToBytes = json.getBytes();
+	 
+		    //Write json as file
+			Files.write(path, strToBytes);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			logger.error(e.getMessage());
+			e.printStackTrace();
+		}		
+		
+	}
+	
+	public void bundleToLocalServer(String text) {
+		System.out.println("IN BUNDLE TO SERVER");
+		try {
+			URL url = new URL("https://localhost:8080/fhir/");
+			HttpURLConnection http = (HttpURLConnection)url.openConnection();
+			http.setRequestMethod("POST");
+			http.setDoOutput(true);
+			http.setRequestProperty("Content-Type", "application/fhir+json");
+
+			byte[] strToBytes = text.getBytes();
+
+			System.out.println("STEP 4");
+			OutputStream stream = http.getOutputStream();
+			System.out.println("STEP 5");
+			stream.write(strToBytes);
+
+			System.out.println(http.getResponseCode() + " " + http.getResponseMessage());
+			http.disconnect();
+		} catch (Exception e) {
+			e.printStackTrace();			
+		}
+		
 	}
 
 }

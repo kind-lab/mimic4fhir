@@ -115,6 +115,24 @@ public class BundleControl {
 	}
 	
 	/**
+	 * Add fhir resource with UUID to current bundle using PUT or POST
+	 * PUT keeps the same id as the resource provides
+	 * POST
+	 * @param rToAdd fhir-resource to add
+	 */
+	public void addUUIDResourceToBundlePut(Resource rToAdd){
+		transactionBundle.addEntry()
+		   .setFullUrl(rToAdd.getId())
+		   .setResource(rToAdd)
+		   .getRequest()
+		      .setUrl(rToAdd.getId())
+		      .setMethod(HTTPVerb.PUT);
+		
+		numberOfResources++;
+		
+	}
+	
+	/**
 	 * Conditional Create:
 	 * Add fhir resource with UUID to current bundle and set condition (create if none exist)
 	 * @param rToAdd fhir-resource to add

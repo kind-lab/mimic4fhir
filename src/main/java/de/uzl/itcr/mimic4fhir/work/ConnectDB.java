@@ -23,6 +23,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import ca.uhn.fhir.context.FhirContext;
+import ca.uhn.fhir.parser.IParser;
+
+import org.hl7.fhir.r4.model.Patient;
+
+import de.uzl.itcr.mimic4fhir.OutputMode;
+import de.uzl.itcr.mimic4fhir.InputMode;
 import de.uzl.itcr.mimic4fhir.model.*;
 import de.uzl.itcr.mimic4fhir.model.manager.StationManager;
 
@@ -51,7 +58,9 @@ public class ConnectDB {
 	private PreparedStatement statementGetStations;
 	private PreparedStatement statementGetDiagnosticReports;
 	private PreparedStatement statementGetImagingStudies;
-	private PreparedStatement statementGetIcdCodes;;
+	private PreparedStatement statementGetIcdCodes;
+	
+	private InputMode inputMode;
 
 	/**
 	 * Create new DB-Connection with Config-Object
@@ -87,11 +96,29 @@ public class ConnectDB {
 							+ ConnectDB.configuration.getPortPostgres() + "/"
 							+ ConnectDB.configuration.getDbnamePostgres() + schema,
 					ConnectDB.configuration.getUserPostgres(), ConnectDB.configuration.getPassPostgres());
+//			
+		switch (inputMode) {
+		case MIMIC_BASE:
 			this.createViews();
-			this.prepareStatements();
+			this.prepareStatementsBase();
+			break;
+		case MIMIC_FHIR:
+			this.prepareStatementsFhir();
+			break;
+		}
+//			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	/**
+	 * Set the inputMode (where to ingest MIMIC-IV from)
+	 * 
+	 * @param inputMode
+	 */
+	public void setIntputMode(InputMode inputMode) {
+		this.inputMode = inputMode;
 	}
 
 	/**
@@ -117,13 +144,13 @@ public class ConnectDB {
 				+ "           FULL JOIN mimic_core.transfers ON admissions.hadm_id = transfers.hadm_id AND admissions.subject_id = transfers.subject_id\n"
 				+ "  ORDER BY patients.subject_id, admission_hadm_id, transfer_id\n" + "      );").execute();
 	}
-
+	
 	/**
 	 * prepare statements for repeated execution against the current connection
 	 *
 	 * @throws SQLException if the statements could not be prepared
 	 */
-	private void prepareStatements() throws SQLException {
+	private void prepareStatementsBase() throws SQLException {
 		this.statementSelectOnePatientFromAdmissionsView = this.connection
 				.prepareStatement("SELECT * FROM patient_admission_view " + "WHERE patient_subjectid = ? "
 						+ "ORDER BY patient_subjectid, admission_hadm_id, transfer_id;");
@@ -156,7 +183,7 @@ public class ConnectDB {
 		this.statementGetAdmissions = this.connection
 				.prepareStatement("SELECT * FROM MIMIC_CORE.ADMISSIONS WHERE SUBJECT_ID = ?");
 		this.statementGetTransfers = this.connection
-				.prepareStatement("SELECT * FROM MIMIC_CORE.TRANSFERS WHERE SUBJECT_ID = ? AND HADM_ID = ?");
+				.prepareStatement("SELECT * FROM MIMIC_COREnull.TRANSFERS WHERE SUBJECT_ID = ? AND HADM_ID = ?");
 		this.statementGetStations = this.connection
 				.prepareStatement("SELECT DISTINCT CAREUNIT \" + \"FROM MIMIC_CORE.TRANSFERS ORDER BY CAREUNIT");
 		this.statementGetDiagnosticReports = this.connection
@@ -165,6 +192,52 @@ public class ConnectDB {
 				.prepareStatement("SELECT * FROM CXR.STUDIES WHERE SUBJECT_ID = ? AND STUDY_ID = ?");
 		this.statementGetIcdCodes = this.connection
 				.prepareStatement("SELECT icd_code, long_title FROM mimic_hosp.d_icd_procedures WHERE icd_version = ?");
+	}
+	
+	/**
+	 * prepare statements for repeated execution against the current connection
+	 *
+	 * @throws SQLException if the statements could not be prepared
+	 */
+	private void prepareStatementsFhir() throws SQLException {
+		this.statementSelectAmountOfPatientIDs = this.connection
+				.prepareStatement("SELECT id as subject_id from mimic_fhir.patient ORDER BY patient_id LIMIT ?;");
+		this.statementSelectAmountOfPatientIDsRandom = this.connection
+				.prepareStatement("SELECT id as subject_id FROM mimic_fhir.patient ORDER BY random() LIMIT ?;");
+		this.statementCountPatients = this.connection.prepareStatement("SELECT COUNT(*) FROM mimic_fhir.patient;");
+//		this.statementGetDiagnoses = this.connection.prepareStatement("SELECT * FROM mimic_hosp.diagnoses_icd d "
+//				+ "INNER JOIN mimic_hosp.d_icd_diagnoses i ON d.icd_code = i.icd_code "
+//				+ "WHERE d.subject_id = ? AND d.hadm_id = ? " + "ORDER BY d.seq_num DESC");
+//		this.statementGetProcedures = this.connection.prepareStatement("SELECT * FROM mimic_hosp.procedures_icd p "
+//				+ "INNER JOIN mimic_hosp.d_icd_procedures i ON p.icd_code = i.icd_code "
+//				+ "WHERE p.subject_id = ? AND p.hadm_id = ? " + "ORDER BY p.seq_num DESC");
+//		this.statementGetChartEvents = this.connection.prepareStatement(
+//				"SELECT C1.SUBJECT_ID, C1.HADM_ID, C1.CHARTTIME, C1.VALUE, C1.VALUENUM, C1.VALUEUOM, D.LABEL "
+//						+ "FROM (SELECT C.SUBJECT_ID, C.HADM_ID, C.CHARTTIME, C.VALUE, C.VALUENUM, C.VALUEUOM, C.ITEMID FROM MIMIC_ICU.CHARTEVENTS C) AS C1 "
+//						+ "INNER JOIN MIMIC_ICU.D_ITEMS D ON C1.ITEMID = D.ITEMID " + "WHERE C1.HADM_ID = ?");
+//		this.statementGetLabEvents = this.connection.prepareStatement(
+//				"SELECT L1.SUBJECT_ID, L1.HADM_ID, L1.CHARTTIME, L1.VALUE, L1.VALUENUM, L1.VALUEUOM, L1.FLAG, D.LABEL, D.FLUID, D.LOINC_CODE, L1.LABEVENT_ID, L1.COMMENTS "
+//						+ "FROM (SELECT L.SUBJECT_ID, L.HADM_ID, L.CHARTTIME, L.VALUE, L.VALUENUM, L.VALUEUOM, L.FLAG, L.ITEMID, L.LABEVENT_ID, L.COMMENTS "
+//						+ "FROM MIMIC_HOSP.LABEVENTS L) AS L1 INNER JOIN MIMIC_HOSP.D_LABITEMS D ON L1.ITEMID = D.ITEMID "
+//						+ "WHERE L1.SUBJECT_ID = ? AND L1.HADM_ID = ?");
+//		this.statementGetPrescriptions = this.connection
+//				.prepareStatement("SELECT * FROM MIMIC_HOSP.PRESCRIPTIONS WHERE SUBJECT_ID = ? AND HADM_ID = ?");
+		this.statementGetAmountOfPatientsLimit = this.connection
+				.prepareStatement("SELECT * FROM mimic_fhir.patient LIMIT ?");
+		this.statementGetAmountOfPatientsLimitRandom = this.connection
+				.prepareStatement("SELECT * FROM mimic_fhir.patient ORDER BY random() LIMIT ?");
+//		this.statementGetAdmissions = this.connection
+//				.prepareStatement("SELECT * FROM MIMIC_CORE.ADMISSIONS WHERE SUBJECT_ID = ?");
+//		this.statementGetTransfers = this.connection
+//				.prepareStatement("SELECT * FROM MIMIC_CORE.TRANSFERS WHERE SUBJECT_ID = ? AND HADM_ID = ?");
+//		this.statementGetStations = this.connection
+//				.prepareStatement("SELECT DISTINCT CAREUNIT \" + \"FROM MIMIC_CORE.TRANSFERS ORDER BY CAREUNIT");
+//		this.statementGetDiagnosticReports = this.connection
+//				.prepareStatement("SELECT * FROM CXR.RECORDS WHERE SUBJECT_ID = ?");
+//		this.statementGetImagingStudies = this.connection
+//				.prepareStatement("SELECT * FROM CXR.STUDIES WHERE SUBJECT_ID = ? AND STUDY_ID = ?");
+//		this.statementGetIcdCodes = this.connection
+//				.prepareStatement("SELECT icd_code, long_title FROM mimic_hosp.d_icd_procedures WHERE icd_version = ?");
 	}
 
 	public static Connection getConnection() {
@@ -215,6 +288,36 @@ public class ConnectDB {
 		}
 		return count;
 	}
+	
+	
+
+	/*
+	 *  Get one patient from mimic_fhir
+	 */
+	public Patient getOnePatient() {
+		String query = "SELECT fhir FROM patient LIMIT 1";		
+		PreparedStatement statement;
+		
+		try {
+			statement = connection.prepareStatement(query);
+			ResultSet rs = statement.executeQuery();
+			
+			if (rs.next()) {			
+				String fhirColumn = rs.getString(1);
+				FhirContext ctx = FhirContext.forR4();
+				IParser parser = ctx.newJsonParser();
+				Patient fhirResource = parser.parseResource(Patient.class, fhirColumn);			
+
+				return fhirResource;
+			}			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		return null;
+	}
+	
+
 
 	/**
 	 * Get first patient in Mimic-Patients-Table
@@ -273,7 +376,8 @@ public class ConnectDB {
 		}
 		return null;
 	}
-
+	
+	
 	/**
 	 * Get patient by subjectId
 	 *

@@ -40,6 +40,7 @@ import org.hl7.fhir.r4.model.Practitioner;
 import org.hl7.fhir.r4.model.PractitionerRole;
 import org.hl7.fhir.r4.model.Procedure;
 import org.hl7.fhir.r4.model.Reference;
+import org.hl7.fhir.r4.model.Resource;
 import org.springframework.util.StopWatch;
 
 import ca.uhn.fhir.model.primitive.IdDt;
@@ -49,7 +50,7 @@ import de.uzl.itcr.mimic4fhir.model.*;
 import de.uzl.itcr.mimic4fhir.model.manager.*;
 import de.uzl.itcr.mimic4fhir.queue.Receiver;
 import de.uzl.itcr.mimic4fhir.queue.Sender;
-import de.uzl.itcr.mimic4fhir.tools.FHIRInstanceValidator;
+import de.uzl.itcr.mimic4fhir.tools.FhirInstanceValidatorMimic;
 import de.uzl.itcr.mimic4fhir.work.BundleControl;
 import de.uzl.itcr.mimic4fhir.work.Config;
 import de.uzl.itcr.mimic4fhir.work.ConnectDB;
@@ -64,6 +65,7 @@ public class Mimic4Fhir {
 	private Config config;
 
 	private OutputMode outputMode;
+	private InputMode inputMode;
 	private int topPatients;
 	private boolean random;
 
@@ -79,7 +81,7 @@ public class Mimic4Fhir {
 
 	private Sender sendr;
 
-	private static FHIRInstanceValidator instanceValidator = FHIRInstanceValidator.getInstance();
+	private static FhirInstanceValidatorMimic instanceValidator = FhirInstanceValidatorMimic.getInstance();
 
 	public Config getConfig() {
 		return config;
@@ -100,6 +102,15 @@ public class Mimic4Fhir {
 	 */
 	public void setOutputMode(OutputMode modus) {
 		this.outputMode = modus;
+	}
+	
+	/**
+	 * Set Application input mode
+	 * 
+	 * @param modus (Read from MIMIC-IV base tables or MIMIC-IV fhir tables)
+	 */
+	public void setInputMode(InputMode modus) {
+		this.inputMode = modus;
 	}
 
 	/**
@@ -147,10 +158,82 @@ public class Mimic4Fhir {
 		TimeMeasurements.getInstance().writeToFile();
 	}
 
+	
+	/*
+	 * Start transformation for mimic-fhir SQL resources
+	 */
+	public void start() {
+		// Connection to mimic postgres DB
+		dbAccess = new ConnectDB(config);
+		
+		// Preload data (if requested...)
+		// medication, organization, location
+		
+   	
+    	
+		// Fhir-Communication and Resource-Bundle-Stuff
+		fhir = new FHIRComm(config);
+		bundleC = new BundleControl();
+
+		int numberOfAllPatients = 0;
+		if (topPatients == 0) { // all Patients
+			numberOfAllPatients = dbAccess.getNumberOfPatients();
+		} else {
+			numberOfAllPatients = topPatients;
+		}
+
+		// Sender for sending bundle messages to queue
+		sendr = new Sender();
+
+		// Start Message-Receiver (handles bundle operations)
+		Receiver r = new Receiver();
+		r.setFhirConnector(fhir);
+		r.setOutputMode(outputMode);
+		r.receive();
+
+		System.out.println("Getting all Patients");
+		String[] patientIds = dbAccess.getAmountOfPatientIds(numberOfAllPatients, random);
+
+
+		StopWatch watch = new StopWatch();
+		watch.start();
+
+		// loop all patients..
+		for (int i = 0; i < numberOfAllPatients; i++) {
+			System.out.println("Processing Patient:" + (i + 1));
+			processPatient(patientIds[i]);
+		}
+
+		// Push end-Message to queue
+		JsonObject message = Json.createObjectBuilder().add("number", "0").add("bundle", "END").build();
+
+		sendr.send(message.toString());
+
+		// close connection to queue
+		sendr.close();
+
+		watch.stop();
+		System.out.print(
+				"Conversion of " + topPatients + " Patients complete in " + watch.getTotalTimeMillis() + " ms)");
+	}
+	
+	public void testOneResource(Resource resource) {		
+		bundleC.addUUIDResourceToBundlePut(resource);
+
+		//Push bundle to queue
+		JsonObject message = Json.createObjectBuilder()
+				.add("number", resource.getId().split("/")[1] + "_" + bundleC.getInternalBundleNumber()) 
+				.add("bundle", fhir.getBundleAsString(bundleC.getTransactionBundle()))
+				.build();
+	
+		sendr.send(message.toString()); 
+	}
+
+	
 	/**
 	 * Start transformation
 	 */
-	public void start() {
+	public void startOld() {
 		// Connection to mimic postgres DB
 		dbAccess = new ConnectDB(config);
 		// initialize memoryLists of locations and caregivers and medication (->
@@ -224,7 +307,19 @@ public class Mimic4Fhir {
 		locationsInBundle.clear();
 		medicationInBundle.clear();
 	}
+	
+	
+	/*
+	 *  MIMIC_FHIR process patient
+	 */
+			
+	private void processPatient(String patientId) {
+		
+	}
 
+	/*
+	 *  MIMIC_BASE process patient
+	 */
 	private void processPatient(MPatient mimicPat, int numPat, StationManager stations) {
 		//Create resource managers
 		PatientManager paManager = new PatientManager();

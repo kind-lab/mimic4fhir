@@ -54,7 +54,7 @@ public class ExampleMain {
 
 		Mimic4Fhir app = new Mimic4Fhir();
 		app.setConfig(configObj);
-		app.setOutputMode(OutputMode.PRINT_FILE);
+		app.setOutputMode(OutputMode.PRINT_FILE_XML);
 		app.setTopPatients(25, true);
 		//app.start();
 		app.startWithThread();

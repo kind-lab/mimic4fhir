@@ -146,7 +146,7 @@ public class MimicCLI implements Runnable {
 				configObj.setFhirServer(fhirEndpoint);
 			} else {
 				System.out.println("Using file output to path: " + filePath);
-				app.setOutputMode(OutputMode.PRINT_FILE);
+				app.setOutputMode(OutputMode.PRINT_FILE_XML);
 				configObj.setFhirxmlFilePath(filePath);
 			}
 		}

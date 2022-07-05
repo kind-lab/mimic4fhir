@@ -26,7 +26,8 @@ package de.uzl.itcr.mimic4fhir;
  */
 public enum OutputMode {
 	PRINT_CONSOLE,
-	PRINT_FILE,
+	PRINT_FILE_XML,
+	PRINT_FILE_JSON,
 	PRINT_BOTH,
 	PUSH_SERVER
 }

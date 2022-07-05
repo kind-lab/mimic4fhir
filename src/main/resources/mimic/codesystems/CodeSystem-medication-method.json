@@ -1,0 +1,242 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-method",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/medication-method defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Hold Dose<a name=\"medication-method-HoldDose\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Partial Administered<a name=\"medication-method-PartialAdministered\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Assessed<a name=\"medication-method-Assessed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Applied<a name=\"medication-method-DelayedApplied\"> </a></td></tr><tr><td style=\"white-space:nowrap\">in Other Location<a name=\"medication-method-inOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Assessed<a name=\"medication-method-DelayedAssessed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Assessed<a name=\"medication-method-NotAssessed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Administered in Other Location<a name=\"medication-method-AdministeredinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed<a name=\"medication-method-Delayed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Started<a name=\"medication-method-Started\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Removed - Unscheduled<a name=\"medication-method-Removed-Unscheduled\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Started<a name=\"medication-method-DelayedStarted\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Given per Sliding Scale in Other Location<a name=\"medication-method-NotGivenperSlidingScaleinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Started<a name=\"medication-method-NotStarted\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Given per Sliding Scale<a name=\"medication-method-NotGivenperSlidingScale\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Partial<a name=\"medication-method-Partial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Stopped - Unscheduled in Other Location<a name=\"medication-method-Stopped-UnscheduledinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Restarted<a name=\"medication-method-Restarted\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Started in Other Location<a name=\"medication-method-StartedinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Not Assessed<a name=\"medication-method-DelayedNotAssessed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Removed in Other Location<a name=\"medication-method-RemovedinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Infusion Reconciliation<a name=\"medication-method-InfusionReconciliation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Read in Other Location<a name=\"medication-method-ReadinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Confirmed<a name=\"medication-method-NotConfirmed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Not Stopped<a name=\"medication-method-DelayedNotStopped\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TPN Rate Not Changed<a name=\"medication-method-TPNRateNotChanged\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Confirmed in Other Location<a name=\"medication-method-ConfirmedinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Not Started<a name=\"medication-method-DelayedNotStarted\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Stopped - Unscheduled<a name=\"medication-method-Stopped-Unscheduled\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Confirmed<a name=\"medication-method-Confirmed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Stopped<a name=\"medication-method-Stopped\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Flushed<a name=\"medication-method-NotFlushed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Rate Change in Other Location<a name=\"medication-method-RateChangeinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Rate Change<a name=\"medication-method-DelayedRateChange\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Applied in Other Location<a name=\"medication-method-AppliedinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Administered<a name=\"medication-method-Administered\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Not Flushed<a name=\"medication-method-DelayedNotFlushed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Given<a name=\"medication-method-NotGiven\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Started per Sliding Scale<a name=\"medication-method-NotStartedperSlidingScale\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Administered Bolus from IV Drip<a name=\"medication-method-AdministeredBolusfromIVDrip\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Rate Change<a name=\"medication-method-RateChange\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Stopped per Sliding Scale<a name=\"medication-method-NotStoppedperSlidingScale\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Not Removed<a name=\"medication-method-DelayedNotRemoved\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Assessed in Other Location<a name=\"medication-method-AssessedinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Restarted in Other Location<a name=\"medication-method-RestartedinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Flushed<a name=\"medication-method-DelayedFlushed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Stopped<a name=\"medication-method-DelayedStopped\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Administered<a name=\"medication-method-DelayedAdministered\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Removed<a name=\"medication-method-Removed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Stopped As Directed<a name=\"medication-method-DelayedStoppedAsDirected\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Stopped in Other Location<a name=\"medication-method-StoppedinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Flushed in Other Location<a name=\"medication-method-FlushedinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Stopped<a name=\"medication-method-NotStopped\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Not Applied<a name=\"medication-method-DelayedNotApplied\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Confirmed<a name=\"medication-method-DelayedConfirmed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Removed<a name=\"medication-method-NotRemoved\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Not Confirmed<a name=\"medication-method-DelayedNotConfirmed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Applied<a name=\"medication-method-NotApplied\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Flushed<a name=\"medication-method-Flushed\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Not Read<a name=\"medication-method-NotRead\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Removed Existing / Applied New in Other Location<a name=\"medication-method-RemovedExisting.47AppliedNewinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Removed Existing / Applied New<a name=\"medication-method-RemovedExisting.47AppliedNew\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Infusion Reconciliation Not Done<a name=\"medication-method-InfusionReconciliationNotDone\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Read<a name=\"medication-method-Read\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Infusion Reconciliation in Other Location<a name=\"medication-method-InfusionReconciliationinOtherLocation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Removed<a name=\"medication-method-DelayedRemoved\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Stopped As Directed<a name=\"medication-method-StoppedAsDirected\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delayed Restarted<a name=\"medication-method-DelayedRestarted\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Applied<a name=\"medication-method-Applied\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Documented in O.R. Holding<a name=\"medication-method-DocumentedinO.46R.46Holding\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/medication-method",
+  "version": "0.2.4",
+  "name": "MedicationMethod",
+  "title": "MedicationMethod",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The medication delivery method for MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/medication-method",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Hold Dose"
+    },
+    {
+      "code": "Partial Administered"
+    },
+    {
+      "code": "Assessed"
+    },
+    {
+      "code": "Delayed Applied"
+    },
+    {
+      "code": "in Other Location"
+    },
+    {
+      "code": "Delayed Assessed"
+    },
+    {
+      "code": "Not Assessed"
+    },
+    {
+      "code": "Administered in Other Location"
+    },
+    {
+      "code": "Delayed"
+    },
+    {
+      "code": "Started"
+    },
+    {
+      "code": "Removed - Unscheduled"
+    },
+    {
+      "code": "Delayed Started"
+    },
+    {
+      "code": "Not Given per Sliding Scale in Other Location"
+    },
+    {
+      "code": "Not Started"
+    },
+    {
+      "code": "Not Given per Sliding Scale"
+    },
+    {
+      "code": "Partial"
+    },
+    {
+      "code": "Stopped - Unscheduled in Other Location"
+    },
+    {
+      "code": "Restarted"
+    },
+    {
+      "code": "Started in Other Location"
+    },
+    {
+      "code": "Delayed Not Assessed"
+    },
+    {
+      "code": "Removed in Other Location"
+    },
+    {
+      "code": "Infusion Reconciliation"
+    },
+    {
+      "code": "Read in Other Location"
+    },
+    {
+      "code": "Not Confirmed"
+    },
+    {
+      "code": "Delayed Not Stopped"
+    },
+    {
+      "code": "TPN Rate Not Changed"
+    },
+    {
+      "code": "Confirmed in Other Location"
+    },
+    {
+      "code": "Delayed Not Started"
+    },
+    {
+      "code": "Stopped - Unscheduled"
+    },
+    {
+      "code": "Confirmed"
+    },
+    {
+      "code": "Stopped"
+    },
+    {
+      "code": "Not Flushed"
+    },
+    {
+      "code": "Rate Change in Other Location"
+    },
+    {
+      "code": "Delayed Rate Change"
+    },
+    {
+      "code": "Applied in Other Location"
+    },
+    {
+      "code": "Administered"
+    },
+    {
+      "code": "Delayed Not Flushed"
+    },
+    {
+      "code": "Not Given"
+    },
+    {
+      "code": "Not Started per Sliding Scale"
+    },
+    {
+      "code": "Administered Bolus from IV Drip"
+    },
+    {
+      "code": "Rate Change"
+    },
+    {
+      "code": "Not Stopped per Sliding Scale"
+    },
+    {
+      "code": "Delayed Not Removed"
+    },
+    {
+      "code": "Assessed in Other Location"
+    },
+    {
+      "code": "Restarted in Other Location"
+    },
+    {
+      "code": "Delayed Flushed"
+    },
+    {
+      "code": "Delayed Stopped"
+    },
+    {
+      "code": "Delayed Administered"
+    },
+    {
+      "code": "Removed"
+    },
+    {
+      "code": "Delayed Stopped As Directed"
+    },
+    {
+      "code": "Stopped in Other Location"
+    },
+    {
+      "code": "Flushed in Other Location"
+    },
+    {
+      "code": "Not Stopped"
+    },
+    {
+      "code": "Delayed Not Applied"
+    },
+    {
+      "code": "Delayed Confirmed"
+    },
+    {
+      "code": "Not Removed"
+    },
+    {
+      "code": "Delayed Not Confirmed"
+    },
+    {
+      "code": "Not Applied"
+    },
+    {
+      "code": "Flushed"
+    },
+    {
+      "code": "Not Read"
+    },
+    {
+      "code": "Removed Existing / Applied New in Other Location"
+    },
+    {
+      "code": "Removed Existing / Applied New"
+    },
+    {
+      "code": "Infusion Reconciliation Not Done"
+    },
+    {
+      "code": "Read"
+    },
+    {
+      "code": "Infusion Reconciliation in Other Location"
+    },
+    {
+      "code": "Delayed Removed"
+    },
+    {
+      "code": "Stopped As Directed"
+    },
+    {
+      "code": "Delayed Restarted"
+    },
+    {
+      "code": "Applied"
+    },
+    {
+      "code": "Documented in O.R. Holding"
+    }
+  ]
+}

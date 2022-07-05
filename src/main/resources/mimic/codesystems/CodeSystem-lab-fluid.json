@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "lab-fluid",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/lab-fluid defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"lab-fluid-I\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Joint Fluid<a name=\"lab-fluid-JointFluid\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Pleural<a name=\"lab-fluid-Pleural\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Bone Marrow<a name=\"lab-fluid-BoneMarrow\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ascites<a name=\"lab-fluid-Ascites\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Fluid<a name=\"lab-fluid-Fluid\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Stool<a name=\"lab-fluid-Stool\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Other Body Fluid<a name=\"lab-fluid-OtherBodyFluid\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q<a name=\"lab-fluid-Q\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Cerebrospinal Fluid<a name=\"lab-fluid-CerebrospinalFluid\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Blood<a name=\"lab-fluid-Blood\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Urine<a name=\"lab-fluid-Urine\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/lab-fluid",
+  "version": "0.2.4",
+  "name": "LabFluid",
+  "title": "LabFluid",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The lab fluid that is captured for the specimen",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/lab-fluid",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "I"
+    },
+    {
+      "code": "Joint Fluid"
+    },
+    {
+      "code": "Pleural"
+    },
+    {
+      "code": "Bone Marrow"
+    },
+    {
+      "code": "Ascites"
+    },
+    {
+      "code": "Fluid"
+    },
+    {
+      "code": "Stool"
+    },
+    {
+      "code": "Other Body Fluid"
+    },
+    {
+      "code": "Q"
+    },
+    {
+      "code": "Cerebrospinal Fluid"
+    },
+    {
+      "code": "Blood"
+    },
+    {
+      "code": "Urine"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medadmin-category-icu",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/medadmin-category-icu defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">12-Parenteral Nutrition<a name=\"medadmin-category-icu-12-ParenteralNutrition\"> </a></td></tr><tr><td style=\"white-space:nowrap\">10-Prophylaxis (IV)<a name=\"medadmin-category-icu-10-Prophylaxis.40IV.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">15-Supplements<a name=\"medadmin-category-icu-15-Supplements\"> </a></td></tr><tr><td style=\"white-space:nowrap\">16-Pre Admission/Non-ICU<a name=\"medadmin-category-icu-16-PreAdmission.47Non-ICU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">13-Enteral Nutrition<a name=\"medadmin-category-icu-13-EnteralNutrition\"> </a></td></tr><tr><td style=\"white-space:nowrap\">04-Fluids (Colloids)<a name=\"medadmin-category-icu-04-Fluids.40Colloids.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">14-Oral/Gastric Intake<a name=\"medadmin-category-icu-14-Oral.47GastricIntake\"> </a></td></tr><tr><td style=\"white-space:nowrap\">08-Antibiotics (IV)<a name=\"medadmin-category-icu-08-Antibiotics.40IV.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">07-Blood Products<a name=\"medadmin-category-icu-07-BloodProducts\"> </a></td></tr><tr><td style=\"white-space:nowrap\">09-Antibiotics (Non IV)<a name=\"medadmin-category-icu-09-Antibiotics.40NonIV.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">06-Insulin (Non IV)<a name=\"medadmin-category-icu-06-Insulin.40NonIV.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">03-IV Fluid Bolus<a name=\"medadmin-category-icu-03-IVFluidBolus\"> </a></td></tr><tr><td style=\"white-space:nowrap\">02-Fluids (Crystalloids)<a name=\"medadmin-category-icu-02-Fluids.40Crystalloids.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">11-Prophylaxis (Non IV)<a name=\"medadmin-category-icu-11-Prophylaxis.40NonIV.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">05-Med Bolus<a name=\"medadmin-category-icu-05-MedBolus\"> </a></td></tr><tr><td style=\"white-space:nowrap\">01-Drips<a name=\"medadmin-category-icu-01-Drips\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/medadmin-category-icu",
+  "version": "0.2.4",
+  "name": "MedadminCategoryIcu",
+  "title": "MedadminCategoryIcu",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The medication administration category for the ICU for MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/medadmin-category-icu",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "12-Parenteral Nutrition"
+    },
+    {
+      "code": "10-Prophylaxis (IV)"
+    },
+    {
+      "code": "15-Supplements"
+    },
+    {
+      "code": "16-Pre Admission/Non-ICU"
+    },
+    {
+      "code": "13-Enteral Nutrition"
+    },
+    {
+      "code": "04-Fluids (Colloids)"
+    },
+    {
+      "code": "14-Oral/Gastric Intake"
+    },
+    {
+      "code": "08-Antibiotics (IV)"
+    },
+    {
+      "code": "07-Blood Products"
+    },
+    {
+      "code": "09-Antibiotics (Non IV)"
+    },
+    {
+      "code": "06-Insulin (Non IV)"
+    },
+    {
+      "code": "03-IV Fluid Bolus"
+    },
+    {
+      "code": "02-Fluids (Crystalloids)"
+    },
+    {
+      "code": "11-Prophylaxis (Non IV)"
+    },
+    {
+      "code": "05-Med Bolus"
+    },
+    {
+      "code": "01-Drips"
+    }
+  ]
+}

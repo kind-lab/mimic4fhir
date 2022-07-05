@@ -1,0 +1,2081 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "units",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/units defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">mL/kg/hour<a name=\"units-mL.47kg.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"units-75\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BULK<a name=\"units-BULK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">log10 IU/mL<a name=\"units-log10IU.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MILLI UNITS/MIN<a name=\"units-MILLIUNITS.47MIN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">drop ou<a name=\"units-dropou\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg tablet<a name=\"units-mgtablet\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PTCH<a name=\"units-PTCH\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tablets<a name=\"units-tablets\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Units/Liter<a name=\"units-Units.47Liter\"> </a></td></tr><tr><td style=\"white-space:nowrap\">milligrams<a name=\"units-milligrams\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq / hr<a name=\"units-mEq.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sec<a name=\"units-sec\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ug/dL<a name=\"units-ug.47dL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/actuation<a name=\"units-mg.47actuation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tiwst<a name=\"units-tiwst\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OINT<a name=\"units-OINT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(10 mL)<a name=\"units-.4010mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/ml<a name=\"units-mcg.47ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">UNIT/HR<a name=\"units-UNIT.47HR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(0.5 %)<a name=\"units-.400.465.37.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/100 mL SW<a name=\"units-mEq.47100mLSW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MG<a name=\"units-MG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">capsule<a name=\"units-capsule\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/0.8 mL<a name=\"units-mg.470.468mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg or 92mg<a name=\"units-mgor92mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Degree<a name=\"units-Degree\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/0.67 mL<a name=\"units-mg.470.4667mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(21)/75 mg (7)<a name=\"units-.4021.41.4775mg.407.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/0.5 mL<a name=\"units-mcg.470.465mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LIQ<a name=\"units-LIQ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">/min<a name=\"units-.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/actuation<a name=\"units-mcg.47actuation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BAG<a name=\"units-BAG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">% (40 mg/mL)<a name=\"units-.37.4040mg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CUP<a name=\"units-CUP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">AMP<a name=\"units-AMP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/0mg<a name=\"units-mg.470mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">GUM<a name=\"units-GUM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">600<a name=\"units-600\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg TID<a name=\"units-mgTID\"> </a></td></tr><tr><td style=\"white-space:nowrap\">drops each eye<a name=\"units-dropseacheye\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Iu/0 iu<a name=\"units-Iu.470iu\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unit/actuation<a name=\"units-unit.47actuation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">18 mg iron<a name=\"units-18mgiron\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/mL) 2.4 mL<a name=\"units-mcg.47mL.412.464mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(24)/75 mg (4)<a name=\"units-.4024.41.4775mg.404.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EA<a name=\"units-EA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">log10 cop/mL<a name=\"units-log10cop.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INH<a name=\"units-INH\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nMol/ml/min<a name=\"units-nMol.47ml.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">g<a name=\"units-g\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sprays<a name=\"units-sprays\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg / 0 mg<a name=\"units-mg.470mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unit/mL<a name=\"units-unit.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mL/m2<a name=\"units-mL.47m2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">micrograms<a name=\"units-micrograms\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(50,000 unit)<a name=\"units-.4050.44000unit.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/61mg<a name=\"units-mg.4761mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">units/hr<a name=\"units-units.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unit (10 mL)<a name=\"units-unit.4010mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cell<a name=\"units-cell\"> </a></td></tr><tr><td style=\"white-space:nowrap\">350<a name=\"units-350\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DEV<a name=\"units-DEV\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq / 400 mL<a name=\"units-mEq.47400mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Pos/Neg<a name=\"units-Pos.47Neg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(100 mcg/mL)<a name=\"units-.40100mcg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/24 hour<a name=\"units-mg.4724hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">600 mcg/2.4 mL<a name=\"units-600mcg.472.464mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CAPs<a name=\"units-CAPs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">500<a name=\"units-500\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/24 mL<a name=\"units-mg.4724mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SUSP<a name=\"units-SUSP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(25 mg/mL)<a name=\"units-.4025mg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SCOOP<a name=\"units-SCOOP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(1250 mg)<a name=\"units-.401250mg.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/kg/hr<a name=\"units-mcg.47kg.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">soak<a name=\"units-soak\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ml<a name=\"units-ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/1000 mL NS<a name=\"units-mEq.471000mLNS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mL/h<a name=\"units-mL.47h\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(300 mcg)<a name=\"units-.40300mcg.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">fL<a name=\"units-fL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">units/hour<a name=\"units-units.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"units-L\"> </a></td></tr><tr><td style=\"white-space:nowrap\">iu<a name=\"units-iu\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/0.8 mL<a name=\"units-mcg.470.468mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Gram<a name=\"units-Gram\"> </a></td></tr><tr><td style=\"white-space:nowrap\">218000 unit<a name=\"units-218000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/ 0 mg<a name=\"units-mg.470mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Iu/ 0 IU<a name=\"units-Iu.470IU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/dL<a name=\"units-mg.47dL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">/0mg<a name=\"units-.470mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">1 cap<a name=\"units-1cap\"> </a></td></tr><tr><td style=\"white-space:nowrap\">spray<a name=\"units-spray\"> </a></td></tr><tr><td style=\"white-space:nowrap\">million units<a name=\"units-millionunits\"> </a></td></tr><tr><td style=\"white-space:nowrap\">240 mg (46)<a name=\"units-240mg.4046.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BTL<a name=\"units-BTL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">FILM<a name=\"units-FILM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PKG<a name=\"units-PKG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq./hour<a name=\"units-mEq.46.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/ 0mg<a name=\"units-mg.470mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"units-0\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PUFFS<a name=\"units-PUFFS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">U/L<a name=\"units-U.47L\"> </a></td></tr><tr><td style=\"white-space:nowrap\">+/-<a name=\"units-.43.47-\"> </a></td></tr><tr><td style=\"white-space:nowrap\">50 units/ml<a name=\"units-50units.47ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg /40 mg<a name=\"units-mg.4740mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">300<a name=\"units-300\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg (30 doses)<a name=\"units-mcg.4030doses.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/mL<a name=\"units-mcg.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-109,000 unit<a name=\"units--109.44000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Units<a name=\"units-Units\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/0.6mL<a name=\"units-mg.470.466mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RING<a name=\"units-RING\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TRMT<a name=\"units-TRMT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">°F<a name=\"units-.176F\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PEN<a name=\"units-PEN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq (1,080 mg)<a name=\"units-mEq.401.44080mg.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unit/mL (75-25)<a name=\"units-unit.47mL.4075-25.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">uL<a name=\"units-uL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mL/beat<a name=\"units-mL.47beat\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/mL<a name=\"units-mg.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">UNIT/kg/HR<a name=\"units-UNIT.47kg.47HR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ENEMA<a name=\"units-ENEMA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">/hr<a name=\"units-.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/mL (25 %)<a name=\"units-mg.47mL.4025.37.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/88mg<a name=\"units-mg.4788mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Inch<a name=\"units-Inch\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/ACT<a name=\"units-mcg.47ACT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">/3 mL (0.083 %)<a name=\"units-.473mL.400.46083.37.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg or 88mg<a name=\"units-mgor88mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Grams<a name=\"units-Grams\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ENE<a name=\"units-ENE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">/hour<a name=\"units-.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">K/uL<a name=\"units-K.47uL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ML<a name=\"units-ML\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dynes*sec/cm5/m2<a name=\"units-dynes.42sec.47cm5.47m2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DRP<a name=\"units-DRP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">STCK<a name=\"units-STCK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CRE<a name=\"units-CRE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">40mg<a name=\"units-40mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg\\ 150 mg<a name=\"units-mg.92150mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">grams<a name=\"units-grams\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IU/ 0 iu<a name=\"units-IU.470iu\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Mg/hr<a name=\"units-Mg.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SPG<a name=\"units-SPG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">kcal/day<a name=\"units-kcal.47day\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/kg/min<a name=\"units-mcg.47kg.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq / mL SW<a name=\"units-mEq.47mLSW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">iu/0u<a name=\"units-iu.470u\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Neb<a name=\"units-Neb\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ea<a name=\"units-ea\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mL/mL<a name=\"units-mL.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/2 mL<a name=\"units-mcg.472mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">UNIT/1000ML<a name=\"units-UNIT.471000ML\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MG/0MG<a name=\"units-MG.470MG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">83900 unit<a name=\"units-83900unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">700<a name=\"units-700\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(1000 mg)<a name=\"units-.401000mg.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"units-G\"> </a></td></tr><tr><td style=\"white-space:nowrap\">g/hr<a name=\"units-g.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">in<a name=\"units-in\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/50 mL<a name=\"units-mg.4750mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg//min<a name=\"units-mg.47.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">GR<a name=\"units-GR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PTCHs<a name=\"units-PTCHs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dose<a name=\"units-dose\"> </a></td></tr><tr><td style=\"white-space:nowrap\">vial<a name=\"units-vial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">% (0.1 mg/gram)<a name=\"units-.37.400.461mg.47gram.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg\\40 mg<a name=\"units-mg.9240mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/24h<a name=\"units-mg.4724h\"> </a></td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"units-8\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/1,000 mL<a name=\"units-mEq.471.44000mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SYRP<a name=\"units-SYRP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">KIT<a name=\"units-KIT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(18 mg/3 mL)<a name=\"units-.4018mg.473mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/min<a name=\"units-mcg.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/5 gram (1 %)<a name=\"units-mg.475gram.401.37.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">15U SQ<a name=\"units-15USQ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/L<a name=\"units-mEq.47L\"> </a></td></tr><tr><td style=\"white-space:nowrap\">topical<a name=\"units-topical\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sheet<a name=\"units-sheet\"> </a></td></tr><tr><td style=\"white-space:nowrap\">#/hpf<a name=\"units-.35.47hpf\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hrs<a name=\"units-hrs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">800 mcg<a name=\"units-800mcg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/1000NS<a name=\"units-mEq.471000NS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N/A<a name=\"units-N.47A\"> </a></td></tr><tr><td style=\"white-space:nowrap\">application<a name=\"units-application\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nanograms/kg/minute<a name=\"units-nanograms.47kg.47minute\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/0.3 mL<a name=\"units-mg.470.463mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DBTL<a name=\"units-DBTL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gram/12 gram<a name=\"units-gram.4712gram\"> </a></td></tr><tr><td style=\"white-space:nowrap\">iu/0iu<a name=\"units-iu.470iu\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(50 mg/5 gram)<a name=\"units-.4050mg.475gram.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-400 unit<a name=\"units--400unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-60000 unit<a name=\"units--60000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg-unit-mg-mg<a name=\"units-mg-unit-mg-mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INJ<a name=\"units-INJ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">g/h<a name=\"units-g.47h\"> </a></td></tr><tr><td style=\"white-space:nowrap\">million<a name=\"units-million\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg base)/3 mL<a name=\"units-mgbase.41.473mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">% of current infusion rate<a name=\"units-.37ofcurrentinfusionrate\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/500 ml<a name=\"units-mg.47500ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(84)/10 mcg (7)<a name=\"units-.4084.41.4710mcg.407.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/2mL<a name=\"units-mg.472mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg\\ 0 mg<a name=\"units-mg.920mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/500ml<a name=\"units-mEq.47500ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">40<a name=\"units-40\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg\\960 mg<a name=\"units-mg.92960mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cmH2O<a name=\"units-cmH2O\"> </a></td></tr><tr><td style=\"white-space:nowrap\">g/kg<a name=\"units-g.47kg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/day<a name=\"units-mg.47day\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/960mg<a name=\"units-mg.47960mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cps<a name=\"units-cps\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Enema<a name=\"units-Enema\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/250 mL<a name=\"units-mg.47250mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">uU/ML<a name=\"units-uU.47ML\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/5 mL<a name=\"units-mg.475mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mL/min<a name=\"units-mL.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">pg<a name=\"units-pg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MIU<a name=\"units-MIU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg\\ 0 mcg<a name=\"units-mcg.920mcg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cc/hr<a name=\"units-cc.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">U/g/Hb<a name=\"units-U.47g.47Hb\"> </a></td></tr><tr><td style=\"white-space:nowrap\">%(700 mg/patch)<a name=\"units-.37.40700mg.47patch.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MPL<a name=\"units-MPL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/mL (1 %)<a name=\"units-mg.47mL.401.37.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lbs<a name=\"units-lbs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gummies<a name=\"units-gummies\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcgr<a name=\"units-mcgr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">5 mL<a name=\"units-5mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">oz<a name=\"units-oz\"> </a></td></tr><tr><td style=\"white-space:nowrap\">iu/0IU<a name=\"units-iu.470IU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">drops<a name=\"units-drops\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(1.5 mL)<a name=\"units-.401.465mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">GTT<a name=\"units-GTT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">grams/hour<a name=\"units-grams.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">400<a name=\"units-400\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/6 mL (6 mL)<a name=\"units-mg.476mL.406mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ratio<a name=\"units-Ratio\"> </a></td></tr><tr><td style=\"white-space:nowrap\">puff<a name=\"units-puff\"> </a></td></tr><tr><td style=\"white-space:nowrap\">pump<a name=\"units-pump\"> </a></td></tr><tr><td style=\"white-space:nowrap\">iu/0 iu<a name=\"units-iu.470iu\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Units VWF:RCo<a name=\"units-UnitsVWF.58RCo\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DROPS<a name=\"units-DROPS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mOsm/kg<a name=\"units-mOsm.47kg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">g/dl<a name=\"units-g.47dl\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SUPP<a name=\"units-SUPP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/500ml D5W<a name=\"units-mEq.47500mlD5W\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mch/kg/min<a name=\"units-mch.47kg.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EU/dL<a name=\"units-EU.47dL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-109000 unit<a name=\"units--109000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mA<a name=\"units-mA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nanogram<a name=\"units-nanogram\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Score<a name=\"units-Score\"> </a></td></tr><tr><td style=\"white-space:nowrap\">packet<a name=\"units-packet\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ampule<a name=\"units-ampule\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/hour<a name=\"units-mcg.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/ kg/ hr<a name=\"units-mcg.47kg.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">log10 copies/mL<a name=\"units-log10copies.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QHS<a name=\"units-QHS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg-mcg<a name=\"units-mg-mcg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-<a name=\"units--\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Mg<a name=\"units-Mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PKT<a name=\"units-PKT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">years<a name=\"units-years\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(3 mL)<a name=\"units-.403mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/8 mL<a name=\"units-mg.478mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/500D5W<a name=\"units-mEq.47500D5W\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg-mg-mcg-mg<a name=\"units-mg-mg-mcg-mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">%-1:200,000<a name=\"units-.37-1.58200.44000\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg PE<a name=\"units-mgPE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg-mg<a name=\"units-mg-mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">U/mL<a name=\"units-U.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BID<a name=\"units-BID\"> </a></td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"units-100\"> </a></td></tr><tr><td style=\"white-space:nowrap\">psi<a name=\"units-psi\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tablet<a name=\"units-tablet\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TC<a name=\"units-TC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(0.06 %)<a name=\"units-.400.4606.37.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PTCHS<a name=\"units-PTCHS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">VIAL<a name=\"units-VIAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TABS<a name=\"units-TABS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(40 mg/mL)<a name=\"units-.4040mg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/15 mL<a name=\"units-mEq.4715mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">g/1L NS<a name=\"units-g.471LNS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SPRY<a name=\"units-SPRY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Iu/ 0 iu<a name=\"units-Iu.470iu\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dynes.sec.cm-5/m2<a name=\"units-dynes.46sec.46cm-5.47m2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lozenge<a name=\"units-lozenge\"> </a></td></tr><tr><td style=\"white-space:nowrap\">kg<a name=\"units-kg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEQ<a name=\"units-mEQ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bottle<a name=\"units-bottle\"> </a></td></tr><tr><td style=\"white-space:nowrap\">#/uL<a name=\"units-.35.47uL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">UNIT<a name=\"units-UNIT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/dose<a name=\"units-mcg.47dose\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IU/0 IU<a name=\"units-IU.470IU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DROPs<a name=\"units-DROPs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tabs<a name=\"units-tabs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">pg/mL<a name=\"units-pg.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">80<a name=\"units-80\"> </a></td></tr><tr><td style=\"white-space:nowrap\">950<a name=\"units-950\"> </a></td></tr><tr><td style=\"white-space:nowrap\">D5W<a name=\"units-D5W\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/5 mL (5 mL)<a name=\"units-mg.475mL.405mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L/hr<a name=\"units-L.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IU/mL<a name=\"units-IU.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">150<a name=\"units-150\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Tabs<a name=\"units-Tabs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Liters<a name=\"units-Liters\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-120000 unit<a name=\"units--120000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L/min<a name=\"units-L.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/2.625 mL<a name=\"units-mg.472.46625mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SYR<a name=\"units-SYR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">drop<a name=\"units-drop\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/dose<a name=\"units-mg.47dose\"> </a></td></tr><tr><td style=\"white-space:nowrap\">200<a name=\"units-200\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(205.5 mcg)<a name=\"units-.40205.465mcg.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/0.1mL<a name=\"units-mg.470.461mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Spray<a name=\"units-Spray\"> </a></td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"units-U\"> </a></td></tr><tr><td style=\"white-space:nowrap\">650<a name=\"units-650\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L/min/m2<a name=\"units-L.47min.47m2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CAN<a name=\"units-CAN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gm/kg<a name=\"units-gm.47kg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg<a name=\"units-mcg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Mg/0mg<a name=\"units-Mg.470mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/min<a name=\"units-mg.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Mg/ 0 mg<a name=\"units-Mg.470mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Appl<a name=\"units-Appl\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/hr<a name=\"units-mcg.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chamber<a name=\"units-chamber\"> </a></td></tr><tr><td style=\"white-space:nowrap\">/ 0 Units<a name=\"units-.470Units\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/m2<a name=\"units-mg.47m2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg iron/5 mL<a name=\"units-mgiron.475mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">_UNIT<a name=\"units-_UNIT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">U/hr<a name=\"units-U.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ng/dL<a name=\"units-ng.47dL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CREA<a name=\"units-CREA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">12 ml<a name=\"units-12ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ml/kg<a name=\"units-ml.47kg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IU<a name=\"units-IU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unit<a name=\"units-unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">units\\ 0 units<a name=\"units-units.920units\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-82,000 unit<a name=\"units--82.44000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/1.25 gram)<a name=\"units-mg.471.4625gram.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mf<a name=\"units-mf\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq / 1L NS<a name=\"units-mEq.471LNS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LOZ<a name=\"units-LOZ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/kg/hour<a name=\"units-mg.47kg.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq in 500ml D5W<a name=\"units-mEqin500mlD5W\"> </a></td></tr><tr><td style=\"white-space:nowrap\">scp<a name=\"units-scp\"> </a></td></tr><tr><td style=\"white-space:nowrap\">180000 unit<a name=\"units-180000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg-mg-mcg<a name=\"units-mg-mg-mcg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tsp<a name=\"units-tsp\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/20 mL<a name=\"units-mg.4720mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/0.5mL (0.51)<a name=\"units-mg.470.465mL.400.4651.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Tab<a name=\"units-Tab\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(0.1 %)<a name=\"units-.400.461.37.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">min<a name=\"units-min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CAP<a name=\"units-CAP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mL<a name=\"units-mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PUFF<a name=\"units-PUFF\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/40mg<a name=\"units-mg.4740mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/50 ml<a name=\"units-mg.4750ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mm Hg<a name=\"units-mmHg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">UNITS<a name=\"units-UNITS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IU/L<a name=\"units-IU.47L\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Floor Stock Bag<a name=\"units-FloorStockBag\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NEEDLE<a name=\"units-NEEDLE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cc<a name=\"units-cc\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg\\ 40mg<a name=\"units-mg.9240mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mgs/min<a name=\"units-mgs.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IO/0 IU<a name=\"units-IO.470IU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">4ML<a name=\"units-4ML\"> </a></td></tr><tr><td style=\"white-space:nowrap\">caps<a name=\"units-caps\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gm<a name=\"units-gm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">teaspoon<a name=\"units-teaspoon\"> </a></td></tr><tr><td style=\"white-space:nowrap\">AERA<a name=\"units-AERA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">doses<a name=\"units-doses\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/h<a name=\"units-mg.47h\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/hr<a name=\"units-mEq.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IU/ 0 IU<a name=\"units-IU.470IU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq in 1L<a name=\"units-mEqin1L\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/2 mL<a name=\"units-mg.472mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(65 mg iron)<a name=\"units-.4065mgiron.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tbsp<a name=\"units-tbsp\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unit/hour<a name=\"units-unit.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MCG/KG<a name=\"units-MCG.47KG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MU<a name=\"units-MU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg (1 mL)<a name=\"units-mg.401mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">units/min<a name=\"units-units.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(100 mg/mL)<a name=\"units-.40100mg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">___<a name=\"units-___\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gram/100 mL<a name=\"units-gram.47100mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">100mL SW<a name=\"units-100mLSW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">300 mL SW<a name=\"units-300mLSW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">1000ML NS<a name=\"units-1000MLNS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">grains<a name=\"units-grains\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ng/kg/min<a name=\"units-ng.47kg.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(1:1,000)<a name=\"units-.401.581.44000.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">pray<a name=\"units-pray\"> </a></td></tr><tr><td style=\"white-space:nowrap\">meq<a name=\"units-meq\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/kg<a name=\"units-mg.47kg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ml<a name=\"units-Ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Umits<a name=\"units-Umits\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CART<a name=\"units-CART\"> </a></td></tr><tr><td style=\"white-space:nowrap\">1 mg/mL<a name=\"units-1mg.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">AERO<a name=\"units-AERO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">/hpf<a name=\"units-.47hpf\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/30 mL<a name=\"units-mg.4730mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">can<a name=\"units-can\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mL/Lumen<a name=\"units-mL.47Lumen\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gram/60 mL<a name=\"units-gram.4760mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">2.5 ml 1 drop<a name=\"units-2.465ml1drop\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/L<a name=\"units-mg.47L\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg-unit<a name=\"units-mg-unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ml/hr<a name=\"units-ml.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(30 mg/mL)<a name=\"units-.4030mg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">puffs<a name=\"units-puffs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PWDR<a name=\"units-PWDR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Mcg<a name=\"units-Mcg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">amp<a name=\"units-amp\"> </a></td></tr><tr><td style=\"white-space:nowrap\">3mg<a name=\"units-3mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CAPS<a name=\"units-CAPS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/g<a name=\"units-mg.47g\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Unit<a name=\"units-Unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gram/59 mL<a name=\"units-gram.4759mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lozenges<a name=\"units-lozenges\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ml/day<a name=\"units-ml.47day\"> </a></td></tr><tr><td style=\"white-space:nowrap\">grams/min<a name=\"units-grams.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(0.6 mg/mL)<a name=\"units-.400.466mg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nmol/L<a name=\"units-nmol.47L\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mgPE<a name=\"units-mgPE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mgs<a name=\"units-mgs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">GEL<a name=\"units-GEL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-250 unit<a name=\"units--250unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/h<a name=\"units-mcg.47h\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tab<a name=\"units-tab\"> </a></td></tr><tr><td style=\"white-space:nowrap\">spacer<a name=\"units-spacer\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gram-kcal/mL<a name=\"units-gram-kcal.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-61000 unit<a name=\"units--61000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">550<a name=\"units-550\"> </a></td></tr><tr><td style=\"white-space:nowrap\">GPL<a name=\"units-GPL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/24hr<a name=\"units-mg.4724hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BAGS<a name=\"units-BAGS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg (120 doses)<a name=\"units-mcg.40120doses.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-0.0194 mg<a name=\"units--0.460194mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/100mL<a name=\"units-mEq.47100mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-30000 unit<a name=\"units--30000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/0.4 mL<a name=\"units-mg.470.464mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/omg<a name=\"units-mg.47omg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RPM<a name=\"units-RPM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg ER<a name=\"units-mgER\"> </a></td></tr><tr><td style=\"white-space:nowrap\">40 units<a name=\"units-40units\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(4 mg/mL)<a name=\"units-.404mg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gram/ml<a name=\"units-gram.47ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TAB<a name=\"units-TAB\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/mL (10%)<a name=\"units-mg.47mL.4010.37.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">msec<a name=\"units-msec\"> </a></td></tr><tr><td style=\"white-space:nowrap\">%<a name=\"units-.37\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/ml<a name=\"units-mg.47ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">kcal/mL<a name=\"units-kcal.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">inches<a name=\"units-inches\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SPRAY<a name=\"units-SPRAY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/67mg<a name=\"units-mg.4767mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BU<a name=\"units-BU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">136000 unit<a name=\"units-136000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(60 mg/mL)<a name=\"units-.4060mg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">WAF<a name=\"units-WAF\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Bottle<a name=\"units-Bottle\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/80mg<a name=\"units-mg.4780mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">pills<a name=\"units-pills\"> </a></td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"units-24\"> </a></td></tr><tr><td style=\"white-space:nowrap\">0/mg<a name=\"units-0.47mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CC<a name=\"units-CC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/0 mg<a name=\"units-mg.470mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ERT<a name=\"units-ERT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">540,000IU / 0 IU<a name=\"units-540.44000IU.470IU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(36 mg iron)<a name=\"units-.4036mgiron.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CADD<a name=\"units-CADD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gr<a name=\"units-gr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">50<a name=\"units-50\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/mL (4 %)<a name=\"units-mg.47mL.404.37.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MCG<a name=\"units-MCG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unit/mL (5 mL)<a name=\"units-unit.47mL.405mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/15 mL<a name=\"units-mg.4715mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PAD<a name=\"units-PAD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mmHg<a name=\"units-mmHg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gm/hr<a name=\"units-gm.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/kg<a name=\"units-mcg.47kg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(2 mg/mL)<a name=\"units-.402mg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-120,000 unit<a name=\"units--120.44000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unit/gram<a name=\"units-unit.47gram\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-200 mg<a name=\"units--200mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ounces<a name=\"units-ounces\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/24 hr<a name=\"units-mcg.4724hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq<a name=\"units-mEq\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/0mgs<a name=\"units-mg.470mgs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">0 mg<a name=\"units-0mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">250<a name=\"units-250\"> </a></td></tr><tr><td style=\"white-space:nowrap\">droperette<a name=\"units-droperette\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg<a name=\"units-mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/kg/hour<a name=\"units-mcg.47kg.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mls<a name=\"units-mls\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Million Units<a name=\"units-MillionUnits\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/2.5 mL<a name=\"units-mg.472.465mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/250 ml<a name=\"units-mg.47250ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cm3<a name=\"units-cm3\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NS<a name=\"units-NS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">m/uL<a name=\"units-m.47uL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg'ml-mg/ml<a name=\"units-mcg.39ml-mg.47ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">15000 unit<a name=\"units-15000unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CON<a name=\"units-CON\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/200 mL NS<a name=\"units-mEq.47200mLNS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mmol/L<a name=\"units-mmol.47L\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mm/hr<a name=\"units-mm.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/day<a name=\"units-mcg.47day\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ppm<a name=\"units-ppm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Units/Hr<a name=\"units-Units.47Hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">UDCUP<a name=\"units-UDCUP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PUMP<a name=\"units-PUMP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/200mL<a name=\"units-mEq.47200mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg PE/kg<a name=\"units-mgPE.47kg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-200 unit<a name=\"units--200unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Enemas<a name=\"units-Enemas\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg-mg/mL<a name=\"units-mcg-mg.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">/mm3<a name=\"units-.47mm3\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bpm<a name=\"units-bpm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">film<a name=\"units-film\"> </a></td></tr><tr><td style=\"white-space:nowrap\">#/lpf<a name=\"units-.35.47lpf\"> </a></td></tr><tr><td style=\"white-space:nowrap\">/ 500mL D5W<a name=\"units-.47500mLD5W\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/0.5 mL<a name=\"units-mg.470.465mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tab'<a name=\"units-tab.39\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mL/hr<a name=\"units-mL.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DROP<a name=\"units-DROP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MCG/KG/MIN<a name=\"units-MCG.47KG.47MIN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">iu/ 0 iu<a name=\"units-iu.470iu\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Drop<a name=\"units-Drop\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unit per ISS<a name=\"units-unitperISS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">JAR<a name=\"units-JAR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mL/Day<a name=\"units-mL.47Day\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Units/kg<a name=\"units-Units.47kg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">thin strip on lower lid<a name=\"units-thinstriponlowerlid\"> </a></td></tr><tr><td style=\"white-space:nowrap\">°C<a name=\"units-.176C\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tABS<a name=\"units-tABS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/200SW<a name=\"units-mEq.47200SW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">pL<a name=\"units-pL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-5.86 gram<a name=\"units--5.4686gram\"> </a></td></tr><tr><td style=\"white-space:nowrap\">units/kg/hr<a name=\"units-units.47kg.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mL/Syringe<a name=\"units-mL.47Syringe\"> </a></td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"units-60\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mL/hour<a name=\"units-mL.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">units/kg/hour<a name=\"units-units.47kg.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gtt<a name=\"units-gtt\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NG/<a name=\"units-NG.47\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gram/mL iron<a name=\"units-gram.47mLiron\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/74mg<a name=\"units-mg.4774mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/kg/hr<a name=\"units-mg.47kg.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PE (Phenytoin Sodium Equivalent)<a name=\"units-PE.40PhenytoinSodiumEquivalent.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bo<a name=\"units-bo\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/kg/min<a name=\"units-mg.47kg.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Film<a name=\"units-Film\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TROC<a name=\"units-TROC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ug/mL<a name=\"units-ug.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">61500 unit<a name=\"units-61500unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(25 mg/2.5gram)<a name=\"units-.4025mg.472.465gram.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gram/15 mL<a name=\"units-gram.4715mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">pumps<a name=\"units-pumps\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SOLN<a name=\"units-SOLN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unit/0.72 mL<a name=\"units-unit.470.4672mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/3ml<a name=\"units-mg.473ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">If/0iu<a name=\"units-If.470iu\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Cap<a name=\"units-Cap\"> </a></td></tr><tr><td style=\"white-space:nowrap\">200 unit<a name=\"units-200unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Milligrams<a name=\"units-Milligrams\"> </a></td></tr><tr><td style=\"white-space:nowrap\">leaf<a name=\"units-leaf\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IU/0IU<a name=\"units-IU.470IU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">% (5 mg/mL)<a name=\"units-.37.405mg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/100 mL<a name=\"units-mg.47100mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">enema<a name=\"units-enema\"> </a></td></tr><tr><td style=\"white-space:nowrap\">flinstones<a name=\"units-flinstones\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg-mcg-mcg<a name=\"units-mg-mcg-mcg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mmHg.<a name=\"units-mmHg.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hour<a name=\"units-hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/ 82mg<a name=\"units-mg.4782mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcq<a name=\"units-mcq\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Tablets<a name=\"units-Tablets\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(10 mg/mL)<a name=\"units-.4010mg.47mL.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ng/mL<a name=\"units-ng.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">pad<a name=\"units-pad\"> </a></td></tr><tr><td style=\"white-space:nowrap\">neb<a name=\"units-neb\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CONC<a name=\"units-CONC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mcg/2.7 mL<a name=\"units-mcg.472.467mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cmH2O/L/seconds<a name=\"units-cmH2O.47L.47seconds\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IU/0U<a name=\"units-IU.470U\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg-35 mcg (28)<a name=\"units-mg-35mcg.4028.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ng/mL DDU<a name=\"units-ng.47mLDDU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MD to order daily dose<a name=\"units-MDtoorderdailydose\"> </a></td></tr><tr><td style=\"white-space:nowrap\">10 ml<a name=\"units-10ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Million Cells<a name=\"units-MillionCells\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(morphine)<a name=\"units-.40morphine.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">u<a name=\"units-u\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/mg<a name=\"units-mg.47mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">GM<a name=\"units-GM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gram/118 mL<a name=\"units-gram.47118mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NEB<a name=\"units-NEB\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(500 mg)<a name=\"units-.40500mg.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mIU/mL<a name=\"units-mIU.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/kg<a name=\"units-mEq.47kg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/5 mL<a name=\"units-mEq.475mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SWAB<a name=\"units-SWAB\"> </a></td></tr><tr><td style=\"white-space:nowrap\">kcal/kg<a name=\"units-kcal.47kg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/hour<a name=\"units-mg.47hour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/3 mL<a name=\"units-mg.473mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">per L<a name=\"units-perL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dynes*sec/cm5<a name=\"units-dynes.42sec.47cm5\"> </a></td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"units-30\"> </a></td></tr><tr><td style=\"white-space:nowrap\">powder<a name=\"units-powder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">UNIT/L<a name=\"units-UNIT.47L\"> </a></td></tr><tr><td style=\"white-space:nowrap\">uIU/mL<a name=\"units-uIU.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/24 hr<a name=\"units-mg.4724hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(24 ml)<a name=\"units-.4024ml.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/1000 ml NS<a name=\"units-mEq.471000mlNS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cap<a name=\"units-cap\"> </a></td></tr><tr><td style=\"white-space:nowrap\">60mg<a name=\"units-60mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">STRP<a name=\"units-STRP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Dose<a name=\"units-Dose\"> </a></td></tr><tr><td style=\"white-space:nowrap\">450<a name=\"units-450\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LOT<a name=\"units-LOT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SC<a name=\"units-SC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">iron)/5 mL<a name=\"units-iron.41.475mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg BID<a name=\"units-mgBID\"> </a></td></tr><tr><td style=\"white-space:nowrap\">insp/min<a name=\"units-insp.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Iu/0IU<a name=\"units-Iu.470IU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">-125 unit<a name=\"units--125unit\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/hr<a name=\"units-mg.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cm<a name=\"units-cm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INCH<a name=\"units-INCH\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq/mL<a name=\"units-mEq.47mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/ 2ml<a name=\"units-mg.472ml\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cp<a name=\"units-cp\"> </a></td></tr><tr><td style=\"white-space:nowrap\">International Units<a name=\"units-InternationalUnits\"> </a></td></tr><tr><td style=\"white-space:nowrap\">%(50 mg/5 gram)<a name=\"units-.37.4050mg.475gram.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/gm<a name=\"units-mg.47gm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unit/mL (70-30)<a name=\"units-unit.47mL.4070-30.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq (1080 mg)<a name=\"units-mEq.401080mg.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ml/min<a name=\"units-ml.47min\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg iron<a name=\"units-mgiron\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ELIX<a name=\"units-ELIX\"> </a></td></tr><tr><td style=\"white-space:nowrap\">0mg<a name=\"units-0mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gram<a name=\"units-gram\"> </a></td></tr><tr><td style=\"white-space:nowrap\">thin layer<a name=\"units-thinlayer\"> </a></td></tr><tr><td style=\"white-space:nowrap\">0mg/mg<a name=\"units-0mg.47mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">units<a name=\"units-units\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/mL (2 %)<a name=\"units-mg.47mL.402.37.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PATCHES<a name=\"units-PATCHES\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CPT<a name=\"units-CPT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"units-1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">g/dL<a name=\"units-g.47dL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mm^3<a name=\"units-mm.943\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nL<a name=\"units-nL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mV<a name=\"units-mV\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Mcg/kg/hr<a name=\"units-Mcg.47kg.47hr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tube<a name=\"units-tube\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ng/mL FEU<a name=\"units-ng.47mLFEU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">UNIT/KG<a name=\"units-UNIT.47KG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mmol<a name=\"units-mmol\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DOSE<a name=\"units-DOSE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/89mg<a name=\"units-mg.4789mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/68mg<a name=\"units-mg.4768mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PO<a name=\"units-PO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">(5)/125-30(10)<a name=\"units-.405.41.47125-30.4010.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Mmg<a name=\"units-Mmg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TUBE<a name=\"units-TUBE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/6mL<a name=\"units-mg.476mL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gummy<a name=\"units-gummy\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mEq.<a name=\"units-mEq.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg/100mg<a name=\"units-mg.47100mg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">umol/L<a name=\"units-umol.47L\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PACK<a name=\"units-PACK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mg (950 mg)<a name=\"units-mg.40950mg.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">billion cell<a name=\"units-billioncell\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/units",
+  "version": "0.2.4",
+  "name": "Units",
+  "title": "Units",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The units used throughout MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/units",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "mL/kg/hour"
+    },
+    {
+      "code": "75"
+    },
+    {
+      "code": "BULK"
+    },
+    {
+      "code": "log10 IU/mL"
+    },
+    {
+      "code": "MILLI UNITS/MIN"
+    },
+    {
+      "code": "drop ou"
+    },
+    {
+      "code": "mg tablet"
+    },
+    {
+      "code": "PTCH"
+    },
+    {
+      "code": "tablets"
+    },
+    {
+      "code": "Units/Liter"
+    },
+    {
+      "code": "milligrams"
+    },
+    {
+      "code": "mEq / hr"
+    },
+    {
+      "code": "sec"
+    },
+    {
+      "code": "ug/dL"
+    },
+    {
+      "code": "mg/actuation"
+    },
+    {
+      "code": "tiwst"
+    },
+    {
+      "code": "OINT"
+    },
+    {
+      "code": "(10 mL)"
+    },
+    {
+      "code": "mcg/ml"
+    },
+    {
+      "code": "UNIT/HR"
+    },
+    {
+      "code": "(0.5 %)"
+    },
+    {
+      "code": "mEq/100 mL SW"
+    },
+    {
+      "code": "MG"
+    },
+    {
+      "code": "capsule"
+    },
+    {
+      "code": "mg/0.8 mL"
+    },
+    {
+      "code": "mg or 92mg"
+    },
+    {
+      "code": "Degree"
+    },
+    {
+      "code": "mg/0.67 mL"
+    },
+    {
+      "code": "(21)/75 mg (7)"
+    },
+    {
+      "code": "mcg/0.5 mL"
+    },
+    {
+      "code": "LIQ"
+    },
+    {
+      "code": "/min"
+    },
+    {
+      "code": "mcg/actuation"
+    },
+    {
+      "code": "BAG"
+    },
+    {
+      "code": "% (40 mg/mL)"
+    },
+    {
+      "code": "CUP"
+    },
+    {
+      "code": "AMP"
+    },
+    {
+      "code": "mg/0mg"
+    },
+    {
+      "code": "GUM"
+    },
+    {
+      "code": "600"
+    },
+    {
+      "code": "mg TID"
+    },
+    {
+      "code": "drops each eye"
+    },
+    {
+      "code": "Iu/0 iu"
+    },
+    {
+      "code": "unit/actuation"
+    },
+    {
+      "code": "18 mg iron"
+    },
+    {
+      "code": "mcg/mL) 2.4 mL"
+    },
+    {
+      "code": "(24)/75 mg (4)"
+    },
+    {
+      "code": "EA"
+    },
+    {
+      "code": "log10 cop/mL"
+    },
+    {
+      "code": "INH"
+    },
+    {
+      "code": "nMol/ml/min"
+    },
+    {
+      "code": "g"
+    },
+    {
+      "code": "sprays"
+    },
+    {
+      "code": "mg / 0 mg"
+    },
+    {
+      "code": "unit/mL"
+    },
+    {
+      "code": "mL/m2"
+    },
+    {
+      "code": "micrograms"
+    },
+    {
+      "code": "(50,000 unit)"
+    },
+    {
+      "code": "mg/61mg"
+    },
+    {
+      "code": "units/hr"
+    },
+    {
+      "code": "unit (10 mL)"
+    },
+    {
+      "code": "cell"
+    },
+    {
+      "code": "350"
+    },
+    {
+      "code": "DEV"
+    },
+    {
+      "code": "mEq / 400 mL"
+    },
+    {
+      "code": "Pos/Neg"
+    },
+    {
+      "code": "(100 mcg/mL)"
+    },
+    {
+      "code": "mg/24 hour"
+    },
+    {
+      "code": "600 mcg/2.4 mL"
+    },
+    {
+      "code": "CAPs"
+    },
+    {
+      "code": "500"
+    },
+    {
+      "code": "mg/24 mL"
+    },
+    {
+      "code": "SUSP"
+    },
+    {
+      "code": "(25 mg/mL)"
+    },
+    {
+      "code": "SCOOP"
+    },
+    {
+      "code": "(1250 mg)"
+    },
+    {
+      "code": "mcg/kg/hr"
+    },
+    {
+      "code": "soak"
+    },
+    {
+      "code": "ml"
+    },
+    {
+      "code": "mEq/1000 mL NS"
+    },
+    {
+      "code": "mL/h"
+    },
+    {
+      "code": "(300 mcg)"
+    },
+    {
+      "code": "fL"
+    },
+    {
+      "code": "units/hour"
+    },
+    {
+      "code": "L"
+    },
+    {
+      "code": "iu"
+    },
+    {
+      "code": "mcg/0.8 mL"
+    },
+    {
+      "code": "Gram"
+    },
+    {
+      "code": "218000 unit"
+    },
+    {
+      "code": "mg/ 0 mg"
+    },
+    {
+      "code": "Iu/ 0 IU"
+    },
+    {
+      "code": "mg/dL"
+    },
+    {
+      "code": "/0mg"
+    },
+    {
+      "code": "1 cap"
+    },
+    {
+      "code": "spray"
+    },
+    {
+      "code": "million units"
+    },
+    {
+      "code": "240 mg (46)"
+    },
+    {
+      "code": "BTL"
+    },
+    {
+      "code": "FILM"
+    },
+    {
+      "code": "PKG"
+    },
+    {
+      "code": "mEq./hour"
+    },
+    {
+      "code": "mg/ 0mg"
+    },
+    {
+      "code": "0"
+    },
+    {
+      "code": "PUFFS"
+    },
+    {
+      "code": "U/L"
+    },
+    {
+      "code": "+/-"
+    },
+    {
+      "code": "50 units/ml"
+    },
+    {
+      "code": "mg /40 mg"
+    },
+    {
+      "code": "300"
+    },
+    {
+      "code": "mcg (30 doses)"
+    },
+    {
+      "code": "mcg/mL"
+    },
+    {
+      "code": "-109,000 unit"
+    },
+    {
+      "code": "Units"
+    },
+    {
+      "code": "mg/0.6mL"
+    },
+    {
+      "code": "RING"
+    },
+    {
+      "code": "TRMT"
+    },
+    {
+      "code": "°F"
+    },
+    {
+      "code": "PEN"
+    },
+    {
+      "code": "mEq (1,080 mg)"
+    },
+    {
+      "code": "unit/mL (75-25)"
+    },
+    {
+      "code": "uL"
+    },
+    {
+      "code": "mL/beat"
+    },
+    {
+      "code": "mg/mL"
+    },
+    {
+      "code": "UNIT/kg/HR"
+    },
+    {
+      "code": "ENEMA"
+    },
+    {
+      "code": "/hr"
+    },
+    {
+      "code": "mg/mL (25 %)"
+    },
+    {
+      "code": "mg/88mg"
+    },
+    {
+      "code": "Inch"
+    },
+    {
+      "code": "mcg/ACT"
+    },
+    {
+      "code": "/3 mL (0.083 %)"
+    },
+    {
+      "code": "mg or 88mg"
+    },
+    {
+      "code": "Grams"
+    },
+    {
+      "code": "ENE"
+    },
+    {
+      "code": "/hour"
+    },
+    {
+      "code": "K/uL"
+    },
+    {
+      "code": "ML"
+    },
+    {
+      "code": "dynes*sec/cm5/m2"
+    },
+    {
+      "code": "DRP"
+    },
+    {
+      "code": "STCK"
+    },
+    {
+      "code": "CRE"
+    },
+    {
+      "code": "40mg"
+    },
+    {
+      "code": "mg\\ 150 mg"
+    },
+    {
+      "code": "grams"
+    },
+    {
+      "code": "IU/ 0 iu"
+    },
+    {
+      "code": "Mg/hr"
+    },
+    {
+      "code": "SPG"
+    },
+    {
+      "code": "kcal/day"
+    },
+    {
+      "code": "mcg/kg/min"
+    },
+    {
+      "code": "mEq / mL SW"
+    },
+    {
+      "code": "iu/0u"
+    },
+    {
+      "code": "Neb"
+    },
+    {
+      "code": "ea"
+    },
+    {
+      "code": "mL/mL"
+    },
+    {
+      "code": "mcg/2 mL"
+    },
+    {
+      "code": "UNIT/1000ML"
+    },
+    {
+      "code": "MG/0MG"
+    },
+    {
+      "code": "83900 unit"
+    },
+    {
+      "code": "700"
+    },
+    {
+      "code": "(1000 mg)"
+    },
+    {
+      "code": "G"
+    },
+    {
+      "code": "g/hr"
+    },
+    {
+      "code": "in"
+    },
+    {
+      "code": "mg/50 mL"
+    },
+    {
+      "code": "mg//min"
+    },
+    {
+      "code": "GR"
+    },
+    {
+      "code": "PTCHs"
+    },
+    {
+      "code": "dose"
+    },
+    {
+      "code": "vial"
+    },
+    {
+      "code": "% (0.1 mg/gram)"
+    },
+    {
+      "code": "mg\\40 mg"
+    },
+    {
+      "code": "mg/24h"
+    },
+    {
+      "code": "8"
+    },
+    {
+      "code": "mEq/1,000 mL"
+    },
+    {
+      "code": "SYRP"
+    },
+    {
+      "code": "KIT"
+    },
+    {
+      "code": "(18 mg/3 mL)"
+    },
+    {
+      "code": "mcg/min"
+    },
+    {
+      "code": "mg/5 gram (1 %)"
+    },
+    {
+      "code": "15U SQ"
+    },
+    {
+      "code": "mEq/L"
+    },
+    {
+      "code": "topical"
+    },
+    {
+      "code": "sheet"
+    },
+    {
+      "code": "#/hpf"
+    },
+    {
+      "code": "hrs"
+    },
+    {
+      "code": "800 mcg"
+    },
+    {
+      "code": "mEq/1000NS"
+    },
+    {
+      "code": "N/A"
+    },
+    {
+      "code": "application"
+    },
+    {
+      "code": "nanograms/kg/minute"
+    },
+    {
+      "code": "mg/0.3 mL"
+    },
+    {
+      "code": "DBTL"
+    },
+    {
+      "code": "gram/12 gram"
+    },
+    {
+      "code": "iu/0iu"
+    },
+    {
+      "code": "(50 mg/5 gram)"
+    },
+    {
+      "code": "-400 unit"
+    },
+    {
+      "code": "-60000 unit"
+    },
+    {
+      "code": "mg-unit-mg-mg"
+    },
+    {
+      "code": "INJ"
+    },
+    {
+      "code": "g/h"
+    },
+    {
+      "code": "million"
+    },
+    {
+      "code": "mg base)/3 mL"
+    },
+    {
+      "code": "% of current infusion rate"
+    },
+    {
+      "code": "mg/500 ml"
+    },
+    {
+      "code": "(84)/10 mcg (7)"
+    },
+    {
+      "code": "mg/2mL"
+    },
+    {
+      "code": "mg\\ 0 mg"
+    },
+    {
+      "code": "mEq/500ml"
+    },
+    {
+      "code": "40"
+    },
+    {
+      "code": "mg\\960 mg"
+    },
+    {
+      "code": "cmH2O"
+    },
+    {
+      "code": "g/kg"
+    },
+    {
+      "code": "mg/day"
+    },
+    {
+      "code": "mg/960mg"
+    },
+    {
+      "code": "cps"
+    },
+    {
+      "code": "Enema"
+    },
+    {
+      "code": "mg/250 mL"
+    },
+    {
+      "code": "uU/ML"
+    },
+    {
+      "code": "mg/5 mL"
+    },
+    {
+      "code": "mL/min"
+    },
+    {
+      "code": "pg"
+    },
+    {
+      "code": "MIU"
+    },
+    {
+      "code": "mcg\\ 0 mcg"
+    },
+    {
+      "code": "cc/hr"
+    },
+    {
+      "code": "U/g/Hb"
+    },
+    {
+      "code": "%(700 mg/patch)"
+    },
+    {
+      "code": "MPL"
+    },
+    {
+      "code": "mg/mL (1 %)"
+    },
+    {
+      "code": "lbs"
+    },
+    {
+      "code": "gummies"
+    },
+    {
+      "code": "mcgr"
+    },
+    {
+      "code": "5 mL"
+    },
+    {
+      "code": "oz"
+    },
+    {
+      "code": "iu/0IU"
+    },
+    {
+      "code": "drops"
+    },
+    {
+      "code": "(1.5 mL)"
+    },
+    {
+      "code": "GTT"
+    },
+    {
+      "code": "grams/hour"
+    },
+    {
+      "code": "400"
+    },
+    {
+      "code": "mg/6 mL (6 mL)"
+    },
+    {
+      "code": "Ratio"
+    },
+    {
+      "code": "puff"
+    },
+    {
+      "code": "pump"
+    },
+    {
+      "code": "iu/0 iu"
+    },
+    {
+      "code": "Units VWF:RCo"
+    },
+    {
+      "code": "DROPS"
+    },
+    {
+      "code": "mOsm/kg"
+    },
+    {
+      "code": "g/dl"
+    },
+    {
+      "code": "SUPP"
+    },
+    {
+      "code": "mEq/500ml D5W"
+    },
+    {
+      "code": "mch/kg/min"
+    },
+    {
+      "code": "EU/dL"
+    },
+    {
+      "code": "-109000 unit"
+    },
+    {
+      "code": "mA"
+    },
+    {
+      "code": "nanogram"
+    },
+    {
+      "code": "Score"
+    },
+    {
+      "code": "packet"
+    },
+    {
+      "code": "ampule"
+    },
+    {
+      "code": "mcg/hour"
+    },
+    {
+      "code": "mcg/ kg/ hr"
+    },
+    {
+      "code": "log10 copies/mL"
+    },
+    {
+      "code": "QHS"
+    },
+    {
+      "code": "mg-mcg"
+    },
+    {
+      "code": "-"
+    },
+    {
+      "code": "Mg"
+    },
+    {
+      "code": "PKT"
+    },
+    {
+      "code": "years"
+    },
+    {
+      "code": "(3 mL)"
+    },
+    {
+      "code": "mg/8 mL"
+    },
+    {
+      "code": "mEq/500D5W"
+    },
+    {
+      "code": "mg-mg-mcg-mg"
+    },
+    {
+      "code": "%-1:200,000"
+    },
+    {
+      "code": "mg PE"
+    },
+    {
+      "code": "mg-mg"
+    },
+    {
+      "code": "U/mL"
+    },
+    {
+      "code": "BID"
+    },
+    {
+      "code": "100"
+    },
+    {
+      "code": "psi"
+    },
+    {
+      "code": "tablet"
+    },
+    {
+      "code": "TC"
+    },
+    {
+      "code": "(0.06 %)"
+    },
+    {
+      "code": "PTCHS"
+    },
+    {
+      "code": "VIAL"
+    },
+    {
+      "code": "TABS"
+    },
+    {
+      "code": "(40 mg/mL)"
+    },
+    {
+      "code": "mEq/15 mL"
+    },
+    {
+      "code": "g/1L NS"
+    },
+    {
+      "code": "SPRY"
+    },
+    {
+      "code": "Iu/ 0 iu"
+    },
+    {
+      "code": "dynes.sec.cm-5/m2"
+    },
+    {
+      "code": "lozenge"
+    },
+    {
+      "code": "kg"
+    },
+    {
+      "code": "mEQ"
+    },
+    {
+      "code": "bottle"
+    },
+    {
+      "code": "#/uL"
+    },
+    {
+      "code": "UNIT"
+    },
+    {
+      "code": "mcg/dose"
+    },
+    {
+      "code": "IU/0 IU"
+    },
+    {
+      "code": "DROPs"
+    },
+    {
+      "code": "tabs"
+    },
+    {
+      "code": "pg/mL"
+    },
+    {
+      "code": "80"
+    },
+    {
+      "code": "950"
+    },
+    {
+      "code": "D5W"
+    },
+    {
+      "code": "mg/5 mL (5 mL)"
+    },
+    {
+      "code": "L/hr"
+    },
+    {
+      "code": "IU/mL"
+    },
+    {
+      "code": "150"
+    },
+    {
+      "code": "Tabs"
+    },
+    {
+      "code": "Liters"
+    },
+    {
+      "code": "-120000 unit"
+    },
+    {
+      "code": "L/min"
+    },
+    {
+      "code": "mg/2.625 mL"
+    },
+    {
+      "code": "SYR"
+    },
+    {
+      "code": "drop"
+    },
+    {
+      "code": "mg/dose"
+    },
+    {
+      "code": "200"
+    },
+    {
+      "code": "(205.5 mcg)"
+    },
+    {
+      "code": "mg/0.1mL"
+    },
+    {
+      "code": "Spray"
+    },
+    {
+      "code": "U"
+    },
+    {
+      "code": "650"
+    },
+    {
+      "code": "L/min/m2"
+    },
+    {
+      "code": "CAN"
+    },
+    {
+      "code": "gm/kg"
+    },
+    {
+      "code": "mcg"
+    },
+    {
+      "code": "Mg/0mg"
+    },
+    {
+      "code": "mg/min"
+    },
+    {
+      "code": "Mg/ 0 mg"
+    },
+    {
+      "code": "Appl"
+    },
+    {
+      "code": "mcg/hr"
+    },
+    {
+      "code": "chamber"
+    },
+    {
+      "code": "/ 0 Units"
+    },
+    {
+      "code": "mg/m2"
+    },
+    {
+      "code": "mg iron/5 mL"
+    },
+    {
+      "code": "_UNIT"
+    },
+    {
+      "code": "U/hr"
+    },
+    {
+      "code": "ng/dL"
+    },
+    {
+      "code": "CREA"
+    },
+    {
+      "code": "12 ml"
+    },
+    {
+      "code": "ml/kg"
+    },
+    {
+      "code": "IU"
+    },
+    {
+      "code": "unit"
+    },
+    {
+      "code": "units\\ 0 units"
+    },
+    {
+      "code": "-82,000 unit"
+    },
+    {
+      "code": "mg/1.25 gram)"
+    },
+    {
+      "code": "mf"
+    },
+    {
+      "code": "mEq / 1L NS"
+    },
+    {
+      "code": "LOZ"
+    },
+    {
+      "code": "mg/kg/hour"
+    },
+    {
+      "code": "mEq in 500ml D5W"
+    },
+    {
+      "code": "scp"
+    },
+    {
+      "code": "180000 unit"
+    },
+    {
+      "code": "mg-mg-mcg"
+    },
+    {
+      "code": "tsp"
+    },
+    {
+      "code": "mg/20 mL"
+    },
+    {
+      "code": "mg/0.5mL (0.51)"
+    },
+    {
+      "code": "Tab"
+    },
+    {
+      "code": "(0.1 %)"
+    },
+    {
+      "code": "min"
+    },
+    {
+      "code": "CAP"
+    },
+    {
+      "code": "mL"
+    },
+    {
+      "code": "PUFF"
+    },
+    {
+      "code": "mg/40mg"
+    },
+    {
+      "code": "mg/50 ml"
+    },
+    {
+      "code": "mm Hg"
+    },
+    {
+      "code": "UNITS"
+    },
+    {
+      "code": "IU/L"
+    },
+    {
+      "code": "Floor Stock Bag"
+    },
+    {
+      "code": "NEEDLE"
+    },
+    {
+      "code": "cc"
+    },
+    {
+      "code": "mg\\ 40mg"
+    },
+    {
+      "code": "mgs/min"
+    },
+    {
+      "code": "IO/0 IU"
+    },
+    {
+      "code": "4ML"
+    },
+    {
+      "code": "caps"
+    },
+    {
+      "code": "gm"
+    },
+    {
+      "code": "teaspoon"
+    },
+    {
+      "code": "AERA"
+    },
+    {
+      "code": "doses"
+    },
+    {
+      "code": "mg/h"
+    },
+    {
+      "code": "mEq/hr"
+    },
+    {
+      "code": "IU/ 0 IU"
+    },
+    {
+      "code": "mEq in 1L"
+    },
+    {
+      "code": "mg/2 mL"
+    },
+    {
+      "code": "(65 mg iron)"
+    },
+    {
+      "code": "tbsp"
+    },
+    {
+      "code": "unit/hour"
+    },
+    {
+      "code": "MCG/KG"
+    },
+    {
+      "code": "MU"
+    },
+    {
+      "code": "mg (1 mL)"
+    },
+    {
+      "code": "units/min"
+    },
+    {
+      "code": "(100 mg/mL)"
+    },
+    {
+      "code": "___"
+    },
+    {
+      "code": "gram/100 mL"
+    },
+    {
+      "code": "100mL SW"
+    },
+    {
+      "code": "300 mL SW"
+    },
+    {
+      "code": "1000ML NS"
+    },
+    {
+      "code": "grains"
+    },
+    {
+      "code": "ng/kg/min"
+    },
+    {
+      "code": "(1:1,000)"
+    },
+    {
+      "code": "pray"
+    },
+    {
+      "code": "meq"
+    },
+    {
+      "code": "mg/kg"
+    },
+    {
+      "code": "Ml"
+    },
+    {
+      "code": "Umits"
+    },
+    {
+      "code": "CART"
+    },
+    {
+      "code": "1 mg/mL"
+    },
+    {
+      "code": "AERO"
+    },
+    {
+      "code": "/hpf"
+    },
+    {
+      "code": "mg/30 mL"
+    },
+    {
+      "code": "can"
+    },
+    {
+      "code": "mL/Lumen"
+    },
+    {
+      "code": "gram/60 mL"
+    },
+    {
+      "code": "2.5 ml 1 drop"
+    },
+    {
+      "code": "mg/L"
+    },
+    {
+      "code": "mg-unit"
+    },
+    {
+      "code": "ml/hr"
+    },
+    {
+      "code": "(30 mg/mL)"
+    },
+    {
+      "code": "puffs"
+    },
+    {
+      "code": "PWDR"
+    },
+    {
+      "code": "Mcg"
+    },
+    {
+      "code": "amp"
+    },
+    {
+      "code": "3mg"
+    },
+    {
+      "code": "CAPS"
+    },
+    {
+      "code": "mg/g"
+    },
+    {
+      "code": "Unit"
+    },
+    {
+      "code": "gram/59 mL"
+    },
+    {
+      "code": "lozenges"
+    },
+    {
+      "code": "ml/day"
+    },
+    {
+      "code": "grams/min"
+    },
+    {
+      "code": "(0.6 mg/mL)"
+    },
+    {
+      "code": "nmol/L"
+    },
+    {
+      "code": "mgPE"
+    },
+    {
+      "code": "mgs"
+    },
+    {
+      "code": "GEL"
+    },
+    {
+      "code": "-250 unit"
+    },
+    {
+      "code": "mcg/h"
+    },
+    {
+      "code": "tab"
+    },
+    {
+      "code": "spacer"
+    },
+    {
+      "code": "gram-kcal/mL"
+    },
+    {
+      "code": "-61000 unit"
+    },
+    {
+      "code": "550"
+    },
+    {
+      "code": "GPL"
+    },
+    {
+      "code": "mg/24hr"
+    },
+    {
+      "code": "BAGS"
+    },
+    {
+      "code": "mcg (120 doses)"
+    },
+    {
+      "code": "-0.0194 mg"
+    },
+    {
+      "code": "mEq/100mL"
+    },
+    {
+      "code": "-30000 unit"
+    },
+    {
+      "code": "mg/0.4 mL"
+    },
+    {
+      "code": "mg/omg"
+    },
+    {
+      "code": "RPM"
+    },
+    {
+      "code": "mg ER"
+    },
+    {
+      "code": "40 units"
+    },
+    {
+      "code": "(4 mg/mL)"
+    },
+    {
+      "code": "gram/ml"
+    },
+    {
+      "code": "TAB"
+    },
+    {
+      "code": "mg/mL (10%)"
+    },
+    {
+      "code": "msec"
+    },
+    {
+      "code": "%"
+    },
+    {
+      "code": "mg/ml"
+    },
+    {
+      "code": "kcal/mL"
+    },
+    {
+      "code": "inches"
+    },
+    {
+      "code": "SPRAY"
+    },
+    {
+      "code": "mg/67mg"
+    },
+    {
+      "code": "BU"
+    },
+    {
+      "code": "136000 unit"
+    },
+    {
+      "code": "(60 mg/mL)"
+    },
+    {
+      "code": "WAF"
+    },
+    {
+      "code": "Bottle"
+    },
+    {
+      "code": "mg/80mg"
+    },
+    {
+      "code": "pills"
+    },
+    {
+      "code": "24"
+    },
+    {
+      "code": "0/mg"
+    },
+    {
+      "code": "CC"
+    },
+    {
+      "code": "mg/0 mg"
+    },
+    {
+      "code": "ERT"
+    },
+    {
+      "code": "540,000IU / 0 IU"
+    },
+    {
+      "code": "(36 mg iron)"
+    },
+    {
+      "code": "CADD"
+    },
+    {
+      "code": "gr"
+    },
+    {
+      "code": "50"
+    },
+    {
+      "code": "mg/mL (4 %)"
+    },
+    {
+      "code": "MCG"
+    },
+    {
+      "code": "unit/mL (5 mL)"
+    },
+    {
+      "code": "mg/15 mL"
+    },
+    {
+      "code": "PAD"
+    },
+    {
+      "code": "mmHg"
+    },
+    {
+      "code": "gm/hr"
+    },
+    {
+      "code": "mcg/kg"
+    },
+    {
+      "code": "(2 mg/mL)"
+    },
+    {
+      "code": "-120,000 unit"
+    },
+    {
+      "code": "unit/gram"
+    },
+    {
+      "code": "-200 mg"
+    },
+    {
+      "code": "ounces"
+    },
+    {
+      "code": "mcg/24 hr"
+    },
+    {
+      "code": "mEq"
+    },
+    {
+      "code": "mg/0mgs"
+    },
+    {
+      "code": "0 mg"
+    },
+    {
+      "code": "250"
+    },
+    {
+      "code": "droperette"
+    },
+    {
+      "code": "mg"
+    },
+    {
+      "code": "mcg/kg/hour"
+    },
+    {
+      "code": "mls"
+    },
+    {
+      "code": "Million Units"
+    },
+    {
+      "code": "mg/2.5 mL"
+    },
+    {
+      "code": "mg/250 ml"
+    },
+    {
+      "code": "cm3"
+    },
+    {
+      "code": "NS"
+    },
+    {
+      "code": "m/uL"
+    },
+    {
+      "code": "mcg'ml-mg/ml"
+    },
+    {
+      "code": "15000 unit"
+    },
+    {
+      "code": "CON"
+    },
+    {
+      "code": "mEq/200 mL NS"
+    },
+    {
+      "code": "mmol/L"
+    },
+    {
+      "code": "mm/hr"
+    },
+    {
+      "code": "mcg/day"
+    },
+    {
+      "code": "ppm"
+    },
+    {
+      "code": "Units/Hr"
+    },
+    {
+      "code": "UDCUP"
+    },
+    {
+      "code": "PUMP"
+    },
+    {
+      "code": "mEq/200mL"
+    },
+    {
+      "code": "mg PE/kg"
+    },
+    {
+      "code": "-200 unit"
+    },
+    {
+      "code": "Enemas"
+    },
+    {
+      "code": "mcg-mg/mL"
+    },
+    {
+      "code": "/mm3"
+    },
+    {
+      "code": "bpm"
+    },
+    {
+      "code": "film"
+    },
+    {
+      "code": "#/lpf"
+    },
+    {
+      "code": "/ 500mL D5W"
+    },
+    {
+      "code": "mg/0.5 mL"
+    },
+    {
+      "code": "tab'"
+    },
+    {
+      "code": "mL/hr"
+    },
+    {
+      "code": "DROP"
+    },
+    {
+      "code": "MCG/KG/MIN"
+    },
+    {
+      "code": "iu/ 0 iu"
+    },
+    {
+      "code": "Drop"
+    },
+    {
+      "code": "unit per ISS"
+    },
+    {
+      "code": "JAR"
+    },
+    {
+      "code": "mL/Day"
+    },
+    {
+      "code": "Units/kg"
+    },
+    {
+      "code": "thin strip on lower lid"
+    },
+    {
+      "code": "°C"
+    },
+    {
+      "code": "tABS"
+    },
+    {
+      "code": "mEq/200SW"
+    },
+    {
+      "code": "pL"
+    },
+    {
+      "code": "-5.86 gram"
+    },
+    {
+      "code": "units/kg/hr"
+    },
+    {
+      "code": "mL/Syringe"
+    },
+    {
+      "code": "60"
+    },
+    {
+      "code": "mL/hour"
+    },
+    {
+      "code": "units/kg/hour"
+    },
+    {
+      "code": "gtt"
+    },
+    {
+      "code": "NG/"
+    },
+    {
+      "code": "gram/mL iron"
+    },
+    {
+      "code": "mg/74mg"
+    },
+    {
+      "code": "mg/kg/hr"
+    },
+    {
+      "code": "PE (Phenytoin Sodium Equivalent)"
+    },
+    {
+      "code": "bo"
+    },
+    {
+      "code": "mg/kg/min"
+    },
+    {
+      "code": "Film"
+    },
+    {
+      "code": "TROC"
+    },
+    {
+      "code": "ug/mL"
+    },
+    {
+      "code": "61500 unit"
+    },
+    {
+      "code": "(25 mg/2.5gram)"
+    },
+    {
+      "code": "gram/15 mL"
+    },
+    {
+      "code": "pumps"
+    },
+    {
+      "code": "SOLN"
+    },
+    {
+      "code": "unit/0.72 mL"
+    },
+    {
+      "code": "mg/3ml"
+    },
+    {
+      "code": "If/0iu"
+    },
+    {
+      "code": "Cap"
+    },
+    {
+      "code": "200 unit"
+    },
+    {
+      "code": "Milligrams"
+    },
+    {
+      "code": "leaf"
+    },
+    {
+      "code": "IU/0IU"
+    },
+    {
+      "code": "% (5 mg/mL)"
+    },
+    {
+      "code": "mg/100 mL"
+    },
+    {
+      "code": "enema"
+    },
+    {
+      "code": "flinstones"
+    },
+    {
+      "code": "mg-mcg-mcg"
+    },
+    {
+      "code": "mmHg."
+    },
+    {
+      "code": "hour"
+    },
+    {
+      "code": "mg/ 82mg"
+    },
+    {
+      "code": "mcq"
+    },
+    {
+      "code": "Tablets"
+    },
+    {
+      "code": "(10 mg/mL)"
+    },
+    {
+      "code": "ng/mL"
+    },
+    {
+      "code": "pad"
+    },
+    {
+      "code": "neb"
+    },
+    {
+      "code": "CONC"
+    },
+    {
+      "code": "mcg/2.7 mL"
+    },
+    {
+      "code": "cmH2O/L/seconds"
+    },
+    {
+      "code": "IU/0U"
+    },
+    {
+      "code": "mg-35 mcg (28)"
+    },
+    {
+      "code": "ng/mL DDU"
+    },
+    {
+      "code": "MD to order daily dose"
+    },
+    {
+      "code": "10 ml"
+    },
+    {
+      "code": "Million Cells"
+    },
+    {
+      "code": "(morphine)"
+    },
+    {
+      "code": "u"
+    },
+    {
+      "code": "mg/mg"
+    },
+    {
+      "code": "GM"
+    },
+    {
+      "code": "gram/118 mL"
+    },
+    {
+      "code": "NEB"
+    },
+    {
+      "code": "(500 mg)"
+    },
+    {
+      "code": "mIU/mL"
+    },
+    {
+      "code": "mEq/kg"
+    },
+    {
+      "code": "mEq/5 mL"
+    },
+    {
+      "code": "SWAB"
+    },
+    {
+      "code": "kcal/kg"
+    },
+    {
+      "code": "mg/hour"
+    },
+    {
+      "code": "mg/3 mL"
+    },
+    {
+      "code": "per L"
+    },
+    {
+      "code": "dynes*sec/cm5"
+    },
+    {
+      "code": "30"
+    },
+    {
+      "code": "powder"
+    },
+    {
+      "code": "UNIT/L"
+    },
+    {
+      "code": "uIU/mL"
+    },
+    {
+      "code": "mg/24 hr"
+    },
+    {
+      "code": "(24 ml)"
+    },
+    {
+      "code": "mEq/1000 ml NS"
+    },
+    {
+      "code": "cap"
+    },
+    {
+      "code": "60mg"
+    },
+    {
+      "code": "STRP"
+    },
+    {
+      "code": "Dose"
+    },
+    {
+      "code": "450"
+    },
+    {
+      "code": "LOT"
+    },
+    {
+      "code": "SC"
+    },
+    {
+      "code": "iron)/5 mL"
+    },
+    {
+      "code": "mg BID"
+    },
+    {
+      "code": "insp/min"
+    },
+    {
+      "code": "Iu/0IU"
+    },
+    {
+      "code": "-125 unit"
+    },
+    {
+      "code": "mg/hr"
+    },
+    {
+      "code": "cm"
+    },
+    {
+      "code": "INCH"
+    },
+    {
+      "code": "mEq/mL"
+    },
+    {
+      "code": "mg/ 2ml"
+    },
+    {
+      "code": "cp"
+    },
+    {
+      "code": "International Units"
+    },
+    {
+      "code": "%(50 mg/5 gram)"
+    },
+    {
+      "code": "mg/gm"
+    },
+    {
+      "code": "unit/mL (70-30)"
+    },
+    {
+      "code": "mEq (1080 mg)"
+    },
+    {
+      "code": "ml/min"
+    },
+    {
+      "code": "mg iron"
+    },
+    {
+      "code": "ELIX"
+    },
+    {
+      "code": "0mg"
+    },
+    {
+      "code": "gram"
+    },
+    {
+      "code": "thin layer"
+    },
+    {
+      "code": "0mg/mg"
+    },
+    {
+      "code": "units"
+    },
+    {
+      "code": "mg/mL (2 %)"
+    },
+    {
+      "code": "PATCHES"
+    },
+    {
+      "code": "CPT"
+    },
+    {
+      "code": "1"
+    },
+    {
+      "code": "g/dL"
+    },
+    {
+      "code": "mm^3"
+    },
+    {
+      "code": "nL"
+    },
+    {
+      "code": "mV"
+    },
+    {
+      "code": "Mcg/kg/hr"
+    },
+    {
+      "code": "tube"
+    },
+    {
+      "code": "ng/mL FEU"
+    },
+    {
+      "code": "UNIT/KG"
+    },
+    {
+      "code": "mmol"
+    },
+    {
+      "code": "DOSE"
+    },
+    {
+      "code": "mg/89mg"
+    },
+    {
+      "code": "mg/68mg"
+    },
+    {
+      "code": "PO"
+    },
+    {
+      "code": "(5)/125-30(10)"
+    },
+    {
+      "code": "Mmg"
+    },
+    {
+      "code": "TUBE"
+    },
+    {
+      "code": "mg/6mL"
+    },
+    {
+      "code": "gummy"
+    },
+    {
+      "code": "mEq."
+    },
+    {
+      "code": "mg/100mg"
+    },
+    {
+      "code": "umol/L"
+    },
+    {
+      "code": "PACK"
+    },
+    {
+      "code": "mg (950 mg)"
+    },
+    {
+      "code": "billion cell"
+    }
+  ]
+}

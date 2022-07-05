@@ -1,0 +1,74 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "procedure-category",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/procedure-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">CRRT Filter Change<a name=\"procedure-category-CRRTFilterChange\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ventilation<a name=\"procedure-category-Ventilation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Peripheral Lines<a name=\"procedure-category-PeripheralLines\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Procedures<a name=\"procedure-category-Procedures\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Communication<a name=\"procedure-category-Communication\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Peritoneal Dialysis<a name=\"procedure-category-PeritonealDialysis\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Continuous Procedures<a name=\"procedure-category-ContinuousProcedures\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Significant Events<a name=\"procedure-category-SignificantEvents\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Tubes<a name=\"procedure-category-Tubes\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Intubation/Extubation<a name=\"procedure-category-Intubation.47Extubation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Dialysis<a name=\"procedure-category-Dialysis\"> </a></td></tr><tr><td style=\"white-space:nowrap\">17 - Inhaled Meds<a name=\"procedure-category-17-InhaledMeds\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Imaging<a name=\"procedure-category-Imaging\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Invasive Lines<a name=\"procedure-category-InvasiveLines\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/procedure-category",
+  "version": "0.2.4",
+  "name": "ProcedureCategory",
+  "title": "ProcedureCategory",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The procedure category codes for MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/procedure-category",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "CRRT Filter Change"
+    },
+    {
+      "code": "Ventilation"
+    },
+    {
+      "code": "Peripheral Lines"
+    },
+    {
+      "code": "Procedures"
+    },
+    {
+      "code": "Communication"
+    },
+    {
+      "code": "Peritoneal Dialysis"
+    },
+    {
+      "code": "Continuous Procedures"
+    },
+    {
+      "code": "Significant Events"
+    },
+    {
+      "code": "Tubes"
+    },
+    {
+      "code": "Intubation/Extubation"
+    },
+    {
+      "code": "Dialysis"
+    },
+    {
+      "code": "17 - Inhaled Meds"
+    },
+    {
+      "code": "Imaging"
+    },
+    {
+      "code": "Invasive Lines"
+    }
+  ]
+}

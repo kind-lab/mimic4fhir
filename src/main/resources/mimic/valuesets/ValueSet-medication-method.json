@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medication-method",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><ul><li>Include all codes defined in <a href=\"CodeSystem-medication-method.html\"><code>http://fhir.mimic.mit.edu/CodeSystem/medication-method</code></a></li></ul></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/ValueSet/medication-method",
+  "version": "0.2.4",
+  "name": "MedicationMethod",
+  "title": "MedicationMethod",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The medication delivery method for MIMIC",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.mimic.mit.edu/CodeSystem/medication-method"
+      }
+    ]
+  }
+}

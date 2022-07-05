@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "lab-flags",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/lab-flags defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">abnormal<a name=\"lab-flags-abnormal\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/lab-flags",
+  "version": "0.2.4",
+  "name": "LabFlags",
+  "title": "LabFlags",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The lab alarm flags for abnormal lab events in MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/lab-flags",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "abnormal"
+    }
+  ]
+}

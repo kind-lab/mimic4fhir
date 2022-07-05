@@ -1,0 +1,71 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "discharge-disposition",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/discharge-disposition defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">ASSISTED LIVING<a name=\"discharge-disposition-ASSISTEDLIVING\"> </a></td></tr><tr><td style=\"white-space:nowrap\">AGAINST ADVICE<a name=\"discharge-disposition-AGAINSTADVICE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DIED<a name=\"discharge-disposition-DIED\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HOSPICE<a name=\"discharge-disposition-HOSPICE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ACUTE HOSPITAL<a name=\"discharge-disposition-ACUTEHOSPITAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">REHAB<a name=\"discharge-disposition-REHAB\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OTHER FACILITY<a name=\"discharge-disposition-OTHERFACILITY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SKILLED NURSING FACILITY<a name=\"discharge-disposition-SKILLEDNURSINGFACILITY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PSYCH FACILITY<a name=\"discharge-disposition-PSYCHFACILITY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CHRONIC/LONG TERM ACUTE CARE<a name=\"discharge-disposition-CHRONIC.47LONGTERMACUTECARE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HEALTHCARE FACILITY<a name=\"discharge-disposition-HEALTHCAREFACILITY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HOME HEALTH CARE<a name=\"discharge-disposition-HOMEHEALTHCARE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HOME<a name=\"discharge-disposition-HOME\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/discharge-disposition",
+  "version": "0.2.4",
+  "name": "DischargeDisposition",
+  "title": "DischargeDisposition",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The discharge disposition for MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/discharge-disposition",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "ASSISTED LIVING"
+    },
+    {
+      "code": "AGAINST ADVICE"
+    },
+    {
+      "code": "DIED"
+    },
+    {
+      "code": "HOSPICE"
+    },
+    {
+      "code": "ACUTE HOSPITAL"
+    },
+    {
+      "code": "REHAB"
+    },
+    {
+      "code": "OTHER FACILITY"
+    },
+    {
+      "code": "SKILLED NURSING FACILITY"
+    },
+    {
+      "code": "PSYCH FACILITY"
+    },
+    {
+      "code": "CHRONIC/LONG TERM ACUTE CARE"
+    },
+    {
+      "code": "HEALTHCARE FACILITY"
+    },
+    {
+      "code": "HOME HEALTH CARE"
+    },
+    {
+      "code": "HOME"
+    }
+  ]
+}

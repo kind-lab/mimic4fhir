@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "lab-priority",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/lab-priority defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">ROUTINE<a name=\"lab-priority-ROUTINE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">STAT<a name=\"lab-priority-STAT\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/lab-priority",
+  "version": "0.2.4",
+  "name": "LabPriority",
+  "title": "LabPriority",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The priority of the lab item in MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/lab-priority",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "ROUTINE"
+    },
+    {
+      "code": "STAT"
+    }
+  ]
+}

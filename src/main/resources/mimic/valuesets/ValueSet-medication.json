@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medication",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-medication-formulary-drug-cd.html\"><code>http://fhir.mimic.mit.edu/CodeSystem/medication-formulary-drug-cd</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-medication-icu.html\"><code>http://fhir.mimic.mit.edu/CodeSystem/medication-icu</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-medication-name.html\"><code>http://fhir.mimic.mit.edu/CodeSystem/medication-name</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-medication-ndc.html\"><code>http://fhir.mimic.mit.edu/CodeSystem/medication-ndc</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-medication-poe-iv.html\"><code>http://fhir.mimic.mit.edu/CodeSystem/medication-poe-iv</code></a></li></ul></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/ValueSet/medication",
+  "version": "0.2.4",
+  "name": "Medication",
+  "title": "Medication",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "All medication codesystems combined for MIMIC. Contains medication-formulary-drug-cd, medication-ndc, medication-name, medication-poe-iv, medication-icu",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.mimic.mit.edu/CodeSystem/medication-formulary-drug-cd"
+      },
+      {
+        "system": "http://fhir.mimic.mit.edu/CodeSystem/medication-icu"
+      },
+      {
+        "system": "http://fhir.mimic.mit.edu/CodeSystem/medication-name"
+      },
+      {
+        "system": "http://fhir.mimic.mit.edu/CodeSystem/medication-ndc"
+      },
+      {
+        "system": "http://fhir.mimic.mit.edu/CodeSystem/medication-poe-iv"
+      }
+    ]
+  }
+}

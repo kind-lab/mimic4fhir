@@ -1,0 +1,89 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "services",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/services defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">TRAUM<a name=\"services-TRAUM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DENT<a name=\"services-DENT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CSURG<a name=\"services-CSURG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CMED<a name=\"services-CMED\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ORTHO<a name=\"services-ORTHO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ENT<a name=\"services-ENT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">GU<a name=\"services-GU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NMED<a name=\"services-NMED\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SURG<a name=\"services-SURG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TSURG<a name=\"services-TSURG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">GYN<a name=\"services-GYN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">VSURG<a name=\"services-VSURG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MED<a name=\"services-MED\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NSURG<a name=\"services-NSURG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PSYCH<a name=\"services-PSYCH\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OBS<a name=\"services-OBS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OMED<a name=\"services-OMED\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EYE<a name=\"services-EYE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PSURG<a name=\"services-PSURG\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/services",
+  "version": "0.2.4",
+  "name": "Services",
+  "title": "Services",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The hospital services for MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/services",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "TRAUM"
+    },
+    {
+      "code": "DENT"
+    },
+    {
+      "code": "CSURG"
+    },
+    {
+      "code": "CMED"
+    },
+    {
+      "code": "ORTHO"
+    },
+    {
+      "code": "ENT"
+    },
+    {
+      "code": "GU"
+    },
+    {
+      "code": "NMED"
+    },
+    {
+      "code": "SURG"
+    },
+    {
+      "code": "TSURG"
+    },
+    {
+      "code": "GYN"
+    },
+    {
+      "code": "VSURG"
+    },
+    {
+      "code": "MED"
+    },
+    {
+      "code": "NSURG"
+    },
+    {
+      "code": "PSYCH"
+    },
+    {
+      "code": "OBS"
+    },
+    {
+      "code": "OMED"
+    },
+    {
+      "code": "EYE"
+    },
+    {
+      "code": "PSURG"
+    }
+  ]
+}

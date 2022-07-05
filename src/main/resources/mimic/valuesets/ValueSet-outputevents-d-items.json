@@ -1,0 +1,345 @@
+{
+  "resourceType": "ValueSet",
+  "id": "outputevents-d-items",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-d-items.html\"><code>http://fhir.mimic.mit.edu/CodeSystem/d-items</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226604\">226604</a></td><td>Hemovac #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226621\">226621</a></td><td>Davol</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226602\">226602</a></td><td>Jackson Pratt #4</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226600\">226600</a></td><td>Jackson Pratt #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226624\">226624</a></td><td>Penrose #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226593\">226593</a></td><td>R Pleural #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226559\">226559</a></td><td>Foley</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226560\">226560</a></td><td>Void</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226557\">226557</a></td><td>R Ureteral Stent</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226608\">226608</a></td><td>Cerebral Subdural #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226619\">226619</a></td><td>Pigtail #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226613\">226613</a></td><td>Wound Vac #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226571\">226571</a></td><td>Emesis</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226629\">226629</a></td><td>PACU EBL</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226622\">226622</a></td><td>Red Rubber</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227488\">227488</a></td><td>GU Irrigant Volume In</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226573\">226573</a></td><td>Gastric Tube</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226588\">226588</a></td><td>Chest Tube #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226563\">226563</a></td><td>Suprapubic</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226632\">226632</a></td><td>Cath Lab</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226628\">226628</a></td><td>PACU Drains</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226614\">226614</a></td><td>Wound Vac #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227510\">227510</a></td><td>TF Residual</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229414\">229414</a></td><td>Chest Tube #4</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226564\">226564</a></td><td>R Nephrostomy</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226633\">226633</a></td><td>Pre-Admission</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226631\">226631</a></td><td>PACU Urine</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228103\">228103</a></td><td>Stool containment device placed</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227487\">227487</a></td><td>GU Irrigant Type</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226569\">226569</a></td><td>Anderson (gastric)</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226586\">226586</a></td><td>Stool Estimate</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226616\">226616</a></td><td>Anderson</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226607\">226607</a></td><td>Cerebral Ventricular #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226713\">226713</a></td><td>Incontinent/voids (estimate)</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226570\">226570</a></td><td>Blakemore</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226558\">226558</a></td><td>L Ureteral Stent</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226617\">226617</a></td><td>Sump #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226590\">226590</a></td><td>L Pleural #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227701\">227701</a></td><td>Drainage Bag</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229413\">229413</a></td><td>Chest Tube #3</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226620\">226620</a></td><td>Pigtail #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227489\">227489</a></td><td>GU Irrigant/Urine Volume Out</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226599\">226599</a></td><td>Jackson Pratt #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226579\">226579</a></td><td>Stool</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226566\">226566</a></td><td>Urine and GU Irrigant Out</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226584\">226584</a></td><td>Ileoconduit</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226606\">226606</a></td><td>Cerebral Ventricular #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226574\">226574</a></td><td>Jejunostomy</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226595\">226595</a></td><td>R Pleural #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226630\">226630</a></td><td>PACU Gastric</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226627\">226627</a></td><td>OR Urine</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226575\">226575</a></td><td>Nasogastric</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226601\">226601</a></td><td>Jackson Pratt #3</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226565\">226565</a></td><td>L Nephrostomy</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226618\">226618</a></td><td>Sump #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226626\">226626</a></td><td>OR EBL</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226623\">226623</a></td><td>Penrose #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226598\">226598</a></td><td>JP Lateral</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224458\">224458</a></td><td>Drain Output_ingr</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226592\">226592</a></td><td>Mediastinal</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226589\">226589</a></td><td>Chest Tube #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226561\">226561</a></td><td>Condom Cath</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226597\">226597</a></td><td>JP Medial</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226609\">226609</a></td><td>Cerebral Subdural #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226625\">226625</a></td><td>Tap</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226572\">226572</a></td><td>Ewald</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226591\">226591</a></td><td>L Pleural #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226582\">226582</a></td><td>Ostomy (output)</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226612\">226612</a></td><td>Pericardial</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226580\">226580</a></td><td>Fecal Bag</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226576\">226576</a></td><td>Oral Gastric</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226610\">226610</a></td><td>Lumbar</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226605\">226605</a></td><td>Hemovac #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226583\">226583</a></td><td>Rectal Tube</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226567\">226567</a></td><td>Straight Cath</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227511\">227511</a></td><td>TF Residual Output</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226603\">226603</a></td><td>T Tube</td></tr></table></li></ul></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/ValueSet/outputevents-d-items",
+  "version": "0.2.4",
+  "name": "OutputeventsDItems",
+  "title": "OutputeventsDItems",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The item codes for outputevents used in MIMIC",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.mimic.mit.edu/CodeSystem/d-items",
+        "concept": [
+          {
+            "code": "226604",
+            "display": "Hemovac #1"
+          },
+          {
+            "code": "226621",
+            "display": "Davol"
+          },
+          {
+            "code": "226602",
+            "display": "Jackson Pratt #4"
+          },
+          {
+            "code": "226600",
+            "display": "Jackson Pratt #2"
+          },
+          {
+            "code": "226624",
+            "display": "Penrose #2"
+          },
+          {
+            "code": "226593",
+            "display": "R Pleural #1"
+          },
+          {
+            "code": "226559",
+            "display": "Foley"
+          },
+          {
+            "code": "226560",
+            "display": "Void"
+          },
+          {
+            "code": "226557",
+            "display": "R Ureteral Stent"
+          },
+          {
+            "code": "226608",
+            "display": "Cerebral Subdural #1"
+          },
+          {
+            "code": "226619",
+            "display": "Pigtail #1"
+          },
+          {
+            "code": "226613",
+            "display": "Wound Vac #1"
+          },
+          {
+            "code": "226571",
+            "display": "Emesis"
+          },
+          {
+            "code": "226629",
+            "display": "PACU EBL"
+          },
+          {
+            "code": "226622",
+            "display": "Red Rubber"
+          },
+          {
+            "code": "227488",
+            "display": "GU Irrigant Volume In"
+          },
+          {
+            "code": "226573",
+            "display": "Gastric Tube"
+          },
+          {
+            "code": "226588",
+            "display": "Chest Tube #1"
+          },
+          {
+            "code": "226563",
+            "display": "Suprapubic"
+          },
+          {
+            "code": "226632",
+            "display": "Cath Lab"
+          },
+          {
+            "code": "226628",
+            "display": "PACU Drains"
+          },
+          {
+            "code": "226614",
+            "display": "Wound Vac #2"
+          },
+          {
+            "code": "227510",
+            "display": "TF Residual"
+          },
+          {
+            "code": "229414",
+            "display": "Chest Tube #4"
+          },
+          {
+            "code": "226564",
+            "display": "R Nephrostomy"
+          },
+          {
+            "code": "226633",
+            "display": "Pre-Admission"
+          },
+          {
+            "code": "226631",
+            "display": "PACU Urine"
+          },
+          {
+            "code": "228103",
+            "display": "Stool containment device placed"
+          },
+          {
+            "code": "227487",
+            "display": "GU Irrigant Type"
+          },
+          {
+            "code": "226569",
+            "display": "Anderson (gastric)"
+          },
+          {
+            "code": "226586",
+            "display": "Stool Estimate"
+          },
+          {
+            "code": "226616",
+            "display": "Anderson"
+          },
+          {
+            "code": "226607",
+            "display": "Cerebral Ventricular #2"
+          },
+          {
+            "code": "226713",
+            "display": "Incontinent/voids (estimate)"
+          },
+          {
+            "code": "226570",
+            "display": "Blakemore"
+          },
+          {
+            "code": "226558",
+            "display": "L Ureteral Stent"
+          },
+          {
+            "code": "226617",
+            "display": "Sump #1"
+          },
+          {
+            "code": "226590",
+            "display": "L Pleural #1"
+          },
+          {
+            "code": "227701",
+            "display": "Drainage Bag"
+          },
+          {
+            "code": "229413",
+            "display": "Chest Tube #3"
+          },
+          {
+            "code": "226620",
+            "display": "Pigtail #2"
+          },
+          {
+            "code": "227489",
+            "display": "GU Irrigant/Urine Volume Out"
+          },
+          {
+            "code": "226599",
+            "display": "Jackson Pratt #1"
+          },
+          {
+            "code": "226579",
+            "display": "Stool"
+          },
+          {
+            "code": "226566",
+            "display": "Urine and GU Irrigant Out"
+          },
+          {
+            "code": "226584",
+            "display": "Ileoconduit"
+          },
+          {
+            "code": "226606",
+            "display": "Cerebral Ventricular #1"
+          },
+          {
+            "code": "226574",
+            "display": "Jejunostomy"
+          },
+          {
+            "code": "226595",
+            "display": "R Pleural #2"
+          },
+          {
+            "code": "226630",
+            "display": "PACU Gastric"
+          },
+          {
+            "code": "226627",
+            "display": "OR Urine"
+          },
+          {
+            "code": "226575",
+            "display": "Nasogastric"
+          },
+          {
+            "code": "226601",
+            "display": "Jackson Pratt #3"
+          },
+          {
+            "code": "226565",
+            "display": "L Nephrostomy"
+          },
+          {
+            "code": "226618",
+            "display": "Sump #2"
+          },
+          {
+            "code": "226626",
+            "display": "OR EBL"
+          },
+          {
+            "code": "226623",
+            "display": "Penrose #1"
+          },
+          {
+            "code": "226598",
+            "display": "JP Lateral"
+          },
+          {
+            "code": "224458",
+            "display": "Drain Output_ingr"
+          },
+          {
+            "code": "226592",
+            "display": "Mediastinal"
+          },
+          {
+            "code": "226589",
+            "display": "Chest Tube #2"
+          },
+          {
+            "code": "226561",
+            "display": "Condom Cath"
+          },
+          {
+            "code": "226597",
+            "display": "JP Medial"
+          },
+          {
+            "code": "226609",
+            "display": "Cerebral Subdural #2"
+          },
+          {
+            "code": "226625",
+            "display": "Tap"
+          },
+          {
+            "code": "226572",
+            "display": "Ewald"
+          },
+          {
+            "code": "226591",
+            "display": "L Pleural #2"
+          },
+          {
+            "code": "226582",
+            "display": "Ostomy (output)"
+          },
+          {
+            "code": "226612",
+            "display": "Pericardial"
+          },
+          {
+            "code": "226580",
+            "display": "Fecal Bag"
+          },
+          {
+            "code": "226576",
+            "display": "Oral Gastric"
+          },
+          {
+            "code": "226610",
+            "display": "Lumbar"
+          },
+          {
+            "code": "226605",
+            "display": "Hemovac #2"
+          },
+          {
+            "code": "226583",
+            "display": "Rectal Tube"
+          },
+          {
+            "code": "226567",
+            "display": "Straight Cath"
+          },
+          {
+            "code": "227511",
+            "display": "TF Residual Output"
+          },
+          {
+            "code": "226603",
+            "display": "T Tube"
+          }
+        ]
+      }
+    ]
+  }
+}

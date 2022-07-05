@@ -1,0 +1,1928 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-icu",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/medication-icu defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">220861<a name=\"medication-icu-220861\"> </a></td><td>Albumin (Human) 20%</td></tr><tr><td style=\"white-space:nowrap\">220862<a name=\"medication-icu-220862\"> </a></td><td>Albumin 25%</td></tr><tr><td style=\"white-space:nowrap\">220863<a name=\"medication-icu-220863\"> </a></td><td>Albumin (Human) 4%</td></tr><tr><td style=\"white-space:nowrap\">220864<a name=\"medication-icu-220864\"> </a></td><td>Albumin 5%</td></tr><tr><td style=\"white-space:nowrap\">220865<a name=\"medication-icu-220865\"> </a></td><td>Aquadestila</td></tr><tr><td style=\"white-space:nowrap\">220866<a name=\"medication-icu-220866\"> </a></td><td>Darrow</td></tr><tr><td style=\"white-space:nowrap\">220949<a name=\"medication-icu-220949\"> </a></td><td>Dextrose 5%</td></tr><tr><td style=\"white-space:nowrap\">220950<a name=\"medication-icu-220950\"> </a></td><td>Dextrose 10%</td></tr><tr><td style=\"white-space:nowrap\">220951<a name=\"medication-icu-220951\"> </a></td><td>Dextrose 20.%</td></tr><tr><td style=\"white-space:nowrap\">220952<a name=\"medication-icu-220952\"> </a></td><td>Dextrose 50%</td></tr><tr><td style=\"white-space:nowrap\">220953<a name=\"medication-icu-220953\"> </a></td><td>Ringers</td></tr><tr><td style=\"white-space:nowrap\">220954<a name=\"medication-icu-220954\"> </a></td><td>Saline 0,9%</td></tr><tr><td style=\"white-space:nowrap\">220955<a name=\"medication-icu-220955\"> </a></td><td>Ringers Lactate</td></tr><tr><td style=\"white-space:nowrap\">220956<a name=\"medication-icu-220956\"> </a></td><td>Ringers Acetate</td></tr><tr><td style=\"white-space:nowrap\">220958<a name=\"medication-icu-220958\"> </a></td><td>Saline 0,255%</td></tr><tr><td style=\"white-space:nowrap\">220959<a name=\"medication-icu-220959\"> </a></td><td>Saline 0,3%</td></tr><tr><td style=\"white-space:nowrap\">220960<a name=\"medication-icu-220960\"> </a></td><td>Saline 0,45%</td></tr><tr><td style=\"white-space:nowrap\">220961<a name=\"medication-icu-220961\"> </a></td><td>Saline 0,65%</td></tr><tr><td style=\"white-space:nowrap\">220962<a name=\"medication-icu-220962\"> </a></td><td>Saline 3%</td></tr><tr><td style=\"white-space:nowrap\">220963<a name=\"medication-icu-220963\"> </a></td><td>Dextrose 4,3% / Saline 0,18%</td></tr><tr><td style=\"white-space:nowrap\">220964<a name=\"medication-icu-220964\"> </a></td><td>Dextrose 5% / Saline 0,9%</td></tr><tr><td style=\"white-space:nowrap\">220965<a name=\"medication-icu-220965\"> </a></td><td>Dextrose 5% / Saline 0,45%</td></tr><tr><td style=\"white-space:nowrap\">220966<a name=\"medication-icu-220966\"> </a></td><td>Dextrose 2,5% / Saline 0,45%</td></tr><tr><td style=\"white-space:nowrap\">220967<a name=\"medication-icu-220967\"> </a></td><td>Dextrose 5% / Ringers Lactate</td></tr><tr><td style=\"white-space:nowrap\">220968<a name=\"medication-icu-220968\"> </a></td><td>Dextrose 10% / Ringers Lactate</td></tr><tr><td style=\"white-space:nowrap\">220969<a name=\"medication-icu-220969\"> </a></td><td>Filtered erytrocytes</td></tr><tr><td style=\"white-space:nowrap\">220970<a name=\"medication-icu-220970\"> </a></td><td>Fresh Frozen Plasma</td></tr><tr><td style=\"white-space:nowrap\">220971<a name=\"medication-icu-220971\"> </a></td><td>ESDEP (Solvent / Detergent Virus-Inactivated Plasma)</td></tr><tr><td style=\"white-space:nowrap\">220972<a name=\"medication-icu-220972\"> </a></td><td>Octoplas</td></tr><tr><td style=\"white-space:nowrap\">220973<a name=\"medication-icu-220973\"> </a></td><td>Gelofusine</td></tr><tr><td style=\"white-space:nowrap\">220975<a name=\"medication-icu-220975\"> </a></td><td>Pentastarch 6% (HAES, Hemohes)</td></tr><tr><td style=\"white-space:nowrap\">220977<a name=\"medication-icu-220977\"> </a></td><td>Pentastarch 10% (HAES, Hemohes)</td></tr><tr><td style=\"white-space:nowrap\">221203<a name=\"medication-icu-221203\"> </a></td><td>Nutrini</td></tr><tr><td style=\"white-space:nowrap\">220979<a name=\"medication-icu-220979\"> </a></td><td>Hetastarch 6% (Saline 0,9%)</td></tr><tr><td style=\"white-space:nowrap\">220980<a name=\"medication-icu-220980\"> </a></td><td>Hextend (Hetastarch 6% in Lactate)</td></tr><tr><td style=\"white-space:nowrap\">220984<a name=\"medication-icu-220984\"> </a></td><td>Intralipid 10%</td></tr><tr><td style=\"white-space:nowrap\">220985<a name=\"medication-icu-220985\"> </a></td><td>Intralipid 20%</td></tr><tr><td style=\"white-space:nowrap\">220986<a name=\"medication-icu-220986\"> </a></td><td>Intralipid 30%</td></tr><tr><td style=\"white-space:nowrap\">220988<a name=\"medication-icu-220988\"> </a></td><td>Mannitol 5%</td></tr><tr><td style=\"white-space:nowrap\">220989<a name=\"medication-icu-220989\"> </a></td><td>Mannitol 10%</td></tr><tr><td style=\"white-space:nowrap\">220990<a name=\"medication-icu-220990\"> </a></td><td>Mannitol 15%</td></tr><tr><td style=\"white-space:nowrap\">220991<a name=\"medication-icu-220991\"> </a></td><td>Mannitol 20%</td></tr><tr><td style=\"white-space:nowrap\">220992<a name=\"medication-icu-220992\"> </a></td><td>Mannitol 25%</td></tr><tr><td style=\"white-space:nowrap\">220995<a name=\"medication-icu-220995\"> </a></td><td>Sodium Bicarbonate 8.4%</td></tr><tr><td style=\"white-space:nowrap\">220996<a name=\"medication-icu-220996\"> </a></td><td>Packed Red Cells</td></tr><tr><td style=\"white-space:nowrap\">221000<a name=\"medication-icu-221000\"> </a></td><td>Dextran 40 / Dextrose 5% (Gentran - Rheomacrodex)</td></tr><tr><td style=\"white-space:nowrap\">221001<a name=\"medication-icu-221001\"> </a></td><td>Dextran 40 / Saline 0,9% (Gentran - Rheomacrodex)</td></tr><tr><td style=\"white-space:nowrap\">221002<a name=\"medication-icu-221002\"> </a></td><td>Dextran 70 / Dextrose 5% (Gentran - Macrodex - RescueFlow)</td></tr><tr><td style=\"white-space:nowrap\">221003<a name=\"medication-icu-221003\"> </a></td><td>Dextran 70 / Saline 0,9% (Gentran - Macrodex - RescueFlow)</td></tr><tr><td style=\"white-space:nowrap\">221004<a name=\"medication-icu-221004\"> </a></td><td>Thrombocyte suspension</td></tr><tr><td style=\"white-space:nowrap\">221005<a name=\"medication-icu-221005\"> </a></td><td>Vamin 14 Electrolyte free</td></tr><tr><td style=\"white-space:nowrap\">221006<a name=\"medication-icu-221006\"> </a></td><td>Vamin 18 Electrolyte free</td></tr><tr><td style=\"white-space:nowrap\">221007<a name=\"medication-icu-221007\"> </a></td><td>Vamin 14 Plus electrolytes</td></tr><tr><td style=\"white-space:nowrap\">221008<a name=\"medication-icu-221008\"> </a></td><td>Vamin Novum 18</td></tr><tr><td style=\"white-space:nowrap\">221009<a name=\"medication-icu-221009\"> </a></td><td>Vivinox T.E.N.</td></tr><tr><td style=\"white-space:nowrap\">221011<a name=\"medication-icu-221011\"> </a></td><td>Vivonex Plus</td></tr><tr><td style=\"white-space:nowrap\">221012<a name=\"medication-icu-221012\"> </a></td><td>Vivonex Pediatric</td></tr><tr><td style=\"white-space:nowrap\">221013<a name=\"medication-icu-221013\"> </a></td><td>Whole Blood</td></tr><tr><td style=\"white-space:nowrap\">221014<a name=\"medication-icu-221014\"> </a></td><td>Dextrose 19%</td></tr><tr><td style=\"white-space:nowrap\">221015<a name=\"medication-icu-221015\"> </a></td><td>Ensure</td></tr><tr><td style=\"white-space:nowrap\">221016<a name=\"medication-icu-221016\"> </a></td><td>Ensure Plus</td></tr><tr><td style=\"white-space:nowrap\">221017<a name=\"medication-icu-221017\"> </a></td><td>Dextrose 2,5%</td></tr><tr><td style=\"white-space:nowrap\">221018<a name=\"medication-icu-221018\"> </a></td><td>Nutrison Standard</td></tr><tr><td style=\"white-space:nowrap\">221020<a name=\"medication-icu-221020\"> </a></td><td>Nutrison concentrated</td></tr><tr><td style=\"white-space:nowrap\">221021<a name=\"medication-icu-221021\"> </a></td><td>Nutrison Energy</td></tr><tr><td style=\"white-space:nowrap\">221022<a name=\"medication-icu-221022\"> </a></td><td>Nutrison Energy Multi Fibre</td></tr><tr><td style=\"white-space:nowrap\">221024<a name=\"medication-icu-221024\"> </a></td><td>Nutrison Multi Fibre</td></tr><tr><td style=\"white-space:nowrap\">221025<a name=\"medication-icu-221025\"> </a></td><td>Pediasure</td></tr><tr><td style=\"white-space:nowrap\">221027<a name=\"medication-icu-221027\"> </a></td><td>Pulmocare</td></tr><tr><td style=\"white-space:nowrap\">221028<a name=\"medication-icu-221028\"> </a></td><td>Stresson</td></tr><tr><td style=\"white-space:nowrap\">221029<a name=\"medication-icu-221029\"> </a></td><td>Osmolite</td></tr><tr><td style=\"white-space:nowrap\">221036<a name=\"medication-icu-221036\"> </a></td><td>Nutren Renal (Full)</td></tr><tr><td style=\"white-space:nowrap\">221037<a name=\"medication-icu-221037\"> </a></td><td>Jevity 1.2</td></tr><tr><td style=\"white-space:nowrap\">221038<a name=\"medication-icu-221038\"> </a></td><td>Jevity</td></tr><tr><td style=\"white-space:nowrap\">221193<a name=\"medication-icu-221193\"> </a></td><td>Auto transfusion</td></tr><tr><td style=\"white-space:nowrap\">221195<a name=\"medication-icu-221195\"> </a></td><td>Hexastarch 6% (Elohaes) / Saline 0,9%</td></tr><tr><td style=\"white-space:nowrap\">221196<a name=\"medication-icu-221196\"> </a></td><td>Fresubin Original</td></tr><tr><td style=\"white-space:nowrap\">221197<a name=\"medication-icu-221197\"> </a></td><td>Fresubin Original Fibre</td></tr><tr><td style=\"white-space:nowrap\">221198<a name=\"medication-icu-221198\"> </a></td><td>Fresubin Energy</td></tr><tr><td style=\"white-space:nowrap\">221199<a name=\"medication-icu-221199\"> </a></td><td>Fresubin Energy Fibre</td></tr><tr><td style=\"white-space:nowrap\">221200<a name=\"medication-icu-221200\"> </a></td><td>Fibrini</td></tr><tr><td style=\"white-space:nowrap\">221201<a name=\"medication-icu-221201\"> </a></td><td>Fibrini Energy</td></tr><tr><td style=\"white-space:nowrap\">221202<a name=\"medication-icu-221202\"> </a></td><td>Infatrini</td></tr><tr><td style=\"white-space:nowrap\">221204<a name=\"medication-icu-221204\"> </a></td><td>Tentrini</td></tr><tr><td style=\"white-space:nowrap\">221205<a name=\"medication-icu-221205\"> </a></td><td>Nutrison pre</td></tr><tr><td style=\"white-space:nowrap\">221206<a name=\"medication-icu-221206\"> </a></td><td>Novasource</td></tr><tr><td style=\"white-space:nowrap\">221207<a name=\"medication-icu-221207\"> </a></td><td>Impact (Full)</td></tr><tr><td style=\"white-space:nowrap\">221208<a name=\"medication-icu-221208\"> </a></td><td>Normosol</td></tr><tr><td style=\"white-space:nowrap\">221209<a name=\"medication-icu-221209\"> </a></td><td>Peptisorb</td></tr><tr><td style=\"white-space:nowrap\">221210<a name=\"medication-icu-221210\"> </a></td><td>Suplena</td></tr><tr><td style=\"white-space:nowrap\">221211<a name=\"medication-icu-221211\"> </a></td><td>Sodium Bicarbonate 1,4%</td></tr><tr><td style=\"white-space:nowrap\">221212<a name=\"medication-icu-221212\"> </a></td><td>Saline 0,18%</td></tr><tr><td style=\"white-space:nowrap\">221213<a name=\"medication-icu-221213\"> </a></td><td>Saline 30%</td></tr><tr><td style=\"white-space:nowrap\">221261<a name=\"medication-icu-221261\"> </a></td><td>Abciximab (Reopro)</td></tr><tr><td style=\"white-space:nowrap\">221282<a name=\"medication-icu-221282\"> </a></td><td>Adenosine</td></tr><tr><td style=\"white-space:nowrap\">221289<a name=\"medication-icu-221289\"> </a></td><td>Epinephrine</td></tr><tr><td style=\"white-space:nowrap\">221319<a name=\"medication-icu-221319\"> </a></td><td>Alteplase (TPA)</td></tr><tr><td style=\"white-space:nowrap\">221342<a name=\"medication-icu-221342\"> </a></td><td>Aminophylline</td></tr><tr><td style=\"white-space:nowrap\">221347<a name=\"medication-icu-221347\"> </a></td><td>Amiodarone</td></tr><tr><td style=\"white-space:nowrap\">221385<a name=\"medication-icu-221385\"> </a></td><td>Lorazepam (Ativan)</td></tr><tr><td style=\"white-space:nowrap\">221393<a name=\"medication-icu-221393\"> </a></td><td>Atropine</td></tr><tr><td style=\"white-space:nowrap\">221429<a name=\"medication-icu-221429\"> </a></td><td>Esmolol</td></tr><tr><td style=\"white-space:nowrap\">221456<a name=\"medication-icu-221456\"> </a></td><td>Calcium Gluconate</td></tr><tr><td style=\"white-space:nowrap\">221468<a name=\"medication-icu-221468\"> </a></td><td>Diltiazem</td></tr><tr><td style=\"white-space:nowrap\">221555<a name=\"medication-icu-221555\"> </a></td><td>Cisatracurium</td></tr><tr><td style=\"white-space:nowrap\">221623<a name=\"medication-icu-221623\"> </a></td><td>Diazepam (Valium)</td></tr><tr><td style=\"white-space:nowrap\">221653<a name=\"medication-icu-221653\"> </a></td><td>Dobutamine</td></tr><tr><td style=\"white-space:nowrap\">221662<a name=\"medication-icu-221662\"> </a></td><td>Dopamine</td></tr><tr><td style=\"white-space:nowrap\">221668<a name=\"medication-icu-221668\"> </a></td><td>Midazolam (Versed)</td></tr><tr><td style=\"white-space:nowrap\">221689<a name=\"medication-icu-221689\"> </a></td><td>Drotrecogin (Xigris)</td></tr><tr><td style=\"white-space:nowrap\">221712<a name=\"medication-icu-221712\"> </a></td><td>Ketamine</td></tr><tr><td style=\"white-space:nowrap\">221733<a name=\"medication-icu-221733\"> </a></td><td>Factor VIII</td></tr><tr><td style=\"white-space:nowrap\">221744<a name=\"medication-icu-221744\"> </a></td><td>Fentanyl</td></tr><tr><td style=\"white-space:nowrap\">221749<a name=\"medication-icu-221749\"> </a></td><td>Phenylephrine</td></tr><tr><td style=\"white-space:nowrap\">221794<a name=\"medication-icu-221794\"> </a></td><td>Furosemide (Lasix)</td></tr><tr><td style=\"white-space:nowrap\">221824<a name=\"medication-icu-221824\"> </a></td><td>Haloperidol (Haldol)</td></tr><tr><td style=\"white-space:nowrap\">221828<a name=\"medication-icu-221828\"> </a></td><td>Hydralazine</td></tr><tr><td style=\"white-space:nowrap\">221833<a name=\"medication-icu-221833\"> </a></td><td>Hydromorphone (Dilaudid)</td></tr><tr><td style=\"white-space:nowrap\">221892<a name=\"medication-icu-221892\"> </a></td><td>Lepirudin</td></tr><tr><td style=\"white-space:nowrap\">221906<a name=\"medication-icu-221906\"> </a></td><td>Norepinephrine</td></tr><tr><td style=\"white-space:nowrap\">221986<a name=\"medication-icu-221986\"> </a></td><td>Milrinone</td></tr><tr><td style=\"white-space:nowrap\">222011<a name=\"medication-icu-222011\"> </a></td><td>Magnesium Sulfate</td></tr><tr><td style=\"white-space:nowrap\">222021<a name=\"medication-icu-222021\"> </a></td><td>Naloxone (Narcan)</td></tr><tr><td style=\"white-space:nowrap\">222037<a name=\"medication-icu-222037\"> </a></td><td>Nesiritide</td></tr><tr><td style=\"white-space:nowrap\">222042<a name=\"medication-icu-222042\"> </a></td><td>Nicardipine</td></tr><tr><td style=\"white-space:nowrap\">222051<a name=\"medication-icu-222051\"> </a></td><td>Nitroprusside</td></tr><tr><td style=\"white-space:nowrap\">222056<a name=\"medication-icu-222056\"> </a></td><td>Nitroglycerin</td></tr><tr><td style=\"white-space:nowrap\">222062<a name=\"medication-icu-222062\"> </a></td><td>Vecuronium</td></tr><tr><td style=\"white-space:nowrap\">222139<a name=\"medication-icu-222139\"> </a></td><td>Potassium ACEtate</td></tr><tr><td style=\"white-space:nowrap\">222151<a name=\"medication-icu-222151\"> </a></td><td>Procainamide</td></tr><tr><td style=\"white-space:nowrap\">222168<a name=\"medication-icu-222168\"> </a></td><td>Propofol</td></tr><tr><td style=\"white-space:nowrap\">222190<a name=\"medication-icu-222190\"> </a></td><td>Ranitidine</td></tr><tr><td style=\"white-space:nowrap\">222315<a name=\"medication-icu-222315\"> </a></td><td>Vasopressin</td></tr><tr><td style=\"white-space:nowrap\">222318<a name=\"medication-icu-222318\"> </a></td><td>Verapamil</td></tr><tr><td style=\"white-space:nowrap\">223257<a name=\"medication-icu-223257\"> </a></td><td>Insulin - 70/30</td></tr><tr><td style=\"white-space:nowrap\">223258<a name=\"medication-icu-223258\"> </a></td><td>Insulin - Regular</td></tr><tr><td style=\"white-space:nowrap\">223259<a name=\"medication-icu-223259\"> </a></td><td>Insulin - NPH</td></tr><tr><td style=\"white-space:nowrap\">223260<a name=\"medication-icu-223260\"> </a></td><td>Insulin - Glargine</td></tr><tr><td style=\"white-space:nowrap\">223261<a name=\"medication-icu-223261\"> </a></td><td>Insulin - Humalog 75/25</td></tr><tr><td style=\"white-space:nowrap\">223262<a name=\"medication-icu-223262\"> </a></td><td>Insulin - Humalog</td></tr><tr><td style=\"white-space:nowrap\">225877<a name=\"medication-icu-225877\"> </a></td><td>Isoniazid</td></tr><tr><td style=\"white-space:nowrap\">225147<a name=\"medication-icu-225147\"> </a></td><td>Argatroban</td></tr><tr><td style=\"white-space:nowrap\">225148<a name=\"medication-icu-225148\"> </a></td><td>Bivalirudin (Angiomax)</td></tr><tr><td style=\"white-space:nowrap\">225150<a name=\"medication-icu-225150\"> </a></td><td>Dexmedetomidine (Precedex)</td></tr><tr><td style=\"white-space:nowrap\">225151<a name=\"medication-icu-225151\"> </a></td><td>Eptifibatide (Integrilin)</td></tr><tr><td style=\"white-space:nowrap\">225152<a name=\"medication-icu-225152\"> </a></td><td>Heparin Sodium</td></tr><tr><td style=\"white-space:nowrap\">225153<a name=\"medication-icu-225153\"> </a></td><td>Labetalol</td></tr><tr><td style=\"white-space:nowrap\">225154<a name=\"medication-icu-225154\"> </a></td><td>Morphine Sulfate</td></tr><tr><td style=\"white-space:nowrap\">225155<a name=\"medication-icu-225155\"> </a></td><td>Octreotide</td></tr><tr><td style=\"white-space:nowrap\">225156<a name=\"medication-icu-225156\"> </a></td><td>Pentobarbital</td></tr><tr><td style=\"white-space:nowrap\">225157<a name=\"medication-icu-225157\"> </a></td><td>Tirofiban (Aggrastat)</td></tr><tr><td style=\"white-space:nowrap\">225158<a name=\"medication-icu-225158\"> </a></td><td>NaCl 0.9%</td></tr><tr><td style=\"white-space:nowrap\">225159<a name=\"medication-icu-225159\"> </a></td><td>NaCl 0.45%</td></tr><tr><td style=\"white-space:nowrap\">225161<a name=\"medication-icu-225161\"> </a></td><td>NaCl 3% (Hypertonic Saline)</td></tr><tr><td style=\"white-space:nowrap\">225162<a name=\"medication-icu-225162\"> </a></td><td>Prismasate K2</td></tr><tr><td style=\"white-space:nowrap\">225163<a name=\"medication-icu-225163\"> </a></td><td>Prismasate K4</td></tr><tr><td style=\"white-space:nowrap\">225164<a name=\"medication-icu-225164\"> </a></td><td>Trisodium Citrate 0.4%</td></tr><tr><td style=\"white-space:nowrap\">225165<a name=\"medication-icu-225165\"> </a></td><td>Bicarbonate Base</td></tr><tr><td style=\"white-space:nowrap\">225166<a name=\"medication-icu-225166\"> </a></td><td>Potassium Chloride</td></tr><tr><td style=\"white-space:nowrap\">225167<a name=\"medication-icu-225167\"> </a></td><td>Hydrochloric Acid - HCL</td></tr><tr><td style=\"white-space:nowrap\">225168<a name=\"medication-icu-225168\"> </a></td><td>Packed Red Blood Cells</td></tr><tr><td style=\"white-space:nowrap\">225170<a name=\"medication-icu-225170\"> </a></td><td>Platelets</td></tr><tr><td style=\"white-space:nowrap\">225171<a name=\"medication-icu-225171\"> </a></td><td>Cryoprecipitate</td></tr><tr><td style=\"white-space:nowrap\">225173<a name=\"medication-icu-225173\"> </a></td><td>Cell Saver</td></tr><tr><td style=\"white-space:nowrap\">225174<a name=\"medication-icu-225174\"> </a></td><td>Hetastarch (Hespan) 6%</td></tr><tr><td style=\"white-space:nowrap\">225879<a name=\"medication-icu-225879\"> </a></td><td>Levofloxacin</td></tr><tr><td style=\"white-space:nowrap\">225881<a name=\"medication-icu-225881\"> </a></td><td>Linezolid</td></tr><tr><td style=\"white-space:nowrap\">225882<a name=\"medication-icu-225882\"> </a></td><td>Mefloquine</td></tr><tr><td style=\"white-space:nowrap\">225795<a name=\"medication-icu-225795\"> </a></td><td>Dextran 40</td></tr><tr><td style=\"white-space:nowrap\">225796<a name=\"medication-icu-225796\"> </a></td><td>Dextran 70</td></tr><tr><td style=\"white-space:nowrap\">225797<a name=\"medication-icu-225797\"> </a></td><td>Free Water</td></tr><tr><td style=\"white-space:nowrap\">225798<a name=\"medication-icu-225798\"> </a></td><td>Vancomycin</td></tr><tr><td style=\"white-space:nowrap\">225799<a name=\"medication-icu-225799\"> </a></td><td>Gastric Meds</td></tr><tr><td style=\"white-space:nowrap\">225801<a name=\"medication-icu-225801\"> </a></td><td>Lipids 20%</td></tr><tr><td style=\"white-space:nowrap\">225823<a name=\"medication-icu-225823\"> </a></td><td>D5 1/2NS</td></tr><tr><td style=\"white-space:nowrap\">225825<a name=\"medication-icu-225825\"> </a></td><td>D5NS</td></tr><tr><td style=\"white-space:nowrap\">225827<a name=\"medication-icu-225827\"> </a></td><td>D5LR</td></tr><tr><td style=\"white-space:nowrap\">225828<a name=\"medication-icu-225828\"> </a></td><td>LR</td></tr><tr><td style=\"white-space:nowrap\">225830<a name=\"medication-icu-225830\"> </a></td><td>Multivitamins</td></tr><tr><td style=\"white-space:nowrap\">225832<a name=\"medication-icu-225832\"> </a></td><td>Folic Acid</td></tr><tr><td style=\"white-space:nowrap\">225833<a name=\"medication-icu-225833\"> </a></td><td>Thiamine</td></tr><tr><td style=\"white-space:nowrap\">225834<a name=\"medication-icu-225834\"> </a></td><td>K Phos</td></tr><tr><td style=\"white-space:nowrap\">225835<a name=\"medication-icu-225835\"> </a></td><td>Na Phos</td></tr><tr><td style=\"white-space:nowrap\">225837<a name=\"medication-icu-225837\"> </a></td><td>Acyclovir</td></tr><tr><td style=\"white-space:nowrap\">225838<a name=\"medication-icu-225838\"> </a></td><td>Ambisome</td></tr><tr><td style=\"white-space:nowrap\">225840<a name=\"medication-icu-225840\"> </a></td><td>Amikacin</td></tr><tr><td style=\"white-space:nowrap\">225842<a name=\"medication-icu-225842\"> </a></td><td>Ampicillin</td></tr><tr><td style=\"white-space:nowrap\">225843<a name=\"medication-icu-225843\"> </a></td><td>Ampicillin/Sulbactam (Unasyn)</td></tr><tr><td style=\"white-space:nowrap\">225844<a name=\"medication-icu-225844\"> </a></td><td>Atovaquone</td></tr><tr><td style=\"white-space:nowrap\">225845<a name=\"medication-icu-225845\"> </a></td><td>Azithromycin</td></tr><tr><td style=\"white-space:nowrap\">225847<a name=\"medication-icu-225847\"> </a></td><td>Aztreonam</td></tr><tr><td style=\"white-space:nowrap\">225848<a name=\"medication-icu-225848\"> </a></td><td>Caspofungin</td></tr><tr><td style=\"white-space:nowrap\">225850<a name=\"medication-icu-225850\"> </a></td><td>Cefazolin</td></tr><tr><td style=\"white-space:nowrap\">225851<a name=\"medication-icu-225851\"> </a></td><td>Cefepime</td></tr><tr><td style=\"white-space:nowrap\">225853<a name=\"medication-icu-225853\"> </a></td><td>Ceftazidime</td></tr><tr><td style=\"white-space:nowrap\">225855<a name=\"medication-icu-225855\"> </a></td><td>Ceftriaxone</td></tr><tr><td style=\"white-space:nowrap\">225857<a name=\"medication-icu-225857\"> </a></td><td>Chloroquine</td></tr><tr><td style=\"white-space:nowrap\">225859<a name=\"medication-icu-225859\"> </a></td><td>Ciprofloxacin</td></tr><tr><td style=\"white-space:nowrap\">225860<a name=\"medication-icu-225860\"> </a></td><td>Clindamycin</td></tr><tr><td style=\"white-space:nowrap\">225862<a name=\"medication-icu-225862\"> </a></td><td>Colistin</td></tr><tr><td style=\"white-space:nowrap\">225863<a name=\"medication-icu-225863\"> </a></td><td>Daptomycin</td></tr><tr><td style=\"white-space:nowrap\">225865<a name=\"medication-icu-225865\"> </a></td><td>Doxycycline</td></tr><tr><td style=\"white-space:nowrap\">225866<a name=\"medication-icu-225866\"> </a></td><td>Erythromycin</td></tr><tr><td style=\"white-space:nowrap\">225868<a name=\"medication-icu-225868\"> </a></td><td>Ethambutol</td></tr><tr><td style=\"white-space:nowrap\">225869<a name=\"medication-icu-225869\"> </a></td><td>Fluconazole</td></tr><tr><td style=\"white-space:nowrap\">225871<a name=\"medication-icu-225871\"> </a></td><td>Foscarnet</td></tr><tr><td style=\"white-space:nowrap\">225873<a name=\"medication-icu-225873\"> </a></td><td>Gancyclovir</td></tr><tr><td style=\"white-space:nowrap\">225875<a name=\"medication-icu-225875\"> </a></td><td>Gentamicin</td></tr><tr><td style=\"white-space:nowrap\">225876<a name=\"medication-icu-225876\"> </a></td><td>Imipenem/Cilastatin</td></tr><tr><td style=\"white-space:nowrap\">225883<a name=\"medication-icu-225883\"> </a></td><td>Meropenem</td></tr><tr><td style=\"white-space:nowrap\">225884<a name=\"medication-icu-225884\"> </a></td><td>Metronidazole</td></tr><tr><td style=\"white-space:nowrap\">225885<a name=\"medication-icu-225885\"> </a></td><td>Micafungin</td></tr><tr><td style=\"white-space:nowrap\">225886<a name=\"medication-icu-225886\"> </a></td><td>Moxifloxacin</td></tr><tr><td style=\"white-space:nowrap\">225888<a name=\"medication-icu-225888\"> </a></td><td>Nafcillin</td></tr><tr><td style=\"white-space:nowrap\">225889<a name=\"medication-icu-225889\"> </a></td><td>Oxacillin</td></tr><tr><td style=\"white-space:nowrap\">225890<a name=\"medication-icu-225890\"> </a></td><td>Penicillin G potassium</td></tr><tr><td style=\"white-space:nowrap\">225892<a name=\"medication-icu-225892\"> </a></td><td>Piperacillin</td></tr><tr><td style=\"white-space:nowrap\">225893<a name=\"medication-icu-225893\"> </a></td><td>Piperacillin/Tazobactam (Zosyn)</td></tr><tr><td style=\"white-space:nowrap\">225895<a name=\"medication-icu-225895\"> </a></td><td>Pyrazinamide</td></tr><tr><td style=\"white-space:nowrap\">225896<a name=\"medication-icu-225896\"> </a></td><td>Quinine</td></tr><tr><td style=\"white-space:nowrap\">225897<a name=\"medication-icu-225897\"> </a></td><td>Ribavirin</td></tr><tr><td style=\"white-space:nowrap\">225898<a name=\"medication-icu-225898\"> </a></td><td>Rifampin</td></tr><tr><td style=\"white-space:nowrap\">225899<a name=\"medication-icu-225899\"> </a></td><td>Bactrim (SMX/TMP)</td></tr><tr><td style=\"white-space:nowrap\">225900<a name=\"medication-icu-225900\"> </a></td><td>Dalfopristin/Quinupristin (Synercid)</td></tr><tr><td style=\"white-space:nowrap\">225902<a name=\"medication-icu-225902\"> </a></td><td>Tobramycin</td></tr><tr><td style=\"white-space:nowrap\">225903<a name=\"medication-icu-225903\"> </a></td><td>Valgancyclovir</td></tr><tr><td style=\"white-space:nowrap\">225905<a name=\"medication-icu-225905\"> </a></td><td>Voriconazole</td></tr><tr><td style=\"white-space:nowrap\">225906<a name=\"medication-icu-225906\"> </a></td><td>Enoxaparin (Lovenox)</td></tr><tr><td style=\"white-space:nowrap\">225907<a name=\"medication-icu-225907\"> </a></td><td>Famotidine (Pepcid)</td></tr><tr><td style=\"white-space:nowrap\">225908<a name=\"medication-icu-225908\"> </a></td><td>Fondaparinux</td></tr><tr><td style=\"white-space:nowrap\">225909<a name=\"medication-icu-225909\"> </a></td><td>Lansoprazole (Prevacid)</td></tr><tr><td style=\"white-space:nowrap\">225910<a name=\"medication-icu-225910\"> </a></td><td>Pantoprazole (Protonix)</td></tr><tr><td style=\"white-space:nowrap\">225911<a name=\"medication-icu-225911\"> </a></td><td>Ranitidine (Prophylaxis)</td></tr><tr><td style=\"white-space:nowrap\">225912<a name=\"medication-icu-225912\"> </a></td><td>Carafate (Sucralfate)</td></tr><tr><td style=\"white-space:nowrap\">225913<a name=\"medication-icu-225913\"> </a></td><td>Coumadin (Warfarin)</td></tr><tr><td style=\"white-space:nowrap\">225914<a name=\"medication-icu-225914\"> </a></td><td>Factor VIIa</td></tr><tr><td style=\"white-space:nowrap\">225915<a name=\"medication-icu-225915\"> </a></td><td>Profilnine</td></tr><tr><td style=\"white-space:nowrap\">225916<a name=\"medication-icu-225916\"> </a></td><td>TPN w/ Lipids</td></tr><tr><td style=\"white-space:nowrap\">225917<a name=\"medication-icu-225917\"> </a></td><td>TPN without Lipids</td></tr><tr><td style=\"white-space:nowrap\">225918<a name=\"medication-icu-225918\"> </a></td><td>Aminosyn 3.5%</td></tr><tr><td style=\"white-space:nowrap\">225919<a name=\"medication-icu-225919\"> </a></td><td>D5 Aminosyn 3.5%</td></tr><tr><td style=\"white-space:nowrap\">225920<a name=\"medication-icu-225920\"> </a></td><td>Peripheral Parenteral Nutrition</td></tr><tr><td style=\"white-space:nowrap\">225921<a name=\"medication-icu-225921\"> </a></td><td>Hepatamine</td></tr><tr><td style=\"white-space:nowrap\">225922<a name=\"medication-icu-225922\"> </a></td><td>Nephramine</td></tr><tr><td style=\"white-space:nowrap\">225923<a name=\"medication-icu-225923\"> </a></td><td>Folate</td></tr><tr><td style=\"white-space:nowrap\">225924<a name=\"medication-icu-225924\"> </a></td><td>Hydrochloric Acid</td></tr><tr><td style=\"white-space:nowrap\">225925<a name=\"medication-icu-225925\"> </a></td><td>Potassium Phosphate</td></tr><tr><td style=\"white-space:nowrap\">225926<a name=\"medication-icu-225926\"> </a></td><td>Sodium ACEtate</td></tr><tr><td style=\"white-space:nowrap\">225928<a name=\"medication-icu-225928\"> </a></td><td>Impact with Fiber (Full)</td></tr><tr><td style=\"white-space:nowrap\">225929<a name=\"medication-icu-225929\"> </a></td><td>ProBalance (Full)</td></tr><tr><td style=\"white-space:nowrap\">225930<a name=\"medication-icu-225930\"> </a></td><td>Peptamen 1.5 (Full)</td></tr><tr><td style=\"white-space:nowrap\">225931<a name=\"medication-icu-225931\"> </a></td><td>Nutren 2.0 (Full)</td></tr><tr><td style=\"white-space:nowrap\">225934<a name=\"medication-icu-225934\"> </a></td><td>Vivonex (Full)</td></tr><tr><td style=\"white-space:nowrap\">225935<a name=\"medication-icu-225935\"> </a></td><td>Replete (Full)</td></tr><tr><td style=\"white-space:nowrap\">225936<a name=\"medication-icu-225936\"> </a></td><td>Replete with Fiber (Full)</td></tr><tr><td style=\"white-space:nowrap\">225937<a name=\"medication-icu-225937\"> </a></td><td>Ensure (Full)</td></tr><tr><td style=\"white-space:nowrap\">225941<a name=\"medication-icu-225941\"> </a></td><td>D5 1/4NS</td></tr><tr><td style=\"white-space:nowrap\">225942<a name=\"medication-icu-225942\"> </a></td><td>Fentanyl (Concentrate)</td></tr><tr><td style=\"white-space:nowrap\">225943<a name=\"medication-icu-225943\"> </a></td><td>Solution</td></tr><tr><td style=\"white-space:nowrap\">225944<a name=\"medication-icu-225944\"> </a></td><td>Sterile Water</td></tr><tr><td style=\"white-space:nowrap\">225945<a name=\"medication-icu-225945\"> </a></td><td>Lidocaine</td></tr><tr><td style=\"white-space:nowrap\">225947<a name=\"medication-icu-225947\"> </a></td><td>Dextrose PN</td></tr><tr><td style=\"white-space:nowrap\">225948<a name=\"medication-icu-225948\"> </a></td><td>Amino Acids</td></tr><tr><td style=\"white-space:nowrap\">225969<a name=\"medication-icu-225969\"> </a></td><td>Lipids (additive)</td></tr><tr><td style=\"white-space:nowrap\">225970<a name=\"medication-icu-225970\"> </a></td><td>Beneprotein</td></tr><tr><td style=\"white-space:nowrap\">225972<a name=\"medication-icu-225972\"> </a></td><td>Fentanyl (Push)</td></tr><tr><td style=\"white-space:nowrap\">225973<a name=\"medication-icu-225973\"> </a></td><td>Meperidine (Demerol)</td></tr><tr><td style=\"white-space:nowrap\">225974<a name=\"medication-icu-225974\"> </a></td><td>Metoprolol</td></tr><tr><td style=\"white-space:nowrap\">225975<a name=\"medication-icu-225975\"> </a></td><td>Heparin Sodium (Prophylaxis)</td></tr><tr><td style=\"white-space:nowrap\">225991<a name=\"medication-icu-225991\"> </a></td><td>Resource Fruit Beverage</td></tr><tr><td style=\"white-space:nowrap\">225993<a name=\"medication-icu-225993\"> </a></td><td>Optisource</td></tr><tr><td style=\"white-space:nowrap\">225994<a name=\"medication-icu-225994\"> </a></td><td>Mighty Shake (Vanilla/Strawberry)</td></tr><tr><td style=\"white-space:nowrap\">225995<a name=\"medication-icu-225995\"> </a></td><td>Mighty Shake (Chocolate)</td></tr><tr><td style=\"white-space:nowrap\">225996<a name=\"medication-icu-225996\"> </a></td><td>Mighty Shake (no sugar added)</td></tr><tr><td style=\"white-space:nowrap\">225999<a name=\"medication-icu-225999\"> </a></td><td>Vanilla Scandi Shake (mixed)</td></tr><tr><td style=\"white-space:nowrap\">226000<a name=\"medication-icu-226000\"> </a></td><td>Chocolate Scandi Shake (mixed)</td></tr><tr><td style=\"white-space:nowrap\">226002<a name=\"medication-icu-226002\"> </a></td><td>Vanilla Lactose Free Scandi Shake (mixed)</td></tr><tr><td style=\"white-space:nowrap\">226016<a name=\"medication-icu-226016\"> </a></td><td>Nutren 2.0 (1/4)</td></tr><tr><td style=\"white-space:nowrap\">226017<a name=\"medication-icu-226017\"> </a></td><td>Nutren 2.0 (2/3)</td></tr><tr><td style=\"white-space:nowrap\">226018<a name=\"medication-icu-226018\"> </a></td><td>Nutren 2.0 (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226019<a name=\"medication-icu-226019\"> </a></td><td>Nutren 2.0 (1/2)</td></tr><tr><td style=\"white-space:nowrap\">226020<a name=\"medication-icu-226020\"> </a></td><td>Impact (1/4)</td></tr><tr><td style=\"white-space:nowrap\">226021<a name=\"medication-icu-226021\"> </a></td><td>Impact (2/3)</td></tr><tr><td style=\"white-space:nowrap\">226022<a name=\"medication-icu-226022\"> </a></td><td>Impact (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226023<a name=\"medication-icu-226023\"> </a></td><td>Impact (1/2)</td></tr><tr><td style=\"white-space:nowrap\">226024<a name=\"medication-icu-226024\"> </a></td><td>Impact with Fiber (1/4)</td></tr><tr><td style=\"white-space:nowrap\">226025<a name=\"medication-icu-226025\"> </a></td><td>Impact with Fiber (2/3)</td></tr><tr><td style=\"white-space:nowrap\">226026<a name=\"medication-icu-226026\"> </a></td><td>Impact with Fiber (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226027<a name=\"medication-icu-226027\"> </a></td><td>Impact with Fiber (1/2)</td></tr><tr><td style=\"white-space:nowrap\">226028<a name=\"medication-icu-226028\"> </a></td><td>Nutren Renal (1/4)</td></tr><tr><td style=\"white-space:nowrap\">226029<a name=\"medication-icu-226029\"> </a></td><td>Nutren Renal (2/3)</td></tr><tr><td style=\"white-space:nowrap\">226030<a name=\"medication-icu-226030\"> </a></td><td>Nutren Renal (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226031<a name=\"medication-icu-226031\"> </a></td><td>Nutren Renal (1/2)</td></tr><tr><td style=\"white-space:nowrap\">226036<a name=\"medication-icu-226036\"> </a></td><td>Peptamen 1.5 (1/4)</td></tr><tr><td style=\"white-space:nowrap\">226037<a name=\"medication-icu-226037\"> </a></td><td>Peptamen 1.5 (2/3)</td></tr><tr><td style=\"white-space:nowrap\">226038<a name=\"medication-icu-226038\"> </a></td><td>Peptamen 1.5 (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226039<a name=\"medication-icu-226039\"> </a></td><td>Peptamen 1.5 (1/2)</td></tr><tr><td style=\"white-space:nowrap\">226040<a name=\"medication-icu-226040\"> </a></td><td>ProBalance (1/4)</td></tr><tr><td style=\"white-space:nowrap\">226041<a name=\"medication-icu-226041\"> </a></td><td>ProBalance (2/3)</td></tr><tr><td style=\"white-space:nowrap\">226042<a name=\"medication-icu-226042\"> </a></td><td>ProBalance (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226043<a name=\"medication-icu-226043\"> </a></td><td>ProBalance (1/2)</td></tr><tr><td style=\"white-space:nowrap\">226044<a name=\"medication-icu-226044\"> </a></td><td>Replete (1/4)</td></tr><tr><td style=\"white-space:nowrap\">226045<a name=\"medication-icu-226045\"> </a></td><td>Replete (2/3)</td></tr><tr><td style=\"white-space:nowrap\">226046<a name=\"medication-icu-226046\"> </a></td><td>Replete (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226047<a name=\"medication-icu-226047\"> </a></td><td>Replete (1/2)</td></tr><tr><td style=\"white-space:nowrap\">226048<a name=\"medication-icu-226048\"> </a></td><td>Replete with Fiber (1/4)</td></tr><tr><td style=\"white-space:nowrap\">226049<a name=\"medication-icu-226049\"> </a></td><td>Replete with Fiber (2/3)</td></tr><tr><td style=\"white-space:nowrap\">226050<a name=\"medication-icu-226050\"> </a></td><td>Replete with Fiber (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226051<a name=\"medication-icu-226051\"> </a></td><td>Replete with Fiber (1/2)</td></tr><tr><td style=\"white-space:nowrap\">226056<a name=\"medication-icu-226056\"> </a></td><td>Vivonex (1/4)</td></tr><tr><td style=\"white-space:nowrap\">226057<a name=\"medication-icu-226057\"> </a></td><td>Vivonex (2/3)</td></tr><tr><td style=\"white-space:nowrap\">226058<a name=\"medication-icu-226058\"> </a></td><td>Vivonex (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226059<a name=\"medication-icu-226059\"> </a></td><td>Vivonex (1/2)</td></tr><tr><td style=\"white-space:nowrap\">226089<a name=\"medication-icu-226089\"> </a></td><td>Piggyback</td></tr><tr><td style=\"white-space:nowrap\">226361<a name=\"medication-icu-226361\"> </a></td><td>Pre-Admission/Non-ICU Intake</td></tr><tr><td style=\"white-space:nowrap\">226362<a name=\"medication-icu-226362\"> </a></td><td>ZGastric/TF Residual Intake</td></tr><tr><td style=\"white-space:nowrap\">226363<a name=\"medication-icu-226363\"> </a></td><td>Cath Lab Intake</td></tr><tr><td style=\"white-space:nowrap\">226364<a name=\"medication-icu-226364\"> </a></td><td>OR Crystalloid Intake</td></tr><tr><td style=\"white-space:nowrap\">226365<a name=\"medication-icu-226365\"> </a></td><td>OR Colloid Intake</td></tr><tr><td style=\"white-space:nowrap\">226367<a name=\"medication-icu-226367\"> </a></td><td>OR FFP Intake</td></tr><tr><td style=\"white-space:nowrap\">226368<a name=\"medication-icu-226368\"> </a></td><td>OR Packed RBC Intake</td></tr><tr><td style=\"white-space:nowrap\">226369<a name=\"medication-icu-226369\"> </a></td><td>OR Platelet Intake</td></tr><tr><td style=\"white-space:nowrap\">226370<a name=\"medication-icu-226370\"> </a></td><td>OR Autologous Blood Intake</td></tr><tr><td style=\"white-space:nowrap\">226371<a name=\"medication-icu-226371\"> </a></td><td>OR Cryoprecipitate Intake</td></tr><tr><td style=\"white-space:nowrap\">226372<a name=\"medication-icu-226372\"> </a></td><td>OR Cell Saver Intake</td></tr><tr><td style=\"white-space:nowrap\">226375<a name=\"medication-icu-226375\"> </a></td><td>PACU Crystalloid Intake</td></tr><tr><td style=\"white-space:nowrap\">226376<a name=\"medication-icu-226376\"> </a></td><td>PACU Colloid Intake</td></tr><tr><td style=\"white-space:nowrap\">226377<a name=\"medication-icu-226377\"> </a></td><td>PACU PO Intake</td></tr><tr><td style=\"white-space:nowrap\">226401<a name=\"medication-icu-226401\"> </a></td><td>GU Irrigant - Normal Saline</td></tr><tr><td style=\"white-space:nowrap\">226402<a name=\"medication-icu-226402\"> </a></td><td>GU Irrigant - Sterile Water</td></tr><tr><td style=\"white-space:nowrap\">226403<a name=\"medication-icu-226403\"> </a></td><td>GU Irrigant - Amphotericin B</td></tr><tr><td style=\"white-space:nowrap\">226452<a name=\"medication-icu-226452\"> </a></td><td>PO Intake</td></tr><tr><td style=\"white-space:nowrap\">226453<a name=\"medication-icu-226453\"> </a></td><td>GT Flush</td></tr><tr><td style=\"white-space:nowrap\">226875<a name=\"medication-icu-226875\"> </a></td><td>Ensure (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226876<a name=\"medication-icu-226876\"> </a></td><td>Ensure (1/2)</td></tr><tr><td style=\"white-space:nowrap\">226877<a name=\"medication-icu-226877\"> </a></td><td>Ensure Plus (Full)</td></tr><tr><td style=\"white-space:nowrap\">226878<a name=\"medication-icu-226878\"> </a></td><td>Ensure Plus (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226879<a name=\"medication-icu-226879\"> </a></td><td>Ensure Plus (1/2)</td></tr><tr><td style=\"white-space:nowrap\">226880<a name=\"medication-icu-226880\"> </a></td><td>Nutren Pulmonary (Full)</td></tr><tr><td style=\"white-space:nowrap\">226881<a name=\"medication-icu-226881\"> </a></td><td>Nutren Pulmonary (3/4)</td></tr><tr><td style=\"white-space:nowrap\">226882<a name=\"medication-icu-226882\"> </a></td><td>Nutren Pulmonary (1/2)</td></tr><tr><td style=\"white-space:nowrap\">227070<a name=\"medication-icu-227070\"> </a></td><td>PACU Packed RBC Intake</td></tr><tr><td style=\"white-space:nowrap\">227071<a name=\"medication-icu-227071\"> </a></td><td>PACU Platelet Intake</td></tr><tr><td style=\"white-space:nowrap\">227072<a name=\"medication-icu-227072\"> </a></td><td>PACU FFP Intake</td></tr><tr><td style=\"white-space:nowrap\">227090<a name=\"medication-icu-227090\"> </a></td><td>Lipids 10%</td></tr><tr><td style=\"white-space:nowrap\">227091<a name=\"medication-icu-227091\"> </a></td><td>Ensure (1/4)</td></tr><tr><td style=\"white-space:nowrap\">227092<a name=\"medication-icu-227092\"> </a></td><td>Ensure Plus (1/4)</td></tr><tr><td style=\"white-space:nowrap\">227370<a name=\"medication-icu-227370\"> </a></td><td>Peptamen VHP (Full)</td></tr><tr><td style=\"white-space:nowrap\">227371<a name=\"medication-icu-227371\"> </a></td><td>Peptamen VHP (3/4)</td></tr><tr><td style=\"white-space:nowrap\">227372<a name=\"medication-icu-227372\"> </a></td><td>Peptamen VHP (2/3)</td></tr><tr><td style=\"white-space:nowrap\">227373<a name=\"medication-icu-227373\"> </a></td><td>Peptamen VHP (1/4)</td></tr><tr><td style=\"white-space:nowrap\">227374<a name=\"medication-icu-227374\"> </a></td><td>Peptamen VHP (1/2)</td></tr><tr><td style=\"white-space:nowrap\">227691<a name=\"medication-icu-227691\"> </a></td><td>Keflex</td></tr><tr><td style=\"white-space:nowrap\">227518<a name=\"medication-icu-227518\"> </a></td><td>Nutren 2.0 (3/4)</td></tr><tr><td style=\"white-space:nowrap\">227520<a name=\"medication-icu-227520\"> </a></td><td>Methadone Hydrochloride</td></tr><tr><td style=\"white-space:nowrap\">227522<a name=\"medication-icu-227522\"> </a></td><td>KCL (Bolus)</td></tr><tr><td style=\"white-space:nowrap\">227523<a name=\"medication-icu-227523\"> </a></td><td>Magnesium Sulfate (Bolus)</td></tr><tr><td style=\"white-space:nowrap\">227524<a name=\"medication-icu-227524\"> </a></td><td>Magnesium Sulfate (OB-GYN)</td></tr><tr><td style=\"white-space:nowrap\">227525<a name=\"medication-icu-227525\"> </a></td><td>Calcium Gluconate (CRRT)</td></tr><tr><td style=\"white-space:nowrap\">227526<a name=\"medication-icu-227526\"> </a></td><td>Citrate</td></tr><tr><td style=\"white-space:nowrap\">227528<a name=\"medication-icu-227528\"> </a></td><td>ACD-A Citrate (500ml)</td></tr><tr><td style=\"white-space:nowrap\">227529<a name=\"medication-icu-227529\"> </a></td><td>ACD-A Citrate (1000ml)</td></tr><tr><td style=\"white-space:nowrap\">227530<a name=\"medication-icu-227530\"> </a></td><td>IV Immune Globulin (IVIG)</td></tr><tr><td style=\"white-space:nowrap\">227531<a name=\"medication-icu-227531\"> </a></td><td>Mannitol</td></tr><tr><td style=\"white-space:nowrap\">227532<a name=\"medication-icu-227532\"> </a></td><td>Plasma Pheresis</td></tr><tr><td style=\"white-space:nowrap\">227533<a name=\"medication-icu-227533\"> </a></td><td>Sodium Bicarbonate 8.4% (Amp)</td></tr><tr><td style=\"white-space:nowrap\">227534<a name=\"medication-icu-227534\"> </a></td><td>Cyclosporine</td></tr><tr><td style=\"white-space:nowrap\">227535<a name=\"medication-icu-227535\"> </a></td><td>Vitamin K (Phytonadione)</td></tr><tr><td style=\"white-space:nowrap\">227536<a name=\"medication-icu-227536\"> </a></td><td>KCl (CRRT)</td></tr><tr><td style=\"white-space:nowrap\">227689<a name=\"medication-icu-227689\"> </a></td><td>Dilantin</td></tr><tr><td style=\"white-space:nowrap\">227690<a name=\"medication-icu-227690\"> </a></td><td>Fosphenytoin</td></tr><tr><td style=\"white-space:nowrap\">227692<a name=\"medication-icu-227692\"> </a></td><td>Isuprel</td></tr><tr><td style=\"white-space:nowrap\">227694<a name=\"medication-icu-227694\"> </a></td><td>Omeprazole (Prilosec)</td></tr><tr><td style=\"white-space:nowrap\">227695<a name=\"medication-icu-227695\"> </a></td><td>Fibersource HN (Full)</td></tr><tr><td style=\"white-space:nowrap\">227696<a name=\"medication-icu-227696\"> </a></td><td>Fibersource HN (3/4)</td></tr><tr><td style=\"white-space:nowrap\">227697<a name=\"medication-icu-227697\"> </a></td><td>Fibersource HN (2/3)</td></tr><tr><td style=\"white-space:nowrap\">227698<a name=\"medication-icu-227698\"> </a></td><td>Fibersource HN (1/2)</td></tr><tr><td style=\"white-space:nowrap\">227699<a name=\"medication-icu-227699\"> </a></td><td>Fibersource HN (1/4)</td></tr><tr><td style=\"white-space:nowrap\">227972<a name=\"medication-icu-227972\"> </a></td><td>NovaSource Renal (1/4)</td></tr><tr><td style=\"white-space:nowrap\">227973<a name=\"medication-icu-227973\"> </a></td><td>NovaSource Renal (1/2)</td></tr><tr><td style=\"white-space:nowrap\">227974<a name=\"medication-icu-227974\"> </a></td><td>NovaSource Renal (3/4)</td></tr><tr><td style=\"white-space:nowrap\">227975<a name=\"medication-icu-227975\"> </a></td><td>NovaSource Renal (Full)</td></tr><tr><td style=\"white-space:nowrap\">227976<a name=\"medication-icu-227976\"> </a></td><td>Boost Glucose Control (1/4)</td></tr><tr><td style=\"white-space:nowrap\">227977<a name=\"medication-icu-227977\"> </a></td><td>Boost Glucose Control (1/2)</td></tr><tr><td style=\"white-space:nowrap\">227978<a name=\"medication-icu-227978\"> </a></td><td>Boost Glucose Control (3/4)</td></tr><tr><td style=\"white-space:nowrap\">227979<a name=\"medication-icu-227979\"> </a></td><td>Boost Glucose Control (Full)</td></tr><tr><td style=\"white-space:nowrap\">228003<a name=\"medication-icu-228003\"> </a></td><td>Tamiflu</td></tr><tr><td style=\"white-space:nowrap\">228131<a name=\"medication-icu-228131\"> </a></td><td>Isosource 1.5 (1/2)</td></tr><tr><td style=\"white-space:nowrap\">228132<a name=\"medication-icu-228132\"> </a></td><td>Isosource 1.5 (1/4)</td></tr><tr><td style=\"white-space:nowrap\">228133<a name=\"medication-icu-228133\"> </a></td><td>Isosource 1.5 (2/3)</td></tr><tr><td style=\"white-space:nowrap\">228134<a name=\"medication-icu-228134\"> </a></td><td>Isosource 1.5 (3/4)</td></tr><tr><td style=\"white-space:nowrap\">228135<a name=\"medication-icu-228135\"> </a></td><td>Isosource 1.5 (Full)</td></tr><tr><td style=\"white-space:nowrap\">228140<a name=\"medication-icu-228140\"> </a></td><td>Dextrose 20%</td></tr><tr><td style=\"white-space:nowrap\">228141<a name=\"medication-icu-228141\"> </a></td><td>Dextrose 30%</td></tr><tr><td style=\"white-space:nowrap\">228142<a name=\"medication-icu-228142\"> </a></td><td>Dextrose 40%</td></tr><tr><td style=\"white-space:nowrap\">228315<a name=\"medication-icu-228315\"> </a></td><td>Acetaminophen-IV</td></tr><tr><td style=\"white-space:nowrap\">228316<a name=\"medication-icu-228316\"> </a></td><td>Levetiracetam (Keppra)</td></tr><tr><td style=\"white-space:nowrap\">228317<a name=\"medication-icu-228317\"> </a></td><td>Calcium Gluconate (Bolus)_OLD_1</td></tr><tr><td style=\"white-space:nowrap\">228339<a name=\"medication-icu-228339\"> </a></td><td>Amiodarone 600/500</td></tr><tr><td style=\"white-space:nowrap\">228340<a name=\"medication-icu-228340\"> </a></td><td>Furosemide (Lasix) 250/50</td></tr><tr><td style=\"white-space:nowrap\">228341<a name=\"medication-icu-228341\"> </a></td><td>NaCl 23.4%</td></tr><tr><td style=\"white-space:nowrap\">228348<a name=\"medication-icu-228348\"> </a></td><td>Nepro (1/2)</td></tr><tr><td style=\"white-space:nowrap\">228349<a name=\"medication-icu-228349\"> </a></td><td>Nepro (1/4)</td></tr><tr><td style=\"white-space:nowrap\">228350<a name=\"medication-icu-228350\"> </a></td><td>Nepro (3/4)</td></tr><tr><td style=\"white-space:nowrap\">228351<a name=\"medication-icu-228351\"> </a></td><td>Nepro (Full)</td></tr><tr><td style=\"white-space:nowrap\">228352<a name=\"medication-icu-228352\"> </a></td><td>Enlive (1/2)</td></tr><tr><td style=\"white-space:nowrap\">228353<a name=\"medication-icu-228353\"> </a></td><td>Enlive (1/4)</td></tr><tr><td style=\"white-space:nowrap\">228354<a name=\"medication-icu-228354\"> </a></td><td>Enlive (3/4)</td></tr><tr><td style=\"white-space:nowrap\">228355<a name=\"medication-icu-228355\"> </a></td><td>Enlive (Full)</td></tr><tr><td style=\"white-space:nowrap\">228356<a name=\"medication-icu-228356\"> </a></td><td>Glucerna (1/2)</td></tr><tr><td style=\"white-space:nowrap\">228357<a name=\"medication-icu-228357\"> </a></td><td>Glucerna (1/4)</td></tr><tr><td style=\"white-space:nowrap\">228358<a name=\"medication-icu-228358\"> </a></td><td>Glucerna (3/4)</td></tr><tr><td style=\"white-space:nowrap\">228359<a name=\"medication-icu-228359\"> </a></td><td>Glucerna (Full)</td></tr><tr><td style=\"white-space:nowrap\">228360<a name=\"medication-icu-228360\"> </a></td><td>Pulmocare (1/2)</td></tr><tr><td style=\"white-space:nowrap\">228361<a name=\"medication-icu-228361\"> </a></td><td>Pulmocare (1/4)</td></tr><tr><td style=\"white-space:nowrap\">228362<a name=\"medication-icu-228362\"> </a></td><td>Pulmocare (3/4)</td></tr><tr><td style=\"white-space:nowrap\">228363<a name=\"medication-icu-228363\"> </a></td><td>Pulmocare (Full)</td></tr><tr><td style=\"white-space:nowrap\">228364<a name=\"medication-icu-228364\"> </a></td><td>Two Cal HN (1/2)</td></tr><tr><td style=\"white-space:nowrap\">228365<a name=\"medication-icu-228365\"> </a></td><td>Two Cal HN (1/4)</td></tr><tr><td style=\"white-space:nowrap\">228366<a name=\"medication-icu-228366\"> </a></td><td>Two Cal HN (3/4)</td></tr><tr><td style=\"white-space:nowrap\">228367<a name=\"medication-icu-228367\"> </a></td><td>Two Cal HN (Full)</td></tr><tr><td style=\"white-space:nowrap\">228383<a name=\"medication-icu-228383\"> </a></td><td>Peptamen Bariatric (Full)</td></tr><tr><td style=\"white-space:nowrap\">229009<a name=\"medication-icu-229009\"> </a></td><td>Promote (Full)</td></tr><tr><td style=\"white-space:nowrap\">229010<a name=\"medication-icu-229010\"> </a></td><td>Jevity 1.2 (Full)</td></tr><tr><td style=\"white-space:nowrap\">229011<a name=\"medication-icu-229011\"> </a></td><td>Jevity 1.5 (Full)</td></tr><tr><td style=\"white-space:nowrap\">229012<a name=\"medication-icu-229012\"> </a></td><td>Vital 1.5 (Full)</td></tr><tr><td style=\"white-space:nowrap\">229013<a name=\"medication-icu-229013\"> </a></td><td>Glucerna 1.2 (Full)</td></tr><tr><td style=\"white-space:nowrap\">229014<a name=\"medication-icu-229014\"> </a></td><td>Promote with Fiber (Full)</td></tr><tr><td style=\"white-space:nowrap\">229057<a name=\"medication-icu-229057\"> </a></td><td>Acetylcysteine</td></tr><tr><td style=\"white-space:nowrap\">229058<a name=\"medication-icu-229058\"> </a></td><td>Aminocaproic acid (Amicar)</td></tr><tr><td style=\"white-space:nowrap\">229059<a name=\"medication-icu-229059\"> </a></td><td>Chloramphenicol</td></tr><tr><td style=\"white-space:nowrap\">229061<a name=\"medication-icu-229061\"> </a></td><td>Ertapenem sodium (Invanz)</td></tr><tr><td style=\"white-space:nowrap\">229062<a name=\"medication-icu-229062\"> </a></td><td>Mycophenolate mofetil (Cellcept)</td></tr><tr><td style=\"white-space:nowrap\">229063<a name=\"medication-icu-229063\"> </a></td><td>Pamidronate</td></tr><tr><td style=\"white-space:nowrap\">229064<a name=\"medication-icu-229064\"> </a></td><td>Tigecycline</td></tr><tr><td style=\"white-space:nowrap\">229066<a name=\"medication-icu-229066\"> </a></td><td>Treprostinil (Remodulin)</td></tr><tr><td style=\"white-space:nowrap\">229067<a name=\"medication-icu-229067\"> </a></td><td>Granulocytes</td></tr><tr><td style=\"white-space:nowrap\">229068<a name=\"medication-icu-229068\"> </a></td><td>Protamine sulfate</td></tr><tr><td style=\"white-space:nowrap\">229069<a name=\"medication-icu-229069\"> </a></td><td>Digoxin (Lanoxin)</td></tr><tr><td style=\"white-space:nowrap\">229070<a name=\"medication-icu-229070\"> </a></td><td>Glycopyrolate (Robinul)</td></tr><tr><td style=\"white-space:nowrap\">229071<a name=\"medication-icu-229071\"> </a></td><td>Neostigmine (Prostigmin)</td></tr><tr><td style=\"white-space:nowrap\">229072<a name=\"medication-icu-229072\"> </a></td><td>Ketorolac (Toradol)</td></tr><tr><td style=\"white-space:nowrap\">229233<a name=\"medication-icu-229233\"> </a></td><td>Rocuronium</td></tr><tr><td style=\"white-space:nowrap\">229234<a name=\"medication-icu-229234\"> </a></td><td>Clevidipine (Cleviprex)</td></tr><tr><td style=\"white-space:nowrap\">229249<a name=\"medication-icu-229249\"> </a></td><td>Aminocaproic acid (Amicar)</td></tr><tr><td style=\"white-space:nowrap\">229294<a name=\"medication-icu-229294\"> </a></td><td>Ensure Clear (Full)</td></tr><tr><td style=\"white-space:nowrap\">229295<a name=\"medication-icu-229295\"> </a></td><td>Glucerna 1.5 (Full)</td></tr><tr><td style=\"white-space:nowrap\">229296<a name=\"medication-icu-229296\"> </a></td><td>Vital High Protein (Full)</td></tr><tr><td style=\"white-space:nowrap\">229297<a name=\"medication-icu-229297\"> </a></td><td>Osmolite 1.5 (Full)</td></tr><tr><td style=\"white-space:nowrap\">229299<a name=\"medication-icu-229299\"> </a></td><td>Insulin - Novolog</td></tr><tr><td style=\"white-space:nowrap\">229420<a name=\"medication-icu-229420\"> </a></td><td>Dexmedetomidine (Precedex)</td></tr><tr><td style=\"white-space:nowrap\">229574<a name=\"medication-icu-229574\"> </a></td><td>Fiber Supplement (i.e. Banana Flakes)</td></tr><tr><td style=\"white-space:nowrap\">229583<a name=\"medication-icu-229583\"> </a></td><td>Beneprotein.</td></tr><tr><td style=\"white-space:nowrap\">229587<a name=\"medication-icu-229587\"> </a></td><td>Ceftaroline</td></tr><tr><td style=\"white-space:nowrap\">229597<a name=\"medication-icu-229597\"> </a></td><td>Heparin Sodium (Impella)</td></tr><tr><td style=\"white-space:nowrap\">229615<a name=\"medication-icu-229615\"> </a></td><td>Esomeprazole (Nexium)</td></tr><tr><td style=\"white-space:nowrap\">229616<a name=\"medication-icu-229616\"> </a></td><td>Ondansetron (Zofran)</td></tr><tr><td style=\"white-space:nowrap\">229617<a name=\"medication-icu-229617\"> </a></td><td>Epinephrine.</td></tr><tr><td style=\"white-space:nowrap\">229618<a name=\"medication-icu-229618\"> </a></td><td>Calcium Chloride</td></tr><tr><td style=\"white-space:nowrap\">229619<a name=\"medication-icu-229619\"> </a></td><td>Insulin - U500</td></tr><tr><td style=\"white-space:nowrap\">229624<a name=\"medication-icu-229624\"> </a></td><td>Nicardipine 40mg/200</td></tr><tr><td style=\"white-space:nowrap\">229630<a name=\"medication-icu-229630\"> </a></td><td>Phenylephrine (50/250)</td></tr><tr><td style=\"white-space:nowrap\">229631<a name=\"medication-icu-229631\"> </a></td><td>Phenylephrine (200/250)_OLD_1</td></tr><tr><td style=\"white-space:nowrap\">229632<a name=\"medication-icu-229632\"> </a></td><td>Phenylephrine (200/250)</td></tr><tr><td style=\"white-space:nowrap\">229639<a name=\"medication-icu-229639\"> </a></td><td>Bumetanide (Bumex)</td></tr><tr><td style=\"white-space:nowrap\">229640<a name=\"medication-icu-229640\"> </a></td><td>Calcium Gluconate (Bolus)</td></tr><tr><td style=\"white-space:nowrap\">229654<a name=\"medication-icu-229654\"> </a></td><td>Amiodarone 450/250</td></tr><tr><td style=\"white-space:nowrap\">229709<a name=\"medication-icu-229709\"> </a></td><td>Angiotensin II (Giapreza)</td></tr><tr><td style=\"white-space:nowrap\">229760<a name=\"medication-icu-229760\"> </a></td><td>Epoprostenol (Veletri)</td></tr><tr><td style=\"white-space:nowrap\">229764<a name=\"medication-icu-229764\"> </a></td><td>Angiotensin II (Giapreza)</td></tr><tr><td style=\"white-space:nowrap\">229781<a name=\"medication-icu-229781\"> </a></td><td>Bivalirudin (Angiomax) (Impella)</td></tr><tr><td style=\"white-space:nowrap\">229861<a name=\"medication-icu-229861\"> </a></td><td>Sodium Acetate.</td></tr><tr><td style=\"white-space:nowrap\">230034<a name=\"medication-icu-230034\"> </a></td><td>Amiodarone 150/100</td></tr><tr><td style=\"white-space:nowrap\">230044<a name=\"medication-icu-230044\"> </a></td><td>Heparin Sodium (CRRT-Prefilter)</td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/medication-icu",
+  "version": "0.2.4",
+  "name": "MedicationIcu",
+  "title": "MedicationIcu",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "All medication found in the ICU, derived from mimic_icu.d_items",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/medication-icu",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "220861",
+      "display": "Albumin (Human) 20%"
+    },
+    {
+      "code": "220862",
+      "display": "Albumin 25%"
+    },
+    {
+      "code": "220863",
+      "display": "Albumin (Human) 4%"
+    },
+    {
+      "code": "220864",
+      "display": "Albumin 5%"
+    },
+    {
+      "code": "220865",
+      "display": "Aquadestila"
+    },
+    {
+      "code": "220866",
+      "display": "Darrow"
+    },
+    {
+      "code": "220949",
+      "display": "Dextrose 5%"
+    },
+    {
+      "code": "220950",
+      "display": "Dextrose 10%"
+    },
+    {
+      "code": "220951",
+      "display": "Dextrose 20.%"
+    },
+    {
+      "code": "220952",
+      "display": "Dextrose 50%"
+    },
+    {
+      "code": "220953",
+      "display": "Ringers"
+    },
+    {
+      "code": "220954",
+      "display": "Saline 0,9%"
+    },
+    {
+      "code": "220955",
+      "display": "Ringers Lactate"
+    },
+    {
+      "code": "220956",
+      "display": "Ringers Acetate"
+    },
+    {
+      "code": "220958",
+      "display": "Saline 0,255%"
+    },
+    {
+      "code": "220959",
+      "display": "Saline 0,3%"
+    },
+    {
+      "code": "220960",
+      "display": "Saline 0,45%"
+    },
+    {
+      "code": "220961",
+      "display": "Saline 0,65%"
+    },
+    {
+      "code": "220962",
+      "display": "Saline 3%"
+    },
+    {
+      "code": "220963",
+      "display": "Dextrose 4,3% / Saline 0,18%"
+    },
+    {
+      "code": "220964",
+      "display": "Dextrose 5% / Saline 0,9%"
+    },
+    {
+      "code": "220965",
+      "display": "Dextrose 5% / Saline 0,45%"
+    },
+    {
+      "code": "220966",
+      "display": "Dextrose 2,5% / Saline 0,45%"
+    },
+    {
+      "code": "220967",
+      "display": "Dextrose 5% / Ringers Lactate"
+    },
+    {
+      "code": "220968",
+      "display": "Dextrose 10% / Ringers Lactate"
+    },
+    {
+      "code": "220969",
+      "display": "Filtered erytrocytes"
+    },
+    {
+      "code": "220970",
+      "display": "Fresh Frozen Plasma"
+    },
+    {
+      "code": "220971",
+      "display": "ESDEP (Solvent / Detergent Virus-Inactivated Plasma)"
+    },
+    {
+      "code": "220972",
+      "display": "Octoplas"
+    },
+    {
+      "code": "220973",
+      "display": "Gelofusine"
+    },
+    {
+      "code": "220975",
+      "display": "Pentastarch 6% (HAES, Hemohes)"
+    },
+    {
+      "code": "220977",
+      "display": "Pentastarch 10% (HAES, Hemohes)"
+    },
+    {
+      "code": "221203",
+      "display": "Nutrini"
+    },
+    {
+      "code": "220979",
+      "display": "Hetastarch 6% (Saline 0,9%)"
+    },
+    {
+      "code": "220980",
+      "display": "Hextend (Hetastarch 6% in Lactate)"
+    },
+    {
+      "code": "220984",
+      "display": "Intralipid 10%"
+    },
+    {
+      "code": "220985",
+      "display": "Intralipid 20%"
+    },
+    {
+      "code": "220986",
+      "display": "Intralipid 30%"
+    },
+    {
+      "code": "220988",
+      "display": "Mannitol 5%"
+    },
+    {
+      "code": "220989",
+      "display": "Mannitol 10%"
+    },
+    {
+      "code": "220990",
+      "display": "Mannitol 15%"
+    },
+    {
+      "code": "220991",
+      "display": "Mannitol 20%"
+    },
+    {
+      "code": "220992",
+      "display": "Mannitol 25%"
+    },
+    {
+      "code": "220995",
+      "display": "Sodium Bicarbonate 8.4%"
+    },
+    {
+      "code": "220996",
+      "display": "Packed Red Cells"
+    },
+    {
+      "code": "221000",
+      "display": "Dextran 40 / Dextrose 5% (Gentran - Rheomacrodex)"
+    },
+    {
+      "code": "221001",
+      "display": "Dextran 40 / Saline 0,9% (Gentran - Rheomacrodex)"
+    },
+    {
+      "code": "221002",
+      "display": "Dextran 70 / Dextrose 5% (Gentran - Macrodex - RescueFlow)"
+    },
+    {
+      "code": "221003",
+      "display": "Dextran 70 / Saline 0,9% (Gentran - Macrodex - RescueFlow)"
+    },
+    {
+      "code": "221004",
+      "display": "Thrombocyte suspension"
+    },
+    {
+      "code": "221005",
+      "display": "Vamin 14 Electrolyte free"
+    },
+    {
+      "code": "221006",
+      "display": "Vamin 18 Electrolyte free"
+    },
+    {
+      "code": "221007",
+      "display": "Vamin 14 Plus electrolytes"
+    },
+    {
+      "code": "221008",
+      "display": "Vamin Novum 18"
+    },
+    {
+      "code": "221009",
+      "display": "Vivinox T.E.N."
+    },
+    {
+      "code": "221011",
+      "display": "Vivonex Plus"
+    },
+    {
+      "code": "221012",
+      "display": "Vivonex Pediatric"
+    },
+    {
+      "code": "221013",
+      "display": "Whole Blood"
+    },
+    {
+      "code": "221014",
+      "display": "Dextrose 19%"
+    },
+    {
+      "code": "221015",
+      "display": "Ensure"
+    },
+    {
+      "code": "221016",
+      "display": "Ensure Plus"
+    },
+    {
+      "code": "221017",
+      "display": "Dextrose 2,5%"
+    },
+    {
+      "code": "221018",
+      "display": "Nutrison Standard"
+    },
+    {
+      "code": "221020",
+      "display": "Nutrison concentrated"
+    },
+    {
+      "code": "221021",
+      "display": "Nutrison Energy"
+    },
+    {
+      "code": "221022",
+      "display": "Nutrison Energy Multi Fibre"
+    },
+    {
+      "code": "221024",
+      "display": "Nutrison Multi Fibre"
+    },
+    {
+      "code": "221025",
+      "display": "Pediasure"
+    },
+    {
+      "code": "221027",
+      "display": "Pulmocare"
+    },
+    {
+      "code": "221028",
+      "display": "Stresson"
+    },
+    {
+      "code": "221029",
+      "display": "Osmolite"
+    },
+    {
+      "code": "221036",
+      "display": "Nutren Renal (Full)"
+    },
+    {
+      "code": "221037",
+      "display": "Jevity 1.2"
+    },
+    {
+      "code": "221038",
+      "display": "Jevity"
+    },
+    {
+      "code": "221193",
+      "display": "Auto transfusion"
+    },
+    {
+      "code": "221195",
+      "display": "Hexastarch 6% (Elohaes) / Saline 0,9%"
+    },
+    {
+      "code": "221196",
+      "display": "Fresubin Original"
+    },
+    {
+      "code": "221197",
+      "display": "Fresubin Original Fibre"
+    },
+    {
+      "code": "221198",
+      "display": "Fresubin Energy"
+    },
+    {
+      "code": "221199",
+      "display": "Fresubin Energy Fibre"
+    },
+    {
+      "code": "221200",
+      "display": "Fibrini"
+    },
+    {
+      "code": "221201",
+      "display": "Fibrini Energy"
+    },
+    {
+      "code": "221202",
+      "display": "Infatrini"
+    },
+    {
+      "code": "221204",
+      "display": "Tentrini"
+    },
+    {
+      "code": "221205",
+      "display": "Nutrison pre"
+    },
+    {
+      "code": "221206",
+      "display": "Novasource"
+    },
+    {
+      "code": "221207",
+      "display": "Impact (Full)"
+    },
+    {
+      "code": "221208",
+      "display": "Normosol"
+    },
+    {
+      "code": "221209",
+      "display": "Peptisorb"
+    },
+    {
+      "code": "221210",
+      "display": "Suplena"
+    },
+    {
+      "code": "221211",
+      "display": "Sodium Bicarbonate 1,4%"
+    },
+    {
+      "code": "221212",
+      "display": "Saline 0,18%"
+    },
+    {
+      "code": "221213",
+      "display": "Saline 30%"
+    },
+    {
+      "code": "221261",
+      "display": "Abciximab (Reopro)"
+    },
+    {
+      "code": "221282",
+      "display": "Adenosine"
+    },
+    {
+      "code": "221289",
+      "display": "Epinephrine"
+    },
+    {
+      "code": "221319",
+      "display": "Alteplase (TPA)"
+    },
+    {
+      "code": "221342",
+      "display": "Aminophylline"
+    },
+    {
+      "code": "221347",
+      "display": "Amiodarone"
+    },
+    {
+      "code": "221385",
+      "display": "Lorazepam (Ativan)"
+    },
+    {
+      "code": "221393",
+      "display": "Atropine"
+    },
+    {
+      "code": "221429",
+      "display": "Esmolol"
+    },
+    {
+      "code": "221456",
+      "display": "Calcium Gluconate"
+    },
+    {
+      "code": "221468",
+      "display": "Diltiazem"
+    },
+    {
+      "code": "221555",
+      "display": "Cisatracurium"
+    },
+    {
+      "code": "221623",
+      "display": "Diazepam (Valium)"
+    },
+    {
+      "code": "221653",
+      "display": "Dobutamine"
+    },
+    {
+      "code": "221662",
+      "display": "Dopamine"
+    },
+    {
+      "code": "221668",
+      "display": "Midazolam (Versed)"
+    },
+    {
+      "code": "221689",
+      "display": "Drotrecogin (Xigris)"
+    },
+    {
+      "code": "221712",
+      "display": "Ketamine"
+    },
+    {
+      "code": "221733",
+      "display": "Factor VIII"
+    },
+    {
+      "code": "221744",
+      "display": "Fentanyl"
+    },
+    {
+      "code": "221749",
+      "display": "Phenylephrine"
+    },
+    {
+      "code": "221794",
+      "display": "Furosemide (Lasix)"
+    },
+    {
+      "code": "221824",
+      "display": "Haloperidol (Haldol)"
+    },
+    {
+      "code": "221828",
+      "display": "Hydralazine"
+    },
+    {
+      "code": "221833",
+      "display": "Hydromorphone (Dilaudid)"
+    },
+    {
+      "code": "221892",
+      "display": "Lepirudin"
+    },
+    {
+      "code": "221906",
+      "display": "Norepinephrine"
+    },
+    {
+      "code": "221986",
+      "display": "Milrinone"
+    },
+    {
+      "code": "222011",
+      "display": "Magnesium Sulfate"
+    },
+    {
+      "code": "222021",
+      "display": "Naloxone (Narcan)"
+    },
+    {
+      "code": "222037",
+      "display": "Nesiritide"
+    },
+    {
+      "code": "222042",
+      "display": "Nicardipine"
+    },
+    {
+      "code": "222051",
+      "display": "Nitroprusside"
+    },
+    {
+      "code": "222056",
+      "display": "Nitroglycerin"
+    },
+    {
+      "code": "222062",
+      "display": "Vecuronium"
+    },
+    {
+      "code": "222139",
+      "display": "Potassium ACEtate"
+    },
+    {
+      "code": "222151",
+      "display": "Procainamide"
+    },
+    {
+      "code": "222168",
+      "display": "Propofol"
+    },
+    {
+      "code": "222190",
+      "display": "Ranitidine"
+    },
+    {
+      "code": "222315",
+      "display": "Vasopressin"
+    },
+    {
+      "code": "222318",
+      "display": "Verapamil"
+    },
+    {
+      "code": "223257",
+      "display": "Insulin - 70/30"
+    },
+    {
+      "code": "223258",
+      "display": "Insulin - Regular"
+    },
+    {
+      "code": "223259",
+      "display": "Insulin - NPH"
+    },
+    {
+      "code": "223260",
+      "display": "Insulin - Glargine"
+    },
+    {
+      "code": "223261",
+      "display": "Insulin - Humalog 75/25"
+    },
+    {
+      "code": "223262",
+      "display": "Insulin - Humalog"
+    },
+    {
+      "code": "225877",
+      "display": "Isoniazid"
+    },
+    {
+      "code": "225147",
+      "display": "Argatroban"
+    },
+    {
+      "code": "225148",
+      "display": "Bivalirudin (Angiomax)"
+    },
+    {
+      "code": "225150",
+      "display": "Dexmedetomidine (Precedex)"
+    },
+    {
+      "code": "225151",
+      "display": "Eptifibatide (Integrilin)"
+    },
+    {
+      "code": "225152",
+      "display": "Heparin Sodium"
+    },
+    {
+      "code": "225153",
+      "display": "Labetalol"
+    },
+    {
+      "code": "225154",
+      "display": "Morphine Sulfate"
+    },
+    {
+      "code": "225155",
+      "display": "Octreotide"
+    },
+    {
+      "code": "225156",
+      "display": "Pentobarbital"
+    },
+    {
+      "code": "225157",
+      "display": "Tirofiban (Aggrastat)"
+    },
+    {
+      "code": "225158",
+      "display": "NaCl 0.9%"
+    },
+    {
+      "code": "225159",
+      "display": "NaCl 0.45%"
+    },
+    {
+      "code": "225161",
+      "display": "NaCl 3% (Hypertonic Saline)"
+    },
+    {
+      "code": "225162",
+      "display": "Prismasate K2"
+    },
+    {
+      "code": "225163",
+      "display": "Prismasate K4"
+    },
+    {
+      "code": "225164",
+      "display": "Trisodium Citrate 0.4%"
+    },
+    {
+      "code": "225165",
+      "display": "Bicarbonate Base"
+    },
+    {
+      "code": "225166",
+      "display": "Potassium Chloride"
+    },
+    {
+      "code": "225167",
+      "display": "Hydrochloric Acid - HCL"
+    },
+    {
+      "code": "225168",
+      "display": "Packed Red Blood Cells"
+    },
+    {
+      "code": "225170",
+      "display": "Platelets"
+    },
+    {
+      "code": "225171",
+      "display": "Cryoprecipitate"
+    },
+    {
+      "code": "225173",
+      "display": "Cell Saver"
+    },
+    {
+      "code": "225174",
+      "display": "Hetastarch (Hespan) 6%"
+    },
+    {
+      "code": "225879",
+      "display": "Levofloxacin"
+    },
+    {
+      "code": "225881",
+      "display": "Linezolid"
+    },
+    {
+      "code": "225882",
+      "display": "Mefloquine"
+    },
+    {
+      "code": "225795",
+      "display": "Dextran 40"
+    },
+    {
+      "code": "225796",
+      "display": "Dextran 70"
+    },
+    {
+      "code": "225797",
+      "display": "Free Water"
+    },
+    {
+      "code": "225798",
+      "display": "Vancomycin"
+    },
+    {
+      "code": "225799",
+      "display": "Gastric Meds"
+    },
+    {
+      "code": "225801",
+      "display": "Lipids 20%"
+    },
+    {
+      "code": "225823",
+      "display": "D5 1/2NS"
+    },
+    {
+      "code": "225825",
+      "display": "D5NS"
+    },
+    {
+      "code": "225827",
+      "display": "D5LR"
+    },
+    {
+      "code": "225828",
+      "display": "LR"
+    },
+    {
+      "code": "225830",
+      "display": "Multivitamins"
+    },
+    {
+      "code": "225832",
+      "display": "Folic Acid"
+    },
+    {
+      "code": "225833",
+      "display": "Thiamine"
+    },
+    {
+      "code": "225834",
+      "display": "K Phos"
+    },
+    {
+      "code": "225835",
+      "display": "Na Phos"
+    },
+    {
+      "code": "225837",
+      "display": "Acyclovir"
+    },
+    {
+      "code": "225838",
+      "display": "Ambisome"
+    },
+    {
+      "code": "225840",
+      "display": "Amikacin"
+    },
+    {
+      "code": "225842",
+      "display": "Ampicillin"
+    },
+    {
+      "code": "225843",
+      "display": "Ampicillin/Sulbactam (Unasyn)"
+    },
+    {
+      "code": "225844",
+      "display": "Atovaquone"
+    },
+    {
+      "code": "225845",
+      "display": "Azithromycin"
+    },
+    {
+      "code": "225847",
+      "display": "Aztreonam"
+    },
+    {
+      "code": "225848",
+      "display": "Caspofungin"
+    },
+    {
+      "code": "225850",
+      "display": "Cefazolin"
+    },
+    {
+      "code": "225851",
+      "display": "Cefepime"
+    },
+    {
+      "code": "225853",
+      "display": "Ceftazidime"
+    },
+    {
+      "code": "225855",
+      "display": "Ceftriaxone"
+    },
+    {
+      "code": "225857",
+      "display": "Chloroquine"
+    },
+    {
+      "code": "225859",
+      "display": "Ciprofloxacin"
+    },
+    {
+      "code": "225860",
+      "display": "Clindamycin"
+    },
+    {
+      "code": "225862",
+      "display": "Colistin"
+    },
+    {
+      "code": "225863",
+      "display": "Daptomycin"
+    },
+    {
+      "code": "225865",
+      "display": "Doxycycline"
+    },
+    {
+      "code": "225866",
+      "display": "Erythromycin"
+    },
+    {
+      "code": "225868",
+      "display": "Ethambutol"
+    },
+    {
+      "code": "225869",
+      "display": "Fluconazole"
+    },
+    {
+      "code": "225871",
+      "display": "Foscarnet"
+    },
+    {
+      "code": "225873",
+      "display": "Gancyclovir"
+    },
+    {
+      "code": "225875",
+      "display": "Gentamicin"
+    },
+    {
+      "code": "225876",
+      "display": "Imipenem/Cilastatin"
+    },
+    {
+      "code": "225883",
+      "display": "Meropenem"
+    },
+    {
+      "code": "225884",
+      "display": "Metronidazole"
+    },
+    {
+      "code": "225885",
+      "display": "Micafungin"
+    },
+    {
+      "code": "225886",
+      "display": "Moxifloxacin"
+    },
+    {
+      "code": "225888",
+      "display": "Nafcillin"
+    },
+    {
+      "code": "225889",
+      "display": "Oxacillin"
+    },
+    {
+      "code": "225890",
+      "display": "Penicillin G potassium"
+    },
+    {
+      "code": "225892",
+      "display": "Piperacillin"
+    },
+    {
+      "code": "225893",
+      "display": "Piperacillin/Tazobactam (Zosyn)"
+    },
+    {
+      "code": "225895",
+      "display": "Pyrazinamide"
+    },
+    {
+      "code": "225896",
+      "display": "Quinine"
+    },
+    {
+      "code": "225897",
+      "display": "Ribavirin"
+    },
+    {
+      "code": "225898",
+      "display": "Rifampin"
+    },
+    {
+      "code": "225899",
+      "display": "Bactrim (SMX/TMP)"
+    },
+    {
+      "code": "225900",
+      "display": "Dalfopristin/Quinupristin (Synercid)"
+    },
+    {
+      "code": "225902",
+      "display": "Tobramycin"
+    },
+    {
+      "code": "225903",
+      "display": "Valgancyclovir"
+    },
+    {
+      "code": "225905",
+      "display": "Voriconazole"
+    },
+    {
+      "code": "225906",
+      "display": "Enoxaparin (Lovenox)"
+    },
+    {
+      "code": "225907",
+      "display": "Famotidine (Pepcid)"
+    },
+    {
+      "code": "225908",
+      "display": "Fondaparinux"
+    },
+    {
+      "code": "225909",
+      "display": "Lansoprazole (Prevacid)"
+    },
+    {
+      "code": "225910",
+      "display": "Pantoprazole (Protonix)"
+    },
+    {
+      "code": "225911",
+      "display": "Ranitidine (Prophylaxis)"
+    },
+    {
+      "code": "225912",
+      "display": "Carafate (Sucralfate)"
+    },
+    {
+      "code": "225913",
+      "display": "Coumadin (Warfarin)"
+    },
+    {
+      "code": "225914",
+      "display": "Factor VIIa"
+    },
+    {
+      "code": "225915",
+      "display": "Profilnine"
+    },
+    {
+      "code": "225916",
+      "display": "TPN w/ Lipids"
+    },
+    {
+      "code": "225917",
+      "display": "TPN without Lipids"
+    },
+    {
+      "code": "225918",
+      "display": "Aminosyn 3.5%"
+    },
+    {
+      "code": "225919",
+      "display": "D5 Aminosyn 3.5%"
+    },
+    {
+      "code": "225920",
+      "display": "Peripheral Parenteral Nutrition"
+    },
+    {
+      "code": "225921",
+      "display": "Hepatamine"
+    },
+    {
+      "code": "225922",
+      "display": "Nephramine"
+    },
+    {
+      "code": "225923",
+      "display": "Folate"
+    },
+    {
+      "code": "225924",
+      "display": "Hydrochloric Acid"
+    },
+    {
+      "code": "225925",
+      "display": "Potassium Phosphate"
+    },
+    {
+      "code": "225926",
+      "display": "Sodium ACEtate"
+    },
+    {
+      "code": "225928",
+      "display": "Impact with Fiber (Full)"
+    },
+    {
+      "code": "225929",
+      "display": "ProBalance (Full)"
+    },
+    {
+      "code": "225930",
+      "display": "Peptamen 1.5 (Full)"
+    },
+    {
+      "code": "225931",
+      "display": "Nutren 2.0 (Full)"
+    },
+    {
+      "code": "225934",
+      "display": "Vivonex (Full)"
+    },
+    {
+      "code": "225935",
+      "display": "Replete (Full)"
+    },
+    {
+      "code": "225936",
+      "display": "Replete with Fiber (Full)"
+    },
+    {
+      "code": "225937",
+      "display": "Ensure (Full)"
+    },
+    {
+      "code": "225941",
+      "display": "D5 1/4NS"
+    },
+    {
+      "code": "225942",
+      "display": "Fentanyl (Concentrate)"
+    },
+    {
+      "code": "225943",
+      "display": "Solution"
+    },
+    {
+      "code": "225944",
+      "display": "Sterile Water"
+    },
+    {
+      "code": "225945",
+      "display": "Lidocaine"
+    },
+    {
+      "code": "225947",
+      "display": "Dextrose PN"
+    },
+    {
+      "code": "225948",
+      "display": "Amino Acids"
+    },
+    {
+      "code": "225969",
+      "display": "Lipids (additive)"
+    },
+    {
+      "code": "225970",
+      "display": "Beneprotein"
+    },
+    {
+      "code": "225972",
+      "display": "Fentanyl (Push)"
+    },
+    {
+      "code": "225973",
+      "display": "Meperidine (Demerol)"
+    },
+    {
+      "code": "225974",
+      "display": "Metoprolol"
+    },
+    {
+      "code": "225975",
+      "display": "Heparin Sodium (Prophylaxis)"
+    },
+    {
+      "code": "225991",
+      "display": "Resource Fruit Beverage"
+    },
+    {
+      "code": "225993",
+      "display": "Optisource"
+    },
+    {
+      "code": "225994",
+      "display": "Mighty Shake (Vanilla/Strawberry)"
+    },
+    {
+      "code": "225995",
+      "display": "Mighty Shake (Chocolate)"
+    },
+    {
+      "code": "225996",
+      "display": "Mighty Shake (no sugar added)"
+    },
+    {
+      "code": "225999",
+      "display": "Vanilla Scandi Shake (mixed)"
+    },
+    {
+      "code": "226000",
+      "display": "Chocolate Scandi Shake (mixed)"
+    },
+    {
+      "code": "226002",
+      "display": "Vanilla Lactose Free Scandi Shake (mixed)"
+    },
+    {
+      "code": "226016",
+      "display": "Nutren 2.0 (1/4)"
+    },
+    {
+      "code": "226017",
+      "display": "Nutren 2.0 (2/3)"
+    },
+    {
+      "code": "226018",
+      "display": "Nutren 2.0 (3/4)"
+    },
+    {
+      "code": "226019",
+      "display": "Nutren 2.0 (1/2)"
+    },
+    {
+      "code": "226020",
+      "display": "Impact (1/4)"
+    },
+    {
+      "code": "226021",
+      "display": "Impact (2/3)"
+    },
+    {
+      "code": "226022",
+      "display": "Impact (3/4)"
+    },
+    {
+      "code": "226023",
+      "display": "Impact (1/2)"
+    },
+    {
+      "code": "226024",
+      "display": "Impact with Fiber (1/4)"
+    },
+    {
+      "code": "226025",
+      "display": "Impact with Fiber (2/3)"
+    },
+    {
+      "code": "226026",
+      "display": "Impact with Fiber (3/4)"
+    },
+    {
+      "code": "226027",
+      "display": "Impact with Fiber (1/2)"
+    },
+    {
+      "code": "226028",
+      "display": "Nutren Renal (1/4)"
+    },
+    {
+      "code": "226029",
+      "display": "Nutren Renal (2/3)"
+    },
+    {
+      "code": "226030",
+      "display": "Nutren Renal (3/4)"
+    },
+    {
+      "code": "226031",
+      "display": "Nutren Renal (1/2)"
+    },
+    {
+      "code": "226036",
+      "display": "Peptamen 1.5 (1/4)"
+    },
+    {
+      "code": "226037",
+      "display": "Peptamen 1.5 (2/3)"
+    },
+    {
+      "code": "226038",
+      "display": "Peptamen 1.5 (3/4)"
+    },
+    {
+      "code": "226039",
+      "display": "Peptamen 1.5 (1/2)"
+    },
+    {
+      "code": "226040",
+      "display": "ProBalance (1/4)"
+    },
+    {
+      "code": "226041",
+      "display": "ProBalance (2/3)"
+    },
+    {
+      "code": "226042",
+      "display": "ProBalance (3/4)"
+    },
+    {
+      "code": "226043",
+      "display": "ProBalance (1/2)"
+    },
+    {
+      "code": "226044",
+      "display": "Replete (1/4)"
+    },
+    {
+      "code": "226045",
+      "display": "Replete (2/3)"
+    },
+    {
+      "code": "226046",
+      "display": "Replete (3/4)"
+    },
+    {
+      "code": "226047",
+      "display": "Replete (1/2)"
+    },
+    {
+      "code": "226048",
+      "display": "Replete with Fiber (1/4)"
+    },
+    {
+      "code": "226049",
+      "display": "Replete with Fiber (2/3)"
+    },
+    {
+      "code": "226050",
+      "display": "Replete with Fiber (3/4)"
+    },
+    {
+      "code": "226051",
+      "display": "Replete with Fiber (1/2)"
+    },
+    {
+      "code": "226056",
+      "display": "Vivonex (1/4)"
+    },
+    {
+      "code": "226057",
+      "display": "Vivonex (2/3)"
+    },
+    {
+      "code": "226058",
+      "display": "Vivonex (3/4)"
+    },
+    {
+      "code": "226059",
+      "display": "Vivonex (1/2)"
+    },
+    {
+      "code": "226089",
+      "display": "Piggyback"
+    },
+    {
+      "code": "226361",
+      "display": "Pre-Admission/Non-ICU Intake"
+    },
+    {
+      "code": "226362",
+      "display": "ZGastric/TF Residual Intake"
+    },
+    {
+      "code": "226363",
+      "display": "Cath Lab Intake"
+    },
+    {
+      "code": "226364",
+      "display": "OR Crystalloid Intake"
+    },
+    {
+      "code": "226365",
+      "display": "OR Colloid Intake"
+    },
+    {
+      "code": "226367",
+      "display": "OR FFP Intake"
+    },
+    {
+      "code": "226368",
+      "display": "OR Packed RBC Intake"
+    },
+    {
+      "code": "226369",
+      "display": "OR Platelet Intake"
+    },
+    {
+      "code": "226370",
+      "display": "OR Autologous Blood Intake"
+    },
+    {
+      "code": "226371",
+      "display": "OR Cryoprecipitate Intake"
+    },
+    {
+      "code": "226372",
+      "display": "OR Cell Saver Intake"
+    },
+    {
+      "code": "226375",
+      "display": "PACU Crystalloid Intake"
+    },
+    {
+      "code": "226376",
+      "display": "PACU Colloid Intake"
+    },
+    {
+      "code": "226377",
+      "display": "PACU PO Intake"
+    },
+    {
+      "code": "226401",
+      "display": "GU Irrigant - Normal Saline"
+    },
+    {
+      "code": "226402",
+      "display": "GU Irrigant - Sterile Water"
+    },
+    {
+      "code": "226403",
+      "display": "GU Irrigant - Amphotericin B"
+    },
+    {
+      "code": "226452",
+      "display": "PO Intake"
+    },
+    {
+      "code": "226453",
+      "display": "GT Flush"
+    },
+    {
+      "code": "226875",
+      "display": "Ensure (3/4)"
+    },
+    {
+      "code": "226876",
+      "display": "Ensure (1/2)"
+    },
+    {
+      "code": "226877",
+      "display": "Ensure Plus (Full)"
+    },
+    {
+      "code": "226878",
+      "display": "Ensure Plus (3/4)"
+    },
+    {
+      "code": "226879",
+      "display": "Ensure Plus (1/2)"
+    },
+    {
+      "code": "226880",
+      "display": "Nutren Pulmonary (Full)"
+    },
+    {
+      "code": "226881",
+      "display": "Nutren Pulmonary (3/4)"
+    },
+    {
+      "code": "226882",
+      "display": "Nutren Pulmonary (1/2)"
+    },
+    {
+      "code": "227070",
+      "display": "PACU Packed RBC Intake"
+    },
+    {
+      "code": "227071",
+      "display": "PACU Platelet Intake"
+    },
+    {
+      "code": "227072",
+      "display": "PACU FFP Intake"
+    },
+    {
+      "code": "227090",
+      "display": "Lipids 10%"
+    },
+    {
+      "code": "227091",
+      "display": "Ensure (1/4)"
+    },
+    {
+      "code": "227092",
+      "display": "Ensure Plus (1/4)"
+    },
+    {
+      "code": "227370",
+      "display": "Peptamen VHP (Full)"
+    },
+    {
+      "code": "227371",
+      "display": "Peptamen VHP (3/4)"
+    },
+    {
+      "code": "227372",
+      "display": "Peptamen VHP (2/3)"
+    },
+    {
+      "code": "227373",
+      "display": "Peptamen VHP (1/4)"
+    },
+    {
+      "code": "227374",
+      "display": "Peptamen VHP (1/2)"
+    },
+    {
+      "code": "227691",
+      "display": "Keflex"
+    },
+    {
+      "code": "227518",
+      "display": "Nutren 2.0 (3/4)"
+    },
+    {
+      "code": "227520",
+      "display": "Methadone Hydrochloride"
+    },
+    {
+      "code": "227522",
+      "display": "KCL (Bolus)"
+    },
+    {
+      "code": "227523",
+      "display": "Magnesium Sulfate (Bolus)"
+    },
+    {
+      "code": "227524",
+      "display": "Magnesium Sulfate (OB-GYN)"
+    },
+    {
+      "code": "227525",
+      "display": "Calcium Gluconate (CRRT)"
+    },
+    {
+      "code": "227526",
+      "display": "Citrate"
+    },
+    {
+      "code": "227528",
+      "display": "ACD-A Citrate (500ml)"
+    },
+    {
+      "code": "227529",
+      "display": "ACD-A Citrate (1000ml)"
+    },
+    {
+      "code": "227530",
+      "display": "IV Immune Globulin (IVIG)"
+    },
+    {
+      "code": "227531",
+      "display": "Mannitol"
+    },
+    {
+      "code": "227532",
+      "display": "Plasma Pheresis"
+    },
+    {
+      "code": "227533",
+      "display": "Sodium Bicarbonate 8.4% (Amp)"
+    },
+    {
+      "code": "227534",
+      "display": "Cyclosporine"
+    },
+    {
+      "code": "227535",
+      "display": "Vitamin K (Phytonadione)"
+    },
+    {
+      "code": "227536",
+      "display": "KCl (CRRT)"
+    },
+    {
+      "code": "227689",
+      "display": "Dilantin"
+    },
+    {
+      "code": "227690",
+      "display": "Fosphenytoin"
+    },
+    {
+      "code": "227692",
+      "display": "Isuprel"
+    },
+    {
+      "code": "227694",
+      "display": "Omeprazole (Prilosec)"
+    },
+    {
+      "code": "227695",
+      "display": "Fibersource HN (Full)"
+    },
+    {
+      "code": "227696",
+      "display": "Fibersource HN (3/4)"
+    },
+    {
+      "code": "227697",
+      "display": "Fibersource HN (2/3)"
+    },
+    {
+      "code": "227698",
+      "display": "Fibersource HN (1/2)"
+    },
+    {
+      "code": "227699",
+      "display": "Fibersource HN (1/4)"
+    },
+    {
+      "code": "227972",
+      "display": "NovaSource Renal (1/4)"
+    },
+    {
+      "code": "227973",
+      "display": "NovaSource Renal (1/2)"
+    },
+    {
+      "code": "227974",
+      "display": "NovaSource Renal (3/4)"
+    },
+    {
+      "code": "227975",
+      "display": "NovaSource Renal (Full)"
+    },
+    {
+      "code": "227976",
+      "display": "Boost Glucose Control (1/4)"
+    },
+    {
+      "code": "227977",
+      "display": "Boost Glucose Control (1/2)"
+    },
+    {
+      "code": "227978",
+      "display": "Boost Glucose Control (3/4)"
+    },
+    {
+      "code": "227979",
+      "display": "Boost Glucose Control (Full)"
+    },
+    {
+      "code": "228003",
+      "display": "Tamiflu"
+    },
+    {
+      "code": "228131",
+      "display": "Isosource 1.5 (1/2)"
+    },
+    {
+      "code": "228132",
+      "display": "Isosource 1.5 (1/4)"
+    },
+    {
+      "code": "228133",
+      "display": "Isosource 1.5 (2/3)"
+    },
+    {
+      "code": "228134",
+      "display": "Isosource 1.5 (3/4)"
+    },
+    {
+      "code": "228135",
+      "display": "Isosource 1.5 (Full)"
+    },
+    {
+      "code": "228140",
+      "display": "Dextrose 20%"
+    },
+    {
+      "code": "228141",
+      "display": "Dextrose 30%"
+    },
+    {
+      "code": "228142",
+      "display": "Dextrose 40%"
+    },
+    {
+      "code": "228315",
+      "display": "Acetaminophen-IV"
+    },
+    {
+      "code": "228316",
+      "display": "Levetiracetam (Keppra)"
+    },
+    {
+      "code": "228317",
+      "display": "Calcium Gluconate (Bolus)_OLD_1"
+    },
+    {
+      "code": "228339",
+      "display": "Amiodarone 600/500"
+    },
+    {
+      "code": "228340",
+      "display": "Furosemide (Lasix) 250/50"
+    },
+    {
+      "code": "228341",
+      "display": "NaCl 23.4%"
+    },
+    {
+      "code": "228348",
+      "display": "Nepro (1/2)"
+    },
+    {
+      "code": "228349",
+      "display": "Nepro (1/4)"
+    },
+    {
+      "code": "228350",
+      "display": "Nepro (3/4)"
+    },
+    {
+      "code": "228351",
+      "display": "Nepro (Full)"
+    },
+    {
+      "code": "228352",
+      "display": "Enlive (1/2)"
+    },
+    {
+      "code": "228353",
+      "display": "Enlive (1/4)"
+    },
+    {
+      "code": "228354",
+      "display": "Enlive (3/4)"
+    },
+    {
+      "code": "228355",
+      "display": "Enlive (Full)"
+    },
+    {
+      "code": "228356",
+      "display": "Glucerna (1/2)"
+    },
+    {
+      "code": "228357",
+      "display": "Glucerna (1/4)"
+    },
+    {
+      "code": "228358",
+      "display": "Glucerna (3/4)"
+    },
+    {
+      "code": "228359",
+      "display": "Glucerna (Full)"
+    },
+    {
+      "code": "228360",
+      "display": "Pulmocare (1/2)"
+    },
+    {
+      "code": "228361",
+      "display": "Pulmocare (1/4)"
+    },
+    {
+      "code": "228362",
+      "display": "Pulmocare (3/4)"
+    },
+    {
+      "code": "228363",
+      "display": "Pulmocare (Full)"
+    },
+    {
+      "code": "228364",
+      "display": "Two Cal HN (1/2)"
+    },
+    {
+      "code": "228365",
+      "display": "Two Cal HN (1/4)"
+    },
+    {
+      "code": "228366",
+      "display": "Two Cal HN (3/4)"
+    },
+    {
+      "code": "228367",
+      "display": "Two Cal HN (Full)"
+    },
+    {
+      "code": "228383",
+      "display": "Peptamen Bariatric (Full)"
+    },
+    {
+      "code": "229009",
+      "display": "Promote (Full)"
+    },
+    {
+      "code": "229010",
+      "display": "Jevity 1.2 (Full)"
+    },
+    {
+      "code": "229011",
+      "display": "Jevity 1.5 (Full)"
+    },
+    {
+      "code": "229012",
+      "display": "Vital 1.5 (Full)"
+    },
+    {
+      "code": "229013",
+      "display": "Glucerna 1.2 (Full)"
+    },
+    {
+      "code": "229014",
+      "display": "Promote with Fiber (Full)"
+    },
+    {
+      "code": "229057",
+      "display": "Acetylcysteine"
+    },
+    {
+      "code": "229058",
+      "display": "Aminocaproic acid (Amicar)"
+    },
+    {
+      "code": "229059",
+      "display": "Chloramphenicol"
+    },
+    {
+      "code": "229061",
+      "display": "Ertapenem sodium (Invanz)"
+    },
+    {
+      "code": "229062",
+      "display": "Mycophenolate mofetil (Cellcept)"
+    },
+    {
+      "code": "229063",
+      "display": "Pamidronate"
+    },
+    {
+      "code": "229064",
+      "display": "Tigecycline"
+    },
+    {
+      "code": "229066",
+      "display": "Treprostinil (Remodulin)"
+    },
+    {
+      "code": "229067",
+      "display": "Granulocytes"
+    },
+    {
+      "code": "229068",
+      "display": "Protamine sulfate"
+    },
+    {
+      "code": "229069",
+      "display": "Digoxin (Lanoxin)"
+    },
+    {
+      "code": "229070",
+      "display": "Glycopyrolate (Robinul)"
+    },
+    {
+      "code": "229071",
+      "display": "Neostigmine (Prostigmin)"
+    },
+    {
+      "code": "229072",
+      "display": "Ketorolac (Toradol)"
+    },
+    {
+      "code": "229233",
+      "display": "Rocuronium"
+    },
+    {
+      "code": "229234",
+      "display": "Clevidipine (Cleviprex)"
+    },
+    {
+      "code": "229249",
+      "display": "Aminocaproic acid (Amicar)"
+    },
+    {
+      "code": "229294",
+      "display": "Ensure Clear (Full)"
+    },
+    {
+      "code": "229295",
+      "display": "Glucerna 1.5 (Full)"
+    },
+    {
+      "code": "229296",
+      "display": "Vital High Protein (Full)"
+    },
+    {
+      "code": "229297",
+      "display": "Osmolite 1.5 (Full)"
+    },
+    {
+      "code": "229299",
+      "display": "Insulin - Novolog"
+    },
+    {
+      "code": "229420",
+      "display": "Dexmedetomidine (Precedex)"
+    },
+    {
+      "code": "229574",
+      "display": "Fiber Supplement (i.e. Banana Flakes)"
+    },
+    {
+      "code": "229583",
+      "display": "Beneprotein."
+    },
+    {
+      "code": "229587",
+      "display": "Ceftaroline"
+    },
+    {
+      "code": "229597",
+      "display": "Heparin Sodium (Impella)"
+    },
+    {
+      "code": "229615",
+      "display": "Esomeprazole (Nexium)"
+    },
+    {
+      "code": "229616",
+      "display": "Ondansetron (Zofran)"
+    },
+    {
+      "code": "229617",
+      "display": "Epinephrine."
+    },
+    {
+      "code": "229618",
+      "display": "Calcium Chloride"
+    },
+    {
+      "code": "229619",
+      "display": "Insulin - U500"
+    },
+    {
+      "code": "229624",
+      "display": "Nicardipine 40mg/200"
+    },
+    {
+      "code": "229630",
+      "display": "Phenylephrine (50/250)"
+    },
+    {
+      "code": "229631",
+      "display": "Phenylephrine (200/250)_OLD_1"
+    },
+    {
+      "code": "229632",
+      "display": "Phenylephrine (200/250)"
+    },
+    {
+      "code": "229639",
+      "display": "Bumetanide (Bumex)"
+    },
+    {
+      "code": "229640",
+      "display": "Calcium Gluconate (Bolus)"
+    },
+    {
+      "code": "229654",
+      "display": "Amiodarone 450/250"
+    },
+    {
+      "code": "229709",
+      "display": "Angiotensin II (Giapreza)"
+    },
+    {
+      "code": "229760",
+      "display": "Epoprostenol (Veletri)"
+    },
+    {
+      "code": "229764",
+      "display": "Angiotensin II (Giapreza)"
+    },
+    {
+      "code": "229781",
+      "display": "Bivalirudin (Angiomax) (Impella)"
+    },
+    {
+      "code": "229861",
+      "display": "Sodium Acetate."
+    },
+    {
+      "code": "230034",
+      "display": "Amiodarone 150/100"
+    },
+    {
+      "code": "230044",
+      "display": "Heparin Sodium (CRRT-Prefilter)"
+    }
+  ]
+}

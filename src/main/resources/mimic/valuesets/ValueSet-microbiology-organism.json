@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "id": "microbiology-organism",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><ul><li>Include all codes defined in <a href=\"CodeSystem-microbiology-organism.html\"><code>http://fhir.mimic.mit.edu/CodeSystem/microbiology-organism</code></a></li></ul></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/ValueSet/microbiology-organism",
+  "version": "0.2.4",
+  "name": "MicrobiologyOrganism",
+  "title": "MicrobiologyOrganism",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The microbiology organism being tested in MIMIC",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.mimic.mit.edu/CodeSystem/microbiology-organism"
+      }
+    ]
+  }
+}

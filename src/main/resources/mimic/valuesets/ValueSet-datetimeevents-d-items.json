@@ -1,0 +1,789 @@
+{
+  "resourceType": "ValueSet",
+  "id": "datetimeevents-d-items",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-d-items.html\"><code>http://fhir.mimic.mit.edu/CodeSystem/d-items</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226719\">226719</a></td><td>Last menses</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225376\">225376</a></td><td>Indwelling Port (PortaCath) Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225316\">225316</a></td><td>CCO PAC Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224185\">224185</a></td><td>PICC Line Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228160\">228160</a></td><td>Impella Aortic Pressure Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225083\">225083</a></td><td>Pregnancy due date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229886\">229886</a></td><td>Pressure Ulcer #3- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225765\">225765</a></td><td>Sheath Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225319\">225319</a></td><td>Dialysis Catheter Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224187\">224187</a></td><td>PICC Line Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225345\">225345</a></td><td>Midline Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229883\">229883</a></td><td>Pressure ulcer #1- Date Indentified_OLD_1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225224\">225224</a></td><td>CCO PAC Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226518\">226518</a></td><td>Expected Discharge Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229887\">229887</a></td><td>Pressure Ulcer #4- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229555\">229555</a></td><td>Cardiac Assist Cannula Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227197\">227197</a></td><td>Indwelling (PortaCath) Port #2 Date Accessed</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225332\">225332</a></td><td>Tunneled (Hickman) Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225128\">225128</a></td><td>Last dialysis</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227722\">227722</a></td><td>AVA Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225322\">225322</a></td><td>Dialysis Catheter Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227817\">227817</a></td><td>Referral Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227793\">227793</a></td><td>Impaired Skin  - Dressing Change #4</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228209\">228209</a></td><td>Tandem Heart Access Line Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227542\">227542</a></td><td>ScvO2 (Presep) Calibrated</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227724\">227724</a></td><td>AVA Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225384\">225384</a></td><td>Presep Catheter Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225213\">225213</a></td><td>Trauma Line Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225394\">225394</a></td><td>Triple Introducer Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229541\">229541</a></td><td>EKOS Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229733\">229733</a></td><td>22 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225336\">225336</a></td><td>IABP Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228215\">228215</a></td><td>Tandem Heart Access Line Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227126\">227126</a></td><td>Indwelling (PortaCath) Port #1 Date Accessed</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225216\">225216</a></td><td>Trauma Line Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225340\">225340</a></td><td>IABP Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229353\">229353</a></td><td>Foley Cath Removal Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225386\">225386</a></td><td>Presep Catheter Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229643\">229643</a></td><td>Stroke NCP - Ed Given Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224288\">224288</a></td><td>Arterial line Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228798\">228798</a></td><td>Pressure ulcer #6- Dressing change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229729\">229729</a></td><td>18 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224293\">224293</a></td><td>Cordis/Introducer Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229890\">229890</a></td><td>Pressure Ulcer #7- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229550\">229550</a></td><td>Avalon Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229549\">229549</a></td><td>Avalon Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225221\">225221</a></td><td>CCO PAC Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228207\">228207</a></td><td>Tandem Heart Access Line Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228631\">228631</a></td><td>Date signed</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224287\">224287</a></td><td>Arterial Line Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228801\">228801</a></td><td>Pressure ulcer #9- Dressing change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225222\">225222</a></td><td>CCO PAC Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229884\">229884</a></td><td>Pressure Ulcer #1- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228321\">228321</a></td><td>PC Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225762\">225762</a></td><td>Sheath Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225370\">225370</a></td><td>Pheresis Catheter Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225279\">225279</a></td><td>Date of Admission to Hospital</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-220003\">220003</a></td><td>ICU Admission date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228266\">228266</a></td><td>FM Date/Time</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226532\">226532</a></td><td>Organ Bank Notified</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225348\">225348</a></td><td>Midline Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225375\">225375</a></td><td>Indwelling Port (PortaCath) Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225369\">225369</a></td><td>Pheresis Catheter Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229655\">229655</a></td><td>Stroke NCP -  Fam Ed Given Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228799\">228799</a></td><td>Pressure ulcer #7- Dressing change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226724\">226724</a></td><td>Hospital Admit Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227794\">227794</a></td><td>Impaired Skin  - Dressing Change #5</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225383\">225383</a></td><td>Presep Catheter Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225346\">225346</a></td><td>Midline Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224298\">224298</a></td><td>Cordis/Introducer Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224296\">224296</a></td><td>Cordis/Introducer Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229556\">229556</a></td><td>Cardiac Assist Cannula Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229740\">229740</a></td><td>24 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228793\">228793</a></td><td>Pressure ulcer #1- Dressing change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225758\">225758</a></td><td>RIC Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225754\">225754</a></td><td>20 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225377\">225377</a></td><td>Indwelling Port (PortaCath) Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227911\">227911</a></td><td>Date - Therapist</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225317\">225317</a></td><td>Trauma Line Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224184\">224184</a></td><td>PICC Line Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227796\">227796</a></td><td>Impaired Skin  - Dressing Change #7</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229731\">229731</a></td><td>16 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225769\">225769</a></td><td>Sheath Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225753\">225753</a></td><td>22 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228166\">228166</a></td><td>Impella Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225354\">225354</a></td><td>PA Catheter Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224878\">224878</a></td><td>GU Catheter Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226515\">226515</a></td><td>Date of Birth</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224285\">224285</a></td><td>Arterial line Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228165\">228165</a></td><td>Impella Daily Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228331\">228331</a></td><td>PC Time of visit</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229732\">229732</a></td><td>20 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229471\">229471</a></td><td>24 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229730\">229730</a></td><td>14 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225335\">225335</a></td><td>IABP Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225763\">225763</a></td><td>Sheath Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229542\">229542</a></td><td>EKOS Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227792\">227792</a></td><td>Impaired Skin  - Dressing Change #3</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227729\">227729</a></td><td>AVA Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225368\">225368</a></td><td>Pheresis Catheter Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228802\">228802</a></td><td>Pressure ulcer #10- Dressing change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224295\">224295</a></td><td>Cordis/Introducer Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229352\">229352</a></td><td>Foley Cath Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225385\">225385</a></td><td>Presep Catheter Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225321\">225321</a></td><td>Dialysis Catheter Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225356\">225356</a></td><td>PA Catheter Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226132\">226132</a></td><td>ICP Line Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229741\">229741</a></td><td>RIC Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225392\">225392</a></td><td>Triple Introducer Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225380\">225380</a></td><td>Indwelling Port (PortaCath)Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224280\">224280</a></td><td>Multi Lumen Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229651\">229651</a></td><td>Stroke NCP - Water Swallow Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225378\">225378</a></td><td>Indwelling Port (PortaCath) Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229891\">229891</a></td><td>Pressure Ulcer #8- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227800\">227800</a></td><td>Impaired Skin  - Dressing Change #10</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225367\">225367</a></td><td>Pheresis Catheter Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225327\">225327</a></td><td>Tunneled (Hickman) Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225337\">225337</a></td><td>IABP Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225393\">225393</a></td><td>Triple Introducer Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229734\">229734</a></td><td>24 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225372\">225372</a></td><td>Pheresis Catheter Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229892\">229892</a></td><td>Pressure Ulcer #9- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224290\">224290</a></td><td>Arterial line Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224282\">224282</a></td><td>Multi Lumen Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225330\">225330</a></td><td>Tunneled (Hickman) Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227790\">227790</a></td><td>Impaired Skin  - Dressing Change #1</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225338\">225338</a></td><td>IABP Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225318\">225318</a></td><td>Dialysis Catheter Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225226\">225226</a></td><td>CCO PAC Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225328\">225328</a></td><td>Tunneled (Hickman) Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225324\">225324</a></td><td>Dialysis CatheterTubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229739\">229739</a></td><td>22 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229738\">229738</a></td><td>20 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227797\">227797</a></td><td>Impaired Skin  - Dressing Change #8</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228218\">228218</a></td><td>Tandem Heart Return Cannula Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224292\">224292</a></td><td>Cordis/Introducer Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224186\">224186</a></td><td>PICC Line Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226482\">226482</a></td><td>Blood Clot Outdates</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224279\">224279</a></td><td>Multi Lumen Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225755\">225755</a></td><td>18 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225391\">225391</a></td><td>Triple Introducer Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225218\">225218</a></td><td>Trauma Line Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229735\">229735</a></td><td>RIC Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226516\">226516</a></td><td>Discharge Date/Time</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229885\">229885</a></td><td>Pressure Ulcer #2- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227721\">227721</a></td><td>AVA Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227541\">227541</a></td><td>SvO2 Calibrated</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229737\">229737</a></td><td>16 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228800\">228800</a></td><td>Pressure ulcer #8- Dressing change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227907\">227907</a></td><td>Date - Student</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225353\">225353</a></td><td>PA Catheter Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225757\">225757</a></td><td>14 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226128\">226128</a></td><td>ICP Line Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225352\">225352</a></td><td>PA Catheter Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225343\">225343</a></td><td>Midline Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225351\">225351</a></td><td>PA Catheter Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225766\">225766</a></td><td>Sheath Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227795\">227795</a></td><td>Impaired Skin  - Dressing Change #6</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228794\">228794</a></td><td>Pressure ulcer #2- Dressing change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227198\">227198</a></td><td>Indwelling (PortaCath) Port #1 Date De-accessed</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225390\">225390</a></td><td>Presep Catheter Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224262\">224262</a></td><td>Multi Lumen Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224284\">224284</a></td><td>Arterial line Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224261\">224261</a></td><td>Multi Lumen Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228795\">228795</a></td><td>Pressure ulcer #3- Dressing change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225344\">225344</a></td><td>Midline Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227199\">227199</a></td><td>Indwelling (PortaCath) Port #2 Date De-accessed</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-226126\">226126</a></td><td>ICP Line Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228796\">228796</a></td><td>Pressure ulcer #4- Dressing change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227798\">227798</a></td><td>Impaired Skin  - Dressing Change #9</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228168\">228168</a></td><td>Impella Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229736\">229736</a></td><td>14 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229888\">229888</a></td><td>Pressure Ulcer #5- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227584\">227584</a></td><td>GU Catheter D/C Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229889\">229889</a></td><td>Pressure Ulcer #6- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229728\">229728</a></td><td>18 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-224183\">224183</a></td><td>PICC Line Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227791\">227791</a></td><td>Impaired Skin  - Dressing Change #2</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227720\">227720</a></td><td>AVA Cap Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-229893\">229893</a></td><td>Pressure Ulcer #10- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225329\">225329</a></td><td>Tunneled (Hickman) Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225756\">225756</a></td><td>16 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225396\">225396</a></td><td>Triple Introducer Tubing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-227361\">227361</a></td><td>Indwelling (PortaCath) Dressing Change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-225214\">225214</a></td><td>Trauma Line Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228797\">228797</a></td><td>Pressure ulcer #5- Dressing change</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228291\">228291</a></td><td>IO Insertion Date</td></tr><tr><td><a href=\"CodeSystem-d-items.html#d-items-228221\">228221</a></td><td>Tandem Heart Return Cannula Insertion Date</td></tr></table></li></ul></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/ValueSet/datetimeevents-d-items",
+  "version": "0.2.4",
+  "name": "DatetimeeventsDItems",
+  "title": "DatetimeeventsDItems",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The datetime item codes used in MIMIC",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.mimic.mit.edu/CodeSystem/d-items",
+        "concept": [
+          {
+            "code": "226719",
+            "display": "Last menses"
+          },
+          {
+            "code": "225376",
+            "display": "Indwelling Port (PortaCath) Change over Wire Date"
+          },
+          {
+            "code": "225316",
+            "display": "CCO PAC Insertion Date"
+          },
+          {
+            "code": "224185",
+            "display": "PICC Line Change over Wire Date"
+          },
+          {
+            "code": "228160",
+            "display": "Impella Aortic Pressure Tubing Change"
+          },
+          {
+            "code": "225083",
+            "display": "Pregnancy due date"
+          },
+          {
+            "code": "229886",
+            "display": "Pressure Ulcer #3- Date Indentified"
+          },
+          {
+            "code": "225765",
+            "display": "Sheath Dressing Change"
+          },
+          {
+            "code": "225319",
+            "display": "Dialysis Catheter Change over Wire Date"
+          },
+          {
+            "code": "224187",
+            "display": "PICC Line Tubing Change"
+          },
+          {
+            "code": "225345",
+            "display": "Midline Dressing Change"
+          },
+          {
+            "code": "229883",
+            "display": "Pressure ulcer #1- Date Indentified_OLD_1"
+          },
+          {
+            "code": "225224",
+            "display": "CCO PAC Dressing Change"
+          },
+          {
+            "code": "226518",
+            "display": "Expected Discharge Date"
+          },
+          {
+            "code": "229887",
+            "display": "Pressure Ulcer #4- Date Indentified"
+          },
+          {
+            "code": "229555",
+            "display": "Cardiac Assist Cannula Change"
+          },
+          {
+            "code": "227197",
+            "display": "Indwelling (PortaCath) Port #2 Date Accessed"
+          },
+          {
+            "code": "225332",
+            "display": "Tunneled (Hickman) Tubing Change"
+          },
+          {
+            "code": "225128",
+            "display": "Last dialysis"
+          },
+          {
+            "code": "227722",
+            "display": "AVA Dressing Change"
+          },
+          {
+            "code": "225322",
+            "display": "Dialysis Catheter Insertion Date"
+          },
+          {
+            "code": "227817",
+            "display": "Referral Date"
+          },
+          {
+            "code": "227793",
+            "display": "Impaired Skin  - Dressing Change #4"
+          },
+          {
+            "code": "228209",
+            "display": "Tandem Heart Access Line Insertion Date"
+          },
+          {
+            "code": "227542",
+            "display": "ScvO2 (Presep) Calibrated"
+          },
+          {
+            "code": "227724",
+            "display": "AVA Insertion Date"
+          },
+          {
+            "code": "225384",
+            "display": "Presep Catheter Change over Wire Date"
+          },
+          {
+            "code": "225213",
+            "display": "Trauma Line Cap Change"
+          },
+          {
+            "code": "225394",
+            "display": "Triple Introducer Insertion Date"
+          },
+          {
+            "code": "229541",
+            "display": "EKOS Insertion Date"
+          },
+          {
+            "code": "229733",
+            "display": "22 Gauge Dressing Change"
+          },
+          {
+            "code": "225336",
+            "display": "IABP Change over Wire Date"
+          },
+          {
+            "code": "228215",
+            "display": "Tandem Heart Access Line Tubing Change"
+          },
+          {
+            "code": "227126",
+            "display": "Indwelling (PortaCath) Port #1 Date Accessed"
+          },
+          {
+            "code": "225216",
+            "display": "Trauma Line Dressing Change"
+          },
+          {
+            "code": "225340",
+            "display": "IABP Tubing Change"
+          },
+          {
+            "code": "229353",
+            "display": "Foley Cath Removal Date"
+          },
+          {
+            "code": "225386",
+            "display": "Presep Catheter Insertion Date"
+          },
+          {
+            "code": "229643",
+            "display": "Stroke NCP - Ed Given Date"
+          },
+          {
+            "code": "224288",
+            "display": "Arterial line Insertion Date"
+          },
+          {
+            "code": "228798",
+            "display": "Pressure ulcer #6- Dressing change"
+          },
+          {
+            "code": "229729",
+            "display": "18 Gauge Cap Change"
+          },
+          {
+            "code": "224293",
+            "display": "Cordis/Introducer Change over Wire Date"
+          },
+          {
+            "code": "229890",
+            "display": "Pressure Ulcer #7- Date Indentified"
+          },
+          {
+            "code": "229550",
+            "display": "Avalon Insertion Date"
+          },
+          {
+            "code": "229549",
+            "display": "Avalon Dressing Change"
+          },
+          {
+            "code": "225221",
+            "display": "CCO PAC Cap Change"
+          },
+          {
+            "code": "228207",
+            "display": "Tandem Heart Access Line Dressing Change"
+          },
+          {
+            "code": "228631",
+            "display": "Date signed"
+          },
+          {
+            "code": "224287",
+            "display": "Arterial Line Dressing Change"
+          },
+          {
+            "code": "228801",
+            "display": "Pressure ulcer #9- Dressing change"
+          },
+          {
+            "code": "225222",
+            "display": "CCO PAC Change over Wire Date"
+          },
+          {
+            "code": "229884",
+            "display": "Pressure Ulcer #1- Date Indentified"
+          },
+          {
+            "code": "228321",
+            "display": "PC Date"
+          },
+          {
+            "code": "225762",
+            "display": "Sheath Cap Change"
+          },
+          {
+            "code": "225370",
+            "display": "Pheresis Catheter Insertion Date"
+          },
+          {
+            "code": "225279",
+            "display": "Date of Admission to Hospital"
+          },
+          {
+            "code": "220003",
+            "display": "ICU Admission date"
+          },
+          {
+            "code": "228266",
+            "display": "FM Date/Time"
+          },
+          {
+            "code": "226532",
+            "display": "Organ Bank Notified"
+          },
+          {
+            "code": "225348",
+            "display": "Midline Tubing Change"
+          },
+          {
+            "code": "225375",
+            "display": "Indwelling Port (PortaCath) Cap Change"
+          },
+          {
+            "code": "225369",
+            "display": "Pheresis Catheter Dressing Change"
+          },
+          {
+            "code": "229655",
+            "display": "Stroke NCP -  Fam Ed Given Date"
+          },
+          {
+            "code": "228799",
+            "display": "Pressure ulcer #7- Dressing change"
+          },
+          {
+            "code": "226724",
+            "display": "Hospital Admit Date"
+          },
+          {
+            "code": "227794",
+            "display": "Impaired Skin  - Dressing Change #5"
+          },
+          {
+            "code": "225383",
+            "display": "Presep Catheter Cap Change"
+          },
+          {
+            "code": "225346",
+            "display": "Midline Insertion Date"
+          },
+          {
+            "code": "224298",
+            "display": "Cordis/Introducer Tubing Change"
+          },
+          {
+            "code": "224296",
+            "display": "Cordis/Introducer Insertion Date"
+          },
+          {
+            "code": "229556",
+            "display": "Cardiac Assist Cannula Date"
+          },
+          {
+            "code": "229740",
+            "display": "24 Gauge Cap Change"
+          },
+          {
+            "code": "228793",
+            "display": "Pressure ulcer #1- Dressing change"
+          },
+          {
+            "code": "225758",
+            "display": "RIC Insertion Date"
+          },
+          {
+            "code": "225754",
+            "display": "20 Gauge Insertion Date"
+          },
+          {
+            "code": "225377",
+            "display": "Indwelling Port (PortaCath) Dressing Change"
+          },
+          {
+            "code": "227911",
+            "display": "Date - Therapist"
+          },
+          {
+            "code": "225317",
+            "display": "Trauma Line Insertion Date"
+          },
+          {
+            "code": "224184",
+            "display": "PICC Line Insertion Date"
+          },
+          {
+            "code": "227796",
+            "display": "Impaired Skin  - Dressing Change #7"
+          },
+          {
+            "code": "229731",
+            "display": "16 Gauge Dressing Change"
+          },
+          {
+            "code": "225769",
+            "display": "Sheath Tubing Change"
+          },
+          {
+            "code": "225753",
+            "display": "22 Gauge Insertion Date"
+          },
+          {
+            "code": "228166",
+            "display": "Impella Dressing Change"
+          },
+          {
+            "code": "225354",
+            "display": "PA Catheter Insertion Date"
+          },
+          {
+            "code": "224878",
+            "display": "GU Catheter Insertion Date"
+          },
+          {
+            "code": "226515",
+            "display": "Date of Birth"
+          },
+          {
+            "code": "224285",
+            "display": "Arterial line Change over Wire Date"
+          },
+          {
+            "code": "228165",
+            "display": "Impella Daily Tubing Change"
+          },
+          {
+            "code": "228331",
+            "display": "PC Time of visit"
+          },
+          {
+            "code": "229732",
+            "display": "20 Gauge Dressing Change"
+          },
+          {
+            "code": "229471",
+            "display": "24 Gauge Insertion Date"
+          },
+          {
+            "code": "229730",
+            "display": "14 Gauge Dressing Change"
+          },
+          {
+            "code": "225335",
+            "display": "IABP Cap Change"
+          },
+          {
+            "code": "225763",
+            "display": "Sheath Change over Wire Date"
+          },
+          {
+            "code": "229542",
+            "display": "EKOS Dressing Change"
+          },
+          {
+            "code": "227792",
+            "display": "Impaired Skin  - Dressing Change #3"
+          },
+          {
+            "code": "227729",
+            "display": "AVA Tubing Change"
+          },
+          {
+            "code": "225368",
+            "display": "Pheresis Catheter Change over Wire Date"
+          },
+          {
+            "code": "228802",
+            "display": "Pressure ulcer #10- Dressing change"
+          },
+          {
+            "code": "224295",
+            "display": "Cordis/Introducer Dressing Change"
+          },
+          {
+            "code": "229352",
+            "display": "Foley Cath Insertion Date"
+          },
+          {
+            "code": "225385",
+            "display": "Presep Catheter Dressing Change"
+          },
+          {
+            "code": "225321",
+            "display": "Dialysis Catheter Dressing Change"
+          },
+          {
+            "code": "225356",
+            "display": "PA Catheter Tubing Change"
+          },
+          {
+            "code": "226132",
+            "display": "ICP Line Tubing Change"
+          },
+          {
+            "code": "229741",
+            "display": "RIC Cap Change"
+          },
+          {
+            "code": "225392",
+            "display": "Triple Introducer Change over Wire Date"
+          },
+          {
+            "code": "225380",
+            "display": "Indwelling Port (PortaCath)Tubing Change"
+          },
+          {
+            "code": "224280",
+            "display": "Multi Lumen Insertion Date"
+          },
+          {
+            "code": "229651",
+            "display": "Stroke NCP - Water Swallow Date"
+          },
+          {
+            "code": "225378",
+            "display": "Indwelling Port (PortaCath) Insertion Date"
+          },
+          {
+            "code": "229891",
+            "display": "Pressure Ulcer #8- Date Indentified"
+          },
+          {
+            "code": "227800",
+            "display": "Impaired Skin  - Dressing Change #10"
+          },
+          {
+            "code": "225367",
+            "display": "Pheresis Catheter Cap Change"
+          },
+          {
+            "code": "225327",
+            "display": "Tunneled (Hickman) Cap Change"
+          },
+          {
+            "code": "225337",
+            "display": "IABP Dressing Change"
+          },
+          {
+            "code": "225393",
+            "display": "Triple Introducer Dressing Change"
+          },
+          {
+            "code": "229734",
+            "display": "24 Gauge Dressing Change"
+          },
+          {
+            "code": "225372",
+            "display": "Pheresis Catheter Tubing Change"
+          },
+          {
+            "code": "229892",
+            "display": "Pressure Ulcer #9- Date Indentified"
+          },
+          {
+            "code": "224290",
+            "display": "Arterial line Tubing Change"
+          },
+          {
+            "code": "224282",
+            "display": "Multi Lumen Tubing Change"
+          },
+          {
+            "code": "225330",
+            "display": "Tunneled (Hickman) Insertion Date"
+          },
+          {
+            "code": "227790",
+            "display": "Impaired Skin  - Dressing Change #1"
+          },
+          {
+            "code": "225338",
+            "display": "IABP Insertion Date"
+          },
+          {
+            "code": "225318",
+            "display": "Dialysis Catheter Cap Change"
+          },
+          {
+            "code": "225226",
+            "display": "CCO PAC Tubing Change"
+          },
+          {
+            "code": "225328",
+            "display": "Tunneled (Hickman) Change over Wire Date"
+          },
+          {
+            "code": "225324",
+            "display": "Dialysis CatheterTubing Change"
+          },
+          {
+            "code": "229739",
+            "display": "22 Gauge Cap Change"
+          },
+          {
+            "code": "229738",
+            "display": "20 Gauge Cap Change"
+          },
+          {
+            "code": "227797",
+            "display": "Impaired Skin  - Dressing Change #8"
+          },
+          {
+            "code": "228218",
+            "display": "Tandem Heart Return Cannula Dressing Change"
+          },
+          {
+            "code": "224292",
+            "display": "Cordis/Introducer Cap Change"
+          },
+          {
+            "code": "224186",
+            "display": "PICC Line Dressing Change"
+          },
+          {
+            "code": "226482",
+            "display": "Blood Clot Outdates"
+          },
+          {
+            "code": "224279",
+            "display": "Multi Lumen Dressing Change"
+          },
+          {
+            "code": "225755",
+            "display": "18 Gauge Insertion Date"
+          },
+          {
+            "code": "225391",
+            "display": "Triple Introducer Cap Change"
+          },
+          {
+            "code": "225218",
+            "display": "Trauma Line Tubing Change"
+          },
+          {
+            "code": "229735",
+            "display": "RIC Dressing Change"
+          },
+          {
+            "code": "226516",
+            "display": "Discharge Date/Time"
+          },
+          {
+            "code": "229885",
+            "display": "Pressure Ulcer #2- Date Indentified"
+          },
+          {
+            "code": "227721",
+            "display": "AVA Change over Wire Date"
+          },
+          {
+            "code": "227541",
+            "display": "SvO2 Calibrated"
+          },
+          {
+            "code": "229737",
+            "display": "16 Gauge Cap Change"
+          },
+          {
+            "code": "228800",
+            "display": "Pressure ulcer #8- Dressing change"
+          },
+          {
+            "code": "227907",
+            "display": "Date - Student"
+          },
+          {
+            "code": "225353",
+            "display": "PA Catheter Dressing Change"
+          },
+          {
+            "code": "225757",
+            "display": "14 Gauge Insertion Date"
+          },
+          {
+            "code": "226128",
+            "display": "ICP Line Insertion Date"
+          },
+          {
+            "code": "225352",
+            "display": "PA Catheter Change over Wire Date"
+          },
+          {
+            "code": "225343",
+            "display": "Midline Cap Change"
+          },
+          {
+            "code": "225351",
+            "display": "PA Catheter Cap Change"
+          },
+          {
+            "code": "225766",
+            "display": "Sheath Insertion Date"
+          },
+          {
+            "code": "227795",
+            "display": "Impaired Skin  - Dressing Change #6"
+          },
+          {
+            "code": "228794",
+            "display": "Pressure ulcer #2- Dressing change"
+          },
+          {
+            "code": "227198",
+            "display": "Indwelling (PortaCath) Port #1 Date De-accessed"
+          },
+          {
+            "code": "225390",
+            "display": "Presep Catheter Tubing Change"
+          },
+          {
+            "code": "224262",
+            "display": "Multi Lumen Change over Wire Date"
+          },
+          {
+            "code": "224284",
+            "display": "Arterial line Cap Change"
+          },
+          {
+            "code": "224261",
+            "display": "Multi Lumen Cap Change"
+          },
+          {
+            "code": "228795",
+            "display": "Pressure ulcer #3- Dressing change"
+          },
+          {
+            "code": "225344",
+            "display": "Midline Change over Wire Date"
+          },
+          {
+            "code": "227199",
+            "display": "Indwelling (PortaCath) Port #2 Date De-accessed"
+          },
+          {
+            "code": "226126",
+            "display": "ICP Line Dressing Change"
+          },
+          {
+            "code": "228796",
+            "display": "Pressure ulcer #4- Dressing change"
+          },
+          {
+            "code": "227798",
+            "display": "Impaired Skin  - Dressing Change #9"
+          },
+          {
+            "code": "228168",
+            "display": "Impella Insertion Date"
+          },
+          {
+            "code": "229736",
+            "display": "14 Gauge Cap Change"
+          },
+          {
+            "code": "229888",
+            "display": "Pressure Ulcer #5- Date Indentified"
+          },
+          {
+            "code": "227584",
+            "display": "GU Catheter D/C Date"
+          },
+          {
+            "code": "229889",
+            "display": "Pressure Ulcer #6- Date Indentified"
+          },
+          {
+            "code": "229728",
+            "display": "18 Gauge Dressing Change"
+          },
+          {
+            "code": "224183",
+            "display": "PICC Line Cap Change"
+          },
+          {
+            "code": "227791",
+            "display": "Impaired Skin  - Dressing Change #2"
+          },
+          {
+            "code": "227720",
+            "display": "AVA Cap Change"
+          },
+          {
+            "code": "229893",
+            "display": "Pressure Ulcer #10- Date Indentified"
+          },
+          {
+            "code": "225329",
+            "display": "Tunneled (Hickman) Dressing Change"
+          },
+          {
+            "code": "225756",
+            "display": "16 Gauge Insertion Date"
+          },
+          {
+            "code": "225396",
+            "display": "Triple Introducer Tubing Change"
+          },
+          {
+            "code": "227361",
+            "display": "Indwelling (PortaCath) Dressing Change"
+          },
+          {
+            "code": "225214",
+            "display": "Trauma Line Change over Wire Date"
+          },
+          {
+            "code": "228797",
+            "display": "Pressure ulcer #5- Dressing change"
+          },
+          {
+            "code": "228291",
+            "display": "IO Insertion Date"
+          },
+          {
+            "code": "228221",
+            "display": "Tandem Heart Return Cannula Insertion Date"
+          }
+        ]
+      }
+    ]
+  }
+}

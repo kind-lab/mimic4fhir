@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "admission-class",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/admission-class defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">EU OBSERVATION<a name=\"admission-class-EUOBSERVATION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">URGENT<a name=\"admission-class-URGENT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ELECTIVE<a name=\"admission-class-ELECTIVE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">AMBULATORY OBSERVATION<a name=\"admission-class-AMBULATORYOBSERVATION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SURGICAL SAME DAY ADMISSION<a name=\"admission-class-SURGICALSAMEDAYADMISSION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DIRECT OBSERVATION<a name=\"admission-class-DIRECTOBSERVATION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DIRECT EMER.<a name=\"admission-class-DIRECTEMER.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OBSERVATION ADMIT<a name=\"admission-class-OBSERVATIONADMIT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EW EMER.<a name=\"admission-class-EWEMER.46\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/admission-class",
+  "version": "0.2.4",
+  "name": "AdmissionClass",
+  "title": "AdmissionClass",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The admission class for MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/admission-class",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "EU OBSERVATION"
+    },
+    {
+      "code": "URGENT"
+    },
+    {
+      "code": "ELECTIVE"
+    },
+    {
+      "code": "AMBULATORY OBSERVATION"
+    },
+    {
+      "code": "SURGICAL SAME DAY ADMISSION"
+    },
+    {
+      "code": "DIRECT OBSERVATION"
+    },
+    {
+      "code": "DIRECT EMER."
+    },
+    {
+      "code": "OBSERVATION ADMIT"
+    },
+    {
+      "code": "EW EMER."
+    }
+  ]
+}

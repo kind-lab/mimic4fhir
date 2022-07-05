@@ -1,0 +1,359 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "bodysite",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/bodysite defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Right Ulnar<a name=\"bodysite-RightUlnar\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Ventricular<a name=\"bodysite-LVentricular\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Humeral Head<a name=\"bodysite-LeftHumeralHead\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RL Ant Forearm Lateral<a name=\"bodysite-RLAntForearmLateral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Subclavian<a name=\"bodysite-RightSubclavian\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LU Ant Forearm<a name=\"bodysite-LUAntForearm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Hand Medial<a name=\"bodysite-RHandMedial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Other<a name=\"bodysite-Other\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Antecube<a name=\"bodysite-RightAntecube\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Wrist<a name=\"bodysite-RWrist\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Accessory Cephalic<a name=\"bodysite-RightAccessoryCephalic\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Cephalic Lower Arm<a name=\"bodysite-RightCephalicLowerArm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Axilla.<a name=\"bodysite-LeftAxilla.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Digital<a name=\"bodysite-LeftDigital\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Basilic Upper Arm<a name=\"bodysite-LeftBasilicUpperArm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Basilic Lower Arm<a name=\"bodysite-LeftBasilicLowerArm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Foot<a name=\"bodysite-RightFoot\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RL Post Forearm<a name=\"bodysite-RLPostForearm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Subclavian<a name=\"bodysite-RSubclavian\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Hand Lateral<a name=\"bodysite-RHandLateral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Axilla.<a name=\"bodysite-RightAxilla.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Basilic Upper Arm<a name=\"bodysite-RightBasilicUpperArm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Intraparenchymal<a name=\"bodysite-LIntraparenchymal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Radial<a name=\"bodysite-LeftRadial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Central.<a name=\"bodysite-Central.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Antecubital<a name=\"bodysite-LeftAntecubital\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Wrist Lateral<a name=\"bodysite-RWristLateral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Femoral<a name=\"bodysite-LeftFemoral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Antecube<a name=\"bodysite-RAntecube\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Ventricular<a name=\"bodysite-RVentricular\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Femoral.<a name=\"bodysite-LeftFemoral.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Wrist Medial<a name=\"bodysite-RWristMedial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left IJ.<a name=\"bodysite-LeftIJ.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Antecube<a name=\"bodysite-LeftAntecube\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Upper Arm<a name=\"bodysite-LeftUpperArm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Metacarpal<a name=\"bodysite-LeftMetacarpal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right EJ<a name=\"bodysite-RightEJ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Accessory Basilic<a name=\"bodysite-LeftAccessoryBasilic\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Central<a name=\"bodysite-Central\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RU Ant Forearm Lateral<a name=\"bodysite-RUAntForearmLateral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LL Ant Forearm<a name=\"bodysite-LLAntForearm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right IJ.<a name=\"bodysite-RightIJ.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right above Antecubital<a name=\"bodysite-RightaboveAntecubital\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RU Ant Forearm Medial<a name=\"bodysite-RUAntForearmMedial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Axilla<a name=\"bodysite-RightAxilla\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Metacarpal<a name=\"bodysite-RightMetacarpal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Subclavian<a name=\"bodysite-LSubclavian\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Accessory Basilic<a name=\"bodysite-RightAccessoryBasilic\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right IJ<a name=\"bodysite-RightIJ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Median Cubital<a name=\"bodysite-LeftMedianCubital\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LU Ant Forearm Lateral<a name=\"bodysite-LUAntForearmLateral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Proximal Tibia<a name=\"bodysite-LeftProximalTibia\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Radial<a name=\"bodysite-RightRadial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left above Antecubital<a name=\"bodysite-LeftaboveAntecubital\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RU Post Forearm<a name=\"bodysite-RUPostForearm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Femoral<a name=\"bodysite-RFemoral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Foot<a name=\"bodysite-LFoot\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Brachial<a name=\"bodysite-RightBrachial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Proximal Tibia<a name=\"bodysite-RightProximalTibia\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Side Head<a name=\"bodysite-LeftSideHead\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LL Ant Forearm Medial<a name=\"bodysite-LLAntForearmMedial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Hand<a name=\"bodysite-LHand\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Cephalic Upper Arm<a name=\"bodysite-LeftCephalicUpperArm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Accessory Cephalic<a name=\"bodysite-LeftAccessoryCephalic\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Intraparenchymal<a name=\"bodysite-RIntraparenchymal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Basilic Lower Arm<a name=\"bodysite-RightBasilicLowerArm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Urethral<a name=\"bodysite-Urethral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Wrist Medial<a name=\"bodysite-LWristMedial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RL Ant Forearm<a name=\"bodysite-RLAntForearm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Brachial.<a name=\"bodysite-RightBrachial.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Hand Medial<a name=\"bodysite-LHandMedial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Femoral<a name=\"bodysite-RightFemoral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ostomy<a name=\"bodysite-Ostomy\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Digital<a name=\"bodysite-RightDigital\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Antecubital<a name=\"bodysite-RightAntecubital\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LU Post Forearm<a name=\"bodysite-LUPostForearm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LL Ant Forearm Lateral<a name=\"bodysite-LLAntForearmLateral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Side Head<a name=\"bodysite-RightSideHead\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Foot<a name=\"bodysite-RFoot\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R Hand<a name=\"bodysite-RHand\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Femoral<a name=\"bodysite-LFemoral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Lumbar<a name=\"bodysite-Lumbar\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Humeral Head<a name=\"bodysite-RightHumeralHead\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Upper Quadrant<a name=\"bodysite-RightUpperQuadrant\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right External Jugular<a name=\"bodysite-RightExternalJugular\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Brachial.<a name=\"bodysite-LeftBrachial.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Foot<a name=\"bodysite-LeftFoot\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RL Ant Forearm Medial<a name=\"bodysite-RLAntForearmMedial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left External Jugular<a name=\"bodysite-LeftExternalJugular\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RU Ant Forearm<a name=\"bodysite-RUAntForearm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Brachial<a name=\"bodysite-LeftBrachial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Femoral.<a name=\"bodysite-RightFemoral.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Lower Quadrant<a name=\"bodysite-LeftLowerQuadrant\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Wrist Lateral<a name=\"bodysite-LWristLateral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Cephalic Lower Arm<a name=\"bodysite-LeftCephalicLowerArm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Median Cubital<a name=\"bodysite-RightMedianCubital\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Wrist<a name=\"bodysite-LWrist\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Subclavian<a name=\"bodysite-LeftSubclavian\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Antecube<a name=\"bodysite-LAntecube\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Upper Arm<a name=\"bodysite-RightUpperArm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Upper Quadrant<a name=\"bodysite-LeftUpperQuadrant\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Lower Quadrant<a name=\"bodysite-RightLowerQuadrant\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Right Cephalic Upper Arm<a name=\"bodysite-RightCephalicUpperArm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left EJ<a name=\"bodysite-LeftEJ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L Hand Lateral<a name=\"bodysite-LHandLateral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left Axilla<a name=\"bodysite-LeftAxilla\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LU Ant Forearm Medial<a name=\"bodysite-LUAntForearmMedial\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LL Post Forearm<a name=\"bodysite-LLPostForearm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Left IJ<a name=\"bodysite-LeftIJ\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/bodysite",
+  "version": "0.2.4",
+  "name": "Bodysite",
+  "title": "Bodysite",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The bodysite codes for MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/bodysite",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Right Ulnar"
+    },
+    {
+      "code": "L Ventricular"
+    },
+    {
+      "code": "Left Humeral Head"
+    },
+    {
+      "code": "RL Ant Forearm Lateral"
+    },
+    {
+      "code": "Right Subclavian"
+    },
+    {
+      "code": "LU Ant Forearm"
+    },
+    {
+      "code": "R Hand Medial"
+    },
+    {
+      "code": "Other"
+    },
+    {
+      "code": "Right Antecube"
+    },
+    {
+      "code": "R Wrist"
+    },
+    {
+      "code": "Right Accessory Cephalic"
+    },
+    {
+      "code": "Right Cephalic Lower Arm"
+    },
+    {
+      "code": "Left Axilla."
+    },
+    {
+      "code": "Left Digital"
+    },
+    {
+      "code": "Left Basilic Upper Arm"
+    },
+    {
+      "code": "Left Basilic Lower Arm"
+    },
+    {
+      "code": "Right Foot"
+    },
+    {
+      "code": "RL Post Forearm"
+    },
+    {
+      "code": "R Subclavian"
+    },
+    {
+      "code": "R Hand Lateral"
+    },
+    {
+      "code": "Right Axilla."
+    },
+    {
+      "code": "Right Basilic Upper Arm"
+    },
+    {
+      "code": "L Intraparenchymal"
+    },
+    {
+      "code": "Left Radial"
+    },
+    {
+      "code": "Central."
+    },
+    {
+      "code": "Left Antecubital"
+    },
+    {
+      "code": "R Wrist Lateral"
+    },
+    {
+      "code": "Left Femoral"
+    },
+    {
+      "code": "R Antecube"
+    },
+    {
+      "code": "R Ventricular"
+    },
+    {
+      "code": "Left Femoral."
+    },
+    {
+      "code": "R Wrist Medial"
+    },
+    {
+      "code": "Left IJ."
+    },
+    {
+      "code": "Left Antecube"
+    },
+    {
+      "code": "Left Upper Arm"
+    },
+    {
+      "code": "Left Metacarpal"
+    },
+    {
+      "code": "Right EJ"
+    },
+    {
+      "code": "Left Accessory Basilic"
+    },
+    {
+      "code": "Central"
+    },
+    {
+      "code": "RU Ant Forearm Lateral"
+    },
+    {
+      "code": "LL Ant Forearm"
+    },
+    {
+      "code": "Right IJ."
+    },
+    {
+      "code": "Right above Antecubital"
+    },
+    {
+      "code": "RU Ant Forearm Medial"
+    },
+    {
+      "code": "Right Axilla"
+    },
+    {
+      "code": "Right Metacarpal"
+    },
+    {
+      "code": "L Subclavian"
+    },
+    {
+      "code": "Right Accessory Basilic"
+    },
+    {
+      "code": "Right IJ"
+    },
+    {
+      "code": "Left Median Cubital"
+    },
+    {
+      "code": "LU Ant Forearm Lateral"
+    },
+    {
+      "code": "Left Proximal Tibia"
+    },
+    {
+      "code": "Right Radial"
+    },
+    {
+      "code": "Left above Antecubital"
+    },
+    {
+      "code": "RU Post Forearm"
+    },
+    {
+      "code": "R Femoral"
+    },
+    {
+      "code": "L Foot"
+    },
+    {
+      "code": "Right Brachial"
+    },
+    {
+      "code": "Right Proximal Tibia"
+    },
+    {
+      "code": "Left Side Head"
+    },
+    {
+      "code": "LL Ant Forearm Medial"
+    },
+    {
+      "code": "L Hand"
+    },
+    {
+      "code": "Left Cephalic Upper Arm"
+    },
+    {
+      "code": "Left Accessory Cephalic"
+    },
+    {
+      "code": "R Intraparenchymal"
+    },
+    {
+      "code": "Right Basilic Lower Arm"
+    },
+    {
+      "code": "Urethral"
+    },
+    {
+      "code": "L Wrist Medial"
+    },
+    {
+      "code": "RL Ant Forearm"
+    },
+    {
+      "code": "Right Brachial."
+    },
+    {
+      "code": "L Hand Medial"
+    },
+    {
+      "code": "Right Femoral"
+    },
+    {
+      "code": "Ostomy"
+    },
+    {
+      "code": "Right Digital"
+    },
+    {
+      "code": "Right Antecubital"
+    },
+    {
+      "code": "LU Post Forearm"
+    },
+    {
+      "code": "LL Ant Forearm Lateral"
+    },
+    {
+      "code": "Right Side Head"
+    },
+    {
+      "code": "R Foot"
+    },
+    {
+      "code": "R Hand"
+    },
+    {
+      "code": "L Femoral"
+    },
+    {
+      "code": "Lumbar"
+    },
+    {
+      "code": "Right Humeral Head"
+    },
+    {
+      "code": "Right Upper Quadrant"
+    },
+    {
+      "code": "Right External Jugular"
+    },
+    {
+      "code": "Left Brachial."
+    },
+    {
+      "code": "Left Foot"
+    },
+    {
+      "code": "RL Ant Forearm Medial"
+    },
+    {
+      "code": "Left External Jugular"
+    },
+    {
+      "code": "RU Ant Forearm"
+    },
+    {
+      "code": "Left Brachial"
+    },
+    {
+      "code": "Right Femoral."
+    },
+    {
+      "code": "Left Lower Quadrant"
+    },
+    {
+      "code": "L Wrist Lateral"
+    },
+    {
+      "code": "Left Cephalic Lower Arm"
+    },
+    {
+      "code": "Right Median Cubital"
+    },
+    {
+      "code": "L Wrist"
+    },
+    {
+      "code": "Left Subclavian"
+    },
+    {
+      "code": "L Antecube"
+    },
+    {
+      "code": "Right Upper Arm"
+    },
+    {
+      "code": "Left Upper Quadrant"
+    },
+    {
+      "code": "Right Lower Quadrant"
+    },
+    {
+      "code": "Right Cephalic Upper Arm"
+    },
+    {
+      "code": "Left EJ"
+    },
+    {
+      "code": "L Hand Lateral"
+    },
+    {
+      "code": "Left Axilla"
+    },
+    {
+      "code": "LU Ant Forearm Medial"
+    },
+    {
+      "code": "LL Post Forearm"
+    },
+    {
+      "code": "Left IJ"
+    }
+  ]
+}

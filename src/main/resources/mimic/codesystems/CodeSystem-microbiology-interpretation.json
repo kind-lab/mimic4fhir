@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "microbiology-interpretation",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/microbiology-interpretation defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"microbiology-interpretation-P\"> </a></td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"microbiology-interpretation-S\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R<a name=\"microbiology-interpretation-R\"> </a></td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"microbiology-interpretation-I\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/microbiology-interpretation",
+  "version": "0.2.4",
+  "name": "MicrobiologyInterpretation",
+  "title": "MicrobiologyInterpretation",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The microbiology result interpretation codes in  MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/microbiology-interpretation",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "P"
+    },
+    {
+      "code": "S"
+    },
+    {
+      "code": "R"
+    },
+    {
+      "code": "I"
+    }
+  ]
+}

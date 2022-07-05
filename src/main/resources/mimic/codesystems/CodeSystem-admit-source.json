@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "admit-source",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/admit-source defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">AMBULATORY SURGERY TRANSFER<a name=\"admit-source-AMBULATORYSURGERYTRANSFER\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TRANSFER FROM SKILLED NURSING FACILITY<a name=\"admit-source-TRANSFERFROMSKILLEDNURSINGFACILITY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PROCEDURE SITE<a name=\"admit-source-PROCEDURESITE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">WALK-IN/SELF REFERRAL<a name=\"admit-source-WALK-IN.47SELFREFERRAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INTERNAL TRANSFER TO OR FROM PSYCH<a name=\"admit-source-INTERNALTRANSFERTOORFROMPSYCH\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PHYSICIAN REFERRAL<a name=\"admit-source-PHYSICIANREFERRAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INFORMATION NOT AVAILABLE<a name=\"admit-source-INFORMATIONNOTAVAILABLE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PACU<a name=\"admit-source-PACU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EMERGENCY ROOM<a name=\"admit-source-EMERGENCYROOM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CLINIC REFERRAL<a name=\"admit-source-CLINICREFERRAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TRANSFER FROM HOSPITAL<a name=\"admit-source-TRANSFERFROMHOSPITAL\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/admit-source",
+  "version": "0.2.4",
+  "name": "AdmitSource",
+  "title": "AdmitSource",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The admission source for MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/admit-source",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "AMBULATORY SURGERY TRANSFER"
+    },
+    {
+      "code": "TRANSFER FROM SKILLED NURSING FACILITY"
+    },
+    {
+      "code": "PROCEDURE SITE"
+    },
+    {
+      "code": "WALK-IN/SELF REFERRAL"
+    },
+    {
+      "code": "INTERNAL TRANSFER TO OR FROM PSYCH"
+    },
+    {
+      "code": "PHYSICIAN REFERRAL"
+    },
+    {
+      "code": "INFORMATION NOT AVAILABLE"
+    },
+    {
+      "code": "PACU"
+    },
+    {
+      "code": "EMERGENCY ROOM"
+    },
+    {
+      "code": "CLINIC REFERRAL"
+    },
+    {
+      "code": "TRANSFER FROM HOSPITAL"
+    }
+  ]
+}

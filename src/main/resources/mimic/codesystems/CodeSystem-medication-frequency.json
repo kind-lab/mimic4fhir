@@ -1,0 +1,521 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-frequency",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/medication-frequency defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Q36H<a name=\"medication-frequency-Q36H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PRE &amp; POST HYDRATION<a name=\"medication-frequency-PRE.38POSTHYDRATION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q4-6H:PRN<a name=\"medication-frequency-Q4-6H.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">X1:PRN<a name=\"medication-frequency-X1.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QTUTHUR<a name=\"medication-frequency-QTUTHUR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q12H:PRN<a name=\"medication-frequency-Q12H.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ONCE:STAT<a name=\"medication-frequency-ONCE.58STAT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q6H<a name=\"medication-frequency-Q6H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q6H:PRN<a name=\"medication-frequency-Q6H.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q18H<a name=\"medication-frequency-Q18H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">3X/DAY<a name=\"medication-frequency-3X.47DAY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q1MO<a name=\"medication-frequency-Q1MO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DAILY<a name=\"medication-frequency-DAILY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">POST HD<a name=\"medication-frequency-POSTHD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EVERY 3 DAYS<a name=\"medication-frequency-EVERY3DAYS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BOLUS<a name=\"medication-frequency-BOLUS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">X1, THEN POST HD<a name=\"medication-frequency-X1.44THENPOSTHD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q6WEEKS<a name=\"medication-frequency-Q6WEEKS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DAYS<a name=\"medication-frequency-DAYS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">1X/WEEK<a name=\"medication-frequency-1X.47WEEK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q6-8H:PRN<a name=\"medication-frequency-Q6-8H.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q3H<a name=\"medication-frequency-Q3H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q48H<a name=\"medication-frequency-Q48H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BIDWM<a name=\"medication-frequency-BIDWM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q96H<a name=\"medication-frequency-Q96H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q15MIN:PRN<a name=\"medication-frequency-Q15MIN.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q24H<a name=\"medication-frequency-Q24H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MR X1<a name=\"medication-frequency-MRX1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HS<a name=\"medication-frequency-HS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">X1<a name=\"medication-frequency-X1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q72H<a name=\"medication-frequency-Q72H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DAILY:PRN<a name=\"medication-frequency-DAILY.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ONCE MR1:PRN<a name=\"medication-frequency-ONCEMR1.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QODHS<a name=\"medication-frequency-QODHS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">6X/WEEK<a name=\"medication-frequency-6X.47WEEK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q 12H<a name=\"medication-frequency-Q12H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QTUTHSA<a name=\"medication-frequency-QTUTHSA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EVERY OTHER DAY:PRN<a name=\"medication-frequency-EVERYOTHERDAY.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TITRATE TO RASS<a name=\"medication-frequency-TITRATETORASS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q5H:PRN<a name=\"medication-frequency-Q5H.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QPM:PRN<a name=\"medication-frequency-QPM.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ONCE:PRN<a name=\"medication-frequency-ONCE.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ON CALL TO OR<a name=\"medication-frequency-ONCALLTOOR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PRE-HYDRATION<a name=\"medication-frequency-PRE-HYDRATION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QID<a name=\"medication-frequency-QID\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BREAKFAST<a name=\"medication-frequency-BREAKFAST\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INFUSION<a name=\"medication-frequency-INFUSION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TID<a name=\"medication-frequency-TID\"> </a></td></tr><tr><td style=\"white-space:nowrap\">2X/DAY<a name=\"medication-frequency-2X.47DAY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q6H:ASDIR<a name=\"medication-frequency-Q6H.58ASDIR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">2X/WEEK<a name=\"medication-frequency-2X.47WEEK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">7X/DAY<a name=\"medication-frequency-7X.47DAY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QHS:PRN<a name=\"medication-frequency-QHS.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QOW<a name=\"medication-frequency-QOW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">X2 PRN<a name=\"medication-frequency-X2PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">3X/WEEK<a name=\"medication-frequency-3X.47WEEK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QID:PRN<a name=\"medication-frequency-QID.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">1X<a name=\"medication-frequency-1X\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QSUN<a name=\"medication-frequency-QSUN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ASDIR<a name=\"medication-frequency-ASDIR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QPM<a name=\"medication-frequency-QPM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TITRATE TO<a name=\"medication-frequency-TITRATETO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DAILY16<a name=\"medication-frequency-DAILY16\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MRX3:PRN<a name=\"medication-frequency-MRX3.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QTUES<a name=\"medication-frequency-QTUES\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QAM:PRN<a name=\"medication-frequency-QAM.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">POST-HYDRATION<a name=\"medication-frequency-POST-HYDRATION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q16H<a name=\"medication-frequency-Q16H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">5X/WEEK<a name=\"medication-frequency-5X.47WEEK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QMOWEFR<a name=\"medication-frequency-QMOWEFR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">X1 PRN SHIVERING<a name=\"medication-frequency-X1PRNSHIVERING\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q4HWA<a name=\"medication-frequency-Q4HWA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ONCE<a name=\"medication-frequency-ONCE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EVERY 4 WEEKS<a name=\"medication-frequency-EVERY4WEEKS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PRN PAIN Q5MIN<a name=\"medication-frequency-PRNPAINQ5MIN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QHD<a name=\"medication-frequency-QHD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MWF<a name=\"medication-frequency-MWF\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q5MIN<a name=\"medication-frequency-Q5MIN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q12H<a name=\"medication-frequency-Q12H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">1X/DAY<a name=\"medication-frequency-1X.47DAY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q8H:PRN<a name=\"medication-frequency-Q8H.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QAM<a name=\"medication-frequency-QAM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q 24H<a name=\"medication-frequency-Q24H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q2H<a name=\"medication-frequency-Q2H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NOON<a name=\"medication-frequency-NOON\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HD PROTOCOL<a name=\"medication-frequency-HDPROTOCOL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QHS<a name=\"medication-frequency-QHS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ONCE PER LUMEN (2 LUMEN)<a name=\"medication-frequency-ONCEPERLUMEN.402LUMEN.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q5 MIN<a name=\"medication-frequency-Q5MIN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QMONTHUR<a name=\"medication-frequency-QMONTHUR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">1XHS<a name=\"medication-frequency-1XHS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q1H PER MOVIPREP PROTOCOL<a name=\"medication-frequency-Q1HPERMOVIPREPPROTOCOL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">4X/DAY<a name=\"medication-frequency-4X.47DAY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PREOP ONCE:PRN, MR1:PRN<a name=\"medication-frequency-PREOPONCE.58PRN.44MR1.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ON CALL<a name=\"medication-frequency-ONCALL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BID<a name=\"medication-frequency-BID\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q4H<a name=\"medication-frequency-Q4H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q4H:PRN<a name=\"medication-frequency-Q4H.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q8H<a name=\"medication-frequency-Q8H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ONCE PER LUMEN (1 LUMEN)<a name=\"medication-frequency-ONCEPERLUMEN.401LUMEN.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">5X/DAY<a name=\"medication-frequency-5X.47DAY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PREOP<a name=\"medication-frequency-PREOP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q3H:PRN<a name=\"medication-frequency-Q3H.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SEE INSULIN CHART<a name=\"medication-frequency-SEEINSULINCHART\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ASDIR8<a name=\"medication-frequency-ASDIR8\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q5MIN:PRN<a name=\"medication-frequency-Q5MIN.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MRX1:PRN<a name=\"medication-frequency-MRX1.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TID:PRN<a name=\"medication-frequency-TID.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">STAT<a name=\"medication-frequency-STAT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TITRATE TO EFFECT<a name=\"medication-frequency-TITRATETOEFFECT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ONCE PER LUMEN (3 LUMEN)<a name=\"medication-frequency-ONCEPERLUMEN.403LUMEN.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QIDWMHS<a name=\"medication-frequency-QIDWMHS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q 8H<a name=\"medication-frequency-Q8H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QIDPCHS<a name=\"medication-frequency-QIDPCHS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QIDACHS<a name=\"medication-frequency-QIDACHS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QSAT<a name=\"medication-frequency-QSAT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BID:PRN<a name=\"medication-frequency-BID.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PREOP ONCE, MR1:PRN<a name=\"medication-frequency-PREOPONCE.44MR1.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q30MIN<a name=\"medication-frequency-Q30MIN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">6X/DAY<a name=\"medication-frequency-6X.47DAY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q2W<a name=\"medication-frequency-Q2W\"> </a></td></tr><tr><td style=\"white-space:nowrap\">2X<a name=\"medication-frequency-2X\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LUNCH<a name=\"medication-frequency-LUNCH\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MRX2:PRN<a name=\"medication-frequency-MRX2.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">1X:ASDIR<a name=\"medication-frequency-1X.58ASDIR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PRN<a name=\"medication-frequency-PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IV DRIP<a name=\"medication-frequency-IVDRIP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QTHUR<a name=\"medication-frequency-QTHUR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ONCE NOW<a name=\"medication-frequency-ONCENOW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q2H PER MOVIPREP PROTOCOL<a name=\"medication-frequency-Q2HPERMOVIPREPPROTOCOL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ONCE MR1<a name=\"medication-frequency-ONCEMR1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EVERY 5 WEEKS<a name=\"medication-frequency-EVERY5WEEKS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q1H:PRN<a name=\"medication-frequency-Q1H.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q3MO<a name=\"medication-frequency-Q3MO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q2H:PRN<a name=\"medication-frequency-Q2H.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q4WEEKS<a name=\"medication-frequency-Q4WEEKS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DINNER<a name=\"medication-frequency-DINNER\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q6H AND PRN<a name=\"medication-frequency-Q6HANDPRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EVERY 2 WEEKS<a name=\"medication-frequency-EVERY2WEEKS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">4X/WEEK<a name=\"medication-frequency-4X.47WEEK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QMON<a name=\"medication-frequency-QMON\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TIDAC<a name=\"medication-frequency-TIDAC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q8WEEKS<a name=\"medication-frequency-Q8WEEKS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ONCE MR2<a name=\"medication-frequency-ONCEMR2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BIDPC<a name=\"medication-frequency-BIDPC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q1H<a name=\"medication-frequency-Q1H\"> </a></td></tr><tr><td style=\"white-space:nowrap\">8X/DAY<a name=\"medication-frequency-8X.47DAY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q8H:ASDIR<a name=\"medication-frequency-Q8H.58ASDIR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QFRI<a name=\"medication-frequency-QFRI\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NOW X1<a name=\"medication-frequency-NOWX1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">5X/DAY:PRN<a name=\"medication-frequency-5X.47DAY.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EVERY OTHER DAY<a name=\"medication-frequency-EVERYOTHERDAY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q9WEEKS<a name=\"medication-frequency-Q9WEEKS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HS:PRN<a name=\"medication-frequency-HS.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">X1 PRN<a name=\"medication-frequency-X1PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q30MIN:PRN<a name=\"medication-frequency-Q30MIN.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ONCE PER LUMEN (4 LUMEN)<a name=\"medication-frequency-ONCEPERLUMEN.404LUMEN.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TID W/MEALS<a name=\"medication-frequency-TIDW.47MEALS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TIDPC<a name=\"medication-frequency-TIDPC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">QWED<a name=\"medication-frequency-QWED\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Q3-4H:PRN<a name=\"medication-frequency-Q3-4H.58PRN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DAILY18<a name=\"medication-frequency-DAILY18\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EVERY 8 WEEKS<a name=\"medication-frequency-EVERY8WEEKS\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/medication-frequency",
+  "version": "0.2.4",
+  "name": "MedicationFrequency",
+  "title": "MedicationFrequency",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The medication frequency reported for medication delivery in MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/medication-frequency",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Q36H"
+    },
+    {
+      "code": "PRE & POST HYDRATION"
+    },
+    {
+      "code": "Q4-6H:PRN"
+    },
+    {
+      "code": "X1:PRN"
+    },
+    {
+      "code": "QTUTHUR"
+    },
+    {
+      "code": "Q12H:PRN"
+    },
+    {
+      "code": "ONCE:STAT"
+    },
+    {
+      "code": "Q6H"
+    },
+    {
+      "code": "Q6H:PRN"
+    },
+    {
+      "code": "Q18H"
+    },
+    {
+      "code": "3X/DAY"
+    },
+    {
+      "code": "Q1MO"
+    },
+    {
+      "code": "DAILY"
+    },
+    {
+      "code": "POST HD"
+    },
+    {
+      "code": "EVERY 3 DAYS"
+    },
+    {
+      "code": "BOLUS"
+    },
+    {
+      "code": "X1, THEN POST HD"
+    },
+    {
+      "code": "Q6WEEKS"
+    },
+    {
+      "code": "DAYS"
+    },
+    {
+      "code": "1X/WEEK"
+    },
+    {
+      "code": "Q6-8H:PRN"
+    },
+    {
+      "code": "Q3H"
+    },
+    {
+      "code": "Q48H"
+    },
+    {
+      "code": "BIDWM"
+    },
+    {
+      "code": "Q96H"
+    },
+    {
+      "code": "Q15MIN:PRN"
+    },
+    {
+      "code": "Q24H"
+    },
+    {
+      "code": "MR X1"
+    },
+    {
+      "code": "HS"
+    },
+    {
+      "code": "X1"
+    },
+    {
+      "code": "Q72H"
+    },
+    {
+      "code": "DAILY:PRN"
+    },
+    {
+      "code": "ONCE MR1:PRN"
+    },
+    {
+      "code": "QODHS"
+    },
+    {
+      "code": "6X/WEEK"
+    },
+    {
+      "code": "Q 12H"
+    },
+    {
+      "code": "QTUTHSA"
+    },
+    {
+      "code": "EVERY OTHER DAY:PRN"
+    },
+    {
+      "code": "TITRATE TO RASS"
+    },
+    {
+      "code": "Q5H:PRN"
+    },
+    {
+      "code": "QPM:PRN"
+    },
+    {
+      "code": "ONCE:PRN"
+    },
+    {
+      "code": "ON CALL TO OR"
+    },
+    {
+      "code": "PRE-HYDRATION"
+    },
+    {
+      "code": "QID"
+    },
+    {
+      "code": "BREAKFAST"
+    },
+    {
+      "code": "INFUSION"
+    },
+    {
+      "code": "TID"
+    },
+    {
+      "code": "2X/DAY"
+    },
+    {
+      "code": "Q6H:ASDIR"
+    },
+    {
+      "code": "2X/WEEK"
+    },
+    {
+      "code": "7X/DAY"
+    },
+    {
+      "code": "QHS:PRN"
+    },
+    {
+      "code": "QOW"
+    },
+    {
+      "code": "X2 PRN"
+    },
+    {
+      "code": "3X/WEEK"
+    },
+    {
+      "code": "QID:PRN"
+    },
+    {
+      "code": "1X"
+    },
+    {
+      "code": "QSUN"
+    },
+    {
+      "code": "ASDIR"
+    },
+    {
+      "code": "QPM"
+    },
+    {
+      "code": "TITRATE TO"
+    },
+    {
+      "code": "DAILY16"
+    },
+    {
+      "code": "MRX3:PRN"
+    },
+    {
+      "code": "QTUES"
+    },
+    {
+      "code": "QAM:PRN"
+    },
+    {
+      "code": "POST-HYDRATION"
+    },
+    {
+      "code": "Q16H"
+    },
+    {
+      "code": "5X/WEEK"
+    },
+    {
+      "code": "QMOWEFR"
+    },
+    {
+      "code": "X1 PRN SHIVERING"
+    },
+    {
+      "code": "Q4HWA"
+    },
+    {
+      "code": "ONCE"
+    },
+    {
+      "code": "EVERY 4 WEEKS"
+    },
+    {
+      "code": "PRN PAIN Q5MIN"
+    },
+    {
+      "code": "QHD"
+    },
+    {
+      "code": "MWF"
+    },
+    {
+      "code": "Q5MIN"
+    },
+    {
+      "code": "Q12H"
+    },
+    {
+      "code": "1X/DAY"
+    },
+    {
+      "code": "Q8H:PRN"
+    },
+    {
+      "code": "QAM"
+    },
+    {
+      "code": "Q 24H"
+    },
+    {
+      "code": "Q2H"
+    },
+    {
+      "code": "NOON"
+    },
+    {
+      "code": "HD PROTOCOL"
+    },
+    {
+      "code": "QHS"
+    },
+    {
+      "code": "ONCE PER LUMEN (2 LUMEN)"
+    },
+    {
+      "code": "Q5 MIN"
+    },
+    {
+      "code": "QMONTHUR"
+    },
+    {
+      "code": "1XHS"
+    },
+    {
+      "code": "Q1H PER MOVIPREP PROTOCOL"
+    },
+    {
+      "code": "4X/DAY"
+    },
+    {
+      "code": "PREOP ONCE:PRN, MR1:PRN"
+    },
+    {
+      "code": "ON CALL"
+    },
+    {
+      "code": "BID"
+    },
+    {
+      "code": "Q4H"
+    },
+    {
+      "code": "Q4H:PRN"
+    },
+    {
+      "code": "Q8H"
+    },
+    {
+      "code": "ONCE PER LUMEN (1 LUMEN)"
+    },
+    {
+      "code": "5X/DAY"
+    },
+    {
+      "code": "PREOP"
+    },
+    {
+      "code": "Q3H:PRN"
+    },
+    {
+      "code": "SEE INSULIN CHART"
+    },
+    {
+      "code": "ASDIR8"
+    },
+    {
+      "code": "Q5MIN:PRN"
+    },
+    {
+      "code": "MRX1:PRN"
+    },
+    {
+      "code": "TID:PRN"
+    },
+    {
+      "code": "STAT"
+    },
+    {
+      "code": "TITRATE TO EFFECT"
+    },
+    {
+      "code": "ONCE PER LUMEN (3 LUMEN)"
+    },
+    {
+      "code": "QIDWMHS"
+    },
+    {
+      "code": "Q 8H"
+    },
+    {
+      "code": "QIDPCHS"
+    },
+    {
+      "code": "QIDACHS"
+    },
+    {
+      "code": "QSAT"
+    },
+    {
+      "code": "BID:PRN"
+    },
+    {
+      "code": "PREOP ONCE, MR1:PRN"
+    },
+    {
+      "code": "Q30MIN"
+    },
+    {
+      "code": "6X/DAY"
+    },
+    {
+      "code": "Q2W"
+    },
+    {
+      "code": "2X"
+    },
+    {
+      "code": "LUNCH"
+    },
+    {
+      "code": "MRX2:PRN"
+    },
+    {
+      "code": "1X:ASDIR"
+    },
+    {
+      "code": "PRN"
+    },
+    {
+      "code": "IV DRIP"
+    },
+    {
+      "code": "QTHUR"
+    },
+    {
+      "code": "ONCE NOW"
+    },
+    {
+      "code": "Q2H PER MOVIPREP PROTOCOL"
+    },
+    {
+      "code": "ONCE MR1"
+    },
+    {
+      "code": "EVERY 5 WEEKS"
+    },
+    {
+      "code": "Q1H:PRN"
+    },
+    {
+      "code": "Q3MO"
+    },
+    {
+      "code": "Q2H:PRN"
+    },
+    {
+      "code": "Q4WEEKS"
+    },
+    {
+      "code": "DINNER"
+    },
+    {
+      "code": "Q6H AND PRN"
+    },
+    {
+      "code": "EVERY 2 WEEKS"
+    },
+    {
+      "code": "4X/WEEK"
+    },
+    {
+      "code": "QMON"
+    },
+    {
+      "code": "TIDAC"
+    },
+    {
+      "code": "Q8WEEKS"
+    },
+    {
+      "code": "ONCE MR2"
+    },
+    {
+      "code": "BIDPC"
+    },
+    {
+      "code": "Q1H"
+    },
+    {
+      "code": "8X/DAY"
+    },
+    {
+      "code": "Q8H:ASDIR"
+    },
+    {
+      "code": "QFRI"
+    },
+    {
+      "code": "NOW X1"
+    },
+    {
+      "code": "5X/DAY:PRN"
+    },
+    {
+      "code": "EVERY OTHER DAY"
+    },
+    {
+      "code": "Q9WEEKS"
+    },
+    {
+      "code": "HS:PRN"
+    },
+    {
+      "code": "X1 PRN"
+    },
+    {
+      "code": "Q30MIN:PRN"
+    },
+    {
+      "code": "ONCE PER LUMEN (4 LUMEN)"
+    },
+    {
+      "code": "TID W/MEALS"
+    },
+    {
+      "code": "TIDPC"
+    },
+    {
+      "code": "QWED"
+    },
+    {
+      "code": "Q3-4H:PRN"
+    },
+    {
+      "code": "DAILY18"
+    },
+    {
+      "code": "EVERY 8 WEEKS"
+    }
+  ]
+}

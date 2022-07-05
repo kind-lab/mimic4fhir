@@ -1,0 +1,448 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "spec-type-desc",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/spec-type-desc defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">90922<a name=\"spec-type-desc-90922\"> </a></td><td>MICRO PROBLEM PATIENT</td></tr><tr><td style=\"white-space:nowrap\">70014<a name=\"spec-type-desc-70014\"> </a></td><td>BLOOD CULTURE - NEONATE</td></tr><tr><td style=\"white-space:nowrap\">70043<a name=\"spec-type-desc-70043\"> </a></td><td>Influenza A/B by DFA - Bronch Lavage</td></tr><tr><td style=\"white-space:nowrap\">70023<a name=\"spec-type-desc-70023\"> </a></td><td>CATHETER TIP-IV</td></tr><tr><td style=\"white-space:nowrap\">70009<a name=\"spec-type-desc-70009\"> </a></td><td>BILE</td></tr><tr><td style=\"white-space:nowrap\">70020<a name=\"spec-type-desc-70020\"> </a></td><td>BRONCHIAL BRUSH</td></tr><tr><td style=\"white-space:nowrap\">70076<a name=\"spec-type-desc-70076\"> </a></td><td>TISSUE</td></tr><tr><td style=\"white-space:nowrap\">90929<a name=\"spec-type-desc-90929\"> </a></td><td>Swab R/O Yeast Screen</td></tr><tr><td style=\"white-space:nowrap\">90913<a name=\"spec-type-desc-90913\"> </a></td><td>HAIR</td></tr><tr><td style=\"white-space:nowrap\">70068<a name=\"spec-type-desc-70068\"> </a></td><td>SWAB</td></tr><tr><td style=\"white-space:nowrap\">70040<a name=\"spec-type-desc-70040\"> </a></td><td>SWAB</td></tr><tr><td style=\"white-space:nowrap\">70077<a name=\"spec-type-desc-70077\"> </a></td><td>URINE</td></tr><tr><td style=\"white-space:nowrap\">70062<a name=\"spec-type-desc-70062\"> </a></td><td>SPUTUM</td></tr><tr><td style=\"white-space:nowrap\">70021<a name=\"spec-type-desc-70021\"> </a></td><td>BRONCHOALVEOLAR LAVAGE</td></tr><tr><td style=\"white-space:nowrap\">70032<a name=\"spec-type-desc-70032\"> </a></td><td>Blood (EBV)</td></tr><tr><td style=\"white-space:nowrap\">70046<a name=\"spec-type-desc-70046\"> </a></td><td>IMMUNOLOGY</td></tr><tr><td style=\"white-space:nowrap\">70056<a name=\"spec-type-desc-70056\"> </a></td><td>RECTAL - R/O GC</td></tr><tr><td style=\"white-space:nowrap\">70010<a name=\"spec-type-desc-70010\"> </a></td><td>BIOPSY</td></tr><tr><td style=\"white-space:nowrap\">70092<a name=\"spec-type-desc-70092\"> </a></td><td>SWAB, R/O GC</td></tr><tr><td style=\"white-space:nowrap\">70049<a name=\"spec-type-desc-70049\"> </a></td><td>NEOPLASTIC BLOOD</td></tr><tr><td style=\"white-space:nowrap\">90919<a name=\"spec-type-desc-90919\"> </a></td><td>Blood (LYME)</td></tr><tr><td style=\"white-space:nowrap\">70022<a name=\"spec-type-desc-70022\"> </a></td><td>BRONCHIAL WASHINGS</td></tr><tr><td style=\"white-space:nowrap\">90906<a name=\"spec-type-desc-90906\"> </a></td><td>C, E, &amp; A Screening</td></tr><tr><td style=\"white-space:nowrap\">70078<a name=\"spec-type-desc-70078\"> </a></td><td>URINE,PROSTATIC MASSAGE</td></tr><tr><td style=\"white-space:nowrap\">70090<a name=\"spec-type-desc-70090\"> </a></td><td>Mini-BAL</td></tr><tr><td style=\"white-space:nowrap\">70082<a name=\"spec-type-desc-70082\"> </a></td><td>URINE,SUPRAPUBIC ASPIRATE</td></tr><tr><td style=\"white-space:nowrap\">70041<a name=\"spec-type-desc-70041\"> </a></td><td>VIRAL CULTURE:R/O HERPES SIMPLEX VIRUS</td></tr><tr><td style=\"white-space:nowrap\">70066<a name=\"spec-type-desc-70066\"> </a></td><td>STOOL (RECEIVED IN TRANSPORT SYSTEM)</td></tr><tr><td style=\"white-space:nowrap\">70057<a name=\"spec-type-desc-70057\"> </a></td><td>Rapid Respiratory Viral Screen &amp; Culture</td></tr><tr><td style=\"white-space:nowrap\">70011<a name=\"spec-type-desc-70011\"> </a></td><td>BLOOD CULTURE ( MYCO/F LYTIC BOTTLE)</td></tr><tr><td style=\"white-space:nowrap\">70003<a name=\"spec-type-desc-70003\"> </a></td><td>ABSCESS</td></tr><tr><td style=\"white-space:nowrap\">70026<a name=\"spec-type-desc-70026\"> </a></td><td>CSF;SPINAL FLUID</td></tr><tr><td style=\"white-space:nowrap\">70080<a name=\"spec-type-desc-70080\"> </a></td><td>URINE,KIDNEY</td></tr><tr><td style=\"white-space:nowrap\">70047<a name=\"spec-type-desc-70047\"> </a></td><td>JOINT FLUID</td></tr><tr><td style=\"white-space:nowrap\">70053<a name=\"spec-type-desc-70053\"> </a></td><td>PERITONEAL FLUID</td></tr><tr><td style=\"white-space:nowrap\">70059<a name=\"spec-type-desc-70059\"> </a></td><td>Staph aureus swab</td></tr><tr><td style=\"white-space:nowrap\">70051<a name=\"spec-type-desc-70051\"> </a></td><td>FLUID,OTHER</td></tr><tr><td style=\"white-space:nowrap\">70058<a name=\"spec-type-desc-70058\"> </a></td><td>RAPID RESPIRATORY VIRAL ANTIGEN TEST</td></tr><tr><td style=\"white-space:nowrap\">90920<a name=\"spec-type-desc-90920\"> </a></td><td>PROSTHETIC JOINT FLUID</td></tr><tr><td style=\"white-space:nowrap\">70048<a name=\"spec-type-desc-70048\"> </a></td><td>NAIL SCRAPINGS</td></tr><tr><td style=\"white-space:nowrap\">70005<a name=\"spec-type-desc-70005\"> </a></td><td>ASPIRATE</td></tr><tr><td style=\"white-space:nowrap\">70027<a name=\"spec-type-desc-70027\"> </a></td><td>CORNEAL EYE SCRAPINGS</td></tr><tr><td style=\"white-space:nowrap\">90930<a name=\"spec-type-desc-90930\"> </a></td><td>Touch Prep/Sections</td></tr><tr><td style=\"white-space:nowrap\">70029<a name=\"spec-type-desc-70029\"> </a></td><td>DIALYSIS FLUID</td></tr><tr><td style=\"white-space:nowrap\">70034<a name=\"spec-type-desc-70034\"> </a></td><td>FOREIGN BODY</td></tr><tr><td style=\"white-space:nowrap\">70025<a name=\"spec-type-desc-70025\"> </a></td><td>CRE Screen</td></tr><tr><td style=\"white-space:nowrap\">70073<a name=\"spec-type-desc-70073\"> </a></td><td>TISSUE</td></tr><tr><td style=\"white-space:nowrap\">70061<a name=\"spec-type-desc-70061\"> </a></td><td>SKIN SCRAPINGS</td></tr><tr><td style=\"white-space:nowrap\">70030<a name=\"spec-type-desc-70030\"> </a></td><td>DIRECT ANTIGEN TEST FOR VARICELLA-ZOSTER VIRUS</td></tr><tr><td style=\"white-space:nowrap\">70037<a name=\"spec-type-desc-70037\"> </a></td><td>FOOT CULTURE</td></tr><tr><td style=\"white-space:nowrap\">70083<a name=\"spec-type-desc-70083\"> </a></td><td>VARICELLA-ZOSTER CULTURE</td></tr><tr><td style=\"white-space:nowrap\">70084<a name=\"spec-type-desc-70084\"> </a></td><td>SWAB</td></tr><tr><td style=\"white-space:nowrap\">70067<a name=\"spec-type-desc-70067\"> </a></td><td>SWAB</td></tr><tr><td style=\"white-space:nowrap\">90935<a name=\"spec-type-desc-90935\"> </a></td><td>VIRAL CULTURE</td></tr><tr><td style=\"white-space:nowrap\">70052<a name=\"spec-type-desc-70052\"> </a></td><td>PERIPHERAL BLOOD LYMPHOCYTES</td></tr><tr><td style=\"white-space:nowrap\">90921<a name=\"spec-type-desc-90921\"> </a></td><td>POST-MORTEM VIRAL CULTURE</td></tr><tr><td style=\"white-space:nowrap\">70065<a name=\"spec-type-desc-70065\"> </a></td><td>SCOTCH TAPE PREP/PADDLE</td></tr><tr><td style=\"white-space:nowrap\">70075<a name=\"spec-type-desc-70075\"> </a></td><td>THROAT CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90908<a name=\"spec-type-desc-90908\"> </a></td><td>Cipro Resistant Screen</td></tr><tr><td style=\"white-space:nowrap\">70017<a name=\"spec-type-desc-70017\"> </a></td><td>SEROLOGY/BLOOD</td></tr><tr><td style=\"white-space:nowrap\">70086<a name=\"spec-type-desc-70086\"> </a></td><td>XXX</td></tr><tr><td style=\"white-space:nowrap\">90909<a name=\"spec-type-desc-90909\"> </a></td><td>CHORIONIC VILLUS SAMPLE</td></tr><tr><td style=\"white-space:nowrap\">70016<a name=\"spec-type-desc-70016\"> </a></td><td>BLOOD CULTURE (POST-MORTEM)</td></tr><tr><td style=\"white-space:nowrap\">70019<a name=\"spec-type-desc-70019\"> </a></td><td>BONE MARROW - CYTOGENETICS</td></tr><tr><td style=\"white-space:nowrap\">70042<a name=\"spec-type-desc-70042\"> </a></td><td>Influenza A/B by DFA</td></tr><tr><td style=\"white-space:nowrap\">70013<a name=\"spec-type-desc-70013\"> </a></td><td>FLUID RECEIVED IN BLOOD CULTURE BOTTLES</td></tr><tr><td style=\"white-space:nowrap\">70002<a name=\"spec-type-desc-70002\"> </a></td><td>THROAT FOR STREP</td></tr><tr><td style=\"white-space:nowrap\">70085<a name=\"spec-type-desc-70085\"> </a></td><td>WORM</td></tr><tr><td style=\"white-space:nowrap\">70088<a name=\"spec-type-desc-70088\"> </a></td><td>Blood (EBV)</td></tr><tr><td style=\"white-space:nowrap\">70033<a name=\"spec-type-desc-70033\"> </a></td><td>EYE</td></tr><tr><td style=\"white-space:nowrap\">70008<a name=\"spec-type-desc-70008\"> </a></td><td>BRONCHIAL BRUSH - PROTECTED</td></tr><tr><td style=\"white-space:nowrap\">70007<a name=\"spec-type-desc-70007\"> </a></td><td>BLOOD BAG FLUID</td></tr><tr><td style=\"white-space:nowrap\">70024<a name=\"spec-type-desc-70024\"> </a></td><td>VIRAL CULTURE: R/O CYTOMEGALOVIRUS</td></tr><tr><td style=\"white-space:nowrap\">70072<a name=\"spec-type-desc-70072\"> </a></td><td>TRACHEAL ASPIRATE</td></tr><tr><td style=\"white-space:nowrap\">70035<a name=\"spec-type-desc-70035\"> </a></td><td>FLUID,OTHER</td></tr><tr><td style=\"white-space:nowrap\">70060<a name=\"spec-type-desc-70060\"> </a></td><td>Stem Cell - Blood Culture</td></tr><tr><td style=\"white-space:nowrap\">70045<a name=\"spec-type-desc-70045\"> </a></td><td>Immunology (CMV)</td></tr><tr><td style=\"white-space:nowrap\">90915<a name=\"spec-type-desc-90915\"> </a></td><td>Isolate</td></tr><tr><td style=\"white-space:nowrap\">70018<a name=\"spec-type-desc-70018\"> </a></td><td>BONE MARROW</td></tr><tr><td style=\"white-space:nowrap\">70064<a name=\"spec-type-desc-70064\"> </a></td><td>STOOL</td></tr><tr><td style=\"white-space:nowrap\">70093<a name=\"spec-type-desc-70093\"> </a></td><td>Blood (Toxo)</td></tr><tr><td style=\"white-space:nowrap\">70081<a name=\"spec-type-desc-70081\"> </a></td><td>URINE</td></tr><tr><td style=\"white-space:nowrap\">70031<a name=\"spec-type-desc-70031\"> </a></td><td>EAR</td></tr><tr><td style=\"white-space:nowrap\">70015<a name=\"spec-type-desc-70015\"> </a></td><td>BLOOD</td></tr><tr><td style=\"white-space:nowrap\">70079<a name=\"spec-type-desc-70079\"> </a></td><td>URINE</td></tr><tr><td style=\"white-space:nowrap\">70087<a name=\"spec-type-desc-70087\"> </a></td><td>Blood (CMV AB)</td></tr><tr><td style=\"white-space:nowrap\">70054<a name=\"spec-type-desc-70054\"> </a></td><td>PLEURAL FLUID</td></tr><tr><td style=\"white-space:nowrap\">70069<a name=\"spec-type-desc-70069\"> </a></td><td>SWAB</td></tr><tr><td style=\"white-space:nowrap\">70071<a name=\"spec-type-desc-70071\"> </a></td><td>SWAB - R/O YEAST</td></tr><tr><td style=\"white-space:nowrap\">70055<a name=\"spec-type-desc-70055\"> </a></td><td>POSTMORTEM CULTURE</td></tr><tr><td style=\"white-space:nowrap\">70028<a name=\"spec-type-desc-70028\"> </a></td><td>Direct Antigen Test for Herpes Simplex Virus Types 1 &amp; 2</td></tr><tr><td style=\"white-space:nowrap\">70091<a name=\"spec-type-desc-70091\"> </a></td><td>MRSA SCREEN</td></tr><tr><td style=\"white-space:nowrap\">90902<a name=\"spec-type-desc-90902\"> </a></td><td>AMNIOTIC FLUID</td></tr><tr><td style=\"white-space:nowrap\">70074<a name=\"spec-type-desc-70074\"> </a></td><td>THROAT</td></tr><tr><td style=\"white-space:nowrap\">90928<a name=\"spec-type-desc-90928\"> </a></td><td>Swab</td></tr><tr><td style=\"white-space:nowrap\">70070<a name=\"spec-type-desc-70070\"> </a></td><td>SWAB</td></tr><tr><td style=\"white-space:nowrap\">70036<a name=\"spec-type-desc-70036\"> </a></td><td>FLUID WOUND</td></tr><tr><td style=\"white-space:nowrap\">90914<a name=\"spec-type-desc-90914\"> </a></td><td>Infection Control Yeast</td></tr><tr><td style=\"white-space:nowrap\">70038<a name=\"spec-type-desc-70038\"> </a></td><td>FECAL SWAB</td></tr><tr><td style=\"white-space:nowrap\">70004<a name=\"spec-type-desc-70004\"> </a></td><td>ARTHROPOD</td></tr><tr><td style=\"white-space:nowrap\">70012<a name=\"spec-type-desc-70012\"> </a></td><td>BLOOD CULTURE</td></tr><tr><td style=\"white-space:nowrap\">70006<a name=\"spec-type-desc-70006\"> </a></td><td>ANORECTAL/VAGINAL</td></tr><tr><td style=\"white-space:nowrap\">90912<a name=\"spec-type-desc-90912\"> </a></td><td>Foreign Body - Sonication Culture</td></tr><tr><td style=\"white-space:nowrap\">70089<a name=\"spec-type-desc-70089\"> </a></td><td>Blood (Malaria)</td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/spec-type-desc",
+  "version": "0.2.4",
+  "name": "SpecTypeDesc",
+  "title": "SpecTypeDesc",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The specimen type codes for microbiologyevents",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/spec-type-desc",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "90922",
+      "display": "MICRO PROBLEM PATIENT"
+    },
+    {
+      "code": "70014",
+      "display": "BLOOD CULTURE - NEONATE"
+    },
+    {
+      "code": "70043",
+      "display": "Influenza A/B by DFA - Bronch Lavage"
+    },
+    {
+      "code": "70023",
+      "display": "CATHETER TIP-IV"
+    },
+    {
+      "code": "70009",
+      "display": "BILE"
+    },
+    {
+      "code": "70020",
+      "display": "BRONCHIAL BRUSH"
+    },
+    {
+      "code": "70076",
+      "display": "TISSUE"
+    },
+    {
+      "code": "90929",
+      "display": "Swab R/O Yeast Screen"
+    },
+    {
+      "code": "90913",
+      "display": "HAIR"
+    },
+    {
+      "code": "70068",
+      "display": "SWAB"
+    },
+    {
+      "code": "70040",
+      "display": "SWAB"
+    },
+    {
+      "code": "70077",
+      "display": "URINE"
+    },
+    {
+      "code": "70062",
+      "display": "SPUTUM"
+    },
+    {
+      "code": "70021",
+      "display": "BRONCHOALVEOLAR LAVAGE"
+    },
+    {
+      "code": "70032",
+      "display": "Blood (EBV)"
+    },
+    {
+      "code": "70046",
+      "display": "IMMUNOLOGY"
+    },
+    {
+      "code": "70056",
+      "display": "RECTAL - R/O GC"
+    },
+    {
+      "code": "70010",
+      "display": "BIOPSY"
+    },
+    {
+      "code": "70092",
+      "display": "SWAB, R/O GC"
+    },
+    {
+      "code": "70049",
+      "display": "NEOPLASTIC BLOOD"
+    },
+    {
+      "code": "90919",
+      "display": "Blood (LYME)"
+    },
+    {
+      "code": "70022",
+      "display": "BRONCHIAL WASHINGS"
+    },
+    {
+      "code": "90906",
+      "display": "C, E, & A Screening"
+    },
+    {
+      "code": "70078",
+      "display": "URINE,PROSTATIC MASSAGE"
+    },
+    {
+      "code": "70090",
+      "display": "Mini-BAL"
+    },
+    {
+      "code": "70082",
+      "display": "URINE,SUPRAPUBIC ASPIRATE"
+    },
+    {
+      "code": "70041",
+      "display": "VIRAL CULTURE:R/O HERPES SIMPLEX VIRUS"
+    },
+    {
+      "code": "70066",
+      "display": "STOOL (RECEIVED IN TRANSPORT SYSTEM)"
+    },
+    {
+      "code": "70057",
+      "display": "Rapid Respiratory Viral Screen & Culture"
+    },
+    {
+      "code": "70011",
+      "display": "BLOOD CULTURE ( MYCO/F LYTIC BOTTLE)"
+    },
+    {
+      "code": "70003",
+      "display": "ABSCESS"
+    },
+    {
+      "code": "70026",
+      "display": "CSF;SPINAL FLUID"
+    },
+    {
+      "code": "70080",
+      "display": "URINE,KIDNEY"
+    },
+    {
+      "code": "70047",
+      "display": "JOINT FLUID"
+    },
+    {
+      "code": "70053",
+      "display": "PERITONEAL FLUID"
+    },
+    {
+      "code": "70059",
+      "display": "Staph aureus swab"
+    },
+    {
+      "code": "70051",
+      "display": "FLUID,OTHER"
+    },
+    {
+      "code": "70058",
+      "display": "RAPID RESPIRATORY VIRAL ANTIGEN TEST"
+    },
+    {
+      "code": "90920",
+      "display": "PROSTHETIC JOINT FLUID"
+    },
+    {
+      "code": "70048",
+      "display": "NAIL SCRAPINGS"
+    },
+    {
+      "code": "70005",
+      "display": "ASPIRATE"
+    },
+    {
+      "code": "70027",
+      "display": "CORNEAL EYE SCRAPINGS"
+    },
+    {
+      "code": "90930",
+      "display": "Touch Prep/Sections"
+    },
+    {
+      "code": "70029",
+      "display": "DIALYSIS FLUID"
+    },
+    {
+      "code": "70034",
+      "display": "FOREIGN BODY"
+    },
+    {
+      "code": "70025",
+      "display": "CRE Screen"
+    },
+    {
+      "code": "70073",
+      "display": "TISSUE"
+    },
+    {
+      "code": "70061",
+      "display": "SKIN SCRAPINGS"
+    },
+    {
+      "code": "70030",
+      "display": "DIRECT ANTIGEN TEST FOR VARICELLA-ZOSTER VIRUS"
+    },
+    {
+      "code": "70037",
+      "display": "FOOT CULTURE"
+    },
+    {
+      "code": "70083",
+      "display": "VARICELLA-ZOSTER CULTURE"
+    },
+    {
+      "code": "70084",
+      "display": "SWAB"
+    },
+    {
+      "code": "70067",
+      "display": "SWAB"
+    },
+    {
+      "code": "90935",
+      "display": "VIRAL CULTURE"
+    },
+    {
+      "code": "70052",
+      "display": "PERIPHERAL BLOOD LYMPHOCYTES"
+    },
+    {
+      "code": "90921",
+      "display": "POST-MORTEM VIRAL CULTURE"
+    },
+    {
+      "code": "70065",
+      "display": "SCOTCH TAPE PREP/PADDLE"
+    },
+    {
+      "code": "70075",
+      "display": "THROAT CULTURE"
+    },
+    {
+      "code": "90908",
+      "display": "Cipro Resistant Screen"
+    },
+    {
+      "code": "70017",
+      "display": "SEROLOGY/BLOOD"
+    },
+    {
+      "code": "70086",
+      "display": "XXX"
+    },
+    {
+      "code": "90909",
+      "display": "CHORIONIC VILLUS SAMPLE"
+    },
+    {
+      "code": "70016",
+      "display": "BLOOD CULTURE (POST-MORTEM)"
+    },
+    {
+      "code": "70019",
+      "display": "BONE MARROW - CYTOGENETICS"
+    },
+    {
+      "code": "70042",
+      "display": "Influenza A/B by DFA"
+    },
+    {
+      "code": "70013",
+      "display": "FLUID RECEIVED IN BLOOD CULTURE BOTTLES"
+    },
+    {
+      "code": "70002",
+      "display": "THROAT FOR STREP"
+    },
+    {
+      "code": "70085",
+      "display": "WORM"
+    },
+    {
+      "code": "70088",
+      "display": "Blood (EBV)"
+    },
+    {
+      "code": "70033",
+      "display": "EYE"
+    },
+    {
+      "code": "70008",
+      "display": "BRONCHIAL BRUSH - PROTECTED"
+    },
+    {
+      "code": "70007",
+      "display": "BLOOD BAG FLUID"
+    },
+    {
+      "code": "70024",
+      "display": "VIRAL CULTURE: R/O CYTOMEGALOVIRUS"
+    },
+    {
+      "code": "70072",
+      "display": "TRACHEAL ASPIRATE"
+    },
+    {
+      "code": "70035",
+      "display": "FLUID,OTHER"
+    },
+    {
+      "code": "70060",
+      "display": "Stem Cell - Blood Culture"
+    },
+    {
+      "code": "70045",
+      "display": "Immunology (CMV)"
+    },
+    {
+      "code": "90915",
+      "display": "Isolate"
+    },
+    {
+      "code": "70018",
+      "display": "BONE MARROW"
+    },
+    {
+      "code": "70064",
+      "display": "STOOL"
+    },
+    {
+      "code": "70093",
+      "display": "Blood (Toxo)"
+    },
+    {
+      "code": "70081",
+      "display": "URINE"
+    },
+    {
+      "code": "70031",
+      "display": "EAR"
+    },
+    {
+      "code": "70015",
+      "display": "BLOOD"
+    },
+    {
+      "code": "70079",
+      "display": "URINE"
+    },
+    {
+      "code": "70087",
+      "display": "Blood (CMV AB)"
+    },
+    {
+      "code": "70054",
+      "display": "PLEURAL FLUID"
+    },
+    {
+      "code": "70069",
+      "display": "SWAB"
+    },
+    {
+      "code": "70071",
+      "display": "SWAB - R/O YEAST"
+    },
+    {
+      "code": "70055",
+      "display": "POSTMORTEM CULTURE"
+    },
+    {
+      "code": "70028",
+      "display": "Direct Antigen Test for Herpes Simplex Virus Types 1 & 2"
+    },
+    {
+      "code": "70091",
+      "display": "MRSA SCREEN"
+    },
+    {
+      "code": "90902",
+      "display": "AMNIOTIC FLUID"
+    },
+    {
+      "code": "70074",
+      "display": "THROAT"
+    },
+    {
+      "code": "90928",
+      "display": "Swab"
+    },
+    {
+      "code": "70070",
+      "display": "SWAB"
+    },
+    {
+      "code": "70036",
+      "display": "FLUID WOUND"
+    },
+    {
+      "code": "90914",
+      "display": "Infection Control Yeast"
+    },
+    {
+      "code": "70038",
+      "display": "FECAL SWAB"
+    },
+    {
+      "code": "70004",
+      "display": "ARTHROPOD"
+    },
+    {
+      "code": "70012",
+      "display": "BLOOD CULTURE"
+    },
+    {
+      "code": "70006",
+      "display": "ANORECTAL/VAGINAL"
+    },
+    {
+      "code": "90912",
+      "display": "Foreign Body - Sonication Culture"
+    },
+    {
+      "code": "70089",
+      "display": "Blood (Malaria)"
+    }
+  ]
+}

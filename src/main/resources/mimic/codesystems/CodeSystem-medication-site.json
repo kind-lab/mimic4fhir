@@ -1,0 +1,1169 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-site",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/medication-site defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">___<a name=\"medication-site-___\"> </a></td></tr><tr><td style=\"white-space:nowrap\">a<a name=\"medication-site-a\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ab<a name=\"medication-site-ab\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ABD<a name=\"medication-site-ABD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Abd<a name=\"medication-site-Abd\"> </a></td></tr><tr><td style=\"white-space:nowrap\">abd<a name=\"medication-site-abd\"> </a></td></tr><tr><td style=\"white-space:nowrap\">abd.<a name=\"medication-site-abd.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">abd and back<a name=\"medication-site-abdandback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">abd/back<a name=\"medication-site-abd.47back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ABDOMEN<a name=\"medication-site-ABDOMEN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Abdomen<a name=\"medication-site-Abdomen\"> </a></td></tr><tr><td style=\"white-space:nowrap\">abdomen<a name=\"medication-site-abdomen\"> </a></td></tr><tr><td style=\"white-space:nowrap\">abdomen and back<a name=\"medication-site-abdomenandback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">abdomen/back<a name=\"medication-site-abdomen.47back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">above knee<a name=\"medication-site-aboveknee\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ankle<a name=\"medication-site-Ankle\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ankle<a name=\"medication-site-ankle\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ant chest<a name=\"medication-site-antchest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">anterior chest<a name=\"medication-site-anteriorchest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">anterior shoulder<a name=\"medication-site-anteriorshoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">anterior thigh<a name=\"medication-site-anteriorthigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ARM<a name=\"medication-site-ARM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Arm<a name=\"medication-site-Arm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">arm<a name=\"medication-site-arm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">arm,<a name=\"medication-site-arm.44\"> </a></td></tr><tr><td style=\"white-space:nowrap\">arm/shoulder<a name=\"medication-site-arm.47shoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">arn<a name=\"medication-site-arn\"> </a></td></tr><tr><td style=\"white-space:nowrap\">axilla<a name=\"medication-site-axilla\"> </a></td></tr><tr><td style=\"white-space:nowrap\">axillary<a name=\"medication-site-axillary\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BACK<a name=\"medication-site-BACK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Back<a name=\"medication-site-Back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bACK<a name=\"medication-site-bACK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">baCK<a name=\"medication-site-baCK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">b ack<a name=\"medication-site-back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back<a name=\"medication-site-back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back/abdomen<a name=\"medication-site-back.47abdomen\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back and abdomen<a name=\"medication-site-backandabdomen\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back and neck<a name=\"medication-site-backandneck\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back/flank<a name=\"medication-site-back.47flank\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back/hip<a name=\"medication-site-back.47hip\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back lower<a name=\"medication-site-backlower\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back neck<a name=\"medication-site-backneck\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back/neck<a name=\"medication-site-back.47neck\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back of arm<a name=\"medication-site-backofarm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back of ear<a name=\"medication-site-backofear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back of neck<a name=\"medication-site-backofneck\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back of shoulder<a name=\"medication-site-backofshoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back of thigh<a name=\"medication-site-backofthigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back/ribs<a name=\"medication-site-back.47ribs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back shoulder<a name=\"medication-site-backshoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back/shoulder<a name=\"medication-site-back.47shoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">back/side<a name=\"medication-site-back.47side\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bacl<a name=\"medication-site-bacl\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bak<a name=\"medication-site-bak\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bCK<a name=\"medication-site-bCK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bck<a name=\"medication-site-bck\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Behind ear<a name=\"medication-site-Behindear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">behind ear<a name=\"medication-site-behindear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">behind left ear<a name=\"medication-site-behindleftear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">behind R ear<a name=\"medication-site-behindRear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">behind right ear<a name=\"medication-site-behindrightear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">behind the ear<a name=\"medication-site-behindtheear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">belly<a name=\"medication-site-belly\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Bicep<a name=\"medication-site-Bicep\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bicep<a name=\"medication-site-bicep\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bicept<a name=\"medication-site-bicept\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilat chest<a name=\"medication-site-bilatchest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilateral feet<a name=\"medication-site-bilateralfeet\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilateral hips<a name=\"medication-site-bilateralhips\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Bilateral knees<a name=\"medication-site-Bilateralknees\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilateral knees<a name=\"medication-site-bilateralknees\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilateral legs<a name=\"medication-site-bilaterallegs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilateral shoulders<a name=\"medication-site-bilateralshoulders\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilateral thighs<a name=\"medication-site-bilateralthighs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilat feet<a name=\"medication-site-bilatfeet\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilat hips<a name=\"medication-site-bilathips\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilat knees<a name=\"medication-site-bilatknees\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilat legs<a name=\"medication-site-bilatlegs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bilat shoulders<a name=\"medication-site-bilatshoulders\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BLE<a name=\"medication-site-BLE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">b/l knees<a name=\"medication-site-b.47lknees\"> </a></td></tr><tr><td style=\"white-space:nowrap\">both knees<a name=\"medication-site-bothknees\"> </a></td></tr><tr><td style=\"white-space:nowrap\">both shoulders<a name=\"medication-site-bothshoulders\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bottom<a name=\"medication-site-bottom\"> </a></td></tr><tr><td style=\"white-space:nowrap\">breast<a name=\"medication-site-breast\"> </a></td></tr><tr><td style=\"white-space:nowrap\">butt<a name=\"medication-site-butt\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Buttock<a name=\"medication-site-Buttock\"> </a></td></tr><tr><td style=\"white-space:nowrap\">buttock<a name=\"medication-site-buttock\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Buttocks<a name=\"medication-site-Buttocks\"> </a></td></tr><tr><td style=\"white-space:nowrap\">buttocks<a name=\"medication-site-buttocks\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Calf<a name=\"medication-site-Calf\"> </a></td></tr><tr><td style=\"white-space:nowrap\">calf<a name=\"medication-site-calf\"> </a></td></tr><tr><td style=\"white-space:nowrap\">center<a name=\"medication-site-center\"> </a></td></tr><tr><td style=\"white-space:nowrap\">center back<a name=\"medication-site-centerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">center lower back<a name=\"medication-site-centerlowerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cervical spine<a name=\"medication-site-cervicalspine\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CHEST<a name=\"medication-site-CHEST\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Chest<a name=\"medication-site-Chest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chest<a name=\"medication-site-chest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chest and back<a name=\"medication-site-chestandback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chest/back<a name=\"medication-site-chest.47back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chest/flank<a name=\"medication-site-chest.47flank\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chest/ribs<a name=\"medication-site-chest.47ribs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chest/shoulder<a name=\"medication-site-chest.47shoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chest/side<a name=\"medication-site-chest.47side\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chest tube site<a name=\"medication-site-chesttubesite\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Chest wall<a name=\"medication-site-Chestwall\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chest wall<a name=\"medication-site-chestwall\"> </a></td></tr><tr><td style=\"white-space:nowrap\">clavicle<a name=\"medication-site-clavicle\"> </a></td></tr><tr><td style=\"white-space:nowrap\">coccyx<a name=\"medication-site-coccyx\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CT<a name=\"medication-site-CT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CT site<a name=\"medication-site-CTsite\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ct site<a name=\"medication-site-ctsite\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CW<a name=\"medication-site-CW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cw<a name=\"medication-site-cw\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Delt<a name=\"medication-site-Delt\"> </a></td></tr><tr><td style=\"white-space:nowrap\">delt<a name=\"medication-site-delt\"> </a></td></tr><tr><td style=\"white-space:nowrap\">deltiod<a name=\"medication-site-deltiod\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DELTOID<a name=\"medication-site-DELTOID\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Deltoid<a name=\"medication-site-Deltoid\"> </a></td></tr><tr><td style=\"white-space:nowrap\">deltoid<a name=\"medication-site-deltoid\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Deltoid area<a name=\"medication-site-Deltoidarea\"> </a></td></tr><tr><td style=\"white-space:nowrap\">deltoid area<a name=\"medication-site-deltoidarea\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dorsal foot<a name=\"medication-site-dorsalfoot\"> </a></td></tr><tr><td style=\"white-space:nowrap\">drain site<a name=\"medication-site-drainsite\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EAR<a name=\"medication-site-EAR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ear<a name=\"medication-site-Ear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ear<a name=\"medication-site-ear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">elbow<a name=\"medication-site-elbow\"> </a></td></tr><tr><td style=\"white-space:nowrap\">epigastric<a name=\"medication-site-epigastric\"> </a></td></tr><tr><td style=\"white-space:nowrap\">FA<a name=\"medication-site-FA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">feet<a name=\"medication-site-feet\"> </a></td></tr><tr><td style=\"white-space:nowrap\">femur<a name=\"medication-site-femur\"> </a></td></tr><tr><td style=\"white-space:nowrap\">FLANK<a name=\"medication-site-FLANK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Flank<a name=\"medication-site-Flank\"> </a></td></tr><tr><td style=\"white-space:nowrap\">flank<a name=\"medication-site-flank\"> </a></td></tr><tr><td style=\"white-space:nowrap\">flank area<a name=\"medication-site-flankarea\"> </a></td></tr><tr><td style=\"white-space:nowrap\">flank/back<a name=\"medication-site-flank.47back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">flank/chest<a name=\"medication-site-flank.47chest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">FOOT<a name=\"medication-site-FOOT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Foot<a name=\"medication-site-Foot\"> </a></td></tr><tr><td style=\"white-space:nowrap\">foot<a name=\"medication-site-foot\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Forearm<a name=\"medication-site-Forearm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">forearm<a name=\"medication-site-forearm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">glute<a name=\"medication-site-glute\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gluteal<a name=\"medication-site-gluteal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">gluteus<a name=\"medication-site-gluteus\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Groin<a name=\"medication-site-Groin\"> </a></td></tr><tr><td style=\"white-space:nowrap\">groin<a name=\"medication-site-groin\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hand<a name=\"medication-site-hand\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hands<a name=\"medication-site-hands\"> </a></td></tr><tr><td style=\"white-space:nowrap\">heel<a name=\"medication-site-heel\"> </a></td></tr><tr><td style=\"white-space:nowrap\">heels<a name=\"medication-site-heels\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HIP<a name=\"medication-site-HIP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Hip<a name=\"medication-site-Hip\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hip<a name=\"medication-site-hip\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hip and thigh<a name=\"medication-site-hipandthigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hip/back<a name=\"medication-site-hip.47back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hip/buttock<a name=\"medication-site-hip.47buttock\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hips<a name=\"medication-site-hips\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hip/thigh<a name=\"medication-site-hip.47thigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">incision<a name=\"medication-site-incision\"> </a></td></tr><tr><td style=\"white-space:nowrap\">inner thigh<a name=\"medication-site-innerthigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">KNEE<a name=\"medication-site-KNEE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Knee<a name=\"medication-site-Knee\"> </a></td></tr><tr><td style=\"white-space:nowrap\">knee<a name=\"medication-site-knee\"> </a></td></tr><tr><td style=\"white-space:nowrap\">kneee<a name=\"medication-site-kneee\"> </a></td></tr><tr><td style=\"white-space:nowrap\">knees<a name=\"medication-site-knees\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L arm<a name=\"medication-site-Larm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lateral<a name=\"medication-site-lateral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lateral abdomen<a name=\"medication-site-lateralabdomen\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lateral back<a name=\"medication-site-lateralback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lateral chest<a name=\"medication-site-lateralchest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lateral chest wall<a name=\"medication-site-lateralchestwall\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lateral side<a name=\"medication-site-lateralside\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lateral thigh<a name=\"medication-site-lateralthigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LB<a name=\"medication-site-LB\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lb<a name=\"medication-site-lb\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LE<a name=\"medication-site-LE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">le<a name=\"medication-site-le\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left<a name=\"medication-site-left\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left arm<a name=\"medication-site-leftarm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left back<a name=\"medication-site-leftback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left deltoid<a name=\"medication-site-leftdeltoid\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left ear<a name=\"medication-site-leftear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left flank<a name=\"medication-site-leftflank\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left hip<a name=\"medication-site-lefthip\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left knee<a name=\"medication-site-leftknee\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left lower back<a name=\"medication-site-leftlowerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left shoulder<a name=\"medication-site-leftshoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left side<a name=\"medication-site-leftside\"> </a></td></tr><tr><td style=\"white-space:nowrap\">left upper arm<a name=\"medication-site-leftupperarm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LEG<a name=\"medication-site-LEG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Leg<a name=\"medication-site-Leg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">leg<a name=\"medication-site-leg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">legs<a name=\"medication-site-legs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L flank<a name=\"medication-site-Lflank\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LLE<a name=\"medication-site-LLE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LLQ<a name=\"medication-site-LLQ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">llq<a name=\"medication-site-llq\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lolwer back<a name=\"medication-site-lolwerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Low Back<a name=\"medication-site-LowBack\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Low back<a name=\"medication-site-Lowback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">low back<a name=\"medication-site-lowback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lowe back<a name=\"medication-site-loweback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower<a name=\"medication-site-lower\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower abd<a name=\"medication-site-lowerabd\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower abdomen<a name=\"medication-site-lowerabdomen\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LOWER BACK<a name=\"medication-site-LOWERBACK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Lower Back<a name=\"medication-site-LowerBack\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Lower back<a name=\"medication-site-Lowerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower baCK<a name=\"medication-site-lowerbaCK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower back<a name=\"medication-site-lowerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lowerback<a name=\"medication-site-lowerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower back/hip<a name=\"medication-site-lowerback.47hip\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower chest<a name=\"medication-site-lowerchest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower flank<a name=\"medication-site-lowerflank\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower leg<a name=\"medication-site-lowerleg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower lumbar<a name=\"medication-site-lowerlumbar\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower quadrant<a name=\"medication-site-lowerquadrant\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower rib<a name=\"medication-site-lowerrib\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower ribs<a name=\"medication-site-lowerribs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lower spine<a name=\"medication-site-lowerspine\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LQ<a name=\"medication-site-LQ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">L shoulder<a name=\"medication-site-Lshoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LUE<a name=\"medication-site-LUE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lue<a name=\"medication-site-lue\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Lumbar<a name=\"medication-site-Lumbar\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lumbar<a name=\"medication-site-lumbar\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lumbar area<a name=\"medication-site-lumbararea\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lumbar back<a name=\"medication-site-lumbarback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lumbar spine<a name=\"medication-site-lumbarspine\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LUQ<a name=\"medication-site-LUQ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mid abdomen<a name=\"medication-site-midabdomen\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Mid back<a name=\"medication-site-Midback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mid back<a name=\"medication-site-midback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mid-back<a name=\"medication-site-mid-back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">midback<a name=\"medication-site-midback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">middle<a name=\"medication-site-middle\"> </a></td></tr><tr><td style=\"white-space:nowrap\">middle back<a name=\"medication-site-middleback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">middle lower back<a name=\"medication-site-middlelowerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mid lower back<a name=\"medication-site-midlowerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NECK<a name=\"medication-site-NECK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Neck<a name=\"medication-site-Neck\"> </a></td></tr><tr><td style=\"white-space:nowrap\">neck<a name=\"medication-site-neck\"> </a></td></tr><tr><td style=\"white-space:nowrap\">neck and back<a name=\"medication-site-neckandback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">neck/back<a name=\"medication-site-neck.47back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">neck/shoulder<a name=\"medication-site-neck.47shoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">outer thigh<a name=\"medication-site-outerthigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">parasternal<a name=\"medication-site-parasternal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">post ear<a name=\"medication-site-postear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">posterior back<a name=\"medication-site-posteriorback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">posterior chest<a name=\"medication-site-posteriorchest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">posterior ear<a name=\"medication-site-posteriorear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">posterior hip<a name=\"medication-site-posteriorhip\"> </a></td></tr><tr><td style=\"white-space:nowrap\">posterior knee<a name=\"medication-site-posteriorknee\"> </a></td></tr><tr><td style=\"white-space:nowrap\">posterior neck<a name=\"medication-site-posteriorneck\"> </a></td></tr><tr><td style=\"white-space:nowrap\">posterior ribs<a name=\"medication-site-posteriorribs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">posterior shoulder<a name=\"medication-site-posteriorshoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">posterior thigh<a name=\"medication-site-posteriorthigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">post neck<a name=\"medication-site-postneck\"> </a></td></tr><tr><td style=\"white-space:nowrap\">post shoulder<a name=\"medication-site-postshoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R arm<a name=\"medication-site-Rarm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">r arm<a name=\"medication-site-rarm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R hip<a name=\"medication-site-Rhip\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RIB<a name=\"medication-site-RIB\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Rib<a name=\"medication-site-Rib\"> </a></td></tr><tr><td style=\"white-space:nowrap\">rib<a name=\"medication-site-rib\"> </a></td></tr><tr><td style=\"white-space:nowrap\">rib area<a name=\"medication-site-ribarea\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Rib cage<a name=\"medication-site-Ribcage\"> </a></td></tr><tr><td style=\"white-space:nowrap\">rib cage<a name=\"medication-site-ribcage\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ribcage<a name=\"medication-site-ribcage\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RIBS<a name=\"medication-site-RIBS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ribs<a name=\"medication-site-Ribs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ribs<a name=\"medication-site-ribs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">right<a name=\"medication-site-right\"> </a></td></tr><tr><td style=\"white-space:nowrap\">right arm<a name=\"medication-site-rightarm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">right back<a name=\"medication-site-rightback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">right flank<a name=\"medication-site-rightflank\"> </a></td></tr><tr><td style=\"white-space:nowrap\">right hip<a name=\"medication-site-righthip\"> </a></td></tr><tr><td style=\"white-space:nowrap\">right knee<a name=\"medication-site-rightknee\"> </a></td></tr><tr><td style=\"white-space:nowrap\">right lower back<a name=\"medication-site-rightlowerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">right shoulder<a name=\"medication-site-rightshoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RLE<a name=\"medication-site-RLE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R lower back<a name=\"medication-site-Rlowerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RLQ<a name=\"medication-site-RLQ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">rlq<a name=\"medication-site-rlq\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RLQ abdomen<a name=\"medication-site-RLQabdomen\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R shoulder<a name=\"medication-site-Rshoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">r shoulder<a name=\"medication-site-rshoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RUA<a name=\"medication-site-RUA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RUE<a name=\"medication-site-RUE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">rue<a name=\"medication-site-rue\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RUQ<a name=\"medication-site-RUQ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ruq<a name=\"medication-site-ruq\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RUQ abd<a name=\"medication-site-RUQabd\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RUQ abdomen<a name=\"medication-site-RUQabdomen\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sacral<a name=\"medication-site-sacral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sacrum<a name=\"medication-site-sacrum\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Scapula<a name=\"medication-site-Scapula\"> </a></td></tr><tr><td style=\"white-space:nowrap\">scapula<a name=\"medication-site-scapula\"> </a></td></tr><tr><td style=\"white-space:nowrap\">scapular<a name=\"medication-site-scapular\"> </a></td></tr><tr><td style=\"white-space:nowrap\">schoulder<a name=\"medication-site-schoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sh<a name=\"medication-site-sh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shin<a name=\"medication-site-shin\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shld<a name=\"medication-site-shld\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shldr<a name=\"medication-site-shldr\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sholder<a name=\"medication-site-sholder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shouder<a name=\"medication-site-shouder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoudler<a name=\"medication-site-shoudler\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shouilder<a name=\"medication-site-shouilder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoukder<a name=\"medication-site-shoukder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shouklder<a name=\"medication-site-shouklder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SHOULDER<a name=\"medication-site-SHOULDER\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Shoulder<a name=\"medication-site-Shoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulder<a name=\"medication-site-shoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulder.<a name=\"medication-site-shoulder.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulder and back<a name=\"medication-site-shoulderandback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulder and hip<a name=\"medication-site-shoulderandhip\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulder/arm<a name=\"medication-site-shoulder.47arm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulder/back<a name=\"medication-site-shoulder.47back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulder blade<a name=\"medication-site-shoulderblade\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulder blades<a name=\"medication-site-shoulderblades\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulder/chest<a name=\"medication-site-shoulder.47chest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulder/neck<a name=\"medication-site-shoulder.47neck\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulders<a name=\"medication-site-shoulders\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shouldert<a name=\"medication-site-shouldert\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shoulder/upper back<a name=\"medication-site-shoulder.47upperback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shouler<a name=\"medication-site-shouler\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Side<a name=\"medication-site-Side\"> </a></td></tr><tr><td style=\"white-space:nowrap\">side<a name=\"medication-site-side\"> </a></td></tr><tr><td style=\"white-space:nowrap\">side/back<a name=\"medication-site-side.47back\"> </a></td></tr><tr><td style=\"white-space:nowrap\">spine<a name=\"medication-site-spine\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sternal<a name=\"medication-site-sternal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sternal incision<a name=\"medication-site-sternalincision\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Sternum<a name=\"medication-site-Sternum\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sternum<a name=\"medication-site-sternum\"> </a></td></tr><tr><td style=\"white-space:nowrap\">stomach<a name=\"medication-site-stomach\"> </a></td></tr><tr><td style=\"white-space:nowrap\">stomach and back<a name=\"medication-site-stomachandback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">stump<a name=\"medication-site-stump\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tailbone<a name=\"medication-site-tailbone\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Thigh<a name=\"medication-site-Thigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">thigh<a name=\"medication-site-thigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">thoracic<a name=\"medication-site-thoracic\"> </a></td></tr><tr><td style=\"white-space:nowrap\">thoracotomy<a name=\"medication-site-thoracotomy\"> </a></td></tr><tr><td style=\"white-space:nowrap\">thoracotomy site<a name=\"medication-site-thoracotomysite\"> </a></td></tr><tr><td style=\"white-space:nowrap\">thorax<a name=\"medication-site-thorax\"> </a></td></tr><tr><td style=\"white-space:nowrap\">top of foot<a name=\"medication-site-topoffoot\"> </a></td></tr><tr><td style=\"white-space:nowrap\">torso<a name=\"medication-site-torso\"> </a></td></tr><tr><td style=\"white-space:nowrap\">trap<a name=\"medication-site-trap\"> </a></td></tr><tr><td style=\"white-space:nowrap\">trunk<a name=\"medication-site-trunk\"> </a></td></tr><tr><td style=\"white-space:nowrap\">UA<a name=\"medication-site-UA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">UE<a name=\"medication-site-UE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ue<a name=\"medication-site-ue\"> </a></td></tr><tr><td style=\"white-space:nowrap\">underarm<a name=\"medication-site-underarm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">under breast<a name=\"medication-site-underbreast\"> </a></td></tr><tr><td style=\"white-space:nowrap\">under ear<a name=\"medication-site-underear\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper<a name=\"medication-site-upper\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper abd<a name=\"medication-site-upperabd\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper abdomen<a name=\"medication-site-upperabdomen\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper and lower back<a name=\"medication-site-upperandlowerback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Upper Arm<a name=\"medication-site-UpperArm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Upper arm<a name=\"medication-site-Upperarm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper arm<a name=\"medication-site-upperarm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Upper Back<a name=\"medication-site-UpperBack\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Upper back<a name=\"medication-site-Upperback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper back<a name=\"medication-site-upperback\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper back/neck<a name=\"medication-site-upperback.47neck\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper back/shoulder<a name=\"medication-site-upperback.47shoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper chest<a name=\"medication-site-upperchest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper extremity<a name=\"medication-site-upperextremity\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper leg<a name=\"medication-site-upperleg\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper quad<a name=\"medication-site-upperquad\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper quadrant<a name=\"medication-site-upperquadrant\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper shoulder<a name=\"medication-site-uppershoulder\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Upper thigh<a name=\"medication-site-Upperthigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">upper thigh<a name=\"medication-site-upperthigh\"> </a></td></tr><tr><td style=\"white-space:nowrap\">UQ<a name=\"medication-site-UQ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">wrist<a name=\"medication-site-wrist\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/medication-site",
+  "version": "0.2.4",
+  "name": "MedicationSite",
+  "title": "MedicationSite",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The medication site for administration in MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/medication-site",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "___"
+    },
+    {
+      "code": "a"
+    },
+    {
+      "code": "ab"
+    },
+    {
+      "code": "ABD"
+    },
+    {
+      "code": "Abd"
+    },
+    {
+      "code": "abd"
+    },
+    {
+      "code": "abd."
+    },
+    {
+      "code": "abd and back"
+    },
+    {
+      "code": "abd/back"
+    },
+    {
+      "code": "ABDOMEN"
+    },
+    {
+      "code": "Abdomen"
+    },
+    {
+      "code": "abdomen"
+    },
+    {
+      "code": "abdomen and back"
+    },
+    {
+      "code": "abdomen/back"
+    },
+    {
+      "code": "above knee"
+    },
+    {
+      "code": "Ankle"
+    },
+    {
+      "code": "ankle"
+    },
+    {
+      "code": "ant chest"
+    },
+    {
+      "code": "anterior chest"
+    },
+    {
+      "code": "anterior shoulder"
+    },
+    {
+      "code": "anterior thigh"
+    },
+    {
+      "code": "ARM"
+    },
+    {
+      "code": "Arm"
+    },
+    {
+      "code": "arm"
+    },
+    {
+      "code": "arm,"
+    },
+    {
+      "code": "arm/shoulder"
+    },
+    {
+      "code": "arn"
+    },
+    {
+      "code": "axilla"
+    },
+    {
+      "code": "axillary"
+    },
+    {
+      "code": "BACK"
+    },
+    {
+      "code": "Back"
+    },
+    {
+      "code": "bACK"
+    },
+    {
+      "code": "baCK"
+    },
+    {
+      "code": "b ack"
+    },
+    {
+      "code": "back"
+    },
+    {
+      "code": "back/abdomen"
+    },
+    {
+      "code": "back and abdomen"
+    },
+    {
+      "code": "back and neck"
+    },
+    {
+      "code": "back/flank"
+    },
+    {
+      "code": "back/hip"
+    },
+    {
+      "code": "back lower"
+    },
+    {
+      "code": "back neck"
+    },
+    {
+      "code": "back/neck"
+    },
+    {
+      "code": "back of arm"
+    },
+    {
+      "code": "back of ear"
+    },
+    {
+      "code": "back of neck"
+    },
+    {
+      "code": "back of shoulder"
+    },
+    {
+      "code": "back of thigh"
+    },
+    {
+      "code": "back/ribs"
+    },
+    {
+      "code": "back shoulder"
+    },
+    {
+      "code": "back/shoulder"
+    },
+    {
+      "code": "back/side"
+    },
+    {
+      "code": "bacl"
+    },
+    {
+      "code": "bak"
+    },
+    {
+      "code": "bCK"
+    },
+    {
+      "code": "bck"
+    },
+    {
+      "code": "Behind ear"
+    },
+    {
+      "code": "behind ear"
+    },
+    {
+      "code": "behind left ear"
+    },
+    {
+      "code": "behind R ear"
+    },
+    {
+      "code": "behind right ear"
+    },
+    {
+      "code": "behind the ear"
+    },
+    {
+      "code": "belly"
+    },
+    {
+      "code": "Bicep"
+    },
+    {
+      "code": "bicep"
+    },
+    {
+      "code": "bicept"
+    },
+    {
+      "code": "bilat chest"
+    },
+    {
+      "code": "bilateral feet"
+    },
+    {
+      "code": "bilateral hips"
+    },
+    {
+      "code": "Bilateral knees"
+    },
+    {
+      "code": "bilateral knees"
+    },
+    {
+      "code": "bilateral legs"
+    },
+    {
+      "code": "bilateral shoulders"
+    },
+    {
+      "code": "bilateral thighs"
+    },
+    {
+      "code": "bilat feet"
+    },
+    {
+      "code": "bilat hips"
+    },
+    {
+      "code": "bilat knees"
+    },
+    {
+      "code": "bilat legs"
+    },
+    {
+      "code": "bilat shoulders"
+    },
+    {
+      "code": "BLE"
+    },
+    {
+      "code": "b/l knees"
+    },
+    {
+      "code": "both knees"
+    },
+    {
+      "code": "both shoulders"
+    },
+    {
+      "code": "bottom"
+    },
+    {
+      "code": "breast"
+    },
+    {
+      "code": "butt"
+    },
+    {
+      "code": "Buttock"
+    },
+    {
+      "code": "buttock"
+    },
+    {
+      "code": "Buttocks"
+    },
+    {
+      "code": "buttocks"
+    },
+    {
+      "code": "Calf"
+    },
+    {
+      "code": "calf"
+    },
+    {
+      "code": "center"
+    },
+    {
+      "code": "center back"
+    },
+    {
+      "code": "center lower back"
+    },
+    {
+      "code": "cervical spine"
+    },
+    {
+      "code": "CHEST"
+    },
+    {
+      "code": "Chest"
+    },
+    {
+      "code": "chest"
+    },
+    {
+      "code": "chest and back"
+    },
+    {
+      "code": "chest/back"
+    },
+    {
+      "code": "chest/flank"
+    },
+    {
+      "code": "chest/ribs"
+    },
+    {
+      "code": "chest/shoulder"
+    },
+    {
+      "code": "chest/side"
+    },
+    {
+      "code": "chest tube site"
+    },
+    {
+      "code": "Chest wall"
+    },
+    {
+      "code": "chest wall"
+    },
+    {
+      "code": "clavicle"
+    },
+    {
+      "code": "coccyx"
+    },
+    {
+      "code": "CT"
+    },
+    {
+      "code": "CT site"
+    },
+    {
+      "code": "ct site"
+    },
+    {
+      "code": "CW"
+    },
+    {
+      "code": "cw"
+    },
+    {
+      "code": "Delt"
+    },
+    {
+      "code": "delt"
+    },
+    {
+      "code": "deltiod"
+    },
+    {
+      "code": "DELTOID"
+    },
+    {
+      "code": "Deltoid"
+    },
+    {
+      "code": "deltoid"
+    },
+    {
+      "code": "Deltoid area"
+    },
+    {
+      "code": "deltoid area"
+    },
+    {
+      "code": "dorsal foot"
+    },
+    {
+      "code": "drain site"
+    },
+    {
+      "code": "EAR"
+    },
+    {
+      "code": "Ear"
+    },
+    {
+      "code": "ear"
+    },
+    {
+      "code": "elbow"
+    },
+    {
+      "code": "epigastric"
+    },
+    {
+      "code": "FA"
+    },
+    {
+      "code": "feet"
+    },
+    {
+      "code": "femur"
+    },
+    {
+      "code": "FLANK"
+    },
+    {
+      "code": "Flank"
+    },
+    {
+      "code": "flank"
+    },
+    {
+      "code": "flank area"
+    },
+    {
+      "code": "flank/back"
+    },
+    {
+      "code": "flank/chest"
+    },
+    {
+      "code": "FOOT"
+    },
+    {
+      "code": "Foot"
+    },
+    {
+      "code": "foot"
+    },
+    {
+      "code": "Forearm"
+    },
+    {
+      "code": "forearm"
+    },
+    {
+      "code": "glute"
+    },
+    {
+      "code": "gluteal"
+    },
+    {
+      "code": "gluteus"
+    },
+    {
+      "code": "Groin"
+    },
+    {
+      "code": "groin"
+    },
+    {
+      "code": "hand"
+    },
+    {
+      "code": "hands"
+    },
+    {
+      "code": "heel"
+    },
+    {
+      "code": "heels"
+    },
+    {
+      "code": "HIP"
+    },
+    {
+      "code": "Hip"
+    },
+    {
+      "code": "hip"
+    },
+    {
+      "code": "hip and thigh"
+    },
+    {
+      "code": "hip/back"
+    },
+    {
+      "code": "hip/buttock"
+    },
+    {
+      "code": "hips"
+    },
+    {
+      "code": "hip/thigh"
+    },
+    {
+      "code": "incision"
+    },
+    {
+      "code": "inner thigh"
+    },
+    {
+      "code": "KNEE"
+    },
+    {
+      "code": "Knee"
+    },
+    {
+      "code": "knee"
+    },
+    {
+      "code": "kneee"
+    },
+    {
+      "code": "knees"
+    },
+    {
+      "code": "L arm"
+    },
+    {
+      "code": "lateral"
+    },
+    {
+      "code": "lateral abdomen"
+    },
+    {
+      "code": "lateral back"
+    },
+    {
+      "code": "lateral chest"
+    },
+    {
+      "code": "lateral chest wall"
+    },
+    {
+      "code": "lateral side"
+    },
+    {
+      "code": "lateral thigh"
+    },
+    {
+      "code": "LB"
+    },
+    {
+      "code": "lb"
+    },
+    {
+      "code": "LE"
+    },
+    {
+      "code": "le"
+    },
+    {
+      "code": "left"
+    },
+    {
+      "code": "left arm"
+    },
+    {
+      "code": "left back"
+    },
+    {
+      "code": "left deltoid"
+    },
+    {
+      "code": "left ear"
+    },
+    {
+      "code": "left flank"
+    },
+    {
+      "code": "left hip"
+    },
+    {
+      "code": "left knee"
+    },
+    {
+      "code": "left lower back"
+    },
+    {
+      "code": "left shoulder"
+    },
+    {
+      "code": "left side"
+    },
+    {
+      "code": "left upper arm"
+    },
+    {
+      "code": "LEG"
+    },
+    {
+      "code": "Leg"
+    },
+    {
+      "code": "leg"
+    },
+    {
+      "code": "legs"
+    },
+    {
+      "code": "L flank"
+    },
+    {
+      "code": "LLE"
+    },
+    {
+      "code": "LLQ"
+    },
+    {
+      "code": "llq"
+    },
+    {
+      "code": "lolwer back"
+    },
+    {
+      "code": "Low Back"
+    },
+    {
+      "code": "Low back"
+    },
+    {
+      "code": "low back"
+    },
+    {
+      "code": "lowe back"
+    },
+    {
+      "code": "lower"
+    },
+    {
+      "code": "lower abd"
+    },
+    {
+      "code": "lower abdomen"
+    },
+    {
+      "code": "LOWER BACK"
+    },
+    {
+      "code": "Lower Back"
+    },
+    {
+      "code": "Lower back"
+    },
+    {
+      "code": "lower baCK"
+    },
+    {
+      "code": "lower back"
+    },
+    {
+      "code": "lowerback"
+    },
+    {
+      "code": "lower back/hip"
+    },
+    {
+      "code": "lower chest"
+    },
+    {
+      "code": "lower flank"
+    },
+    {
+      "code": "lower leg"
+    },
+    {
+      "code": "lower lumbar"
+    },
+    {
+      "code": "lower quadrant"
+    },
+    {
+      "code": "lower rib"
+    },
+    {
+      "code": "lower ribs"
+    },
+    {
+      "code": "lower spine"
+    },
+    {
+      "code": "LQ"
+    },
+    {
+      "code": "L shoulder"
+    },
+    {
+      "code": "LUE"
+    },
+    {
+      "code": "lue"
+    },
+    {
+      "code": "Lumbar"
+    },
+    {
+      "code": "lumbar"
+    },
+    {
+      "code": "lumbar area"
+    },
+    {
+      "code": "lumbar back"
+    },
+    {
+      "code": "lumbar spine"
+    },
+    {
+      "code": "LUQ"
+    },
+    {
+      "code": "mid abdomen"
+    },
+    {
+      "code": "Mid back"
+    },
+    {
+      "code": "mid back"
+    },
+    {
+      "code": "mid-back"
+    },
+    {
+      "code": "midback"
+    },
+    {
+      "code": "middle"
+    },
+    {
+      "code": "middle back"
+    },
+    {
+      "code": "middle lower back"
+    },
+    {
+      "code": "mid lower back"
+    },
+    {
+      "code": "NECK"
+    },
+    {
+      "code": "Neck"
+    },
+    {
+      "code": "neck"
+    },
+    {
+      "code": "neck and back"
+    },
+    {
+      "code": "neck/back"
+    },
+    {
+      "code": "neck/shoulder"
+    },
+    {
+      "code": "outer thigh"
+    },
+    {
+      "code": "parasternal"
+    },
+    {
+      "code": "post ear"
+    },
+    {
+      "code": "posterior back"
+    },
+    {
+      "code": "posterior chest"
+    },
+    {
+      "code": "posterior ear"
+    },
+    {
+      "code": "posterior hip"
+    },
+    {
+      "code": "posterior knee"
+    },
+    {
+      "code": "posterior neck"
+    },
+    {
+      "code": "posterior ribs"
+    },
+    {
+      "code": "posterior shoulder"
+    },
+    {
+      "code": "posterior thigh"
+    },
+    {
+      "code": "post neck"
+    },
+    {
+      "code": "post shoulder"
+    },
+    {
+      "code": "R arm"
+    },
+    {
+      "code": "r arm"
+    },
+    {
+      "code": "R hip"
+    },
+    {
+      "code": "RIB"
+    },
+    {
+      "code": "Rib"
+    },
+    {
+      "code": "rib"
+    },
+    {
+      "code": "rib area"
+    },
+    {
+      "code": "Rib cage"
+    },
+    {
+      "code": "rib cage"
+    },
+    {
+      "code": "ribcage"
+    },
+    {
+      "code": "RIBS"
+    },
+    {
+      "code": "Ribs"
+    },
+    {
+      "code": "ribs"
+    },
+    {
+      "code": "right"
+    },
+    {
+      "code": "right arm"
+    },
+    {
+      "code": "right back"
+    },
+    {
+      "code": "right flank"
+    },
+    {
+      "code": "right hip"
+    },
+    {
+      "code": "right knee"
+    },
+    {
+      "code": "right lower back"
+    },
+    {
+      "code": "right shoulder"
+    },
+    {
+      "code": "RLE"
+    },
+    {
+      "code": "R lower back"
+    },
+    {
+      "code": "RLQ"
+    },
+    {
+      "code": "rlq"
+    },
+    {
+      "code": "RLQ abdomen"
+    },
+    {
+      "code": "R shoulder"
+    },
+    {
+      "code": "r shoulder"
+    },
+    {
+      "code": "RUA"
+    },
+    {
+      "code": "RUE"
+    },
+    {
+      "code": "rue"
+    },
+    {
+      "code": "RUQ"
+    },
+    {
+      "code": "ruq"
+    },
+    {
+      "code": "RUQ abd"
+    },
+    {
+      "code": "RUQ abdomen"
+    },
+    {
+      "code": "sacral"
+    },
+    {
+      "code": "sacrum"
+    },
+    {
+      "code": "Scapula"
+    },
+    {
+      "code": "scapula"
+    },
+    {
+      "code": "scapular"
+    },
+    {
+      "code": "schoulder"
+    },
+    {
+      "code": "sh"
+    },
+    {
+      "code": "shin"
+    },
+    {
+      "code": "shld"
+    },
+    {
+      "code": "shldr"
+    },
+    {
+      "code": "sholder"
+    },
+    {
+      "code": "shouder"
+    },
+    {
+      "code": "shoudler"
+    },
+    {
+      "code": "shouilder"
+    },
+    {
+      "code": "shoukder"
+    },
+    {
+      "code": "shouklder"
+    },
+    {
+      "code": "SHOULDER"
+    },
+    {
+      "code": "Shoulder"
+    },
+    {
+      "code": "shoulder"
+    },
+    {
+      "code": "shoulder."
+    },
+    {
+      "code": "shoulder and back"
+    },
+    {
+      "code": "shoulder and hip"
+    },
+    {
+      "code": "shoulder/arm"
+    },
+    {
+      "code": "shoulder/back"
+    },
+    {
+      "code": "shoulder blade"
+    },
+    {
+      "code": "shoulder blades"
+    },
+    {
+      "code": "shoulder/chest"
+    },
+    {
+      "code": "shoulder/neck"
+    },
+    {
+      "code": "shoulders"
+    },
+    {
+      "code": "shouldert"
+    },
+    {
+      "code": "shoulder/upper back"
+    },
+    {
+      "code": "shouler"
+    },
+    {
+      "code": "Side"
+    },
+    {
+      "code": "side"
+    },
+    {
+      "code": "side/back"
+    },
+    {
+      "code": "spine"
+    },
+    {
+      "code": "sternal"
+    },
+    {
+      "code": "sternal incision"
+    },
+    {
+      "code": "Sternum"
+    },
+    {
+      "code": "sternum"
+    },
+    {
+      "code": "stomach"
+    },
+    {
+      "code": "stomach and back"
+    },
+    {
+      "code": "stump"
+    },
+    {
+      "code": "tailbone"
+    },
+    {
+      "code": "Thigh"
+    },
+    {
+      "code": "thigh"
+    },
+    {
+      "code": "thoracic"
+    },
+    {
+      "code": "thoracotomy"
+    },
+    {
+      "code": "thoracotomy site"
+    },
+    {
+      "code": "thorax"
+    },
+    {
+      "code": "top of foot"
+    },
+    {
+      "code": "torso"
+    },
+    {
+      "code": "trap"
+    },
+    {
+      "code": "trunk"
+    },
+    {
+      "code": "UA"
+    },
+    {
+      "code": "UE"
+    },
+    {
+      "code": "ue"
+    },
+    {
+      "code": "underarm"
+    },
+    {
+      "code": "under breast"
+    },
+    {
+      "code": "under ear"
+    },
+    {
+      "code": "upper"
+    },
+    {
+      "code": "upper abd"
+    },
+    {
+      "code": "upper abdomen"
+    },
+    {
+      "code": "upper and lower back"
+    },
+    {
+      "code": "Upper Arm"
+    },
+    {
+      "code": "Upper arm"
+    },
+    {
+      "code": "upper arm"
+    },
+    {
+      "code": "Upper Back"
+    },
+    {
+      "code": "Upper back"
+    },
+    {
+      "code": "upper back"
+    },
+    {
+      "code": "upper back/neck"
+    },
+    {
+      "code": "upper back/shoulder"
+    },
+    {
+      "code": "upper chest"
+    },
+    {
+      "code": "upper extremity"
+    },
+    {
+      "code": "upper leg"
+    },
+    {
+      "code": "upper quad"
+    },
+    {
+      "code": "upper quadrant"
+    },
+    {
+      "code": "upper shoulder"
+    },
+    {
+      "code": "Upper thigh"
+    },
+    {
+      "code": "upper thigh"
+    },
+    {
+      "code": "UQ"
+    },
+    {
+      "code": "wrist"
+    }
+  ]
+}

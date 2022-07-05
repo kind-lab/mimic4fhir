@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "id": "specimen-type",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-lab-fluid.html\"><code>http://fhir.mimic.mit.edu/CodeSystem/lab-fluid</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-spec-type-desc.html\"><code>http://fhir.mimic.mit.edu/CodeSystem/spec-type-desc</code></a></li></ul></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/ValueSet/specimen-type",
+  "version": "0.2.4",
+  "name": "SpecimenType",
+  "title": "SpecimenType",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The specimen type codes for both lab and micro specimen for MIMIC",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.mimic.mit.edu/CodeSystem/lab-fluid"
+      },
+      {
+        "system": "http://fhir.mimic.mit.edu/CodeSystem/spec-type-desc"
+      }
+    ]
+  }
+}

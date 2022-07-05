@@ -1,0 +1,140 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "microbiology-antibiotic",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/microbiology-antibiotic defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">90012<a name=\"microbiology-antibiotic-90012\"> </a></td><td>GENTAMICIN</td></tr><tr><td style=\"white-space:nowrap\">90016<a name=\"microbiology-antibiotic-90016\"> </a></td><td>OXACILLIN</td></tr><tr><td style=\"white-space:nowrap\">90010<a name=\"microbiology-antibiotic-90010\"> </a></td><td>NITROFURANTOIN</td></tr><tr><td style=\"white-space:nowrap\">90030<a name=\"microbiology-antibiotic-90030\"> </a></td><td>DAPTOMYCIN</td></tr><tr><td style=\"white-space:nowrap\">90031<a name=\"microbiology-antibiotic-90031\"> </a></td><td>LINEZOLID</td></tr><tr><td style=\"white-space:nowrap\">90013<a name=\"microbiology-antibiotic-90013\"> </a></td><td>TOBRAMYCIN</td></tr><tr><td style=\"white-space:nowrap\">90023<a name=\"microbiology-antibiotic-90023\"> </a></td><td>CEFUROXIME</td></tr><tr><td style=\"white-space:nowrap\">90008<a name=\"microbiology-antibiotic-90008\"> </a></td><td>TRIMETHOPRIM/SULFA</td></tr><tr><td style=\"white-space:nowrap\">90015<a name=\"microbiology-antibiotic-90015\"> </a></td><td>VANCOMYCIN</td></tr><tr><td style=\"white-space:nowrap\">90028<a name=\"microbiology-antibiotic-90028\"> </a></td><td>CEFEPIME</td></tr><tr><td style=\"white-space:nowrap\">90020<a name=\"microbiology-antibiotic-90020\"> </a></td><td>IMIPENEM</td></tr><tr><td style=\"white-space:nowrap\">90011<a name=\"microbiology-antibiotic-90011\"> </a></td><td>TETRACYCLINE</td></tr><tr><td style=\"white-space:nowrap\">90025<a name=\"microbiology-antibiotic-90025\"> </a></td><td>LEVOFLOXACIN</td></tr><tr><td style=\"white-space:nowrap\">90017<a name=\"microbiology-antibiotic-90017\"> </a></td><td>CEFTAZIDIME</td></tr><tr><td style=\"white-space:nowrap\">90027<a name=\"microbiology-antibiotic-90027\"> </a></td><td>RIFAMPIN</td></tr><tr><td style=\"white-space:nowrap\">90022<a name=\"microbiology-antibiotic-90022\"> </a></td><td>AMPICILLIN/SULBACTAM</td></tr><tr><td style=\"white-space:nowrap\">90026<a name=\"microbiology-antibiotic-90026\"> </a></td><td>PIPERACILLIN/TAZO</td></tr><tr><td style=\"white-space:nowrap\">90007<a name=\"microbiology-antibiotic-90007\"> </a></td><td>CLINDAMYCIN</td></tr><tr><td style=\"white-space:nowrap\">90029<a name=\"microbiology-antibiotic-90029\"> </a></td><td>MEROPENEM</td></tr><tr><td style=\"white-space:nowrap\">90005<a name=\"microbiology-antibiotic-90005\"> </a></td><td>CEFAZOLIN</td></tr><tr><td style=\"white-space:nowrap\">90003<a name=\"microbiology-antibiotic-90003\"> </a></td><td>PENICILLIN G</td></tr><tr><td style=\"white-space:nowrap\">90006<a name=\"microbiology-antibiotic-90006\"> </a></td><td>ERYTHROMYCIN</td></tr><tr><td style=\"white-space:nowrap\">90014<a name=\"microbiology-antibiotic-90014\"> </a></td><td>AMIKACIN</td></tr><tr><td style=\"white-space:nowrap\">90004<a name=\"microbiology-antibiotic-90004\"> </a></td><td>AMPICILLIN</td></tr><tr><td style=\"white-space:nowrap\">90018<a name=\"microbiology-antibiotic-90018\"> </a></td><td>CEFTRIAXONE</td></tr><tr><td style=\"white-space:nowrap\">90019<a name=\"microbiology-antibiotic-90019\"> </a></td><td>CIPROFLOXACIN</td></tr><tr><td style=\"white-space:nowrap\">90021<a name=\"microbiology-antibiotic-90021\"> </a></td><td>PIPERACILLIN</td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/microbiology-antibiotic",
+  "version": "0.2.4",
+  "name": "MicrobiologyAntibiotic",
+  "title": "MicrobiologyAntibiotic",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The microbiology antibiotic being tested on an organism in MIMIC",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/microbiology-antibiotic",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "90012",
+      "display": "GENTAMICIN"
+    },
+    {
+      "code": "90016",
+      "display": "OXACILLIN"
+    },
+    {
+      "code": "90010",
+      "display": "NITROFURANTOIN"
+    },
+    {
+      "code": "90030",
+      "display": "DAPTOMYCIN"
+    },
+    {
+      "code": "90031",
+      "display": "LINEZOLID"
+    },
+    {
+      "code": "90013",
+      "display": "TOBRAMYCIN"
+    },
+    {
+      "code": "90023",
+      "display": "CEFUROXIME"
+    },
+    {
+      "code": "90008",
+      "display": "TRIMETHOPRIM/SULFA"
+    },
+    {
+      "code": "90015",
+      "display": "VANCOMYCIN"
+    },
+    {
+      "code": "90028",
+      "display": "CEFEPIME"
+    },
+    {
+      "code": "90020",
+      "display": "IMIPENEM"
+    },
+    {
+      "code": "90011",
+      "display": "TETRACYCLINE"
+    },
+    {
+      "code": "90025",
+      "display": "LEVOFLOXACIN"
+    },
+    {
+      "code": "90017",
+      "display": "CEFTAZIDIME"
+    },
+    {
+      "code": "90027",
+      "display": "RIFAMPIN"
+    },
+    {
+      "code": "90022",
+      "display": "AMPICILLIN/SULBACTAM"
+    },
+    {
+      "code": "90026",
+      "display": "PIPERACILLIN/TAZO"
+    },
+    {
+      "code": "90007",
+      "display": "CLINDAMYCIN"
+    },
+    {
+      "code": "90029",
+      "display": "MEROPENEM"
+    },
+    {
+      "code": "90005",
+      "display": "CEFAZOLIN"
+    },
+    {
+      "code": "90003",
+      "display": "PENICILLIN G"
+    },
+    {
+      "code": "90006",
+      "display": "ERYTHROMYCIN"
+    },
+    {
+      "code": "90014",
+      "display": "AMIKACIN"
+    },
+    {
+      "code": "90004",
+      "display": "AMPICILLIN"
+    },
+    {
+      "code": "90018",
+      "display": "CEFTRIAXONE"
+    },
+    {
+      "code": "90019",
+      "display": "CIPROFLOXACIN"
+    },
+    {
+      "code": "90021",
+      "display": "PIPERACILLIN"
+    }
+  ]
+}

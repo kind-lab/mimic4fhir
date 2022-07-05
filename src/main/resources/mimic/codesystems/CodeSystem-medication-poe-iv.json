@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-poe-iv",
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This code system http://fhir.mimic.mit.edu/CodeSystem/medication-poe-iv defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">TPN<a name=\"medication-poe-iv-TPN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IV therapy<a name=\"medication-poe-iv-IVtherapy\"> </a></td></tr></table></div>"
+  },
+  "url": "http://fhir.mimic.mit.edu/CodeSystem/medication-poe-iv",
+  "version": "0.2.4",
+  "name": "MedicationPoeIv",
+  "title": "MedicationPoeIv",
+  "status": "draft",
+  "date": "2022-05-24T14:39:04-04:00",
+  "publisher": "KinD Lab",
+  "contact": [
+    {
+      "name": "KinD Lab",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "description": "The IV medication that is ordered through POE",
+  "valueSet": "http://fhir.mimic.mit.edu/ValueSet/medication-poe-iv",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "TPN"
+    },
+    {
+      "code": "IV therapy"
+    }
+  ]
+}

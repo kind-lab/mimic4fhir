@@ -143,22 +143,22 @@ public class Receiver {
 	private void performAction(String number, String bundle) {
 		// Perform action for bundle
 		switch (outputMode) {
-		case PRINT_CONSOLE:
-			fhirConnector.printBundleAsXml(fhirConnector.getBundleFromString(bundle));
-			break;
-		case PRINT_FILE_XML:
-			fhirConnector.printBundleAsXmlToFile(number, fhirConnector.getBundleFromString(bundle));
-			break;
-		case PRINT_FILE_JSON:
-			fhirConnector.printBundleAsJsonToFile(number, fhirConnector.getBundleFromString(bundle));
-			break;
-		case PRINT_BOTH:
-			fhirConnector.printBundleAsXml(fhirConnector.getBundleFromString(bundle));
-			fhirConnector.printBundleAsXmlToFile(number, fhirConnector.getBundleFromString(bundle));
-			break;
-		case PUSH_SERVER:
-			fhirConnector.bundleToServer(fhirConnector.getBundleFromString(bundle));
-			break;
+			case PRINT_CONSOLE:
+				fhirConnector.printBundleAsXml(fhirConnector.getBundleFromString(bundle));
+				break;
+			case PRINT_FILE_XML:
+				fhirConnector.printBundleAsXmlToFile(number, fhirConnector.getBundleFromString(bundle));
+				break;
+			case PRINT_FILE_JSON:
+				fhirConnector.printBundleAsJsonToFile(number, fhirConnector.getBundleFromString(bundle));
+				break;
+			case PRINT_BOTH:
+				fhirConnector.printBundleAsXml(fhirConnector.getBundleFromString(bundle));
+				fhirConnector.printBundleAsXmlToFile(number, fhirConnector.getBundleFromString(bundle));
+				break;
+			case PUSH_SERVER:
+				fhirConnector.bundleToServer(fhirConnector.getBundleFromString(bundle));
+				break;
 		}
 	}
 }

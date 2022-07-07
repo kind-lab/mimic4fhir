@@ -39,6 +39,7 @@ import org.apache.http.util.EntityUtils;
 
 import de.uzl.itcr.mimic4fhir.work.Config;
 import de.uzl.itcr.mimic4fhir.work.ConnectDB;
+import de.uzl.itcr.mimic4fhir.InputMode;
 
 public class ICD9MapperLookup {
 
@@ -225,7 +226,7 @@ public class ICD9MapperLookup {
 	}
 
 	public void printMissingMappings(ConnectDB.IcdVersion version, Config fhirConfig) {
-		ConnectDB db = new ConnectDB(fhirConfig);
+		ConnectDB db = new ConnectDB(fhirConfig, InputMode.MIMIC_BASE);
 		List<String> icdList = db.getICDCodes(version, false), missingList = new ArrayList<>();
 		String urlStart = "", urlEnd = "";
 		switch (version.valueOf()) {

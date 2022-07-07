@@ -55,6 +55,7 @@ import de.uzl.itcr.mimic4fhir.work.BundleControl;
 import de.uzl.itcr.mimic4fhir.work.Config;
 import de.uzl.itcr.mimic4fhir.work.ConnectDB;
 import de.uzl.itcr.mimic4fhir.work.FHIRComm;
+import de.uzl.itcr.mimic4fhir.table.MimicFhirTable;
 
 /**
  * Application for transforming data from MIMIC IV to FHIR R4
@@ -126,7 +127,7 @@ public class Mimic4Fhir {
 
 	public void startWithThread() {
 
-		dbAccess = new ConnectDB(config);
+		dbAccess = new ConnectDB(config, inputMode);
 		FHIRComm fhirComm = new FHIRComm(config);
 
 		Receiver r = new Receiver();
@@ -164,16 +165,12 @@ public class Mimic4Fhir {
 	 */
 	public void start() {
 		// Connection to mimic postgres DB
-		dbAccess = new ConnectDB(config);
-		
-		// Preload data (if requested...)
-		// medication, organization, location
-		
-   	
+		dbAccess = new ConnectDB(config, inputMode);	
     	
 		// Fhir-Communication and Resource-Bundle-Stuff
 		fhir = new FHIRComm(config);
 		bundleC = new BundleControl();
+		dbAccess.setFhirConnector(fhir);
 
 		int numberOfAllPatients = 0;
 		if (topPatients == 0) { // all Patients
@@ -190,13 +187,20 @@ public class Mimic4Fhir {
 		r.setFhirConnector(fhir);
 		r.setOutputMode(outputMode);
 		r.receive();
+		
+		// Preload data (if requested...)
+		// medication, organization, location
+		// data elements
+//		preLoadDataResources();
+		
+		
 
 		System.out.println("Getting all Patients");
-		String[] patientIds = dbAccess.getAmountOfPatientIds(numberOfAllPatients, random);
-
-
+		String[] patientIds = dbAccess.getAmountOfPatientIds(numberOfAllPatients, random);	
+		
 		StopWatch watch = new StopWatch();
-		watch.start();
+		watch.start();		
+
 
 		// loop all patients..
 		for (int i = 0; i < numberOfAllPatients; i++) {
@@ -206,7 +210,6 @@ public class Mimic4Fhir {
 
 		// Push end-Message to queue
 		JsonObject message = Json.createObjectBuilder().add("number", "0").add("bundle", "END").build();
-
 		sendr.send(message.toString());
 
 		// close connection to queue
@@ -216,6 +219,26 @@ public class Mimic4Fhir {
 		System.out.print(
 				"Conversion of " + topPatients + " Patients complete in " + watch.getTotalTimeMillis() + " ms)");
 	}
+	
+	public void preLoadDataResources() {
+		List<Resource> locations = dbAccess.getResources(MimicFhirTable.LOCATION);
+		List<Resource> medications = dbAccess.getResources(MimicFhirTable.MEDICATION);
+		List<Resource> organizations = dbAccess.getResources(MimicFhirTable.ORGANIZATION);
+		
+		addResourcesToBundle(locations);
+		addResourcesToBundle(organizations);
+		addResourcesToBundle(medications);
+			
+		//Push bundle to queue
+		JsonObject message = Json.createObjectBuilder()
+				.add("number", "data_bundle" + bundleC.getInternalBundleNumber()) 
+				.add("bundle", fhir.getBundleAsString(bundleC.getTransactionBundle()))
+				.build();
+	
+		sendr.send(message.toString()); 		
+	}
+	
+	
 	
 	public void testOneResource(Resource resource) {		
 		bundleC.addUUIDResourceToBundlePut(resource);
@@ -235,7 +258,7 @@ public class Mimic4Fhir {
 	 */
 	public void startOld() {
 		// Connection to mimic postgres DB
-		dbAccess = new ConnectDB(config);
+		dbAccess = new ConnectDB(config, inputMode);
 		// initialize memoryLists of locations and caregivers and medication (->
 		// conditional creates, each resource only once in bundle)
 		locationsInBundle = new HashMap<String, String>();
@@ -314,7 +337,85 @@ public class Mimic4Fhir {
 	 */
 			
 	private void processPatient(String patientId) {
+		Patient patient = dbAccess.getPatient(patientId);
+		List<Resource> encounters = dbAccess.getResourcesByPatientId(MimicFhirTable.ENCOUNTER, patientId);
+		List<Resource> conditions = dbAccess.getResourcesByPatientId(MimicFhirTable.CONDITION, patientId);
+		List<Resource> encounterIcus = dbAccess.getResourcesByPatientId(MimicFhirTable.ENCOUNTER_ICU, patientId);		
+		List<Resource> medicationAdministrations = dbAccess.getResourcesByPatientId(MimicFhirTable.MEDICATION_ADMINISTRATION, patientId);
+		List<Resource> medicationAdministrationIcus = dbAccess.getResourcesByPatientId(MimicFhirTable.MEDICATION_ADMINISTRATION_ICU, patientId);
+		List<Resource> medicationDispenses = dbAccess.getResourcesByPatientId(MimicFhirTable.MEDICATION_DISPENSE, patientId);
+		List<Resource> medicationRequests = dbAccess.getResourcesByPatientId(MimicFhirTable.MEDICATION_REQUEST, patientId);
+		List<Resource> observationChartevents = dbAccess.getResourcesByPatientId(MimicFhirTable.OBSERVATION_CHARTEVENTS, patientId);
+		List<Resource> observationDatetimeevents = dbAccess.getResourcesByPatientId(MimicFhirTable.OBSERVATION_DATETIMEEVENTS, patientId);
 		
+		List<Resource> observationMicroOrgs = dbAccess.getResourcesByPatientId(MimicFhirTable.OBSERVATION_MICRO_ORG, patientId);
+		List<Resource> observationMicroSuscs = dbAccess.getResourcesByPatientId(MimicFhirTable.OBSERVATION_MICRO_SUSC, patientId);
+		List<Resource> observationMicroTests = dbAccess.getResourcesByPatientId(MimicFhirTable.OBSERVATION_MICRO_TEST, patientId);
+		List<Resource> observationOutputevents = dbAccess.getResourcesByPatientId(MimicFhirTable.OBSERVATION_OUTPUTEVENTS, patientId);
+		List<Resource> procedures = dbAccess.getResourcesByPatientId(MimicFhirTable.PROCEDURE, patientId);
+		List<Resource> procedure_icus = dbAccess.getResourcesByPatientId(MimicFhirTable.PROCEDURE_ICU, patientId);
+		List<Resource> specimens = dbAccess.getResourcesByPatientId(MimicFhirTable.SPECIMEN, patientId);
+		
+		
+		// Labs -- need to regenerate observation_labevents table... postgres struggling
+		//List<Resource> observationLabevents = dbAccess.getResourcesByPatientId(MimicFhirTable.OBSERVATION_LABEVENTS, patientId);
+		//List<Resource> specimenLabs = dbAccess.getResourcesByPatientId(MimicFhirTable.SPECIMEN_LAB, patientId);
+		
+		// patient related
+		System.out.println("Patient Bundle");
+		bundleC.addUUIDResourceToBundlePut(patient);
+		addResourcesToBundle(encounters);
+		addResourcesToBundle(encounterIcus);
+		addResourcesToBundle(procedures);
+		addResourcesToBundle(conditions);
+		System.out.println("Patient Bundle Size: " + bundleC.getNumberOfResources());
+		submitBundle(patientId);
+		
+		
+		//medication
+		System.out.println("Medication Bundle");
+		addResourcesToBundle(medicationRequests);
+		addResourcesToBundle(medicationAdministrations);
+		addResourcesToBundle(medicationDispenses);
+		
+		addResourcesToBundle(medicationAdministrationIcus);
+		System.out.println("Medication Bundle Size: " + bundleC.getNumberOfResources());
+		submitBundle(patientId);
+		
+		// micro
+		System.out.println("Microbiology Bundle");
+		addResourcesToBundle(observationMicroOrgs);
+		addResourcesToBundle(observationMicroSuscs);
+		addResourcesToBundle(observationMicroTests);
+		addResourcesToBundle(specimens);
+		System.out.println("Micro Bundle Size: " + bundleC.getNumberOfResources());
+		submitBundle(patientId);
+		
+		// labs
+//		addResourcesToBundle(observationLabevents);
+//		addResourcesToBundle(specimenLabs);
+		
+		//icu	
+		System.out.println("ICU Bundle");
+		addResourcesToBundle(procedure_icus);
+		addResourcesToBundle(observationDatetimeevents);
+		addResourcesToBundle(observationChartevents);
+		addResourcesToBundle(observationOutputevents);
+		System.out.println("ICU Bundle Size: " + bundleC.getNumberOfResources());
+		//bundleC.resetBundle();
+		submitBundle(patientId);		
+	}
+	
+	public void submitBundle(String patientId) {
+		//Push bundle to queue
+		System.out.println("Submitting bundle: " + patientId + "_" + bundleC.getInternalBundleNumber());
+		JsonObject message = Json.createObjectBuilder()
+				.add("number", patientId + "_" + bundleC.getInternalBundleNumber()) 
+				.add("bundle", fhir.getBundleAsString(bundleC.getTransactionBundle()))
+				.build();
+	
+		sendr.send(message.toString()); 	
+		bundleC.resetBundle();
 	}
 
 	/*
@@ -493,6 +594,35 @@ public class Mimic4Fhir {
 		}
 		bundleC.resetInternalBundleNumber();
 	}
+	
+	/**
+	 * Add fhir list of fhir resources by UUID to current bundle
+	 * @param resources fhir-resources to add
+	 */
+	private void addResourcesToBundle(List<Resource> resources) {
+		System.out.println("Size: " + resources.size());
+		resources.forEach((resource) -> {
+			checkBundleLimit();
+			bundleC.addUUIDResourceToBundlePut(resource);
+		});
+	}
+	
+	private void checkBundleLimit() {
+
+		// if bundle exceeds 100 resources -> start new bundle
+		if (bundleC.getNumberOfResources() > 100) {
+			// Push bundle to queue
+			JsonObject message = Json.createObjectBuilder()
+					.add("number", "bundle_" + bundleC.getInternalBundleNumber())
+					.add("bundle", fhir.getBundleAsString(bundleC.getTransactionBundle())).build();
+
+			sendr.send(message.toString());
+
+			// reset bundle
+			bundleC.resetBundle();
+		}
+	}
+	
 
 	private void checkBundleLimit(String numPat, Patient fhirPat, MAdmission admission, Encounter enc,
 			List<Condition> conditions, List<Procedure> procedures, StationManager stations) {

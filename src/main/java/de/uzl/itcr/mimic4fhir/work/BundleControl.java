@@ -16,6 +16,8 @@
  ******************************************************************************/
 package de.uzl.itcr.mimic4fhir.work;
 
+import java.util.List;
+
 import org.hl7.fhir.r4.model.Bundle;
 import org.hl7.fhir.r4.model.Resource;
 import org.hl7.fhir.r4.model.Bundle.BundleType;
@@ -23,6 +25,7 @@ import org.hl7.fhir.r4.model.Bundle.HTTPVerb;
 
 /**
  * Handles bundle operations
+ * 
  * @author Stefanie Ververs
  *
  */
@@ -30,33 +33,35 @@ public class BundleControl {
 	private Bundle transactionBundle;
 	private int numberOfResources = 0;
 	private int internalBundleNumber = 0;
-	
+
 	/**
 	 * creates a new transaction bundle
 	 */
 	public BundleControl() {
-		//new Bundle
+		// new Bundle
 		transactionBundle = new Bundle();
 		transactionBundle.setType(BundleType.TRANSACTION);
 		internalBundleNumber = 1;
-	}	
-	
+	}
+
 	/**
 	 * Number of resources currently present in bundle
+	 * 
 	 * @return number of resources
 	 */
 	public int getNumberOfResources() {
 		return numberOfResources;
 	}
-	
+
 	/**
-	 * Internal bundle number (how often bundle "reset"?) 
+	 * Internal bundle number (how often bundle "reset"?)
+	 * 
 	 * @return internal bundle number
 	 */
 	public int getInternalBundleNumber() {
 		return internalBundleNumber;
 	}
-	
+
 	/**
 	 * Reset internal bundle number to 1
 	 */
@@ -73,9 +78,10 @@ public class BundleControl {
 		numberOfResources = 0;
 		internalBundleNumber++;
 	}
-	
+
 	/**
 	 * Get the current bundle
+	 * 
 	 * @return current bundle
 	 */
 	public Bundle getTransactionBundle() {
@@ -84,69 +90,73 @@ public class BundleControl {
 
 	/**
 	 * Add fhir resource without UUID to current bundle
+	 * 
 	 * @param rToAdd fhir-resource to add
 	 */
-	public void addResourceToBundle(Resource rToAdd)
-	{		
+	public void addResourceToBundle(Resource rToAdd) {
 		transactionBundle.addEntry()
-		   .setResource(rToAdd)
-		   .getRequest()
-		      .setUrl(rToAdd.fhirType())
-		      .setMethod(HTTPVerb.POST);
-		
+				.setResource(rToAdd)
+				.getRequest()
+				.setUrl(rToAdd.fhirType())
+				.setMethod(HTTPVerb.POST);
+
 		numberOfResources++;
 
 	}
-	
+
 	/**
 	 * Add fhir resource with UUID to current bundle
+	 * 
 	 * @param rToAdd fhir-resource to add
 	 */
-	public void addUUIDResourceToBundle(Resource rToAdd){
+	public void addUUIDResourceToBundle(Resource rToAdd) {
 		transactionBundle.addEntry()
-		   .setFullUrl(rToAdd.getId())
-		   .setResource(rToAdd)
-		   .getRequest()
-		      .setUrl(rToAdd.fhirType())
-		      .setMethod(HTTPVerb.POST);
-		
+				.setFullUrl(rToAdd.getId())
+				.setResource(rToAdd)
+				.getRequest()
+				.setUrl(rToAdd.fhirType())
+				.setMethod(HTTPVerb.POST);
+
 		numberOfResources++;
-		
+
 	}
-	
+
 	/**
 	 * Add fhir resource with UUID to current bundle using PUT or POST
 	 * PUT keeps the same id as the resource provides
 	 * POST
+	 * 
 	 * @param rToAdd fhir-resource to add
 	 */
-	public void addUUIDResourceToBundlePut(Resource rToAdd){
+	public void addUUIDResourceToBundlePut(Resource rToAdd) {
 		transactionBundle.addEntry()
-		   .setFullUrl(rToAdd.getId())
-		   .setResource(rToAdd)
-		   .getRequest()
-		      .setUrl(rToAdd.getId())
-		      .setMethod(HTTPVerb.PUT);
-		
+				.setFullUrl(rToAdd.getId())
+				.setResource(rToAdd)
+				.getRequest()
+				.setUrl(rToAdd.getId())
+				.setMethod(HTTPVerb.PUT);
+
 		numberOfResources++;
-		
+
 	}
-	
+
 	/**
 	 * Conditional Create:
-	 * Add fhir resource with UUID to current bundle and set condition (create if none exist)
-	 * @param rToAdd fhir-resource to add
-	 * @param condition search-condition to match 
+	 * Add fhir resource with UUID to current bundle and set condition (create if
+	 * none exist)
+	 * 
+	 * @param rToAdd    fhir-resource to add
+	 * @param condition search-condition to match
 	 */
 	public void addUUIDResourceWithConditionToBundle(Resource rToAdd, String condition) {
 		transactionBundle.addEntry()
-		   .setFullUrl(rToAdd.getId())
-		   .setResource(rToAdd)
-		   .getRequest()
-		      .setUrl(rToAdd.fhirType())
-		      .setIfNoneExist(condition)
-		      .setMethod(HTTPVerb.POST);
-		
+				.setFullUrl(rToAdd.getId())
+				.setResource(rToAdd)
+				.getRequest()
+				.setUrl(rToAdd.fhirType())
+				.setIfNoneExist(condition)
+				.setMethod(HTTPVerb.POST);
+
 		numberOfResources++;
 	}
 }

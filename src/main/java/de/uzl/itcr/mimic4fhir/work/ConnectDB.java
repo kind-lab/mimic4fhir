@@ -27,11 +27,17 @@ import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.parser.IParser;
 
 import org.hl7.fhir.r4.model.Patient;
+import org.hl7.fhir.r4.model.Encounter;
+import org.hl7.fhir.r4.model.Condition;
+import org.hl7.fhir.r4.model.Resource;
 
+import de.uzl.itcr.mimic4fhir.work.FHIRComm;
 import de.uzl.itcr.mimic4fhir.OutputMode;
 import de.uzl.itcr.mimic4fhir.InputMode;
 import de.uzl.itcr.mimic4fhir.model.*;
 import de.uzl.itcr.mimic4fhir.model.manager.StationManager;
+import de.uzl.itcr.mimic4fhir.table.MimicFhirTable;
+import de.uzl.itcr.mimic4fhir.table.MimicFhirMap;
 
 /**
  * Connection, access and querys to postgresDB
@@ -41,6 +47,9 @@ import de.uzl.itcr.mimic4fhir.model.manager.StationManager;
 public class ConnectDB {
 	private static Config configuration;
 	private Connection connection = null;
+	private FHIRComm fhir;
+	private InputMode inputMode;
+	private MimicFhirMap mimicFhirMap;
 
 	private PreparedStatement statementSelectOnePatientFromAdmissionsView;
 	private PreparedStatement statementSelectAmountOfPatientIDs;
@@ -60,16 +69,39 @@ public class ConnectDB {
 	private PreparedStatement statementGetImagingStudies;
 	private PreparedStatement statementGetIcdCodes;
 	
-	private InputMode inputMode;
+	private PreparedStatement statementGetPatient;
+	private PreparedStatement statementGetEncounter;
+	private PreparedStatement statementGetEncounterIcu;
+	private PreparedStatement statementGetCondition;
+	private PreparedStatement statementGetLocation;
+	private PreparedStatement statementGetMedication;
+	private PreparedStatement statementGetMedicationAdministration;
+	private PreparedStatement statementGetMedicationAdministrationIcu;
+	private PreparedStatement statementGetMedicationDispense;
+	private PreparedStatement statementGetMedicationRequest;
+	private PreparedStatement statementGetObservationChartevents;
+	private PreparedStatement statementGetObservationDatetimeevents;
+	private PreparedStatement statementGetObservationLabevents;
+	private PreparedStatement statementGetObservationMicroOrg;
+	private PreparedStatement statementGetObservationMicroSusc;
+	private PreparedStatement statementGetObservationMicroTest;
+	private PreparedStatement statementGetObservationOutputevents;
+	private PreparedStatement statementGetOrganization;
+	private PreparedStatement statementGetProcedure;
+	private PreparedStatement statementGetProcedureIcu;
+	private PreparedStatement statementGetSpecimen;
+	private PreparedStatement statementGetSpecimenLab;
+	private PreparedStatement statementGetResourceByPatientId;
 
 	/**
 	 * Create new DB-Connection with Config-Object
 	 *
 	 * @param configuration
 	 */
-	public ConnectDB(Config configuration) {
+	public ConnectDB(Config configuration, InputMode inputMode) {
 
 		this.configuration = configuration;
+		this.inputMode = inputMode;
 		// Do some stuff to do DB-Connection..
 
 		try {
@@ -96,21 +128,33 @@ public class ConnectDB {
 							+ ConnectDB.configuration.getPortPostgres() + "/"
 							+ ConnectDB.configuration.getDbnamePostgres() + schema,
 					ConnectDB.configuration.getUserPostgres(), ConnectDB.configuration.getPassPostgres());
-//			
+			
 		switch (inputMode) {
 		case MIMIC_BASE:
 			this.createViews();
 			this.prepareStatementsBase();
 			break;
 		case MIMIC_FHIR:
+			this.mimicFhirMap = new MimicFhirMap(); 
 			this.prepareStatementsFhir();
 			break;
 		}
-//			
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * Set the Fhir-Communication class
+	 * 
+	 * @param fhirComm
+	 */
+	public void setFhirConnector(FHIRComm fhir) {
+		this.fhir = fhir;
+		
+	}
+
 	
 	/**
 	 * Set the inputMode (where to ingest MIMIC-IV from)
@@ -120,7 +164,7 @@ public class ConnectDB {
 	public void setIntputMode(InputMode inputMode) {
 		this.inputMode = inputMode;
 	}
-
+	
 	/**
 	 * create the views required for the downstream queries
 	 *
@@ -200,44 +244,25 @@ public class ConnectDB {
 	 * @throws SQLException if the statements could not be prepared
 	 */
 	private void prepareStatementsFhir() throws SQLException {
+		// Statements that overlap with MIMIC_BASE
 		this.statementSelectAmountOfPatientIDs = this.connection
 				.prepareStatement("SELECT id as subject_id from mimic_fhir.patient ORDER BY patient_id LIMIT ?;");
 		this.statementSelectAmountOfPatientIDsRandom = this.connection
 				.prepareStatement("SELECT id as subject_id FROM mimic_fhir.patient ORDER BY random() LIMIT ?;");
-		this.statementCountPatients = this.connection.prepareStatement("SELECT COUNT(*) FROM mimic_fhir.patient;");
-//		this.statementGetDiagnoses = this.connection.prepareStatement("SELECT * FROM mimic_hosp.diagnoses_icd d "
-//				+ "INNER JOIN mimic_hosp.d_icd_diagnoses i ON d.icd_code = i.icd_code "
-//				+ "WHERE d.subject_id = ? AND d.hadm_id = ? " + "ORDER BY d.seq_num DESC");
-//		this.statementGetProcedures = this.connection.prepareStatement("SELECT * FROM mimic_hosp.procedures_icd p "
-//				+ "INNER JOIN mimic_hosp.d_icd_procedures i ON p.icd_code = i.icd_code "
-//				+ "WHERE p.subject_id = ? AND p.hadm_id = ? " + "ORDER BY p.seq_num DESC");
-//		this.statementGetChartEvents = this.connection.prepareStatement(
-//				"SELECT C1.SUBJECT_ID, C1.HADM_ID, C1.CHARTTIME, C1.VALUE, C1.VALUENUM, C1.VALUEUOM, D.LABEL "
-//						+ "FROM (SELECT C.SUBJECT_ID, C.HADM_ID, C.CHARTTIME, C.VALUE, C.VALUENUM, C.VALUEUOM, C.ITEMID FROM MIMIC_ICU.CHARTEVENTS C) AS C1 "
-//						+ "INNER JOIN MIMIC_ICU.D_ITEMS D ON C1.ITEMID = D.ITEMID " + "WHERE C1.HADM_ID = ?");
-//		this.statementGetLabEvents = this.connection.prepareStatement(
-//				"SELECT L1.SUBJECT_ID, L1.HADM_ID, L1.CHARTTIME, L1.VALUE, L1.VALUENUM, L1.VALUEUOM, L1.FLAG, D.LABEL, D.FLUID, D.LOINC_CODE, L1.LABEVENT_ID, L1.COMMENTS "
-//						+ "FROM (SELECT L.SUBJECT_ID, L.HADM_ID, L.CHARTTIME, L.VALUE, L.VALUENUM, L.VALUEUOM, L.FLAG, L.ITEMID, L.LABEVENT_ID, L.COMMENTS "
-//						+ "FROM MIMIC_HOSP.LABEVENTS L) AS L1 INNER JOIN MIMIC_HOSP.D_LABITEMS D ON L1.ITEMID = D.ITEMID "
-//						+ "WHERE L1.SUBJECT_ID = ? AND L1.HADM_ID = ?");
-//		this.statementGetPrescriptions = this.connection
-//				.prepareStatement("SELECT * FROM MIMIC_HOSP.PRESCRIPTIONS WHERE SUBJECT_ID = ? AND HADM_ID = ?");
+		this.statementCountPatients = this.connection.prepareStatement("SELECT COUNT(*) FROM mimic_fhir.patient;");//		
 		this.statementGetAmountOfPatientsLimit = this.connection
 				.prepareStatement("SELECT * FROM mimic_fhir.patient LIMIT ?");
 		this.statementGetAmountOfPatientsLimitRandom = this.connection
 				.prepareStatement("SELECT * FROM mimic_fhir.patient ORDER BY random() LIMIT ?");
-//		this.statementGetAdmissions = this.connection
-//				.prepareStatement("SELECT * FROM MIMIC_CORE.ADMISSIONS WHERE SUBJECT_ID = ?");
-//		this.statementGetTransfers = this.connection
-//				.prepareStatement("SELECT * FROM MIMIC_CORE.TRANSFERS WHERE SUBJECT_ID = ? AND HADM_ID = ?");
-//		this.statementGetStations = this.connection
-//				.prepareStatement("SELECT DISTINCT CAREUNIT \" + \"FROM MIMIC_CORE.TRANSFERS ORDER BY CAREUNIT");
-//		this.statementGetDiagnosticReports = this.connection
-//				.prepareStatement("SELECT * FROM CXR.RECORDS WHERE SUBJECT_ID = ?");
-//		this.statementGetImagingStudies = this.connection
-//				.prepareStatement("SELECT * FROM CXR.STUDIES WHERE SUBJECT_ID = ? AND STUDY_ID = ?");
-//		this.statementGetIcdCodes = this.connection
-//				.prepareStatement("SELECT icd_code, long_title FROM mimic_hosp.d_icd_procedures WHERE icd_version = ?");
+		
+		// MIMIC_FHIR statements
+		this.statementGetEncounter = this.connection
+				.prepareStatement("SELECT fhir FROM mimic_fhir.encounter WHERE patient_id = ?::uuid;");
+		this.statementGetPatient = this.connection
+				.prepareStatement("SELECT fhir FROM mimic_fhir.patient WHERE id = ?::uuid;");
+		this.statementGetResourceByPatientId = this.connection
+				.prepareStatement("SELECT fhir FROM mimic_fhir.? WHERE patient_id = ?::uuid;");
+		
 	}
 
 	public static Connection getConnection() {
@@ -314,6 +339,78 @@ public class ConnectDB {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
+		return null;
+	}
+	
+	/* 
+	 *  Get resource table from mimic_fhir filtered by patient_id
+	 */
+	public List<Resource> getResourcesByPatientId(MimicFhirTable resource, String patientId) {	
+		String queryString = String.format("SELECT fhir FROM mimic_fhir.%s WHERE patient_id = '%s'::uuid;", resource, patientId);
+		List<Resource> listOfResources = new ArrayList<Resource>();
+		try {
+			PreparedStatement statement = this.connection.prepareStatement(queryString);			
+			ResultSet rs = statement.executeQuery();
+			while (rs.next()) {
+				String fhirColumn = rs.getString(1);
+				Resource fhirResource = fhir.getJsonParser()
+						.parseResource(this.mimicFhirMap.getResourceClass(resource), fhirColumn);				
+				listOfResources.add(fhirResource);
+			}
+			return listOfResources;
+		} catch (SQLException throwables) {
+			throwables.printStackTrace();
+		}
+		return null;
+	}
+	
+	/* 
+	 *  Get resources from mimic_fhir
+	 */
+	public List<Resource> getResources(MimicFhirTable resource) {	
+		String queryString = String.format("SELECT fhir FROM mimic_fhir.%s;", resource);
+		List<Resource> listOfResources = new ArrayList<Resource>();
+		try {
+			PreparedStatement statement = this.connection.prepareStatement(queryString);			
+			ResultSet rs = statement.executeQuery();
+			while (rs.next()) {
+				String fhirColumn = rs.getString(1);
+				Resource fhirResource = fhir.getJsonParser()
+						.parseResource(this.mimicFhirMap.getResourceClass(resource), fhirColumn);	
+				listOfResources.add(fhirResource);
+			}
+			return listOfResources;
+		} catch (SQLException throwables) {
+			throwables.printStackTrace();
+		}
+		return null;
+	}
+	
+	
+	/*
+	 *  Get patient from mimic_fhir
+	 */
+	public Patient getPatient(String patientId) {
+		PreparedStatement statement = statementGetPatient;
+		Patient fhirResource = null;
+		try {
+			//PreparedStatement statement = connection.prepareStatement("SELECT fhir FROM patient LIMIT 1");
+			statement.setString(1, patientId);
+			//statement.setString(1, "0a8eebfd-a352-522e-89f0-1d4a13abdebc");
+			System.out.println("Statement: " + statement);
+			ResultSet rs = statement.executeQuery();
+			if (rs.next()) {
+				String fhirColumn = rs.getString(1);
+				System.out.println("FHIR Column: " + fhirColumn);
+				fhirResource = fhir.getJsonParser().parseResource(Patient.class, fhirColumn);	
+				System.out.println("id: " + fhirResource.getId());
+				System.out.println("after parser");
+			}
+			
+			return fhirResource;
+		} catch (SQLException throwables) {
+			throwables.printStackTrace();
+		}
 		return null;
 	}
 	
@@ -1193,5 +1290,7 @@ public class ConnectDB {
 			exc.printStackTrace();
 		}
 	}
+
+
 
 }

@@ -45,12 +45,14 @@ import org.springframework.util.StopWatch;
 
 import ca.uhn.fhir.model.primitive.IdDt;
 import de.uzl.itcr.mimic4fhir.concur.ConversionThread;
+import de.uzl.itcr.mimic4fhir.concur.ValidationThread;
 import de.uzl.itcr.mimic4fhir.concur.TimeMeasurements;
 import de.uzl.itcr.mimic4fhir.model.*;
 import de.uzl.itcr.mimic4fhir.model.manager.*;
 import de.uzl.itcr.mimic4fhir.queue.Receiver;
 import de.uzl.itcr.mimic4fhir.queue.Sender;
 import de.uzl.itcr.mimic4fhir.tools.FhirInstanceValidatorMimic;
+import de.uzl.itcr.mimic4fhir.tools.FHIRInstanceValidator;
 import de.uzl.itcr.mimic4fhir.work.BundleControl;
 import de.uzl.itcr.mimic4fhir.work.Config;
 import de.uzl.itcr.mimic4fhir.work.ConnectDB;
@@ -81,8 +83,10 @@ public class Mimic4Fhir {
 	private BundleControl bundleC;
 
 	private Sender sendr;
+	private Receiver receiver;
 
 	private static FhirInstanceValidatorMimic instanceValidator = FhirInstanceValidatorMimic.getInstance();
+	private static FHIRInstanceValidator instanceValidator2 = FHIRInstanceValidator.getInstance();
 
 	public Config getConfig() {
 		return config;
@@ -128,28 +132,63 @@ public class Mimic4Fhir {
 	public void startWithThread() {
 
 		dbAccess = new ConnectDB(config, inputMode);
-		FHIRComm fhirComm = new FHIRComm(config);
-
-		Receiver r = new Receiver();
-		r.setFhirConnector(fhirComm);
-		r.setOutputMode(outputMode);
-		r.receive();
-
-		StationManager stations = dbAccess.getStations();
+		fhir = new FHIRComm(config);
+		
+		int numberOfAllPatients = 0;
+		if (topPatients == 0) { // all Patients
+			numberOfAllPatients = dbAccess.getNumberOfPatients();
+		} else {
+			numberOfAllPatients = topPatients;
+		}
+		
+		int numReceivers = 5;		
+		if (numberOfAllPatients > numReceivers) {
+			numReceivers = numberOfAllPatients;
+		}		
+		for (int i=0; i<numReceivers; i++) {
+			receiver = new Receiver();
+			receiver.setFhirConnector(fhir);
+			receiver.setOutputMode(outputMode);
+			receiver.receive();
+			
+		}
+	
 		String[] patientIDs = dbAccess.getAmountOfPatientIds(topPatients, random);
 
 		StopWatch watch = new StopWatch();
 		watch.start();
-
+		
 		ExecutorService executor = Executors.newFixedThreadPool(10);
-		for (int i = 0; i < topPatients; i++) {
-			executor.submit(
-					new ConversionThread(fhirComm, patientIDs[i], i, stations, config, config.getValidateResources(), dbAccess));
+
+		if (inputMode == InputMode.MIMIC_BASE) {
+			StationManager stations = dbAccess.getStations();
+			for (int i = 0; i < topPatients; i++) {
+				executor.submit(
+						new ConversionThread(fhir, patientIDs[i], i, stations, config, config.getValidateResources(), dbAccess));
+			}
+		} else if (inputMode == InputMode.MIMIC_FHIR) {
+			dbAccess.setFhirConnector(fhir);
+			for (int i = 0; i < topPatients; i++) {
+				executor.submit(
+						new ValidationThread(fhir, patientIDs[i], config, dbAccess));
+			}
 		}
+		
+		
 
 		executor.shutdown();
 		try {
 			executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
+			sendr = new Sender();
+			JsonObject message = Json.createObjectBuilder().add("number", "0").add("bundle", "END").build();
+			for (int i=0; i<numReceivers; i++) {
+				sendr.send(message.toString()); 
+			}
+
+			// close connection to queue
+			sendr.close();
+			
+			
 			watch.stop();
 			System.out.print(
 					"Conversion of " + topPatients + " Patients complete in " + watch.getTotalTimeMillis() + " ms)");
@@ -158,6 +197,7 @@ public class Mimic4Fhir {
 		}
 		TimeMeasurements.getInstance().writeToFile();
 	}
+
 
 	
 	/*

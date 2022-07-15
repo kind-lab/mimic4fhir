@@ -139,6 +139,18 @@ public class Receiver {
 		}
 
 	}
+	
+	/**
+	 * Close channel connection
+	 */
+	public void close() {
+		try {
+			this.channel.close();
+			this.connection.close();
+		} catch (IOException | TimeoutException e) {
+			e.printStackTrace();
+		}
+	}
 
 	private void performAction(String number, String bundle) {
 		// Perform action for bundle

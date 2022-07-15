@@ -56,8 +56,8 @@ public class Main {
 		app.setConfig(configObj);
 		app.setOutputMode(OutputMode.PUSH_SERVER);
 		app.setInputMode(InputMode.MIMIC_FHIR);
-		app.setTopPatients(10, true);
-		app.start();
-//		app.startWithThread();
+		app.setTopPatients(10, false);
+//		app.start();
+		app.startWithThread();
 	}
 }

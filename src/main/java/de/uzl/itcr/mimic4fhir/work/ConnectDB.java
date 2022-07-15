@@ -27,8 +27,6 @@ import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.parser.IParser;
 
 import org.hl7.fhir.r4.model.Patient;
-import org.hl7.fhir.r4.model.Encounter;
-import org.hl7.fhir.r4.model.Condition;
 import org.hl7.fhir.r4.model.Resource;
 
 import de.uzl.itcr.mimic4fhir.work.FHIRComm;
@@ -70,27 +68,6 @@ public class ConnectDB {
 	private PreparedStatement statementGetIcdCodes;
 	
 	private PreparedStatement statementGetPatient;
-	private PreparedStatement statementGetEncounter;
-	private PreparedStatement statementGetEncounterIcu;
-	private PreparedStatement statementGetCondition;
-	private PreparedStatement statementGetLocation;
-	private PreparedStatement statementGetMedication;
-	private PreparedStatement statementGetMedicationAdministration;
-	private PreparedStatement statementGetMedicationAdministrationIcu;
-	private PreparedStatement statementGetMedicationDispense;
-	private PreparedStatement statementGetMedicationRequest;
-	private PreparedStatement statementGetObservationChartevents;
-	private PreparedStatement statementGetObservationDatetimeevents;
-	private PreparedStatement statementGetObservationLabevents;
-	private PreparedStatement statementGetObservationMicroOrg;
-	private PreparedStatement statementGetObservationMicroSusc;
-	private PreparedStatement statementGetObservationMicroTest;
-	private PreparedStatement statementGetObservationOutputevents;
-	private PreparedStatement statementGetOrganization;
-	private PreparedStatement statementGetProcedure;
-	private PreparedStatement statementGetProcedureIcu;
-	private PreparedStatement statementGetSpecimen;
-	private PreparedStatement statementGetSpecimenLab;
 	private PreparedStatement statementGetResourceByPatientId;
 
 	/**
@@ -246,7 +223,7 @@ public class ConnectDB {
 	private void prepareStatementsFhir() throws SQLException {
 		// Statements that overlap with MIMIC_BASE
 		this.statementSelectAmountOfPatientIDs = this.connection
-				.prepareStatement("SELECT id as subject_id from mimic_fhir.patient ORDER BY patient_id LIMIT ?;");
+				.prepareStatement("SELECT id as subject_id from mimic_fhir.patient ORDER BY id LIMIT ?;");
 		this.statementSelectAmountOfPatientIDsRandom = this.connection
 				.prepareStatement("SELECT id as subject_id FROM mimic_fhir.patient ORDER BY random() LIMIT ?;");
 		this.statementCountPatients = this.connection.prepareStatement("SELECT COUNT(*) FROM mimic_fhir.patient;");//		
@@ -256,8 +233,6 @@ public class ConnectDB {
 				.prepareStatement("SELECT * FROM mimic_fhir.patient ORDER BY random() LIMIT ?");
 		
 		// MIMIC_FHIR statements
-		this.statementGetEncounter = this.connection
-				.prepareStatement("SELECT fhir FROM mimic_fhir.encounter WHERE patient_id = ?::uuid;");
 		this.statementGetPatient = this.connection
 				.prepareStatement("SELECT fhir FROM mimic_fhir.patient WHERE id = ?::uuid;");
 		this.statementGetResourceByPatientId = this.connection
@@ -342,6 +317,10 @@ public class ConnectDB {
 		return null;
 	}
 	
+	synchronized public List<Resource> getResourcesByPatientIdSynchronized(MimicFhirTable resource, String patientId) {
+		return this.getResourcesByPatientId(resource, patientId);
+	}
+	
 	/* 
 	 *  Get resource table from mimic_fhir filtered by patient_id
 	 */
@@ -386,6 +365,10 @@ public class ConnectDB {
 		return null;
 	}
 	
+	
+	synchronized public Patient getPatientSynchronized(String patientId) {
+		return this.getPatient(patientId);
+	}
 	
 	/*
 	 *  Get patient from mimic_fhir

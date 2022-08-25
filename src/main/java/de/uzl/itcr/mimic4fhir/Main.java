@@ -17,6 +17,7 @@
 package de.uzl.itcr.mimic4fhir;
 
 import de.uzl.itcr.mimic4fhir.model.manager.ModelVersion;
+import de.uzl.itcr.mimic4fhir.table.MimicFhirTable;
 import de.uzl.itcr.mimic4fhir.work.Config;
 
 public class Main {
@@ -27,10 +28,10 @@ public class Main {
 
 		// Postgres
 		configObj.setPassPostgres("postgres");
-		configObj.setPortPostgres("5432");
+		configObj.setPortPostgres("5434");
 		configObj.setUserPostgres("postgres");
 		configObj.setPostgresServer("localhost");
-		configObj.setDbnamePostgres("mimic");
+		configObj.setDbnamePostgres("mimic_demo");
 		configObj.setSchemaPostgres("mimic_fhir");
 
 		// Fhir
@@ -59,5 +60,6 @@ public class Main {
 		app.setTopPatients(10, false);
 //		app.start();
 		app.startWithThread();
+		
 	}
 }

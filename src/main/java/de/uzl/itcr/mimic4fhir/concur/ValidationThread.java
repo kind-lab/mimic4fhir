@@ -11,12 +11,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StopWatch;
 
+import com.google.common.collect.Lists;
+
 import de.uzl.itcr.mimic4fhir.queue.Sender;
 import de.uzl.itcr.mimic4fhir.table.MimicFhirTable;
 import de.uzl.itcr.mimic4fhir.work.BundleControl;
 import de.uzl.itcr.mimic4fhir.work.Config;
 import de.uzl.itcr.mimic4fhir.work.ConnectDB;
 import de.uzl.itcr.mimic4fhir.work.FHIRComm;
+import de.uzl.itcr.mimic4fhir.work.BundleGroup;
 
 public class ValidationThread implements Runnable{
 	
@@ -100,44 +103,47 @@ public class ValidationThread implements Runnable{
 			
 			// patient related
 			logger.info("Patient Bundle");
+			BundleGroup bundleGroup = BundleGroup.PATIENT;
 			bundleC.addUUIDResourceToBundlePut(patient);
-			addResourcesToBundle(encounters);
-			addResourcesToBundle(encounterIcus);
-			addResourcesToBundle(procedures);
-			addResourcesToBundle(conditions);
+			addResourcesToBundle(encounters, bundleGroup);
+			addResourcesToBundle(encounterIcus, bundleGroup);
+			addResourcesToBundle(procedures, bundleGroup);
+			addResourcesToBundle(conditions, bundleGroup);
 			logger.info("Patient Bundle Size: " + bundleC.getNumberOfResources());
 			submitBundle(patientId);
 			
 			
 			//medication
 			logger.info("Medication Bundle");
-			addResourcesToBundle(medicationRequests);
-			addResourcesToBundle(medicationAdministrations);
-			addResourcesToBundle(medicationDispenses);
-			
-			addResourcesToBundle(medicationAdministrationIcus);
+			bundleGroup = BundleGroup.MEDICATION;
+			addResourcesToBundle(medicationRequests, bundleGroup);
+			addResourcesToBundle(medicationAdministrations, bundleGroup);
+			addResourcesToBundle(medicationDispenses, bundleGroup);			
+			addResourcesToBundle(medicationAdministrationIcus, bundleGroup);
 			logger.info("Medication Bundle Size: " + bundleC.getNumberOfResources());
 			submitBundle(patientId);
-			
-			// micro
+//			
+//			// micro
 			logger.info("Microbiology Bundle");
-			addResourcesToBundle(observationMicroOrgs);
-			addResourcesToBundle(observationMicroSuscs);
-			addResourcesToBundle(observationMicroTests);
-			addResourcesToBundle(specimens);
+			bundleGroup = BundleGroup.MICROBIOLOGY;
+			addResourcesToBundle(observationMicroOrgs, bundleGroup);
+			addResourcesToBundle(observationMicroSuscs, bundleGroup);
+			addResourcesToBundle(observationMicroTests, bundleGroup);
+			addResourcesToBundle(specimens, bundleGroup);
 			logger.info("Micro Bundle Size: " + bundleC.getNumberOfResources());
 			submitBundle(patientId);
-			
-			// labs
-	//				addResourcesToBundle(observationLabevents);
-	//				addResourcesToBundle(specimenLabs);
-			
-			//icu	
+//			
+//			// labs
+//	//				addResourcesToBundle(observationLabevents);
+//	//				addResourcesToBundle(specimenLabs);
+//			
+//			//icu	
 			logger.info("ICU Bundle");
-			addResourcesToBundle(procedure_icus);
-			addResourcesToBundle(observationDatetimeevents);
-			addResourcesToBundle(observationChartevents);
-			addResourcesToBundle(observationOutputevents);
+			bundleGroup = BundleGroup.ICU;
+			addResourcesToBundle(procedure_icus, bundleGroup);
+			addResourcesToBundle(observationDatetimeevents, bundleGroup);
+			addResourcesToBundle(observationChartevents, bundleGroup);
+			addResourcesToBundle(observationOutputevents, bundleGroup);
 			logger.info("ICU Bundle Size: " + bundleC.getNumberOfResources());
 			//bundleC.resetBundle();
 			submitBundle(patientId);		
@@ -163,18 +169,31 @@ public class ValidationThread implements Runnable{
 	 * Add fhir list of fhir resources by UUID to current bundle
 	 * @param resources fhir-resources to add
 	 */
-	private void addResourcesToBundle(List<Resource> resources) {
+	private void addResourcesToBundle(List<Resource> resources, BundleGroup bundleGroup) {
+		int bundleLimit = 10;
 		System.out.println("Size: " + resources.size());
-		resources.forEach((resource) -> {
-			checkBundleLimit();
-			bundleC.addUUIDResourceToBundlePut(resource);
-		});
+		// microbiology bundle must be sent together, no matter the bundle size cause of referential integrity
+		if (resources.size() > bundleLimit && !bundleGroup.equals(BundleGroup.MICROBIOLOGY)) {
+			List<List<Resource>> resourceLists = Lists.partition(resources, bundleLimit);
+			resourceLists.forEach(resourceList -> {
+				resourceList.forEach(resource -> {
+					bundleC.addUUIDResourceToBundlePut(resource);
+				});
+				checkBundleLimit();
+			});				
+		} else {
+			resources.forEach(resource -> {
+				bundleC.addUUIDResourceToBundlePut(resource);
+			});
+		}
+	
+		
 	}
 	
 	private void checkBundleLimit() {
 
-		// if bundle exceeds 100 resources -> start new bundle
-		if (bundleC.getNumberOfResources() > 100) {
+		// if bundle exceeds 50 resources -> start new bundle
+		if (bundleC.getNumberOfResources() >= 10) {
 			// Push bundle to queue
 			JsonObject message = Json.createObjectBuilder()
 					.add("number", "bundle_" + bundleC.getInternalBundleNumber())

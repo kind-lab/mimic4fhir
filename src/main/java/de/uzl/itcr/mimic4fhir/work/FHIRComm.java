@@ -57,6 +57,7 @@ public class FHIRComm {
 	 * @param config config-Object
 	 */
 	public FHIRComm(Config config) {
+		logger.info("in FHIRComm");
 		this.configuration = config;
 		ctx = FhirContext.forR4();
 
@@ -129,22 +130,32 @@ public class FHIRComm {
 	 * @param transactionBundle bundle to push to server
 	 */
 	public void bundleToServer(Bundle transactionBundle) {
-		Boolean validResources = true;
-		System.out.println("Before pushing bundle");
-		Bundle resp = client
-				.transaction()
-				.withBundle(transactionBundle)
-				.withAdditionalHeader("Prefer", "return=representation")
-				.execute();
-		System.out.println("After pushing bundle");
-		System.out.println(resp.fhirType());
-
-		if (resp.fhirType() == "OperationOutcome") {
-			validResources = false;
+		try { 
+			Boolean validResources = true;
+			System.out.println("Before pushing bundle");
+			Bundle resp = client
+					.transaction()
+					.withBundle(transactionBundle)
+					.withAdditionalHeader("Prefer", "return=representation")
+					.execute();
+			System.out.println("After pushing bundle");
+			System.out.println(resp.fhirType());
+	
+			if (resp.fhirType() == "OperationOutcome") {
+				validResources = false;
+			}
+			// Log response
+			writeToFile(ctx.newJsonParser().encodeResourceToString(resp), "json", validResources);
+			System.out.println("After writing bundle");
+		} catch (Exception e){
+			writeToFile(ctx.newJsonParser().encodeResourceToString(transactionBundle), "json", false);
+			
+			// do nothing, see if error is reported...
+//			logger.error("ERROR ERROR");
+//			logger.error(ctx.newJsonParser().encodeResourceToString(resp));
+			logger.error(e.getMessage());
+			e.printStackTrace();
 		}
-		// Log response
-		writeToFile(ctx.newJsonParser().encodeResourceToString(resp), "json", validResources);
-		System.out.println("After writing bundle");
 	}
 
 	private void writeToFile(String text) {

@@ -26,6 +26,9 @@ import java.util.concurrent.TimeUnit;
 import javax.json.Json;
 import javax.json.JsonObject;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import org.hl7.fhir.r4.model.Coding;
 import org.hl7.fhir.r4.model.Condition;
 import org.hl7.fhir.r4.model.Encounter;
@@ -87,6 +90,8 @@ public class Mimic4Fhir {
 
 	private static FhirInstanceValidatorMimic instanceValidator = FhirInstanceValidatorMimic.getInstance();
 	private static FHIRInstanceValidator instanceValidator2 = FHIRInstanceValidator.getInstance();
+	
+	private static final Logger logger = LoggerFactory.getLogger(ConversionThread.class);
 
 	public Config getConfig() {
 		return config;
@@ -141,10 +146,12 @@ public class Mimic4Fhir {
 			numberOfAllPatients = topPatients;
 		}
 		
-		int numReceivers = 5;		
-		if (numberOfAllPatients > numReceivers) {
+		int numReceivers = 10;		
+		// cap numReceivers at 10, more than that overwhelms the computer
+		if (numberOfAllPatients > numReceivers && numberOfAllPatients<10) {
 			numReceivers = numberOfAllPatients;
 		}		
+		logger.info("Number of recievers: " + numReceivers);
 		for (int i=0; i<numReceivers; i++) {
 			receiver = new Receiver();
 			receiver.setFhirConnector(fhir);
@@ -410,40 +417,39 @@ public class Mimic4Fhir {
 		addResourcesToBundle(conditions);
 		System.out.println("Patient Bundle Size: " + bundleC.getNumberOfResources());
 		submitBundle(patientId);
-		
-		
+//		
+//		
 		//medication
 		System.out.println("Medication Bundle");
 		addResourcesToBundle(medicationRequests);
 		addResourcesToBundle(medicationAdministrations);
-		addResourcesToBundle(medicationDispenses);
-		
+		addResourcesToBundle(medicationDispenses);		
 		addResourcesToBundle(medicationAdministrationIcus);
 		System.out.println("Medication Bundle Size: " + bundleC.getNumberOfResources());
 		submitBundle(patientId);
 		
-		// micro
-		System.out.println("Microbiology Bundle");
-		addResourcesToBundle(observationMicroOrgs);
-		addResourcesToBundle(observationMicroSuscs);
-		addResourcesToBundle(observationMicroTests);
-		addResourcesToBundle(specimens);
-		System.out.println("Micro Bundle Size: " + bundleC.getNumberOfResources());
-		submitBundle(patientId);
+//		// micro
+//		System.out.println("Microbiology Bundle");
+//		addResourcesToBundle(observationMicroOrgs);
+//		addResourcesToBundle(observationMicroSuscs);
+//		addResourcesToBundle(observationMicroTests);
+//		addResourcesToBundle(specimens);
+//		System.out.println("Micro Bundle Size: " + bundleC.getNumberOfResources());
+//		submitBundle(patientId);
 		
 		// labs
 //		addResourcesToBundle(observationLabevents);
 //		addResourcesToBundle(specimenLabs);
-		
-		//icu	
-		System.out.println("ICU Bundle");
-		addResourcesToBundle(procedure_icus);
-		addResourcesToBundle(observationDatetimeevents);
-		addResourcesToBundle(observationChartevents);
-		addResourcesToBundle(observationOutputevents);
-		System.out.println("ICU Bundle Size: " + bundleC.getNumberOfResources());
-		//bundleC.resetBundle();
-		submitBundle(patientId);		
+//		
+//		//icu	
+//		System.out.println("ICU Bundle");
+//		addResourcesToBundle(procedure_icus);
+//		addResourcesToBundle(observationDatetimeevents);
+//		addResourcesToBundle(observationChartevents);
+//		addResourcesToBundle(observationOutputevents);
+//		System.out.println("ICU Bundle Size: " + bundleC.getNumberOfResources());
+//		//bundleC.resetBundle();
+//		submitBundle(patientId);		
 	}
 	
 	public void submitBundle(String patientId) {

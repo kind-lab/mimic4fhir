@@ -28,22 +28,34 @@ public class ValidationThread implements Runnable{
 	private BundleControl bundleC = new BundleControl();
 	
 	Patient patient;
+	List<Resource> edConditions;
+	List<Resource> edEncounters;
+	List<Resource> edMedicationDispenses;
+	List<Resource> edMedicationStatements;
+	List<Resource> edProcedures;
+	List<Resource> edObservations;
+	List<Resource> observationVitalSigns;
+	
 	List<Resource> encounters;
 	List<Resource> conditions;
-	List<Resource> encounterIcus;		
-	List<Resource> medicationAdministrations;
-	List<Resource> medicationAdministrationIcus;
+	List<Resource> procedures;	
+			
+	List<Resource> medicationAdministrations;	
 	List<Resource> medicationDispenses;
 	List<Resource> medicationRequests;
+	
+	List<Resource> icuEncounters;
+	List<Resource> icuMedicationAdministrations;
+	List<Resource> icuProcedures;
 	List<Resource> observationChartevents;
 	List<Resource> observationDatetimeevents;
+	List<Resource> observationOutputevents;
 	
 	List<Resource> observationMicroOrgs;
 	List<Resource> observationMicroSuscs;
-	List<Resource> observationMicroTests;
-	List<Resource> observationOutputevents;
-	List<Resource> procedures;
-	List<Resource> procedure_icus;
+	List<Resource> observationMicroTests;	
+	List<Resource> observationLabevents;	
+	List<Resource> specimenLabs;	
 	List<Resource> specimens;
 
 	// TransformerHelper helper
@@ -80,33 +92,46 @@ public class ValidationThread implements Runnable{
 		try {
 			System.out.println("before patient read");
 			patient = dbAccess.getPatientSynchronized(patientId);
-			System.out.println("after patient read");
 			encounters = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.ENCOUNTER, patientId);
-			System.out.println("after enc read");
-			conditions = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.CONDITION, patientId);
-			System.out.println("after cond read");
-			encounterIcus = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.ENCOUNTER_ICU, patientId);		
-			medicationAdministrations = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.MEDICATION_ADMINISTRATION, patientId);
-			medicationAdministrationIcus = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.MEDICATION_ADMINISTRATION_ICU, patientId);
+			conditions = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.CONDITION, patientId);					
+			procedures = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.PROCEDURE, patientId);	
+			
+			medicationAdministrations = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.MEDICATION_ADMINISTRATION, patientId);			
 			medicationDispenses = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.MEDICATION_DISPENSE, patientId);
 			medicationRequests = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.MEDICATION_REQUEST, patientId);
+						
+			icuEncounters = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.ENCOUNTER_ICU, patientId);
+			icuMedicationAdministrations = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.MEDICATION_ADMINISTRATION_ICU, patientId);
+			icuProcedures = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.PROCEDURE_ICU, patientId);
 			observationChartevents = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.OBSERVATION_CHARTEVENTS, patientId);
 			observationDatetimeevents = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.OBSERVATION_DATETIMEEVENTS, patientId);
+			observationOutputevents = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.OBSERVATION_OUTPUTEVENTS, patientId);
 			
 			observationMicroOrgs = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.OBSERVATION_MICRO_ORG, patientId);
 			observationMicroSuscs = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.OBSERVATION_MICRO_SUSC, patientId);
 			observationMicroTests = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.OBSERVATION_MICRO_TEST, patientId);
-			observationOutputevents = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.OBSERVATION_OUTPUTEVENTS, patientId);
-			procedures = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.PROCEDURE, patientId);
-			procedure_icus = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.PROCEDURE_ICU, patientId);
 			specimens = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.SPECIMEN, patientId);
+			
+			observationLabevents = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.OBSERVATION_LABEVENTS, patientId);
+			specimenLabs = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.SPECIMEN_LAB, patientId);			
+			
+			// ed resources
+			edEncounters = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.ENCOUNTER_ED, patientId);
+			edConditions = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.CONDITION_ED, patientId);
+			edProcedures = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.PROCEDURE_ED, patientId);
+			edObservations = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.OBSERVATION_ED, patientId);
+			edMedicationDispenses = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.MEDICATION_DISPENSE_ED, patientId);
+			edMedicationStatements = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.MEDICATION_STATEMENT_ED, patientId);
+			observationVitalSigns = dbAccess.getResourcesByPatientIdSynchronized(MimicFhirTable.OBSERVATION_VITAL_SIGNS, patientId);
+			
+			
 			
 			// patient related
 			logger.info("Patient Bundle");
 			BundleGroup bundleGroup = BundleGroup.PATIENT;
 			bundleC.addUUIDResourceToBundlePut(patient);
 			addResourcesToBundle(encounters, bundleGroup);
-			addResourcesToBundle(encounterIcus, bundleGroup);
+			addResourcesToBundle(icuEncounters, bundleGroup);
 			addResourcesToBundle(procedures, bundleGroup);
 			addResourcesToBundle(conditions, bundleGroup);
 			logger.info("Patient Bundle Size: " + bundleC.getNumberOfResources());
@@ -119,32 +144,47 @@ public class ValidationThread implements Runnable{
 			addResourcesToBundle(medicationRequests, bundleGroup);
 			addResourcesToBundle(medicationAdministrations, bundleGroup);
 			addResourcesToBundle(medicationDispenses, bundleGroup);			
-			addResourcesToBundle(medicationAdministrationIcus, bundleGroup);
+			addResourcesToBundle(icuMedicationAdministrations, bundleGroup);
 			logger.info("Medication Bundle Size: " + bundleC.getNumberOfResources());
 			submitBundle(patientId);
 //			
 //			// micro
 			logger.info("Microbiology Bundle");
 			bundleGroup = BundleGroup.MICROBIOLOGY;
+			addResourcesToBundle(specimens, bundleGroup);
 			addResourcesToBundle(observationMicroOrgs, bundleGroup);
 			addResourcesToBundle(observationMicroSuscs, bundleGroup);
-			addResourcesToBundle(observationMicroTests, bundleGroup);
-			addResourcesToBundle(specimens, bundleGroup);
+			addResourcesToBundle(observationMicroTests, bundleGroup);			
 			logger.info("Micro Bundle Size: " + bundleC.getNumberOfResources());
 			submitBundle(patientId);
 //			
 //			// labs
-//	//				addResourcesToBundle(observationLabevents);
-//	//				addResourcesToBundle(specimenLabs);
+			bundleGroup = BundleGroup.LABS;
+			addResourcesToBundle(specimenLabs, bundleGroup);
+			addResourcesToBundle(observationLabevents, bundleGroup);
+			
 //			
 //			//icu	
 			logger.info("ICU Bundle");
 			bundleGroup = BundleGroup.ICU;
-			addResourcesToBundle(procedure_icus, bundleGroup);
+			addResourcesToBundle(icuProcedures, bundleGroup);
 			addResourcesToBundle(observationDatetimeevents, bundleGroup);
 			addResourcesToBundle(observationChartevents, bundleGroup);
 			addResourcesToBundle(observationOutputevents, bundleGroup);
 			logger.info("ICU Bundle Size: " + bundleC.getNumberOfResources());
+			
+			// ed
+			logger.info("ED Bundle");
+			bundleGroup = BundleGroup.ED;
+			addResourcesToBundle(edEncounters, bundleGroup);
+			addResourcesToBundle(edConditions, bundleGroup);
+			addResourcesToBundle(edProcedures, bundleGroup);			
+			addResourcesToBundle(edMedicationDispenses, bundleGroup);
+			addResourcesToBundle(edMedicationStatements, bundleGroup);
+//			addResourcesToBundle(edObservations, bundleGroup);
+//			addResourcesToBundle(observationVitalSigns, bundleGroup);
+			
+			
 			//bundleC.resetBundle();
 			submitBundle(patientId);		
 		} catch (Exception e) {

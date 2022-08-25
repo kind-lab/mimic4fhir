@@ -1,9 +1,10 @@
 package de.uzl.itcr.mimic4fhir.work;
 
 public enum BundleGroup {
-	PATIENT,
-	MICROBIOLOGY,
-	MEDICATION,
-	LABS,
+	ED,
 	ICU,
+	LABS,
+	MEDICATION,
+	MICROBIOLOGY,
+	PATIENT	
 }
